@@ -1,0 +1,28 @@
+{
+  "name": "omencss",
+  "version": "0.0.1",
+  "description": "The classy way to write design.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch --no-source-map scss:css",
+    "prepare": "husky install",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "css": "sass --no-source-map scss:css",
+    "compressed-css": "sass --no-source-map scss:css/minified --style=compressed"
+  },
+  "keywords": [
+    "animation",
+    "css",
+    "design",
+    "library",
+    "omencss"
+  ],
+  "author": "SeGl",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "sass": "^1.46.0"
+  }
+}
