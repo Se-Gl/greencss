@@ -10,3 +10,4 @@ package-lock.json
 
 # all .json files
 *.json
+*.txt
