@@ -2,6 +2,57 @@
 
 ## Development Process
 
+## Getting Started
+
+First installation
+
+```bash
+# 1.    install all dependencies
+npm i
+
+# 2.    initialize husky
+npm run prepare
+
+# 3.    manually generate .css files
+npm run css
+
+# 4.    manually create a minified .css file
+npm run compressed-css
+
+# 5.    start scss
+npm run dev
+
+# 6. start your development server
+```
+
+### SASS Commands
+
+Run the following command during development and after the first installation to the repo. It will convert the scss files to css files. It will have an immediate impact on the `samples/index.html` file.
+
+```bash
+npm run dev
+```
+
+### Prettier Commands
+
+```bash
+# check the project for styling errors and run the --fix command
+npm run lint
+# fix style errors by running prettier
+npm run format
+```
+
+### scss to css
+
+Every new commit automatically creates a `css` folder with a `css/minified` subfolder. To avoid possible errors on different local vs. online repositories, the `.css` files will not be pushed to GitHub. The developer may generate CSS files manually - without the need of creating a commit. Therefore the following code must be executed. Initially, it is recommended to run the following codes after cloning the repository:
+
+```bash
+# manually generate .css files
+npm run css
+# manually create a minified .css file
+npm run compressed-css
+```
+
 ### Structure - 7:1
 
 Building the architecture of a CSS library is probably one of the trickiest tasks to do during the development of a project. Keeping the architecture consistent and meaningful is even more of a challenge.
@@ -55,43 +106,6 @@ sass/
 |   |– _index.scss        # Sass Index File
 |
  – main.scss              # Main Sass Input File
-```
-
-## Getting Started
-
-Install the dependencies
-
-```bash
-# install all dependencies
-npm i
-```
-
-### SASS Commands
-
-Run the following command during development. It will convert the scss files to css files. It will have an immediate impact on the `samples/index.html` file.
-
-```bash
-npm run dev
-```
-
-### Prettier Commands
-
-```bash
-# check the project for styling errors and run the --fix command
-npm run lint
-# fix style errors by running prettier
-npm run format
-```
-
-### scss to css
-
-Every new commit automatically creates a `css` folder with a `css/minified` subfolder. To avoid possible errors on different local vs. online repositories, the `.css` files will not be pushed to GitHub. The developer may generate CSS files manually - without the need of creating a commit. Therefore the following code must be executed. Initially, it is recommended to run the following codes after cloning the repository:
-
-```bash
-# manually generate .css files
-npm run css
-# manually create a minified .css file
-npm run compressed-css
 ```
 
 ### Basic Frontend Libraries
