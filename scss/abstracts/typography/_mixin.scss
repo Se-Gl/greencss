@@ -20,7 +20,7 @@
 @for $i from 1 through 30 {
   $letterspacing: $i;
   .ls#{$letterspacing} {
-    letter-spacing: ($letterspacing * 1em) / 10;
+    letter-spacing: math.div($letterspacing * 1em, 10);
   }
 }
 
