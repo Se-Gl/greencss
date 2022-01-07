@@ -1,20 +1,20 @@
 @use 'sass:math';
 
-// font size 1px-100px
+// font size 1px-100px (+1px)
 @for $i from 1 through 100 {
   $fontsize: $i;
   .fs#{$fontsize} {
     font-size: $fontsize * 1px;
   }
 }
-// font size 110px-300px
+// font size 110px-300px (+10px)
 @for $i from 11 through 30 {
   $fontsize: $i;
   .fs#{$fontsize * 10} {
     font-size: $fontsize * 10px;
   }
 }
-// relative font size 1vh-100vh
+// relative font size 1vh-100vh (+1vh)
 @for $i from 1 through 100 {
   $relativefontsize: $i;
   .rel-fs#{$relativefontsize} {
@@ -22,7 +22,7 @@
   }
 }
 
-// font weight
+// font weight (+100)
 @for $i from 1 through 9 {
   $fontweight: $i * 100;
   .fw#{math.div($fontweight, 100)} {
@@ -30,7 +30,7 @@
   }
 }
 
-// line height
+// line height (+1%)
 @for $i from 1 through 300 {
   $lineheight: $i;
   .lh#{$lineheight} {
@@ -38,7 +38,7 @@
   }
 }
 
-// letter spacing
+// letter spacing (+0.1em)
 @for $i from 1 through 30 {
   $letterspacing: $i;
   .ls#{$letterspacing} {
