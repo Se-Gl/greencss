@@ -1,9 +1,31 @@
 @use 'sass:math';
 
+// font size 1px-100px
+@for $i from 1 through 100 {
+  $fontsize: $i;
+  .fs#{$fontsize} {
+    font-size: $fontsize * 1px;
+  }
+}
+// font size 110px-300px
+@for $i from 11 through 30 {
+  $fontsize: $i;
+  .fs#{$fontsize * 10} {
+    font-size: $fontsize * 10px;
+  }
+}
+// relative font size 1vh-100vh
+@for $i from 1 through 100 {
+  $relativefontsize: $i;
+  .rel-fs#{$relativefontsize} {
+    font-size: $relativefontsize * 1vh;
+  }
+}
+
 // font weight
 @for $i from 1 through 9 {
   $fontweight: $i * 100;
-  .weight#{math.div($fontweight, 100)} {
+  .fw#{math.div($fontweight, 100)} {
     font-weight: $fontweight;
   }
 }
