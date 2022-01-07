@@ -1,0 +1,49 @@
+// font weight
+@for $i from 1 through 9 {
+  $fontweight: $i * 100;
+  .weight#{($fontweight / 100)} {
+    font-weight: $fontweight;
+  }
+}
+
+// line height
+@for $i from 1 through 300 {
+  $lineheight: $i;
+  .lh#{$lineheight} {
+    line-height: $lineheight * 1%;
+  }
+}
+
+// letter spacing
+@for $i from 1 through 30 {
+  $letterspacing: $i;
+  .ls#{$letterspacing} {
+    letter-spacing: ($letterspacing * 1em) / 10;
+  }
+}
+
+// font style
+$fontstyle: ('normal', 'italic', 'oblique', 'initial', 'inherit');
+@each $style in $fontstyle {
+  .#{$style}-font {
+    font-style: '#{$style}';
+  }
+}
+
+// font-variant-numeric
+$numericfont: (
+  'normal',
+  'ordinal',
+  'slashed-zero',
+  'lining-nums',
+  'oldstyle-nums',
+  'proportional-nums',
+  'tabular-nums',
+  'diagonal-fractions',
+  'stacked-fractions'
+);
+@each $nr in $numericfont {
+  .#{$nr}-font-var {
+    font-variant-numeric: '#{$nr}';
+  }
+}
