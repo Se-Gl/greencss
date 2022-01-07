@@ -1,7 +1,9 @@
+@use 'sass:math';
+
 // font weight
 @for $i from 1 through 9 {
   $fontweight: $i * 100;
-  .weight#{($fontweight / 100)} {
+  .weight#{math.div($fontweight, 100)} {
     font-weight: $fontweight;
   }
 }
