@@ -1,68 +1,77 @@
 @use 'sass:math';
 
 // font size 1px-100px (+1px)
+// from text-1 to text-100
 @for $i from 1 through 100 {
   $fontsize: $i;
-  .fs#{$fontsize} {
+  .text-#{$fontsize} {
     font-size: $fontsize * 1px;
   }
 }
 // font size 110px-300px (+10px)
+// from text-110 to text-300
 @for $i from 11 through 30 {
   $fontsize: $i;
-  .fs#{$fontsize * 10} {
+  .text-#{$fontsize * 10} {
     font-size: $fontsize * 10px;
   }
 }
 // relative font size 1vh-100vh (+1vh)
+// from rel-text-1 to rel-text-100
 @for $i from 1 through 100 {
   $relativefontsize: $i;
-  .rel-fs#{$relativefontsize} {
+  .rel-text-#{$relativefontsize} {
     font-size: $relativefontsize * 1vh;
   }
 }
 
 // font weight (+100)
+// from font-1 to font-9
 @for $i from 1 through 9 {
   $fontweight: $i * 100;
-  .fw#{math.div($fontweight, 100)} {
+  .font-#{math.div($fontweight, 100)} {
     font-weight: $fontweight;
   }
 }
 
 // font weight char
+// bold-font etc.
 $fontweightchar: (bold, bolder, inherit, initial, normal, lighter, revert, unset);
 @each $style in $fontweightchar {
-  .#{$style}-font {
+  .font-#{$style} {
     font-weight: $style;
   }
 }
 
 // line height (+1%)
+// from leading-1 to leading-300
 @for $i from 1 through 300 {
   $lineheight: $i;
-  .lh#{$lineheight} {
+  .leading-#{$lineheight} {
     line-height: $lineheight * 1%;
   }
 }
 
 // letter spacing (+0.1em)
+// from tracking-1 to tracking-30
 @for $i from 1 through 30 {
   $letterspacing: $i;
-  .ls#{$letterspacing} {
+  .tracking-#{$letterspacing} {
     letter-spacing: math.div($letterspacing * 1em, 10);
   }
 }
 
 // font style
-$fontstyle: (normal, italic, oblique, initial, inherit);
+// font-style-normal etc.
+$fontstyle: (normal, italic, oblique, initial, inherit, revert, unset);
 @each $style in $fontstyle {
-  .#{$style}-font {
+  .font-style-#{$style} {
     font-style: $style;
   }
 }
 
 // font-variant-numeric
+// numeric-normal etc.
 $numericfont: (
   normal,
   ordinal,
@@ -75,7 +84,7 @@ $numericfont: (
   stacked-fractions
 );
 @each $nr in $numericfont {
-  .#{$nr}-font-var {
+  .numeric-#{$nr} {
     font-variant-numeric: $nr;
   }
 }
