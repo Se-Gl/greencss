@@ -163,3 +163,12 @@ $verticalAlignment: (baseline, sub, super, text-top, text-bottom, middle, top, b
     vertical-align: $verticalAlignmentPercent * 1%;
   }
 }
+
+// whitespace
+// whitespace-normal etc.
+$whitespace: (normal, nowrap, pre, pre-wrap, pre-line, break-spaces);
+@each $value in $whitespace {
+  .whitespace-#{$value} {
+    white-space: $value;
+  }
+}
