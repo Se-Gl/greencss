@@ -134,3 +134,13 @@ $textoverflow: (ellipsis, clip, unset);
     text-overflow: $value;
   }
 }
+
+// text orientation
+// uppercase etc.
+$textoverflow: (mixed, upright, sideways-right, sideways);
+@each $value in $textoverflow {
+  .orientation-#{$value} {
+    writing-mode: vertical-rl;
+    text-orientation: $value;
+  }
+}
