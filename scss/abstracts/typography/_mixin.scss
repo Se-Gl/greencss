@@ -97,3 +97,17 @@ $textalign: (left, center, right, justify);
     text-align: $nr;
   }
 }
+
+// text decoration
+// underline etc.
+$textdecoration: (
+  underline: underline,
+  overline: overline,
+  line-through: line-through,
+  no-decoration: none
+);
+@each $name, $char in $textdecoration {
+  .#{$name} {
+    text-decoration-line: $char;
+  }
+}
