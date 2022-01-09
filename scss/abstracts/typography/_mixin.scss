@@ -88,3 +88,12 @@ $numericfont: (
     font-variant-numeric: $nr;
   }
 }
+
+// text alignment
+// text-left etc.
+$textalign: (left, center, right, justify);
+@each $nr in $textalign {
+  .text-#{$nr} {
+    text-align: $nr;
+  }
+}
