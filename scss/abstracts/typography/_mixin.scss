@@ -83,18 +83,18 @@ $numericfont: (
   diagonal-fractions,
   stacked-fractions
 );
-@each $nr in $numericfont {
-  .numeric-#{$nr} {
-    font-variant-numeric: $nr;
+@each $value in $numericfont {
+  .numeric-#{$value} {
+    font-variant-numeric: $value;
   }
 }
 
 // text alignment
 // text-left etc.
 $textalign: (left, center, right, justify);
-@each $nr in $textalign {
-  .text-#{$nr} {
-    text-align: $nr;
+@each $value in $textalign {
+  .text-#{$value} {
+    text-align: $value;
   }
 }
 
@@ -123,5 +123,14 @@ $texttransforms: (
 @each $name, $char in $texttransforms {
   .#{$name} {
     text-transform: $char;
+  }
+}
+
+// text overflow
+// text-ellipsis etc.
+$textoverflow: (ellipsis, clip, unset);
+@each $value in $textoverflow {
+  .text-#{$value} {
+    text-overflow: $value;
   }
 }
