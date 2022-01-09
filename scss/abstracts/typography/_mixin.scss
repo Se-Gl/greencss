@@ -30,6 +30,14 @@
   }
 }
 
+// font weight char
+$fontweightchar: (bold, bolder, inherit, initial, normal, lighter, revert, unset);
+@each $style in $fontweightchar {
+  .#{$style}-font {
+    font-weight: $style;
+  }
+}
+
 // line height (+1%)
 @for $i from 1 through 300 {
   $lineheight: $i;
@@ -47,27 +55,27 @@
 }
 
 // font style
-$fontstyle: ('normal', 'italic', 'oblique', 'initial', 'inherit');
+$fontstyle: (normal, italic, oblique, initial, inherit);
 @each $style in $fontstyle {
   .#{$style}-font {
-    font-style: '#{$style}';
+    font-style: $style;
   }
 }
 
 // font-variant-numeric
 $numericfont: (
-  'normal',
-  'ordinal',
-  'slashed-zero',
-  'lining-nums',
-  'oldstyle-nums',
-  'proportional-nums',
-  'tabular-nums',
-  'diagonal-fractions',
-  'stacked-fractions'
+  normal,
+  ordinal,
+  slashed-zero,
+  lining-nums,
+  oldstyle-nums,
+  proportional-nums,
+  tabular-nums,
+  diagonal-fractions,
+  stacked-fractions
 );
 @each $nr in $numericfont {
   .#{$nr}-font-var {
-    font-variant-numeric: '#{$nr}';
+    font-variant-numeric: $nr;
   }
 }
