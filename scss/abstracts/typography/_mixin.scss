@@ -111,3 +111,17 @@ $textdecoration: (
     text-decoration-line: $char;
   }
 }
+
+// text transform
+// uppercase etc.
+$texttransforms: (
+  uppercase: uppercase,
+  lowercase: lowercase,
+  capitalize: capitalize,
+  no-transform: none
+);
+@each $name, $char in $texttransforms {
+  .#{$name} {
+    text-transform: $char;
+  }
+}
