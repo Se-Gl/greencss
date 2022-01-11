@@ -1,62 +1,69 @@
 @use '../variables/color' as *;
 
-// text color (from: 1 is dark to: 5 is light)
-// text-venetianred-1 etc.
-@each $color, $hex in $colors {
-  @for $i from 1 through 5 {
-    $lighten: $i * 7%;
-    $hover: ($i + 1) * 7%;
-    $lighten-name: $i;
-
-    .text-#{$color}-#{$lighten-name} {
-      color: lighten($hex, $lighten);
-    }
+@each $key, $val in $colors {
+  // initial text color from colors list
+  // text-venetianred
+  .text-#{$key} {
+    color: $val;
   }
-}
-
-// text color with hover effect (from: 1 is dark to: 5 is light)
-// hov-text-venetianred-1 etc.
-@each $color, $hex in $colors {
-  @for $i from 1 through 5 {
-    $lighten: $i * 7%;
+  // initial text colors hover
+  // hov-text-venetianred
+  @for $i from 1 through 1 {
     $hover: ($i + 1) * 7%;
-    $lighten-name: $i;
-
-    .hov-text-#{$color}-#{$lighten-name} {
-      color: lighten($hex, $lighten);
+    .hov-text-#{$key} {
+      color: $val;
       &:hover {
-        color: lighten($hex, $hover);
+        color: lighten($val, $hover);
       }
     }
   }
-}
-
-// default light and dark
-@each $color, $hex in $lightdark {
+  // initial bg color from colors list
+  // text-venetianred
+  .bg-#{$key} {
+    background-color: $val;
+  }
+  // initial bg colors hover
+  // hov-text-venetianred
   @for $i from 1 through 1 {
-    $hover: ($i + 1) * 5%;
-    $color-name: $i;
-
-    .text-#{$color} {
-      color: $hex;
+    $hover: ($i + 1) * 7%;
+    .hov-bg-#{$key} {
+      background-color: $val;
+      &:hover {
+        background-color: lighten($val, $hover);
+      }
     }
   }
-}
-// default light and dark with hover effect
-@each $color, $hex in $lightdark {
-  @for $i from 1 through 1 {
-    $hover: ($i + 1) * 5%;
-    $color-name: $i;
 
-    .hov-text-#{$color} {
-      color: $hex;
+  // light variations (7%)
+  @for $i from 1 through 5 {
+    $lighten: $i * 7%;
+    $hover: ($i + 1) * 7%;
+    $lighten-name: $i;
+
+    // text with lighter color
+    // text-venetianred-1
+    .text-#{$key}-#{$i} {
+      color: lighten($val, $lighten);
+    }
+    // text hover with lighter color
+    // text-venetianred-1 or hov-text-venetianred-1
+    .hov-text-#{$key}-#{$i} {
+      color: lighten($val, $lighten);
       &:hover {
-        color: lighten($hex, $hover);
+        color: lighten($val, $hover);
+      }
+    }
+    // bg hover with lighter color
+    // bg-venetianred-1 or hov-bg-venetianred-1
+    .hov-bg-#{$key}-#{$i} {
+      background-color: lighten($val, $lighten);
+      &:hover {
+        background-color: lighten($val, $hover);
       }
     }
   }
 }
 .transition {
+  transition: all 0.5s ease-in-out;
   font-size: 25rem;
-  transition: all 0.5s ease;
 }
