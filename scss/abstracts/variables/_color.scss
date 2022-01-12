@@ -1,21 +1,35 @@
 // individual colors
 $red: #ce1f1a;
+$darkorange: #d54913;
 $orange: #e98f1f;
+$lightorange: #ffd300;
 $yellow: #deff0a;
+$yellowgreen: #a1ff0a;
+$lightgreen: #0aff99;
 $green: #3f7d1a;
+$lightblue: #0aefff;
 $blue: #147df5;
+$darkblue: #0870c7;
 $purple: #be0aff;
 $magenta: #d03377;
+$darkpurple: #580aff;
 
 // theme color
 $colors: (
-  'red': $red,
-  'orange': $orange,
-  'yellow': $yellow,
-  'green': $green,
-  'blue': $blue,
-  'purple': $purple,
-  'magenta': $magenta
+  'red': #ce1f1a,
+  'darkorange': #d54913,
+  'orange': #e98f1f,
+  'lightorange': #ffd300,
+  'yellow': #deff0a,
+  'yellowgreen': #a1ff0a,
+  'lightgreen': #0aff99,
+  'green': #3f7d1a,
+  'lightblue': #0aefff,
+  'blue': #147df5,
+  'darkblue': #0870c7,
+  'purple': #be0aff,
+  'magenta': #d03377,
+  'darkpurple': #580aff
 );
 
 $lightdark: (
