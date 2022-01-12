@@ -63,6 +63,43 @@
     }
   }
 }
+
+// default light and dark
+// text-dark text-light
+@each $color, $hex in $lightdark {
+  @for $i from 1 through 1 {
+    $hover: ($i + 1) * 5%;
+    $color-name: $i;
+
+    .text-#{$color} {
+      color: $hex;
+    }
+    .bg-#{$color} {
+      background-color: $hex;
+    }
+  }
+}
+// default light and dark with hover effect
+// hov-text-dark hov-text-light
+@each $color, $hex in $lightdark {
+  @for $i from 1 through 1 {
+    $hover: ($i + 1) * 5%;
+    $color-name: $i;
+
+    .hov-text-#{$color} {
+      color: $hex;
+      &:hover {
+        color: lighten($hex, $hover);
+      }
+    }
+    .hov-bg-#{$color} {
+      background-color: $hex;
+      &:hover {
+        background-color: lighten($hex, $hover);
+      }
+    }
+  }
+}
 .transition {
   transition: all 0.5s ease-in-out;
   font-size: 25rem;
