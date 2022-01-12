@@ -1,13 +1,19 @@
 @use '../variables/color' as *;
 
-$list1: $red, $blue;
-
-@mixin gradient($direction, $list) {
-  background: -webkit-linear-gradient($direction, $list);
-  background: -moz-linear-gradient($direction, $list);
-  background: -o-linear-gradient($direction, $list);
-  background: linear-gradient($direction, $list);
+// background gradient with initial colors
+// gradient-to-right from-purple to-orange
+@each $name, $char in $colors {
+  .from-#{$name} {
+    --gradient-from-color: #{$char};
+    --gradient-color-merge: var(--gradient-from-color), var(--gradient-to-color);
+  }
+  .to-#{$name} {
+    --gradient-to-color: #{$char};
+  }
 }
-.one {
-  @include gradient(left, $list1);
+
+@each $position, $value in $positions {
+  .gradient-to-#{$position} {
+    background-image: linear-gradient(to $value, var(--gradient-color-merge));
+  }
 }

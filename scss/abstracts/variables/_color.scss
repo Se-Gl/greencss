@@ -1,14 +1,3 @@
-// theme color
-$colors: (
-  'red': #ce1f1a,
-  'orange': #e98f1f,
-  'yellow': #deff0a,
-  'green': #3f7d1a,
-  'blue': #147df5,
-  'purple': #be0aff,
-  'magenta': #d03377
-);
-
 // individual colors
 $red: #ce1f1a;
 $orange: #e98f1f;
@@ -18,7 +7,30 @@ $blue: #147df5;
 $purple: #be0aff;
 $magenta: #d03377;
 
+// theme color
+$colors: (
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'blue': $blue,
+  'purple': $purple,
+  'magenta': $magenta
+);
+
 $lightdark: (
   'light': #f0eef5,
   'dark': #03000a
+);
+
+// bg gradient positions
+$positions: (
+  'top': top,
+  'top-right': top right,
+  'right': right,
+  'bottom-right': bottom right,
+  'bottom': bottom,
+  'bottom-left': bottom left,
+  'left': left,
+  'top-left': top left
 );
