@@ -65,7 +65,7 @@
 }
 
 // default light and dark
-// text-dark text-light
+// text-dark text-light and hov-text-dark hov-text-light
 @each $color, $hex in $lightdark {
   @for $i from 1 through 1 {
     $hover: ($i + 1) * 5%;
@@ -74,23 +74,14 @@
     .text-#{$color} {
       color: $hex;
     }
-    .bg-#{$color} {
-      background-color: $hex;
-    }
-  }
-}
-// default light and dark with hover effect
-// hov-text-dark hov-text-light
-@each $color, $hex in $lightdark {
-  @for $i from 1 through 1 {
-    $hover: ($i + 1) * 5%;
-    $color-name: $i;
-
     .hov-text-#{$color} {
       color: $hex;
       &:hover {
         color: lighten($hex, $hover);
       }
+    }
+    .bg-#{$color} {
+      background-color: $hex;
     }
     .hov-bg-#{$color} {
       background-color: $hex;
@@ -99,8 +90,4 @@
       }
     }
   }
-}
-.transition {
-  transition: all 0.5s ease-in-out;
-  font-size: 25rem;
 }
