@@ -1,21 +1,23 @@
 // theme color
 $colors: (
-  'venetianred': #ce1f1a,
-  'sinopia': #d54913,
-  'carrotorange': #e98f1f,
-  'cyberyellow': #ffd300,
-  'chartreuse': #deff0a,
-  'springbud': #a1ff0a,
-  'mediumspring': #0aff99,
-  'sapgreen': #3f7d1a,
-  'electricblue': #0aefff,
-  'azure': #147df5,
-  'navyblue': #0870c7,
-  'electricpurple': #be0aff,
-  'telemagenta': #d03377,
-  'hanpurple': #580aff,
-  'stpatricksblue': #253280
+  'red': #ce1f1a,
+  'orange': #e98f1f,
+  'yellow': #deff0a,
+  'green': #3f7d1a,
+  'blue': #147df5,
+  'purple': #be0aff,
+  'magenta': #d03377
 );
+
+// individual colors
+$red: #ce1f1a;
+$orange: #e98f1f;
+$yellow: #deff0a;
+$green: #3f7d1a;
+$blue: #147df5;
+$purple: #be0aff;
+$magenta: #d03377;
+
 $lightdark: (
   'light': #f0eef5,
   'dark': #03000a

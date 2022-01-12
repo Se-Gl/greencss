@@ -1,82 +1,13 @@
 @use '../variables/color' as *;
 
-@each $key, $val in $colors {
-  // initial text color from colors list
-  // text-venetianred or hov-text-venetianred
-  .text-#{$key} {
-    color: $val;
-  }
-  .hov-text-#{$key} {
-    &:hover {
-      color: $val;
-    }
-  }
-  // initial bg color from colors list
-  // text-venetianred
-  .bg-#{$key} {
-    background-color: $val;
-  }
-  .hov-bg-#{$key} {
-    &:hover {
-      background-color: $val;
-    }
-  }
+$list1: $red, $blue;
 
-  // // light variations (7%)
-  @for $i from 1 through 5 {
-    $lighten: $i * 7%;
-    $lighten-name: $i;
-
-    // text with lighter color
-    // text-venetianred-1
-    .text-#{$key}-#{$i} {
-      color: lighten($val, $lighten);
-    }
-    // text hover with lighter color
-    // hov-text-venetianred-1
-    .hov-text-#{$key}-#{$i} {
-      &:hover {
-        color: lighten($val, $lighten);
-      }
-    }
-    // bg with lighter color
-    // bg-venetianred-1
-    .bg-#{$key}-#{$i} {
-      background-color: lighten($val, $lighten);
-    }
-    // bg hover with lighter color
-    // bg-venetianred-1
-    .hov-bg-#{$key}-#{$i} {
-      &:hover {
-        background-color: lighten($val, $lighten);
-      }
-    }
-  }
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
 }
-
-// default light and dark
-// text-dark text-light and hov-text-dark hov-text-light
-@each $color, $hex in $lightdark {
-  @for $i from 1 through 1 {
-    $lighten: $i * 7%;
-    $color-name: $i;
-
-    .text-#{$color} {
-      color: $hex;
-    }
-    .hov-text-#{$color} {
-      &:hover {
-        color: $hex;
-      }
-    }
-
-    .bg-#{$color} {
-      background-color: $hex;
-    }
-    .hov-bg-#{$color} {
-      &:hover {
-        background-color: $hex;
-      }
-    }
-  }
+.one {
+  @include gradient(left, $list1);
 }
