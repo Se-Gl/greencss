@@ -57,14 +57,14 @@
       color: $hex;
     }
     .hov-text-#{$color}:hover {
-      color: lighten($hex, $lighten);
+      color: $hex;
     }
 
     .bg-#{$color} {
       background-color: $hex;
     }
     .hov-bg-#{$color}:hover {
-      background-color: lighten($hex, $lighten);
+      background-color: $hex;
     }
   }
 }
