@@ -16,20 +16,20 @@ $darkpurple: #580aff;
 
 // theme color
 $colors: (
-  'red': #ce1f1a,
-  'darkorange': #d54913,
-  'orange': #e98f1f,
-  'lightorange': #ffd300,
-  'yellow': #deff0a,
-  'yellowgreen': #a1ff0a,
-  'lightgreen': #0aff99,
-  'green': #3f7d1a,
-  'lightblue': #0aefff,
-  'blue': #147df5,
-  'darkblue': #0870c7,
-  'purple': #be0aff,
-  'magenta': #d03377,
-  'darkpurple': #580aff
+  'red': $red,
+  'darkorange': $darkorange,
+  'orange': $orange,
+  'lightorange': $lightorange,
+  'yellow': $yellow,
+  'yellowgreen': $yellowgreen,
+  'lightgreen': $lightgreen,
+  'green': $green,
+  'lightblue': $lightblue,
+  'blue': $blue,
+  'darkblue': $darkblue,
+  'purple': $purple,
+  'magenta': $magenta,
+  'darkpurple': $darkpurple
 );
 
 $lightdark: (
