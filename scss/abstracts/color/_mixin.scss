@@ -6,16 +6,20 @@
   .text-#{$key} {
     color: $val;
   }
-  .hov-text-#{$key}:hover {
-    color: $val;
+  .hov-text-#{$key} {
+    &:hover {
+      color: $val;
+    }
   }
   // initial bg color from colors list
   // text-venetianred
   .bg-#{$key} {
     background-color: $val;
   }
-  .hov-bg-#{$key}:hover {
-    background-color: $val;
+  .hov-bg-#{$key} {
+    &:hover {
+      background-color: $val;
+    }
   }
 
   // // light variations (7%)
@@ -30,8 +34,10 @@
     }
     // text hover with lighter color
     // hov-text-venetianred-1
-    .hov-text-#{$key}-#{$i}:hover {
-      color: lighten($val, $lighten);
+    .hov-text-#{$key}-#{$i} {
+      &:hover {
+        color: lighten($val, $lighten);
+      }
     }
     // bg with lighter color
     // bg-venetianred-1
@@ -40,8 +46,10 @@
     }
     // bg hover with lighter color
     // bg-venetianred-1
-    .hov-bg-#{$key}-#{$i}:hover {
-      background-color: lighten($val, $lighten);
+    .hov-bg-#{$key}-#{$i} {
+      &:hover {
+        background-color: lighten($val, $lighten);
+      }
     }
   }
 }
@@ -56,15 +64,19 @@
     .text-#{$color} {
       color: $hex;
     }
-    .hov-text-#{$color}:hover {
-      color: $hex;
+    .hov-text-#{$color} {
+      &:hover {
+        color: $hex;
+      }
     }
 
     .bg-#{$color} {
       background-color: $hex;
     }
-    .hov-bg-#{$color}:hover {
-      background-color: $hex;
+    .hov-bg-#{$color} {
+      &:hover {
+        background-color: $hex;
+      }
     }
   }
 }
