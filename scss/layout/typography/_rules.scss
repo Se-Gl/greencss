@@ -17,12 +17,12 @@
     font-size: $fontsize * 1px;
   }
 }
-// relative font size 1vh-100vh (+1vh)
+// relative font size 1vw-100vw (+1vw)
 // from rel-text-1 to rel-text-100
 @for $i from 1 through 100 {
   $relativefontsize: $i;
   .rel-text-#{$relativefontsize} {
-    font-size: $relativefontsize * 1vh;
+    font-size: $relativefontsize * 1vw;
   }
 }
 
