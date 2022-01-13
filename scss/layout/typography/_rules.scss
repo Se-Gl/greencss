@@ -12,9 +12,9 @@
 // font size 110px-300px (+10px)
 // from text-110 to text-300
 @for $i from 11 through 30 {
-  $fontsize: $i;
-  .text-#{$fontsize * 10} {
-    font-size: $fontsize * 10px;
+  $fontsize: $i * 10;
+  .text-#{$fontsize} {
+    font-size: $fontsize * 1px;
   }
 }
 // relative font size 1vh-100vh (+1vh)
