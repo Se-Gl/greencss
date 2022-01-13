@@ -1,37 +1,75 @@
 @use '../../variables/breakpoints/variables' as *;
 
-@mixin xs {
+// min breakpoints mixins
+@mixin min-xs {
   @media (min-width: map-get($breakpoints, 'xs')) {
     @content;
   }
 }
 
-@mixin sm {
+@mixin min-sm {
   @media (min-width: map-get($breakpoints, 'sm')) {
     @content;
   }
 }
 
-@mixin md {
+@mixin min-md {
   @media (min-width: map-get($breakpoints, 'md')) {
     @content;
   }
 }
 
-@mixin lg {
+@mixin min-lg {
   @media (min-width: map-get($breakpoints, 'lg')) {
     @content;
   }
 }
 
-@mixin xl {
+@mixin min-xl {
   @media (min-width: map-get($breakpoints, 'xl')) {
     @content;
   }
 }
 
-@mixin breakpoint($bp: 0) {
+@mixin min-breakpoint($bp: 0) {
   @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin min-xs {
+  @media (min-width: map-get($breakpoints, 'xs')) {
+    @content;
+  }
+}
+
+// max breakpoints mixins
+@mixin max-sm {
+  @media (max-width: map-get($breakpoints, 'sm')) {
+    @content;
+  }
+}
+
+@mixin max-md {
+  @media (max-width: map-get($breakpoints, 'md')) {
+    @content;
+  }
+}
+
+@mixin max-lg {
+  @media (max-width: map-get($breakpoints, 'lg')) {
+    @content;
+  }
+}
+
+@mixin max-xl {
+  @media (max-width: map-get($breakpoints, 'xl')) {
+    @content;
+  }
+}
+
+@mixin max-breakpoint($bp: 0) {
+  @media (max-width: $bp) {
     @content;
   }
 }
