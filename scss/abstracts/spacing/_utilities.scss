@@ -1,23 +1,20 @@
 @use 'sass:math';
-@use '../variables/utilities' as *;
+@use './key-values' as *;
 
-// flex display
-@each $key, $value in $display {
-  .#{$key} {
-    display: $value;
-  }
-}
+// generate utility classes
+@each $property, $map in $utilities {
+  $key: map-get($map, 'keys');
+  $values: map-get($map, 'values');
 
-// flex direction
-@each $key, $value in $flexdirection {
-  .#{$key} {
-    flex-direction: $value;
-  }
-}
-
-// flex wrap
-@each $key, $value in $flexwrap {
-  .#{$key} {
-    flex-wrap: $value;
+  @each $k, $v in $values {
+    @if ($k == 'default') {
+      .#{$key} {
+        #{$property}: $v;
+      }
+    } @else {
+      .#{$key}#{$k} {
+        #{$property}: $v;
+      }
+    }
   }
 }
