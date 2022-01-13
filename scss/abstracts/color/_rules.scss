@@ -1,4 +1,4 @@
-@use '../variables/color' as *;
+@use './variables' as *;
 
 @each $key, $val in $colors {
   // initial text color from colors list
