@@ -28,3 +28,10 @@ $flexdirection: (
   flex-col: column,
   flex-col-reverse: column-reverse
 );
+
+$flexwrap: (
+  flex-wrap: wrap,
+  flex-wrap-reverse: wrap-reverse,
+  flex-nowrap: nowrap,
+  flex-revert: revert
+);
