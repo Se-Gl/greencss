@@ -14,7 +14,8 @@
 }
 
 @mixin md {
-  @media (min-width: map-get($breakpoints, 'md+')) and (max-width: map-get($breakpoints, 'lg')) and (orientation: landscape) {
+  @media (min-width: map-get($breakpoints, 'md+')) and (max-width: map-get($breakpoints, 'lg')),
+    (orientation: landscape) {
     @content;
   }
 }
