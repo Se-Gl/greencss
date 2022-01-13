@@ -1,4 +1,5 @@
 @use 'sass:math';
+@use './variables' as *;
 
 // font size 1px-100px (+1px)
 // from text-1 to text-100
@@ -34,15 +35,6 @@
   }
 }
 
-// font weight char
-// bold-font etc.
-$fontweightchar: (bold, bolder, inherit, initial, normal, lighter, revert, unset);
-@each $style in $fontweightchar {
-  .font-#{$style} {
-    font-weight: $style;
-  }
-}
-
 // line height (+1%)
 // from leading-1 to leading-300
 @for $i from 1 through 300 {
@@ -58,93 +50,6 @@ $fontweightchar: (bold, bolder, inherit, initial, normal, lighter, revert, unset
   $letterspacing: $i;
   .tracking-#{$letterspacing} {
     letter-spacing: math.div($letterspacing * 1em, 10);
-  }
-}
-
-// font style
-// font-style-normal etc.
-$fontstyle: (normal, italic, oblique, initial, inherit, revert, unset);
-@each $style in $fontstyle {
-  .font-style-#{$style} {
-    font-style: $style;
-  }
-}
-
-// font-variant-numeric
-// numeric-normal etc.
-$numericfont: (
-  normal,
-  ordinal,
-  slashed-zero,
-  lining-nums,
-  oldstyle-nums,
-  proportional-nums,
-  tabular-nums,
-  diagonal-fractions,
-  stacked-fractions
-);
-@each $value in $numericfont {
-  .numeric-#{$value} {
-    font-variant-numeric: $value;
-  }
-}
-
-// text alignment
-// text-left etc.
-$textalign: (left, center, right, justify);
-@each $value in $textalign {
-  .text-#{$value} {
-    text-align: $value;
-  }
-}
-
-// text decoration
-// underline etc.
-$textdecoration: (
-  underline: underline,
-  overline: overline,
-  line-through: line-through,
-  no-decoration: none
-);
-@each $name, $char in $textdecoration {
-  .#{$name} {
-    text-decoration-line: $char;
-  }
-}
-
-// text transform
-// uppercase etc.
-$texttransforms: (
-  uppercase: uppercase,
-  lowercase: lowercase,
-  capitalize: capitalize,
-  no-transform: none
-);
-@each $name, $char in $texttransforms {
-  .#{$name} {
-    text-transform: $char;
-  }
-}
-
-// text overflow
-// text-ellipsis etc.
-$textoverflow: (ellipsis, clip, unset);
-@each $value in $textoverflow {
-  .text-#{$value} {
-    text-overflow: $value;
-  }
-}
-
-// word break
-// break-normal etc.
-$wordBreak: (
-  normal: normal,
-  all: break-all,
-  keep-all: keep-all
-);
-@each $name, $value in $wordBreak {
-  .break-#{$name} {
-    word-break: $value;
   }
 }
 
@@ -177,11 +82,22 @@ $verticalAlignment: (baseline, sub, super, text-top, text-bottom, middle, top, b
   }
 }
 
-// whitespace
-// whitespace-normal etc.
-$whitespace: (normal, nowrap, pre, pre-wrap, pre-line, break-spaces);
-@each $value in $whitespace {
-  .whitespace-#{$value} {
-    white-space: $value;
+// generate typo utility classes
+@each $property, $map in $typo-utilities {
+  $prefix: map-get($map, 'prefix');
+  $values: map-get($map, 'values');
+
+  @if ($property == 'white-space') {
+    @each $k, $v in $values {
+      .#{$prefix} {
+        #{$property}: $v;
+      }
+    }
+  } @else {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k} {
+        #{$property}: $v;
+      }
+    }
   }
 }

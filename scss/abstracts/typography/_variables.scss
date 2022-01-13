@@ -1,0 +1,96 @@
+$typo-utilities: (
+  'font-weight': (
+    'prefix': 'font-',
+    'values': (
+      bold: bold,
+      bolder: bolder,
+      inherit: inherit,
+      initial: initial,
+      normal: normal,
+      lighter: lighter,
+      revert: revert,
+      unset: unset
+    )
+  ),
+  'font-style': (
+    'prefix': 'font-style-',
+    'values': (
+      normal: normal,
+      italic: italic,
+      oblique: oblique,
+      initial: initial,
+      inherit: inherit,
+      revert: revert,
+      unset: unset
+    )
+  ),
+  'font-variant-numeric': (
+    'prefix': 'numeric-',
+    'values': (
+      normal: normal,
+      ordinal: ordinal,
+      slashed-zero: slashed-zero,
+      lining-nums: lining-nums,
+      oldstyle-nums: oldstyle-nums,
+      proportional-nums: proportional-nums,
+      tabular-nums: tabular-nums,
+      diagonal-fractions: diagonal-fractions,
+      stacked-fractions: stacked-fractions
+    )
+  ),
+  'text-align': (
+    'prefix': 'text-',
+    'values': (
+      left: left,
+      center: center,
+      right: right,
+      justify: justify
+    )
+  ),
+  'text-decoration-line': (
+    'prefix': '',
+    'values': (
+      underline: underline,
+      overline: overline,
+      line-through: line-through,
+      no-decoration: none
+    )
+  ),
+  'text-transform': (
+    'prefix': '',
+    'values': (
+      uppercase: uppercase,
+      lowercase: lowercase,
+      capitalize: capitalize,
+      no-transform: none
+    )
+  ),
+  'text-overflow': (
+    'prefix': 'text-',
+    'values': (
+      ellipsis: ellipsis,
+      clip: clip,
+      unset: unset
+    )
+  ),
+  'word-break': (
+    'prefix': 'break-',
+    'values': (
+      normal: normal,
+      all: break-all,
+      keep-all: keep-all
+    )
+  ),
+  'white-space': (
+    'prefix': 'whitespace-',
+    'values': (
+      default: default,
+      normal: normal,
+      nowrap: nowrap,
+      pre: pre,
+      pre-wrap: pre-wrap,
+      pre-line: pre-line,
+      break-spaces: break-spaces
+    )
+  )
+);
