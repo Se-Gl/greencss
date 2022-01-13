@@ -114,5 +114,42 @@ $typo-utilities: (
       top: top,
       bottom: bottom
     )
+  ),
+  'font-family': (
+    'prefix': '',
+    'values': (
+      sans: (
+        -apple-system,
+        BlinkMacSystemFont,
+        Roboto,
+        Arial,
+        'Helvetica Neue',
+        'Segoe UI',
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        'Open Sans',
+        sans-serif
+      ),
+      serif: (
+        'Times New Roman',
+        Times,
+        serif
+      ),
+      monospace: (
+        'Courier New',
+        Courier,
+        monospace
+      ),
+      cursive: (
+        'Brush Script MT',
+        cursive
+      ),
+      fantasy: (
+        Copperplate,
+        Papyrus,
+        fantasy
+      )
+    )
   )
 );
