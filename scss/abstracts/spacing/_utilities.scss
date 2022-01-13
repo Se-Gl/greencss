@@ -1,0 +1,16 @@
+@use 'sass:math';
+@use '../variables/utilities' as *;
+
+// flex
+@each $key, $value in $display {
+  .#{$key} {
+    display: $value;
+  }
+}
+
+// flex
+@each $key, $value in $flexdirection {
+  .#{$key} {
+    flex-direction: $value;
+  }
+}
