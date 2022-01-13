@@ -92,5 +92,27 @@ $typo-utilities: (
       pre-line: pre-line,
       break-spaces: break-spaces
     )
+  ),
+  'text-orientation': (
+    'prefix': 'orientation-',
+    'values': (
+      mixed: mixed,
+      upright: upright,
+      sideways-right: sideways-right,
+      sideways: sideways
+    )
+  ),
+  'vertical-align': (
+    'prefix': 'vertical-',
+    'values': (
+      baseline: baseline,
+      sub: sub,
+      super: super,
+      text-top: text-top,
+      text-bottom: text-bottom,
+      middle: middle,
+      top: top,
+      bottom: bottom
+    )
   )
 );

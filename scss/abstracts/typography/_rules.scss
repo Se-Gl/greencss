@@ -53,25 +53,6 @@
   }
 }
 
-// text orientation
-// orientation-mixed etc.
-$textoverflow: (mixed, upright, sideways-right, sideways);
-@each $value in $textoverflow {
-  .orientation-#{$value} {
-    writing-mode: vertical-rl;
-    text-orientation: $value;
-  }
-}
-
-// vertical alignment (needs display: inline;)
-// vertical-baseline etc.
-$verticalAlignment: (baseline, sub, super, text-top, text-bottom, middle, top, bottom);
-@each $value in $verticalAlignment {
-  .vertical-#{$value} {
-    display: inline;
-    vertical-align: $value;
-  }
-}
 // vertical alignment (+1%)
 // from vertical-1 to vertical-100
 @for $i from 1 through 100 {
@@ -87,9 +68,17 @@ $verticalAlignment: (baseline, sub, super, text-top, text-bottom, middle, top, b
   $prefix: map-get($map, 'prefix');
   $values: map-get($map, 'values');
 
-  @if ($property == 'white-space') {
+  @if ($property == 'text-orientation') {
     @each $k, $v in $values {
-      .#{$prefix} {
+      .#{$prefix}#{$k} {
+        writing-mode: vertical-rl;
+        #{$property}: $v;
+      }
+    }
+  } @else if ($property == 'vertical-align') {
+    @each $k, $v in $values {
+      .#{$prefix}#{$k} {
+        display: inline;
         #{$property}: $v;
       }
     }
