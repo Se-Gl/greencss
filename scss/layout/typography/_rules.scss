@@ -1,5 +1,5 @@
 @use 'sass:math';
-@use './variables' as *;
+@use '../../abstracts/variables/typography/variables' as *;
 
 // font size 1px-100px (+1px)
 // from text-1 to text-100
