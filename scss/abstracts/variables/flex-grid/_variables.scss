@@ -232,5 +232,14 @@ $utilities: (
       justify-items-center: center,
       justify-items-stretch: stretch
     )
+  ),
+  'justify-self': (
+    'values': (
+      justify-self-auto: auto,
+      justify-self-start: start,
+      justify-self-end: end,
+      justify-self-center: center,
+      justify-self-stretch: stretch
+    )
   )
 );
