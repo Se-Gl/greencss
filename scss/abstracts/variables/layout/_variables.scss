@@ -56,5 +56,12 @@ $utilities: (
       box-border: border-box,
       box-content: content-box
     )
+  ),
+  'float': (
+    'values': (
+      float-right: right,
+      float-left: left,
+      float-none: none
+    )
   )
 );
