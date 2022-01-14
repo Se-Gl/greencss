@@ -12,5 +12,17 @@ $utilities: (
     'values': (
       col-auto: auto
     )
+  ),
+  'break-after': (
+    'values': (
+      break-after-auto: auto,
+      break-after-avoid: avoid,
+      break-after-all: all,
+      break-after-avoid-page: avoid-page,
+      break-after-page: page,
+      break-after-left: left,
+      break-after-right: right,
+      break-after-column: column
+    )
   )
 );
