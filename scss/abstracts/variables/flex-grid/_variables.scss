@@ -241,5 +241,15 @@ $utilities: (
       justify-self-center: center,
       justify-self-stretch: stretch
     )
+  ),
+  'align-content': (
+    'values': (
+      content-center: center,
+      content-start: flex-start,
+      content-end: flex-end,
+      content-between: space-between,
+      content-around: space-around,
+      content-evenly: space-evenly
+    )
   )
 );
