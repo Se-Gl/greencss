@@ -260,5 +260,15 @@ $utilities: (
       items-baseline: baseline,
       items-stretch: stretch
     )
+  ),
+  'align-self': (
+    'values': (
+      self-auto: auto,
+      self-start: flex-start,
+      self-end: flex-end,
+      self-center: center,
+      self-stretch: stretch,
+      self-baseline: baseline
+    )
   )
 );
