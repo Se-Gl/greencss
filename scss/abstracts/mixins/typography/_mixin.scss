@@ -1,0 +1,61 @@
+@use 'sass:math';
+@use '../../variables/typography/variables' as *;
+
+// generate typo utility classes
+@mixin typobasis($bp: '') {
+  @each $property, $map in $typo-utilities {
+    $prefix: map-get($map, 'prefix');
+    $values: map-get($map, 'values');
+
+    @if ($property == 'text-orientation') {
+      @each $k, $v in $values {
+        .#{$bp}#{$prefix}#{$k} {
+          writing-mode: vertical-rl;
+          #{$property}: $v;
+        }
+      }
+    } @else if ($property == 'vertical-align') {
+      @each $k, $v in $values {
+        .#{$bp}#{$prefix}#{$k} {
+          display: inline;
+          #{$property}: $v;
+        }
+      }
+    } @else {
+      @each $k, $v in $values {
+        .#{$bp}#{$prefix}#{$k} {
+          #{$property}: $v;
+        }
+      }
+    }
+  }
+}
+
+@mixin typoNumbers($bp: '', $classname: font-size, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1px) {
+  @if ($classname == 'letter-spacing') {
+    @for $i from $firstnumber through $secondnumber {
+      $fontsize: $i * $calculate;
+
+      .#{$bp}#{$fontsize} {
+        #{$classname}: math.div($fontsize * 1em, 10);
+      }
+    }
+  } @else if ($classname == 'vertical-align') {
+    @for $i from $firstnumber through $secondnumber {
+      $fontsize: $i * $calculate;
+
+      .#{$bp}#{$fontsize} {
+        display: inline;
+        #{$classname}: $fontsize * $multiply;
+      }
+    }
+  } @else {
+    @for $i from $firstnumber through $secondnumber {
+      $fontsize: $i * $calculate;
+
+      .#{$bp}#{$fontsize} {
+        #{$classname}: $fontsize * $multiply;
+      }
+    }
+  }
+}

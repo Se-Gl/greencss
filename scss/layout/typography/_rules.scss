@@ -1,92 +1,13 @@
-@use 'sass:math';
 @use '../../abstracts/variables/typography/variables' as *;
+@use '../../abstracts/mixins/typography/mixin' as *;
 
-// font size 1px-100px (+1px)
-// from text-1 to text-100
-@for $i from 1 through 100 {
-  $fontsize: $i;
-  .text-#{$fontsize} {
-    font-size: $fontsize * 1px;
-  }
-}
-// font size 110px-300px (+10px)
-// from text-110 to text-300
-@for $i from 11 through 30 {
-  $fontsize: $i * 10;
-  .text-#{$fontsize} {
-    font-size: $fontsize * 1px;
-  }
-}
-// relative font size 1vw-100vw (+1vw)
-// from rel-text-1 to rel-text-100
-@for $i from 1 through 100 {
-  $relativefontsize: $i;
-  .rel-text-#{$relativefontsize} {
-    font-size: $relativefontsize * 1vw;
-  }
-}
+@include typobasis();
 
-// font weight (+100)
-// from font-1 to font-9
-@for $i from 1 through 9 {
-  $fontweight: $i * 100;
-  .font-#{math.div($fontweight, 100)} {
-    font-weight: $fontweight;
-  }
-}
-
-// line height (+1%)
-// from leading-1 to leading-300
-@for $i from 1 through 300 {
-  $lineheight: $i;
-  .leading-#{$lineheight} {
-    line-height: $lineheight * 1%;
-  }
-}
-
-// letter spacing (+0.1em)
-// from tracking-1 to tracking-30
-@for $i from 1 through 30 {
-  $letterspacing: $i;
-  .tracking-#{$letterspacing} {
-    letter-spacing: math.div($letterspacing * 1em, 10);
-  }
-}
-
-// vertical alignment (+1%)
-// from vertical-1 to vertical-100
-@for $i from 1 through 100 {
-  $verticalAlignmentPercent: $i;
-  .vertical-#{$verticalAlignmentPercent} {
-    display: inline;
-    vertical-align: $verticalAlignmentPercent * 1%;
-  }
-}
-
-// generate typo utility classes
-@each $property, $map in $typo-utilities {
-  $prefix: map-get($map, 'prefix');
-  $values: map-get($map, 'values');
-
-  @if ($property == 'text-orientation') {
-    @each $k, $v in $values {
-      .#{$prefix}#{$k} {
-        writing-mode: vertical-rl;
-        #{$property}: $v;
-      }
-    }
-  } @else if ($property == 'vertical-align') {
-    @each $k, $v in $values {
-      .#{$prefix}#{$k} {
-        display: inline;
-        #{$property}: $v;
-      }
-    }
-  } @else {
-    @each $k, $v in $values {
-      .#{$prefix}#{$k} {
-        #{$property}: $v;
-      }
-    }
-  }
-}
+// $bp: '', $classname: font-size, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1px
+@include typoNumbers(text-, font-size, 1, 100, 1, 1px);
+@include typoNumbers(text-, font-size, 11, 30, 10, 1px);
+@include typoNumbers(rel-text-, font-size, 1, 100, 1, 1vw);
+@include typoNumbers(font-, font-weight, 1, 9, 100, 1);
+@include typoNumbers(leading-, line-height, 1, 300, 1, 1%);
+@include typoNumbers(tracking-, letter-spacing, 1, 30, 1, 1);
+@include typoNumbers(vertical-, vertical-align, 1, 100, 1, 1%);
