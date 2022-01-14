@@ -289,5 +289,14 @@ $utilities: (
       place-items-center: center,
       place-items-stretch: stretch
     )
+  ),
+  'place-self': (
+    'values': (
+      place-self-auto: auto,
+      place-self-start: start,
+      place-self-end: end,
+      place-self-center: center,
+      place-self-stretch: stretch
+    )
   )
 );
