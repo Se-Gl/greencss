@@ -206,5 +206,13 @@ $utilities: (
       auto-cols-max: max-content,
       auto-cols-fr: minmax(0, 1fr)
     )
+  ),
+  'grid-auto-rows': (
+    'values': (
+      auto-rows-auto: auto,
+      auto-rows-min: min-content,
+      auto-rows-max: max-content,
+      auto-rows-fr: minmax(0, 1fr)
+    )
   )
 );
