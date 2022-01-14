@@ -214,5 +214,15 @@ $utilities: (
       auto-rows-max: max-content,
       auto-rows-fr: minmax(0, 1fr)
     )
+  ),
+  'justify-content': (
+    'values': (
+      justify-start: flex-start,
+      justify-end: flex-end,
+      justify-center: center,
+      justify-between: space-between,
+      justify-around: space-around,
+      justify-evenly: space-evenly
+    )
   )
 );
