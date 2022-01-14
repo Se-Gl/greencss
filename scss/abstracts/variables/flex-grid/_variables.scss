@@ -141,5 +141,16 @@ $utilities: (
       col-end-13: 13,
       col-end-auto: auto
     )
+  ),
+  'grid-template-rows': (
+    'values': (
+      grid-rows-1: repeat(1, minmax(0, 1fr)),
+      grid-rows-2: repeat(2, minmax(0, 1fr)),
+      grid-rows-3: repeat(3, minmax(0, 1fr)),
+      grid-rows-4: repeat(4, minmax(0, 1fr)),
+      grid-rows-5: repeat(5, minmax(0, 1fr)),
+      grid-rows-6: repeat(6, minmax(0, 1fr)),
+      grid-rows-none: none
+    )
   )
 );
