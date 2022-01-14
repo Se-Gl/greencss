@@ -1,117 +1,39 @@
 @use '../../abstracts/variables/color/variables' as *;
+@use '../../abstracts/mixins/color/mixin' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
 
-@each $key, $val in $colors {
-  // initial text color from colors list
-  // text-venetianred or hov-text-venetianred
-  .text-#{$key} {
-    color: $val;
-  }
-  .hov-text-#{$key} {
-    &:hover {
-      color: $val;
-    }
-  }
-  // initial bg color from colors list
-  // text-venetianred
-  .bg-#{$key} {
-    background-color: $val;
-  }
-  .hov-bg-#{$key} {
-    &:hover {
-      background-color: $val;
-    }
-  }
+@include colorlight();
+@include defaultcolor();
+@include bggradient();
+@include bgGradientToFrom();
 
-  // // light variations (7%)
-  @for $i from 1 through 5 {
-    $lighten: $i * 7%;
-    $lighten-name: $i;
-
-    // text with lighter color
-    // text-venetianred-1
-    .text-#{$key}-#{$i} {
-      color: lighten($val, $lighten);
-    }
-    // text hover with lighter color
-    // hov-text-venetianred-1
-    .hov-text-#{$key}-#{$i} {
-      &:hover {
-        color: lighten($val, $lighten);
-      }
-    }
-    // bg with lighter color
-    // bg-venetianred-1
-    .bg-#{$key}-#{$i} {
-      background-color: lighten($val, $lighten);
-    }
-    // bg hover with lighter color
-    // bg-venetianred-1
-    .hov-bg-#{$key}-#{$i} {
-      &:hover {
-        background-color: lighten($val, $lighten);
-      }
-    }
-  }
+@include xs {
+  @include colorlight(xs\:);
+  @include defaultcolor(xs\:);
+  @include bggradient(xs\:);
+  @include bgGradientToFrom(xs\:);
 }
-
-// default light and dark
-// text-dark text-light and hov-text-dark hov-text-light
-@each $color, $hex in $lightdark {
-  @for $i from 1 through 1 {
-    $lighten: $i * 7%;
-    $color-name: $i;
-
-    .text-#{$color} {
-      color: $hex;
-    }
-    .hov-text-#{$color} {
-      &:hover {
-        color: $hex;
-      }
-    }
-
-    .bg-#{$color} {
-      background-color: $hex;
-    }
-    .hov-bg-#{$color} {
-      &:hover {
-        background-color: $hex;
-      }
-    }
-  }
+@include sm {
+  @include colorlight(sm\:);
+  @include defaultcolor(sm\:);
+  @include bggradient(sm\:);
+  @include bgGradientToFrom(sm\:);
 }
-
-// custom background gradient with initial colors props and hover state
-// gradient-to-right from-purple to-orange
-@each $name, $char in $colors {
-  .from-#{$name} {
-    --gradient-from-color: #{$char};
-    --gradient-color-merge: var(--gradient-from-color), var(--gradient-to-color);
-  }
-  .hov-from-#{$name} {
-    &:hover {
-      --gradient-from-color: #{$char};
-      --gradient-color-merge: var(--gradient-from-color), var(--gradient-to-color);
-    }
-  }
-  .to-#{$name} {
-    --gradient-to-color: #{$char};
-  }
-  .hov-to-#{$name} {
-    &:hover {
-      --gradient-to-color: #{$char};
-    }
-  }
+@include md {
+  @include colorlight(md\:);
+  @include defaultcolor(md\:);
+  @include bggradient(md\:);
+  @include bgGradientToFrom(md\:);
 }
-
-@each $position, $value in $positions {
-  .gradient-to-#{$position} {
-    background-image: linear-gradient(to $value, var(--gradient-color-merge));
-  }
-
-  .hov-gradient-to-#{$position} {
-    &:hover {
-      background-image: linear-gradient(to $value, var(--gradient-color-merge));
-    }
-  }
+@include lg {
+  @include colorlight(lg\:);
+  @include defaultcolor(lg\:);
+  @include bggradient(lg\:);
+  @include bgGradientToFrom(lg\:);
+}
+@include xl {
+  @include colorlight(xl\:);
+  @include defaultcolor(xl\:);
+  @include bggradient(xl\:);
+  @include bgGradientToFrom(xl\:);
 }
