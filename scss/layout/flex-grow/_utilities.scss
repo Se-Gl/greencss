@@ -1,5 +1,6 @@
 @use 'sass:math';
 @use '../../abstracts/variables/flex-grid/variables' as *;
+@use '../../abstracts/mixins/flex-grid/flex-grid' as *;
 
 // generate utility classes
 @each $property, $map in $utilities {
@@ -13,16 +14,6 @@
   }
 }
 // flex basis numbers 0rem-100rem
-@for $i from 0 through 100 {
-  $flexbasis: $i;
-  .basis-#{$flexbasis} {
-    flex-basis: $flexbasis * 1rem;
-  }
-}
-// flex basis numbers 0%-100%
-@for $i from 0 through 100 {
-  $flexbasis: $i;
-  .basis-#{$flexbasis}per {
-    flex-basis: $flexbasis * 1%;
-  }
-}
+
+@include flexbasis(1rem, '');
+@include flexbasis(1%, per);
