@@ -1,0 +1,7 @@
+@use '../../abstracts/mixins/layout/mixin' as *;
+
+// generate responsive utility classes
+@include layoutvalues();
+// $bp:   $bp: '', $classname: font-size, $postfix: -rem, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1
+@include layoutNumbers(col-, columns, '', 1, 12, 1);
+@include layoutNumbers(col-, columns, '', 1, 100, 1rem);

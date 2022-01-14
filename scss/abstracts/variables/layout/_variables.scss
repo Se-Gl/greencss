@@ -1,0 +1,16 @@
+@use 'sass:math';
+
+$utilities: (
+  'aspect-ratio': (
+    'values': (
+      aspect-auto: auto,
+      aspect-square: math.div(1, 1),
+      aspect-video: math.div(16, 9)
+    )
+  ),
+  'columns': (
+    'values': (
+      col-auto: auto
+    )
+  )
+);
