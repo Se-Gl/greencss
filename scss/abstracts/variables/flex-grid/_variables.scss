@@ -298,5 +298,26 @@ $utilities: (
       place-self-center: center,
       place-self-stretch: stretch
     )
+  ),
+  'flex-basis': (
+    'values': (
+      basis-auto: auto,
+      // basis-8per: 8.333333%,
+      // basis-16per: 16.666667%,
+      // basis-20per: 20%,
+      // basis-25per: 25%,
+      // basis-33per: 33.333333%,
+      // basis-40per: 40%,
+      // basis-41per: 41.666667%,
+      // basis-50per: 50%,
+      // basis-58per: 58.333333%,
+      // basis-60per: 60%,
+      // basis-66per: 66.666667%,
+      // basis-75per: 75%,
+      // basis-80per: 80%,
+      // basis-83per: 83.333333%,
+      // basis-91per: 91.666667%,
+      // basis-full: 100%;
+    )
   )
 );

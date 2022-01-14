@@ -12,3 +12,17 @@
     }
   }
 }
+// flex basis numbers 0rem-100rem
+@for $i from 0 through 100 {
+  $flexbasis: $i;
+  .basis-#{$flexbasis} {
+    flex-basis: $flexbasis * 1rem;
+  }
+}
+// flex basis numbers 0%-100%
+@for $i from 0 through 100 {
+  $flexbasis: $i;
+  .basis-#{$flexbasis}per {
+    flex-basis: $flexbasis * 1%;
+  }
+}
