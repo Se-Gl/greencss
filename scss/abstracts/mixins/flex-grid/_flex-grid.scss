@@ -1,8 +1,23 @@
+@use '../../variables/flex-grid/variables' as *;
+
 @mixin flexbasis($value: 1, $prefix: '', $bp: '') {
   @for $i from 0 through 100 {
     $flexbasis: $i;
     .#{$bp}basis-#{$flexbasis}#{$prefix} {
       flex-basis: $flexbasis * $value;
+    }
+  }
+}
+
+@mixin flexvalues($bp: '') {
+  @each $property, $map in $utilities {
+    $key: map-get($map, 'keys');
+    $values: map-get($map, 'values');
+
+    @each $k, $v in $values {
+      .#{$bp}#{$key}#{$k} {
+        #{$property}: $v;
+      }
     }
   }
 }

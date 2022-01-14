@@ -1,20 +1,27 @@
 @use 'sass:math';
-@use '../../abstracts/variables/flex-grid/variables' as *;
+// @use '../../abstracts/variables/flex-grid/variables' as *;
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
 
-// generate utility classes
-@each $property, $map in $utilities {
-  $key: map-get($map, 'keys');
-  $values: map-get($map, 'values');
-
-  @each $k, $v in $values {
-    .#{$key}#{$k} {
-      #{$property}: $v;
-    }
-  }
+// // generate responsive utility classes
+@include flexvalues();
+@include xs {
+  @include flexvalues(xs-);
 }
-// flex basis numbers 0rem-100rem
+@include sm {
+  @include flexvalues(sm-);
+}
+@include md {
+  @include flexvalues(md-);
+}
+@include lg {
+  @include flexvalues(lg-);
+}
+@include xl {
+  @include flexvalues(xl-);
+}
+
+// responsive flex basis numbers 0rem-100rem
 
 @include flexbasis(1rem, '');
 @include flexbasis(1%, per);
