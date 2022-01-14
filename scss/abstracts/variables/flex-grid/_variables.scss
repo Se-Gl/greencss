@@ -281,5 +281,13 @@ $utilities: (
       place-content-evenly: space-evenly,
       place-content-stretch: stretch
     )
+  ),
+  'place-items': (
+    'values': (
+      place-items-start: start,
+      place-items-end: end,
+      place-items-center: center,
+      place-items-stretch: stretch
+    )
   )
 );
