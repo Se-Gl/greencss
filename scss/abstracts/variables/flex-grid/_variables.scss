@@ -251,5 +251,14 @@ $utilities: (
       content-around: space-around,
       content-evenly: space-evenly
     )
+  ),
+  'align-items': (
+    'values': (
+      items-start: flex-start,
+      items-end: flex-end,
+      items-center: center,
+      items-baseline: baseline,
+      items-stretch: stretch
+    )
   )
 );
