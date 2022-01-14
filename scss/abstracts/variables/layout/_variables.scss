@@ -63,5 +63,13 @@ $utilities: (
       float-left: left,
       float-none: none
     )
+  ),
+  'clear': (
+    'values': (
+      clear-left: left,
+      clear-right: right,
+      clear-both: both,
+      clear-none: none
+    )
   )
 );
