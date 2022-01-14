@@ -65,29 +65,27 @@ A possible structure could look as follows _(as of January 2022)_
 sass/
 |
 |– abstracts/
-|   |– _animation.scss    # Basic Animation Variables
-|   |– _color.scss        # Colour Mixins
-|   |– _font.scss         # Font Related Files
-|   |– _mixins.scss       # Sass Mixins
-|   |– _variables.scss    # Basic Project Variables
+|   |– mixins             # Sass Mixins Folder
+|   |   |– breakpoints       # Breakpoint Mixins
+|   |   |– color             # Color Mixins
+|   |   |– components        # Components Mixins with subfolders
+|   |   |– flex-grid         # Flex & Grid Mixins
+|   |   |– typography        # Typography Mixins
+|   |– variables          # Basic Project Variables
+|   |   |– breakpoints       # Breakpoint Variables
+|   |   |– color             # Color Variables
+|   |   |– components        # Components Variables with subfolders
+|   |   |– flex-grid         # Flex & Grid Variables
+|   |   |– typography        # Typography Variables
 |   |– _index.scss        # Sass Index File
-|
-|– vendors/
-|   |– _index.scss        # 3rd Party Solutions
+|   |– _license.scss      # Font Related Files
 |
 |– base/
 |   |– _reset.scss        # Reset/normalize
-|   |– _typography.scss   # Typography Rules
-|
-|– layout/
-|   |– _utilities.scss    # Margin, Padding, Opacity
-|   |– _navigation.scss   # Navigation
-|   |– _grid.scss         # Grid System
-|   |– _header.scss       # Header
-|   |– _footer.scss       # Footer
 |   |– _index.scss        # Sass Index File
 |
 |– components/
+|   |– _buttons           # Grid Playground
 |   |– _buttons.scss      # Buttons
 |   |– _carousel.scss     # Carousel
 |   |– _cover.scss        # Cover
@@ -97,6 +95,17 @@ sass/
 |   |– _cards.scss        # Cards
 |   |– _index.scss        # Sass Index File
 |
+|– layout/
+|   |– color             # Color Utilities
+|   |   |– _utilities.scss    # Utilities
+|   |– flex-grid         # Flex & Grid Utilities
+|   |   |– _utilities.scss    # Utilities
+|   |– responsive/
+|   |   |– _index.scss        # Responsive Utilities Styles
+|   |– typography        # Typography Utilities
+|   |   |– _utilities.scss    # Utilities
+|   |– _index.scss        # Sass Index File
+|
 |– pages/
 |   |– _index.scss        # Custom Page Styles
 |
@@ -104,6 +113,9 @@ sass/
 |   |– _theme.scss        # Default Theme
 |   |– _dark.scss         # Dark Mode
 |   |– _index.scss        # Sass Index File
+|
+|– vendors/
+|   |– _index.scss        # 3rd Party Solutions
 |
  – main.scss              # Main Sass Input File
 ```

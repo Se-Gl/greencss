@@ -1,37 +1,57 @@
-@use '../../abstracts/variables/color/variables' as *;
-@use '../../abstracts/mixins/color/mixin' as *;
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
-
-@include colorlight();
-@include defaultcolor();
-@include bggradient();
-@include bgGradientToFrom();
+@use '../../abstracts/mixins/flex-grid/flex-grid' as *;
+@use '../../abstracts/mixins/color/mixin' as *;
 
 @include xs {
+  // flex
+  @include flexvalues(xs\:);
+  @include flexbasis(1rem, '', xs\:);
+  @include flexbasis(1%, per, xs\:);
+  //   color
   @include colorlight(xs\:);
   @include defaultcolor(xs\:);
   @include bggradient(xs\:);
   @include bgGradientToFrom(xs\:);
 }
 @include sm {
+  // flex
+  @include flexvalues(sm\:);
+  @include flexbasis(1rem, '', sm\:);
+  @include flexbasis(1%, per, sm\:);
+  //   color
   @include colorlight(sm\:);
   @include defaultcolor(sm\:);
   @include bggradient(sm\:);
   @include bgGradientToFrom(sm\:);
 }
 @include md {
+  // flex
+  @include flexvalues(md\:);
+  @include flexbasis(1rem, '', md\:);
+  @include flexbasis(1%, per, md\:);
+  //   color
   @include colorlight(md\:);
   @include defaultcolor(md\:);
   @include bggradient(md\:);
   @include bgGradientToFrom(md\:);
 }
 @include lg {
+  // flex
+  @include flexvalues(lg\:);
+  @include flexbasis(1rem, '', lg\:);
+  @include flexbasis(1%, per, lg\:);
+  //   color
   @include colorlight(lg\:);
   @include defaultcolor(lg\:);
   @include bggradient(lg\:);
   @include bgGradientToFrom(lg\:);
 }
 @include xl {
+  // flex
+  @include flexvalues(xl\:);
+  @include flexbasis(1rem, '', xl-);
+  @include flexbasis(1%, per, xl-);
+  //   color
   @include colorlight(xl\:);
   @include defaultcolor(xl\:);
   @include bggradient(xl\:);

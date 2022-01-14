@@ -1,0 +1,6 @@
+@use '../../abstracts/mixins/color/mixin' as *;
+
+@include colorlight();
+@include defaultcolor();
+@include bggradient();
+@include bgGradientToFrom();

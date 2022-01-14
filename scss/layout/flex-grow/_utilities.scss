@@ -1,47 +1,9 @@
-@use 'sass:math';
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
-@use '../../abstracts/mixins/breakpoints/mixin' as *;
 
 // // generate responsive utility classes
 @include flexvalues();
-@include xs {
-  @include flexvalues(xs\:);
-}
-@include sm {
-  @include flexvalues(sm\:);
-}
-@include md {
-  @include flexvalues(md\:);
-}
-@include lg {
-  @include flexvalues(lg\:);
-}
-@include xl {
-  @include flexvalues(xl\:);
-}
 
 // responsive flex basis numbers 0rem-100rem
 
 @include flexbasis(1rem, '');
 @include flexbasis(1%, per);
-
-@include xs {
-  @include flexbasis(1rem, '', xs\:);
-  @include flexbasis(1%, per, xs\:);
-}
-@include sm {
-  @include flexbasis(1rem, '', sm\:);
-  @include flexbasis(1%, per, sm\:);
-}
-@include md {
-  @include flexbasis(1rem, '', md\:);
-  @include flexbasis(1%, per, md\:);
-}
-@include lg {
-  @include flexbasis(1rem, '', lg\:);
-  @include flexbasis(1%, per, lg\:);
-}
-@include xl {
-  @include flexbasis(1rem, '', xl-);
-  @include flexbasis(1%, per, xl-);
-}
