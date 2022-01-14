@@ -36,5 +36,13 @@ $utilities: (
       break-before-right: right,
       break-before-column: column
     )
+  ),
+  'break-inside': (
+    'values': (
+      break-inside-auto: auto,
+      break-inside-avoid: avoid,
+      break-inside-avoid-page: avoid-page,
+      break-inside-avoid-column: avoid-column
+    )
   )
 );
