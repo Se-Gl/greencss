@@ -1,7 +1,7 @@
-@mixin flexbasis($value, $prefix) {
+@mixin flexbasis($value: 1, $prefix: '', $bp: '') {
   @for $i from 0 through 100 {
     $flexbasis: $i;
-    .basis-#{$flexbasis}#{$prefix} {
+    .#{$bp}basis-#{$flexbasis}#{$prefix} {
       flex-basis: $flexbasis * $value;
     }
   }
