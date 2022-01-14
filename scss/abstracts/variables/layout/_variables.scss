@@ -71,5 +71,11 @@ $utilities: (
       clear-both: both,
       clear-none: none
     )
+  ),
+  'isolation': (
+    'values': (
+      isolation: isolate,
+      isolation-auto: auto
+    )
   )
 );
