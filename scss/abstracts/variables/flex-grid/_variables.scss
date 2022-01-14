@@ -39,5 +39,11 @@ $utilities: (
       flex-nowrap: nowrap,
       flex-revert: revert
     )
+  ),
+  'flex-grow': (
+    'values': (
+      grow: 1,
+      grow-not: 0
+    )
   )
 );
