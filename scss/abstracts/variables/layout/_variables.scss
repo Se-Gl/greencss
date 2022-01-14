@@ -44,5 +44,11 @@ $utilities: (
       break-inside-avoid-page: avoid-page,
       break-inside-avoid-column: avoid-column
     )
+  ),
+  '	box-decoration-break': (
+    'values': (
+      box-decoration-clone: clone,
+      box-decoration-slice: slice
+    )
   )
 );
