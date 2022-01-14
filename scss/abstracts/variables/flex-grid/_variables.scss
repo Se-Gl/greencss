@@ -224,5 +224,13 @@ $utilities: (
       justify-around: space-around,
       justify-evenly: space-evenly
     )
+  ),
+  'justify-items': (
+    'values': (
+      justify-items-start: start,
+      justify-items-end: end,
+      justify-items-center: center,
+      justify-items-stretch: stretch
+    )
   )
 );
