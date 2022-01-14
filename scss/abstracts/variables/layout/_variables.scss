@@ -45,10 +45,16 @@ $utilities: (
       break-inside-avoid-column: avoid-column
     )
   ),
-  '	box-decoration-break': (
+  'box-decoration-break': (
     'values': (
       box-decoration-clone: clone,
       box-decoration-slice: slice
+    )
+  ),
+  'box-sizing': (
+    'values': (
+      box-border: border-box,
+      box-content: content-box
     )
   )
 );
