@@ -198,5 +198,13 @@ $utilities: (
       grid-flow-row-dense: row dense,
       grid-flow-col-dense: column dense
     )
+  ),
+  'grid-auto-columns': (
+    'values': (
+      auto-cols-auto: auto,
+      auto-cols-min: min-content,
+      auto-cols-max: max-content,
+      auto-cols-fr: minmax(0, 1fr)
+    )
   )
 );
