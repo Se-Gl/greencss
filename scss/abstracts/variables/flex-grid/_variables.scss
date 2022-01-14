@@ -152,5 +152,41 @@ $utilities: (
       grid-rows-6: repeat(6, minmax(0, 1fr)),
       grid-rows-none: none
     )
+  ),
+  'grid-row': (
+    'values': (
+      row-auto: auto,
+      row-span-1: span 1 / span 1,
+      row-span-2: span 2 / span 2,
+      row-span-3: span 3 / span 3,
+      row-span-4: span 4 / span 4,
+      row-span-5: span 5 / span 5,
+      row-span-6: span 6 / span 6,
+      row-span-full: 1 / -1
+    )
+  ),
+  'grid-row-start': (
+    'values': (
+      row-start-1: 1,
+      row-start-2: 2,
+      row-start-3: 3,
+      row-start-4: 4,
+      row-start-5: 5,
+      row-start-6: 6,
+      row-start-7: 7,
+      row-start-auto: auto
+    )
+  ),
+  'grid-row-end': (
+    'values': (
+      row-end-1: 1,
+      row-end-2: 2,
+      row-end-3: 3,
+      row-end-4: 4,
+      row-end-5: 5,
+      row-end-6: 6,
+      row-end-7: 7,
+      row-end-auto: auto
+    )
   )
 );
