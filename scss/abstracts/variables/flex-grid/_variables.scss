@@ -190,5 +190,13 @@ $utilities: (
       row-end-7: 7,
       row-end-auto: auto
     )
+  ),
+  'grid-auto-flow': (
+    'values': (
+      grid-flow-row: row,
+      grid-flow-col: column,
+      grid-flow-row-dense: row dense,
+      grid-flow-col-dense: column dense
+    )
   )
 );
