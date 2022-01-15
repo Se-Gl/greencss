@@ -111,20 +111,41 @@ $utilities: (
   ),
   'overflow-x': (
     'values': (
-      overflow-x-auto: auto,
-      overflow-x-hidden: hidden,
-      overflow-x-clip: clip,
-      overflow-x-visible: visible,
-      overflow-x-scroll: scroll
+      overflow-hor-auto: auto,
+      overflow-hor-hidden: hidden,
+      overflow-hor-clip: clip,
+      overflow-hor-visible: visible,
+      overflow-hor-scroll: scroll
     )
   ),
   'overflow-y': (
     'values': (
-      overflow-y-auto: auto,
-      overflow-y-hidden: hidden,
-      overflow-y-clip: clip,
-      overflow-y-visible: visible,
-      overflow-y-scroll: scroll
+      overflow-vert-auto: auto,
+      overflow-vert-hidden: hidden,
+      overflow-vert-clip: clip,
+      overflow-vert-visible: visible,
+      overflow-vert-scroll: scroll
+    )
+  ),
+  'overscroll-behavior': (
+    'values': (
+      overscroll-auto: auto,
+      overscroll-contain: contain,
+      overscroll-none: none
+    )
+  ),
+  'overscroll-behavior-y': (
+    'values': (
+      overscroll-vert-auto: auto,
+      overscroll-vert-contain: contain,
+      overscroll-vert-none: none
+    )
+  ),
+  'overscroll-behavior-x': (
+    'values': (
+      overscroll-hor-auto: auto,
+      overscroll-hor-contain: contain,
+      overscroll-hor-none: none
     )
   )
 );
