@@ -156,5 +156,25 @@ $utilities: (
       static: static,
       sticky: sticky
     )
+  ),
+  'top': (
+    'values': (
+      top-auto: auto
+    )
+  ),
+  'right': (
+    'values': (
+      right-auto: auto
+    )
+  ),
+  'bottom': (
+    'values': (
+      bottom-auto: auto
+    )
+  ),
+  'left': (
+    'values': (
+      left-auto: auto
+    )
   )
 );
