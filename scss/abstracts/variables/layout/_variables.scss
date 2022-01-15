@@ -147,5 +147,14 @@ $utilities: (
       overscroll-hor-contain: contain,
       overscroll-hor-none: none
     )
+  ),
+  'position': (
+    'values': (
+      absolute: absolute,
+      fixed: fixed,
+      relative: relative,
+      static: static,
+      sticky: sticky
+    )
   )
 );
