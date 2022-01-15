@@ -4,44 +4,6 @@
 @use '../../abstracts/mixins/color/mixin' as *;
 @use '../../abstracts/mixins/layout/mixin' as *;
 
-@include xs {
-  // flex
-  @include flexvalues(xs\:);
-  @include flexbasis(1rem, '', xs\:);
-  @include flexbasis(1%, per, xs\:);
-  //   color
-  @include initialColor(xs\:text-, color);
-  @include initialColor(xs\:bg-, background-color);
-  @include lightColor(xs\:text-, 1, 5, color, $colors);
-  @include lightColor(xs\:bg-, 1, 5, background-color, $colors);
-  @include lightColor(xs\:text-, 0, 0, color, $lightdark);
-  @include lightColor(xs\:bg-, 1, 5, background-color, $lightdark);
-  @include bggradient(xs\:);
-  @include bgGradientToFrom(xs\:);
-  // active and focus color classes
-  @include initialColor(xs\:text-, color, active);
-  @include initialColor(xs\:text-, color, focus);
-  @include initialColor(xs\:bg-, background-color, active);
-  @include initialColor(xs\:bg-, background-color, focus);
-  @include lightColor(xs\:text-, 1, 5, color, $colors, active);
-  @include lightColor(xs\:text-, 1, 5, color, $colors, focus);
-  @include lightColor(xs\:bg-, 1, 5, background-color, $colors, active);
-  @include lightColor(xs\:bg-, 1, 5, background-color, $colors, focus);
-  @include lightColor(xs\:text-, 0, 0, color, $lightdark, active);
-  @include lightColor(xs\:text-, 0, 0, color, $lightdark, focus);
-  @include lightColor(xs\:bg-, 1, 5, background-color, $lightdark, active);
-  @include lightColor(xs\:bg-, 1, 5, background-color, $lightdark, focus);
-  // layout
-  @include layoutvalues(xs\:);
-  @include layoutNumbers(xs\:col-, columns, '', 1, 12, 1);
-  @include layoutNumbers(xs\:col-, columns, '', 1, 100, 1rem);
-  @include layoutNumbers(xs\:top-, top, '', 1, 100, 1, 1%);
-  @include layoutNumbers(xs\:right-, right, '', 1, 100, 1, 1%);
-  @include layoutNumbers(xs\:bottom-, bottom, '', 1, 100, 1, 1%);
-  @include layoutNumbers(xs\:left-, left, '', 1, 100, 1, 1%);
-  @include layoutNumbers(xs\:z-neg, z-index, '', -10, -1, 1);
-  @include layoutNumbers(xs\:z-, z-index, '', 0, 100, 1);
-}
 @include sm {
   // flex
   @include flexvalues(sm\:);
@@ -165,48 +127,4 @@
   @include layoutNumbers(lg\:left-, left, '', 1, 100, 1, 1%);
   @include layoutNumbers(lg\:z-neg, z-index, '', -10, -1, 1);
   @include layoutNumbers(lg\:z-, z-index, '', 0, 100, 1);
-}
-@include xl {
-  // flex
-  @include flexvalues(xl\:);
-  @include flexbasis(1rem, '', xl-);
-  @include flexbasis(1%, per, xl-);
-  //   color
-  @include initialColor(xl\:text-, color);
-  @include initialColor(xl\:bg-, background-color);
-  @include lightColor(xl\:text-, 1, 5, color, $colors);
-  @include lightColor(xl\:bg-, 1, 5, background-color, $colors);
-  @include lightColor(xl\:text-, 0, 0, color, $lightdark);
-  @include lightColor(xl\:bg-, 1, 5, background-color, $lightdark);
-  @include bggradient(xl\:);
-  @include bgGradientToFrom(xl\:);
-  @include bggradient(xl\:);
-  @include bgGradientToFrom(xl\:);
-  @include bggradient(xl\:);
-  @include bgGradientToFrom(xl\:);
-  @include bggradient(xl\:);
-  @include bgGradientToFrom(xl\:);
-  // active and focus color classes
-  @include initialColor(xl\:text-, color, active);
-  @include initialColor(xl\:text-, color, focus);
-  @include initialColor(xl\:bg-, background-color, active);
-  @include initialColor(xl\:bg-, background-color, focus);
-  @include lightColor(xl\:text-, 1, 5, color, $colors, active);
-  @include lightColor(xl\:text-, 1, 5, color, $colors, focus);
-  @include lightColor(xl\:bg-, 1, 5, background-color, $colors, active);
-  @include lightColor(xl\:bg-, 1, 5, background-color, $colors, focus);
-  @include lightColor(xl\:text-, 0, 0, color, $lightdark, active);
-  @include lightColor(xl\:text-, 0, 0, color, $lightdark, focus);
-  @include lightColor(xl\:bg-, 1, 5, background-color, $lightdark, active);
-  @include lightColor(xl\:bg-, 1, 5, background-color, $lightdark, focus);
-  // layout
-  @include layoutvalues(xl\:);
-  @include layoutNumbers(xl\:col-, columns, '', 1, 12, 1);
-  @include layoutNumbers(xl\:col-, columns, '', 1, 100, 1rem);
-  @include layoutNumbers(xl\:top-, top, '', 1, 100, 1, 1%);
-  @include layoutNumbers(xl\:right-, right, '', 1, 100, 1, 1%);
-  @include layoutNumbers(xl\:bottom-, bottom, '', 1, 100, 1, 1%);
-  @include layoutNumbers(xl\:left-, left, '', 1, 100, 1, 1%);
-  @include layoutNumbers(xl\:z-neg, z-index, '', -10, -1, 1);
-  @include layoutNumbers(xl\:z-, z-index, '', 0, 100, 1);
 }
