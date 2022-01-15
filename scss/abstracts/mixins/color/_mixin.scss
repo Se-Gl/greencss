@@ -53,7 +53,7 @@
       --gradient-from-color: #{$char};
       --gradient-color-merge: var(--gradient-from-color), var(--gradient-to-color);
     }
-    .#{$bp}hov\:from-#{$name} {
+    .hover\:#{$bp}from-#{$name} {
       &:hover {
         --gradient-from-color: #{$char};
         --gradient-color-merge: var(--gradient-from-color), var(--gradient-to-color);
@@ -62,7 +62,7 @@
     .#{$bp}to-#{$name} {
       --gradient-to-color: #{$char};
     }
-    .#{$bp}hov\:to-#{$name} {
+    .hover\:#{$bp}to-#{$name} {
       &:hover {
         --gradient-to-color: #{$char};
       }
@@ -76,7 +76,7 @@
       background-image: linear-gradient(to $value, var(--gradient-color-merge));
     }
 
-    .#{$bp}hov\:gradient-to-#{$position} {
+    .hover\:#{$bp}gradient-to-#{$position} {
       &:hover {
         background-image: linear-gradient(to $value, var(--gradient-color-merge));
       }
