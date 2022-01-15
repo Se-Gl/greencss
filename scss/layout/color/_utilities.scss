@@ -9,3 +9,20 @@
 @include lightColor(bg-, 1, 5, background-color, $lightdark);
 @include bggradient();
 @include bgGradientToFrom();
+
+// active and focus color classes
+@include initialColor(text-, color, active);
+@include initialColor(text-, color, focus);
+@include initialColor(bg-, background-color, active);
+@include initialColor(bg-, background-color, focus);
+
+@include lightColor(text-, 1, 5, color, $colors, active);
+@include lightColor(text-, 1, 5, color, $colors, focus);
+@include lightColor(bg-, 1, 5, background-color, $colors, active);
+@include lightColor(bg-, 1, 5, background-color, $colors, focus);
+
+@include lightColor(text-, 0, 0, color, $lightdark, active);
+@include lightColor(text-, 0, 0, color, $lightdark, focus);
+
+@include lightColor(bg-, 1, 5, background-color, $lightdark, active);
+@include lightColor(bg-, 1, 5, background-color, $lightdark, focus);

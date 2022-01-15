@@ -1,27 +1,28 @@
 @use '../../variables/color/variables' as *;
 
-@mixin initialColor($bp, $classname) {
+// .text-red with hover (.hov:text-red) and active (.act:text-red) classes
+@mixin initialColor($bp, $classname, $selector: hover) {
   @each $key, $val in $colors {
     .#{$bp}#{$key} {
       #{$classname}: $val;
     }
-    .hov\:#{$bp}#{$key} {
-      &:hover {
+    .#{$selector}\:#{$bp}#{$key} {
+      &:#{$selector} {
         #{$classname}: $val;
       }
     }
   }
 }
 
-@mixin lightColor($bp: '', $firstnumber, $secondnumber, $classname, $loop) {
+@mixin lightColor($bp: '', $firstnumber, $secondnumber, $classname, $loop, $selector: hover) {
   @each $key, $val in $loop {
     @if ($firstnumber == 0) {
       @for $i from $firstnumber through $secondnumber {
         .#{$bp}#{$key} {
           #{$classname}: $val;
         }
-        .hov\:#{$bp}#{$key} {
-          &:hover {
+        .#{$selector}\:#{$bp}#{$key} {
+          &:#{$selector} {
             #{$classname}: $val;
           }
         }
@@ -34,8 +35,8 @@
         .#{$bp}#{$key}-#{$i} {
           #{$classname}: lighten($val, $lighten);
         }
-        .hov\:#{$bp}#{$key}-#{$i} {
-          &:hover {
+        .#{$selector}\:#{$bp}#{$key}-#{$i} {
+          &:#{$selector} {
             #{$classname}: lighten($val, $lighten);
           }
         }

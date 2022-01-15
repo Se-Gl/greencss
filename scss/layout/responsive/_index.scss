@@ -18,6 +18,19 @@
   @include lightColor(xs\:bg-, 1, 5, background-color, $lightdark);
   @include bggradient(xs\:);
   @include bgGradientToFrom(xs\:);
+  // active and focus color classes
+  @include initialColor(xs\:text-, color, active);
+  @include initialColor(xs\:text-, color, focus);
+  @include initialColor(xs\:bg-, background-color, active);
+  @include initialColor(xs\:bg-, background-color, focus);
+  @include lightColor(xs\:text-, 1, 5, color, $colors, active);
+  @include lightColor(xs\:text-, 1, 5, color, $colors, focus);
+  @include lightColor(xs\:bg-, 1, 5, background-color, $colors, active);
+  @include lightColor(xs\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(xs\:text-, 0, 0, color, $lightdark, active);
+  @include lightColor(xs\:text-, 0, 0, color, $lightdark, focus);
+  @include lightColor(xs\:bg-, 1, 5, background-color, $lightdark, active);
+  @include lightColor(xs\:bg-, 1, 5, background-color, $lightdark, focus);
   // layout
   @include layoutvalues(xs\:);
   @include layoutNumbers(xs\:col-, columns, '', 1, 12, 1);
@@ -45,6 +58,19 @@
   @include bgGradientToFrom(sm\:);
   @include bggradient(sm\:);
   @include bgGradientToFrom(sm\:);
+  // active and focus color classes
+  @include initialColor(sm\:text-, color, active);
+  @include initialColor(sm\:text-, color, focus);
+  @include initialColor(sm\:bg-, background-color, active);
+  @include initialColor(sm\:bg-, background-color, focus);
+  @include lightColor(sm\:text-, 1, 5, color, $colors, active);
+  @include lightColor(sm\:text-, 1, 5, color, $colors, focus);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $colors, active);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(sm\:text-, 0, 0, color, $lightdark, active);
+  @include lightColor(sm\:text-, 0, 0, color, $lightdark, focus);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $lightdark, active);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $lightdark, focus);
   // layout
   @include layoutvalues(sm\:);
   @include layoutNumbers(sm\:col-, columns, '', 1, 12, 1);
@@ -74,6 +100,19 @@
   @include bgGradientToFrom(md\:);
   @include bggradient(md\:);
   @include bgGradientToFrom(md\:);
+  // active and focus color classes
+  @include initialColor(md\:text-, color, active);
+  @include initialColor(md\:text-, color, focus);
+  @include initialColor(md\:bg-, background-color, active);
+  @include initialColor(md\:bg-, background-color, focus);
+  @include lightColor(md\:text-, 1, 5, color, $colors, active);
+  @include lightColor(md\:text-, 1, 5, color, $colors, focus);
+  @include lightColor(md\:bg-, 1, 5, background-color, $colors, active);
+  @include lightColor(md\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(md\:text-, 0, 0, color, $lightdark, active);
+  @include lightColor(md\:text-, 0, 0, color, $lightdark, focus);
+  @include lightColor(md\:bg-, 1, 5, background-color, $lightdark, active);
+  @include lightColor(md\:bg-, 1, 5, background-color, $lightdark, focus);
   // layout
   @include layoutvalues(md\:);
   @include layoutNumbers(md\:col-, columns, '', 1, 12, 1);
@@ -103,6 +142,19 @@
   @include bgGradientToFrom(lg\:);
   @include bggradient(lg\:);
   @include bgGradientToFrom(lg\:);
+  // active and focus color classes
+  @include initialColor(lg\:text-, color, active);
+  @include initialColor(lg\:text-, color, focus);
+  @include initialColor(lg\:bg-, background-color, active);
+  @include initialColor(lg\:bg-, background-color, focus);
+  @include lightColor(lg\:text-, 1, 5, color, $colors, active);
+  @include lightColor(lg\:text-, 1, 5, color, $colors, focus);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $colors, active);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(lg\:text-, 0, 0, color, $lightdark, active);
+  @include lightColor(lg\:text-, 0, 0, color, $lightdark, focus);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $lightdark, active);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $lightdark, focus);
   // layout
   @include layoutvalues(lg\:);
   @include layoutNumbers(lg\:col-, columns, '', 1, 12, 1);
@@ -134,6 +186,19 @@
   @include bgGradientToFrom(xl\:);
   @include bggradient(xl\:);
   @include bgGradientToFrom(xl\:);
+  // active and focus color classes
+  @include initialColor(xl\:text-, color, active);
+  @include initialColor(xl\:text-, color, focus);
+  @include initialColor(xl\:bg-, background-color, active);
+  @include initialColor(xl\:bg-, background-color, focus);
+  @include lightColor(xl\:text-, 1, 5, color, $colors, active);
+  @include lightColor(xl\:text-, 1, 5, color, $colors, focus);
+  @include lightColor(xl\:bg-, 1, 5, background-color, $colors, active);
+  @include lightColor(xl\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(xl\:text-, 0, 0, color, $lightdark, active);
+  @include lightColor(xl\:text-, 0, 0, color, $lightdark, focus);
+  @include lightColor(xl\:bg-, 1, 5, background-color, $lightdark, active);
+  @include lightColor(xl\:bg-, 1, 5, background-color, $lightdark, focus);
   // layout
   @include layoutvalues(xl\:);
   @include layoutNumbers(xl\:col-, columns, '', 1, 12, 1);
