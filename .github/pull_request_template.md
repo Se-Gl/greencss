@@ -15,5 +15,6 @@ TODO:
 
 Checklist / Reminders:
 
+- [ ] Responsive Code Snippets are included
 - [ ] Documentation is created / adapted
 
