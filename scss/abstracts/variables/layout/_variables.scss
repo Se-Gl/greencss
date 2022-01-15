@@ -86,5 +86,18 @@ $utilities: (
       object-none: none,
       object-scale-down: scale-down
     )
+  ),
+  'object-position': (
+    'values': (
+      object-position-top: top,
+      object-position-right-top: right top,
+      object-position-right: right,
+      object-position-right-bottom: right bottom,
+      object-position-bottom: bottom,
+      object-position-center: center,
+      object-position-left-bottom: left bottom,
+      object-position-left: left,
+      object-position-left-top: left top
+    )
   )
 );
