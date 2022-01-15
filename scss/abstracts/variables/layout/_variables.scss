@@ -77,5 +77,14 @@ $utilities: (
       isolation: isolate,
       isolation-auto: auto
     )
+  ),
+  'object-fit': (
+    'values': (
+      object-contain: contain,
+      object-cover: cover,
+      object-fill: fill,
+      object-none: none,
+      object-scale-down: scale-down
+    )
   )
 );
