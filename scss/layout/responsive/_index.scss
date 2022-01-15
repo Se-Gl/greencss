@@ -1,3 +1,4 @@
+@use '../../abstracts/variables/color/variables' as *;
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
@@ -9,8 +10,12 @@
   @include flexbasis(1rem, '', xs\:);
   @include flexbasis(1%, per, xs\:);
   //   color
-  @include colorlight(xs\:);
-  @include defaultcolor(xs\:);
+  @include initialColor(xs\:text-, color);
+  @include initialColor(xs\:bg-, background-color);
+  @include lightColor(xs\:text-, 1, 5, color, $colors);
+  @include lightColor(xs\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(xs\:text-, 0, 0, color, $lightdark);
+  @include lightColor(xs\:bg-, 1, 5, background-color, $lightdark);
   @include bggradient(xs\:);
   @include bgGradientToFrom(xs\:);
   // layout
@@ -30,8 +35,14 @@
   @include flexbasis(1rem, '', sm\:);
   @include flexbasis(1%, per, sm\:);
   //   color
-  @include colorlight(sm\:);
-  @include defaultcolor(sm\:);
+  @include initialColor(sm\:text-, color);
+  @include initialColor(sm\:bg-, background-color);
+  @include lightColor(sm\:text-, 1, 5, color, $colors);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(sm\:text-, 0, 0, color, $lightdark);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $lightdark);
+  @include bggradient(sm\:);
+  @include bgGradientToFrom(sm\:);
   @include bggradient(sm\:);
   @include bgGradientToFrom(sm\:);
   // layout
@@ -51,8 +62,16 @@
   @include flexbasis(1rem, '', md\:);
   @include flexbasis(1%, per, md\:);
   //   color
-  @include colorlight(md\:);
-  @include defaultcolor(md\:);
+  @include initialColor(md\:text-, color);
+  @include initialColor(md\:bg-, background-color);
+  @include lightColor(md\:text-, 1, 5, color, $colors);
+  @include lightColor(md\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(md\:text-, 0, 0, color, $lightdark);
+  @include lightColor(md\:bg-, 1, 5, background-color, $lightdark);
+  @include bggradient(md\:);
+  @include bgGradientToFrom(md\:);
+  @include bggradient(md\:);
+  @include bgGradientToFrom(md\:);
   @include bggradient(md\:);
   @include bgGradientToFrom(md\:);
   // layout
@@ -72,8 +91,16 @@
   @include flexbasis(1rem, '', lg\:);
   @include flexbasis(1%, per, lg\:);
   //   color
-  @include colorlight(lg\:);
-  @include defaultcolor(lg\:);
+  @include initialColor(lg\:text-, color);
+  @include initialColor(lg\:bg-, background-color);
+  @include lightColor(lg\:text-, 1, 5, color, $colors);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(lg\:text-, 0, 0, color, $lightdark);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $lightdark);
+  @include bggradient(lg\:);
+  @include bgGradientToFrom(lg\:);
+  @include bggradient(lg\:);
+  @include bgGradientToFrom(lg\:);
   @include bggradient(lg\:);
   @include bgGradientToFrom(lg\:);
   // layout
@@ -93,8 +120,18 @@
   @include flexbasis(1rem, '', xl-);
   @include flexbasis(1%, per, xl-);
   //   color
-  @include colorlight(xl\:);
-  @include defaultcolor(xl\:);
+  @include initialColor(xl\:text-, color);
+  @include initialColor(xl\:bg-, background-color);
+  @include lightColor(xl\:text-, 1, 5, color, $colors);
+  @include lightColor(xl\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(xl\:text-, 0, 0, color, $lightdark);
+  @include lightColor(xl\:bg-, 1, 5, background-color, $lightdark);
+  @include bggradient(xl\:);
+  @include bgGradientToFrom(xl\:);
+  @include bggradient(xl\:);
+  @include bgGradientToFrom(xl\:);
+  @include bggradient(xl\:);
+  @include bgGradientToFrom(xl\:);
   @include bggradient(xl\:);
   @include bgGradientToFrom(xl\:);
   // layout

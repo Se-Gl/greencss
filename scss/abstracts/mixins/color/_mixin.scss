@@ -1,84 +1,43 @@
 @use '../../variables/color/variables' as *;
 
-@mixin colorlight($bp: '') {
+@mixin initialColor($bp, $classname) {
   @each $key, $val in $colors {
-    // initial text color from colors list
-    // text-venetianred or hov-text-venetianred
-    .#{$bp}text-#{$key} {
-      color: $val;
+    .#{$bp}#{$key} {
+      #{$classname}: $val;
     }
-    .#{$bp}hov\:text-#{$key} {
+    .hov\:#{$bp}#{$key} {
       &:hover {
-        color: $val;
-      }
-    }
-    // initial bg color from colors list
-    // text-venetianred
-    .#{$bp}bg-#{$key} {
-      background-color: $val;
-    }
-    .#{$bp}hov\:bg-#{$key} {
-      &:hover {
-        background-color: $val;
-      }
-    }
-
-    // // light variations (7%)
-    @for $i from 1 through 5 {
-      $lighten: $i * 7%;
-      $lighten-name: $i;
-
-      // text with lighter color
-      // text-venetianred-1
-      .#{$bp}text-#{$key}-#{$i} {
-        color: lighten($val, $lighten);
-      }
-      // text hover with lighter color
-      // hov-text-venetianred-1
-      .#{$bp}hov\:text-#{$key}-#{$i} {
-        &:hover {
-          color: lighten($val, $lighten);
-        }
-      }
-      // bg with lighter color
-      // bg-venetianred-1
-      .#{$bp}bg-#{$key}-#{$i} {
-        background-color: lighten($val, $lighten);
-      }
-      // bg hover with lighter color
-      // bg-venetianred-1
-      .#{$bp}hov\:bg-#{$key}-#{$i} {
-        &:hover {
-          background-color: lighten($val, $lighten);
-        }
+        #{$classname}: $val;
       }
     }
   }
 }
 
-// default light and dark
-// text-dark text-light and hov-text-dark hov-text-light
-@mixin defaultcolor($bp: '') {
-  @each $color, $hex in $lightdark {
-    @for $i from 1 through 1 {
-      $lighten: $i * 7%;
-      $color-name: $i;
-
-      .#{$bp}text-#{$color} {
-        color: $hex;
-      }
-      .#{$bp}hov\:text-#{$color} {
-        &:hover {
-          color: $hex;
+@mixin lightColor($bp: '', $firstnumber, $secondnumber, $classname, $loop) {
+  @each $key, $val in $loop {
+    @if ($firstnumber == 0) {
+      @for $i from $firstnumber through $secondnumber {
+        .#{$bp}#{$key} {
+          #{$classname}: $val;
+        }
+        .hov\:#{$bp}#{$key} {
+          &:hover {
+            #{$classname}: $val;
+          }
         }
       }
+    } @else {
+      // // light variations (7%)
+      @for $i from $firstnumber through $secondnumber {
+        $lighten: $i * 7%;
 
-      .#{$bp}bg-#{$color} {
-        background-color: $hex;
-      }
-      .#{$bp}hov\:bg-#{$color} {
-        &:hover {
-          background-color: $hex;
+        .#{$bp}#{$key}-#{$i} {
+          #{$classname}: lighten($val, $lighten);
+        }
+        .hov\:#{$bp}#{$key}-#{$i} {
+          &:hover {
+            #{$classname}: lighten($val, $lighten);
+          }
         }
       }
     }

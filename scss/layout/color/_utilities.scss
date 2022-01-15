@@ -1,6 +1,11 @@
 @use '../../abstracts/mixins/color/mixin' as *;
+@use '../../abstracts/variables/color/variables' as *;
 
-@include colorlight();
-@include defaultcolor();
+@include initialColor(text-, color);
+@include initialColor(bg-, background-color);
+@include lightColor(text-, 1, 5, color, $colors);
+@include lightColor(bg-, 1, 5, background-color, $colors);
+@include lightColor(text-, 0, 0, color, $lightdark);
+@include lightColor(bg-, 1, 5, background-color, $lightdark);
 @include bggradient();
 @include bgGradientToFrom();
