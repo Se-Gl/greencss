@@ -99,5 +99,32 @@ $utilities: (
       object-position-left: left,
       object-position-left-top: left top
     )
+  ),
+  'overflow': (
+    'values': (
+      overflow-auto: auto,
+      overflow-hidden: hidden,
+      overflow-clip: clip,
+      overflow-visible: visible,
+      overflow-scroll: scroll
+    )
+  ),
+  'overflow-x': (
+    'values': (
+      overflow-x-auto: auto,
+      overflow-x-hidden: hidden,
+      overflow-x-clip: clip,
+      overflow-x-visible: visible,
+      overflow-x-scroll: scroll
+    )
+  ),
+  'overflow-y': (
+    'values': (
+      overflow-y-auto: auto,
+      overflow-y-hidden: hidden,
+      overflow-y-clip: clip,
+      overflow-y-visible: visible,
+      overflow-y-scroll: scroll
+    )
   )
 );
