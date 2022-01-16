@@ -1,15 +1,17 @@
 @use '../../abstracts/variables/color/variables' as *;
+@use '../../abstracts/variables/sizing/variables' as *;
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
 @use '../../abstracts/mixins/layout/mixin' as *;
+@use '../../abstracts/mixins/sizing/mixin' as *;
 
 @include sm {
   // flex
   @include flexvalues(sm\:);
   @include flexbasis(1rem, '', sm\:);
   @include flexbasis(1%, per, sm\:);
-  //   color
+  // color
   @include initialColor(sm\:text-, color);
   @include initialColor(sm\:bg-, background-color);
   @include lightColor(sm\:text-, 1, 5, color, $colors);
@@ -43,13 +45,21 @@
   @include layoutNumbers(sm\:left-, left, '', 1, 100, 1, 1%);
   @include layoutNumbers(sm\:z-neg, z-index, '', -10, -1, 1);
   @include layoutNumbers(sm\:z-, z-index, '', 0, 100, 1);
+  // sizing
+  @include sizingValues(sm\:, $sizingValues);
+  @include sizingNumbers(sm\:w-, rem, width, 1, 100, 1, 1rem);
+  @include sizingNumbers(sm\:w-, per, width, 1, 100, 1, 1%);
+  @include sizingNumbers(sm\:w-, vw, width, 1, 100, 1, 1vw);
+  @include sizingNumbers(sm\:max-w-, rem, max-width, 1, 100, 1, 1rem);
+  @include sizingNumbers(sm\:max-w-, per, max-width, 1, 100, 1, 1%);
+  @include sizingNumbers(sm\:max-w-, vw, max-width, 1, 100, 1, 1vw);
 }
 @include md {
   // flex
   @include flexvalues(md\:);
   @include flexbasis(1rem, '', md\:);
   @include flexbasis(1%, per, md\:);
-  //   color
+  // color
   @include initialColor(md\:text-, color);
   @include initialColor(md\:bg-, background-color);
   @include lightColor(md\:text-, 1, 5, color, $colors);
@@ -85,13 +95,21 @@
   @include layoutNumbers(md\:left-, left, '', 1, 100, 1, 1%);
   @include layoutNumbers(md\:z-neg, z-index, '', -10, -1, 1);
   @include layoutNumbers(md\:z-, z-index, '', 0, 100, 1);
+  // sizing
+  @include sizingValues(md\:, $sizingValues);
+  @include sizingNumbers(md\:w-, rem, width, 1, 100, 1, 1rem);
+  @include sizingNumbers(md\:w-, per, width, 1, 100, 1, 1%);
+  @include sizingNumbers(md\:w-, vw, width, 1, 100, 1, 1vw);
+  @include sizingNumbers(md\:max-w-, rem, max-width, 1, 100, 1, 1rem);
+  @include sizingNumbers(md\:max-w-, per, max-width, 1, 100, 1, 1%);
+  @include sizingNumbers(md\:max-w-, vw, max-width, 1, 100, 1, 1vw);
 }
 @include lg {
   // flex
   @include flexvalues(lg\:);
   @include flexbasis(1rem, '', lg\:);
   @include flexbasis(1%, per, lg\:);
-  //   color
+  // color
   @include initialColor(lg\:text-, color);
   @include initialColor(lg\:bg-, background-color);
   @include lightColor(lg\:text-, 1, 5, color, $colors);
@@ -127,4 +145,12 @@
   @include layoutNumbers(lg\:left-, left, '', 1, 100, 1, 1%);
   @include layoutNumbers(lg\:z-neg, z-index, '', -10, -1, 1);
   @include layoutNumbers(lg\:z-, z-index, '', 0, 100, 1);
+  // sizing
+  @include sizingValues(lg\:, $sizingValues);
+  @include sizingNumbers(lg\:w-, rem, width, 1, 100, 1, 1rem);
+  @include sizingNumbers(lg\:w-, per, width, 1, 100, 1, 1%);
+  @include sizingNumbers(lg\:w-, vw, width, 1, 100, 1, 1vw);
+  @include sizingNumbers(lg\:max-w-, rem, max-width, 1, 100, 1, 1rem);
+  @include sizingNumbers(lg\:max-w-, per, max-width, 1, 100, 1, 1%);
+  @include sizingNumbers(lg\:max-w-, vw, max-width, 1, 100, 1, 1vw);
 }
