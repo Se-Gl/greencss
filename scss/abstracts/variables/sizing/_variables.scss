@@ -1,0 +1,48 @@
+$sizingValues: (
+  'width': (
+    'values': (
+      w-min-content: min-content,
+      w-max-content: max-content,
+      w-fit-content: fit-content
+    )
+  ),
+  'min-width': (
+    'values': (
+      min-w-0: 0px,
+      min-w-full: 100%,
+      min-w-min-content: min-content,
+      min-w-max-content: max-content,
+      min-w-fit-content: fit-content
+    )
+  ),
+  'max-width': (
+    'values': (
+      max-w-min-content: min-content,
+      max-w-max-content: max-content,
+      max-w-fit-content: fit-content
+    )
+  ),
+  'height': (
+    'values': (
+      h-min-content: min-content,
+      h-max-content: max-content,
+      h-fit-content: fit-content
+    )
+  ),
+  'min-height': (
+    'values': (
+      min-h-0: 0px,
+      min-h-full: 100%,
+      min-h-min-content: min-content,
+      min-h-max-content: max-content,
+      min-h-fit-content: fit-content
+    )
+  ),
+  'max-height': (
+    'values': (
+      max-h-min-content: min-content,
+      max-h-max-content: max-content,
+      max-h-fit-content: fit-content
+    )
+  )
+);

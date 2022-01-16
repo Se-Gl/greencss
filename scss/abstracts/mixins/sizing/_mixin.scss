@@ -1,0 +1,30 @@
+@mixin sizingValues($bp: '', $loop) {
+  @each $property, $map in $loop {
+    $key: map-get($map, 'keys');
+    $values: map-get($map, 'values');
+
+    @each $k, $v in $values {
+      .#{$bp}#{$key}#{$k} {
+        #{$property}: $v;
+      }
+    }
+  }
+}
+
+@mixin sizingNumbers(
+  $bp: '',
+  $postfix: '',
+  $classname: width,
+  $firstnumber: 1,
+  $secondnumber: 100,
+  $calculate: 1,
+  $multiply: 1px
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $width: $i * $calculate;
+
+    .#{$bp}#{$width}#{$postfix} {
+      #{$classname}: $width * $multiply;
+    }
+  }
+}

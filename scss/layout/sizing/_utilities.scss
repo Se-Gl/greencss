@@ -1,0 +1,20 @@
+@use '../../abstracts/mixins/sizing/mixin' as *;
+@use '../../abstracts/variables/sizing/variables' as *;
+
+@include sizingValues('', $sizingValues);
+// $bp: '', $classname: width, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1px
+// width
+@include sizingNumbers(w-, rem, width, 1, 100, 1, 1rem);
+@include sizingNumbers(w-, per, width, 1, 100, 1, 1%);
+@include sizingNumbers(w-, vw, width, 1, 100, 1, 1vw);
+@include sizingNumbers(max-w-, rem, max-width, 1, 100, 1, 1rem);
+@include sizingNumbers(max-w-, per, max-width, 1, 100, 1, 1%);
+@include sizingNumbers(max-w-, vw, max-width, 1, 100, 1, 1vw);
+
+// height
+@include sizingNumbers(h-, rem, height, 1, 100, 1, 1rem);
+@include sizingNumbers(h-, per, height, 1, 100, 1, 1%);
+@include sizingNumbers(h-, vw, height, 1, 100, 1, 1vh);
+@include sizingNumbers(max-h-, rem, max-height, 1, 100, 1, 1rem);
+@include sizingNumbers(max-h-, per, max-height, 1, 100, 1, 1%);
+@include sizingNumbers(max-h-, vw, max-height, 1, 100, 1, 1vh);
