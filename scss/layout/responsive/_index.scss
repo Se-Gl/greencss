@@ -18,7 +18,7 @@
   @include lightColor(sm\:text-, 1, 5, color, $colors);
   @include lightColor(sm\:bg-, 1, 5, background-color, $colors);
   @include lightColor(sm\:text-, 0, 0, color, $lightdark);
-  @include lightColor(sm\:bg-, 1, 5, background-color, $lightdark);
+  @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark);
   @include bggradient(sm\:);
   @include bgGradientToFrom(sm\:);
   @include bggradient(sm\:);
@@ -34,8 +34,8 @@
   @include lightColor(sm\:bg-, 1, 5, background-color, $colors, focus);
   @include lightColor(sm\:text-, 0, 0, color, $lightdark, active);
   @include lightColor(sm\:text-, 0, 0, color, $lightdark, focus);
-  @include lightColor(sm\:bg-, 1, 5, background-color, $lightdark, active);
-  @include lightColor(sm\:bg-, 1, 5, background-color, $lightdark, focus);
+  @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, active);
+  @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, focus);
   // layout
   @include layoutvalues(sm\:);
   @include layoutNumbers(sm\:col-, columns, '', 1, 12, 1);
@@ -107,7 +107,7 @@
   @include lightColor(md\:text-, 1, 5, color, $colors);
   @include lightColor(md\:bg-, 1, 5, background-color, $colors);
   @include lightColor(md\:text-, 0, 0, color, $lightdark);
-  @include lightColor(md\:bg-, 1, 5, background-color, $lightdark);
+  @include lightColor(md\:bg-, 0, 0, background-color, $lightdark);
   @include bggradient(md\:);
   @include bgGradientToFrom(md\:);
   @include bggradient(md\:);
@@ -125,8 +125,8 @@
   @include lightColor(md\:bg-, 1, 5, background-color, $colors, focus);
   @include lightColor(md\:text-, 0, 0, color, $lightdark, active);
   @include lightColor(md\:text-, 0, 0, color, $lightdark, focus);
-  @include lightColor(md\:bg-, 1, 5, background-color, $lightdark, active);
-  @include lightColor(md\:bg-, 1, 5, background-color, $lightdark, focus);
+  @include lightColor(md\:bg-, 0, 0, background-color, $lightdark, active);
+  @include lightColor(md\:bg-, 0, 0, background-color, $lightdark, focus);
   // layout
   @include layoutvalues(md\:);
   @include layoutNumbers(md\:col-, columns, '', 1, 12, 1);
@@ -198,7 +198,7 @@
   @include lightColor(lg\:text-, 1, 5, color, $colors);
   @include lightColor(lg\:bg-, 1, 5, background-color, $colors);
   @include lightColor(lg\:text-, 0, 0, color, $lightdark);
-  @include lightColor(lg\:bg-, 1, 5, background-color, $lightdark);
+  @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark);
   @include bggradient(lg\:);
   @include bgGradientToFrom(lg\:);
   @include bggradient(lg\:);
@@ -216,8 +216,8 @@
   @include lightColor(lg\:bg-, 1, 5, background-color, $colors, focus);
   @include lightColor(lg\:text-, 0, 0, color, $lightdark, active);
   @include lightColor(lg\:text-, 0, 0, color, $lightdark, focus);
-  @include lightColor(lg\:bg-, 1, 5, background-color, $lightdark, active);
-  @include lightColor(lg\:bg-, 1, 5, background-color, $lightdark, focus);
+  @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, active);
+  @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, focus);
   // layout
   @include layoutvalues(lg\:);
   @include layoutNumbers(lg\:col-, columns, '', 1, 12, 1);

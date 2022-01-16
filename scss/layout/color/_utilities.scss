@@ -6,7 +6,7 @@
 @include lightColor(text-, 1, 5, color, $colors);
 @include lightColor(bg-, 1, 5, background-color, $colors);
 @include lightColor(text-, 0, 0, color, $lightdark);
-@include lightColor(bg-, 1, 5, background-color, $lightdark);
+@include lightColor(bg-, 0, 0, background-color, $lightdark);
 @include bggradient();
 @include bgGradientToFrom();
 
@@ -23,6 +23,5 @@
 
 @include lightColor(text-, 0, 0, color, $lightdark, active);
 @include lightColor(text-, 0, 0, color, $lightdark, focus);
-
-@include lightColor(bg-, 1, 5, background-color, $lightdark, active);
-@include lightColor(bg-, 1, 5, background-color, $lightdark, focus);
+@include lightColor(bg-, 0, 0, background-color, $lightdark, active);
+@include lightColor(bg-, 0, 0, background-color, $lightdark, focus);
