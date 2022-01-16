@@ -5,6 +5,7 @@
 @use '../../abstracts/mixins/color/mixin' as *;
 @use '../../abstracts/mixins/layout/mixin' as *;
 @use '../../abstracts/mixins/sizing/mixin' as *;
+@use '../../abstracts/mixins/spacing/mixin' as *;
 
 @include sm {
   // flex
@@ -53,6 +54,35 @@
   @include sizingNumbers(sm\:max-w-, rem, max-width, 1, 100, 1, 1rem);
   @include sizingNumbers(sm\:max-w-, per, max-width, 1, 100, 1, 1%);
   @include sizingNumbers(sm\:max-w-, vw, max-width, 1, 100, 1, 1vw);
+  // spacing
+  @include spacingNumbers(sm\:p-, px, padding, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:pt-, px, padding-top, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:pr-, px, padding-right, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:pb-, px, padding-bottom, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:pl-, px, padding-left, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:px-, px, padding-inline, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:py-, px, padding-block, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:p-, rem, padding, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:pt-, rem, padding-top, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:pr-, rem, padding-right, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:pb-, rem, padding-bottom, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:pl-, rem, padding-left, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:px-, rem, padding-inline, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:py-, rem, padding-block, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:m-, px, margin, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:mt-, px, margin-top, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:mr-, px, margin-right, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:mb-, px, margin-bottom, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:ml-, px, margin-left, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:mx-, px, margin-inline, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:my-, px, margin-block, 1, 100, 1, 1px);
+  @include spacingNumbers(sm\:m-, rem, margin, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:mt-, rem, margin-top, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:mr-, rem, margin-right, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:mb-, rem, margin-bottom, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:ml-, rem, margin-left, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
+  @include spacingNumbers(sm\:my-, rem, margin-block, 11, 30, 1, 1rem);
 }
 @include md {
   // flex
@@ -103,6 +133,35 @@
   @include sizingNumbers(md\:max-w-, rem, max-width, 1, 100, 1, 1rem);
   @include sizingNumbers(md\:max-w-, per, max-width, 1, 100, 1, 1%);
   @include sizingNumbers(md\:max-w-, vw, max-width, 1, 100, 1, 1vw);
+  // spacing
+  @include spacingNumbers(md\:p-, px, padding, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:pt-, px, padding-top, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:pr-, px, padding-right, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:pb-, px, padding-bottom, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:pl-, px, padding-left, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:px-, px, padding-inline, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:py-, px, padding-block, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:p-, rem, padding, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:pt-, rem, padding-top, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:pr-, rem, padding-right, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:pb-, rem, padding-bottom, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:pl-, rem, padding-left, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:px-, rem, padding-inline, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:py-, rem, padding-block, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:m-, px, margin, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:mt-, px, margin-top, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:mr-, px, margin-right, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:mb-, px, margin-bottom, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:ml-, px, margin-left, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:mx-, px, margin-inline, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:my-, px, margin-block, 1, 100, 1, 1px);
+  @include spacingNumbers(md\:m-, rem, margin, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:mt-, rem, margin-top, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:mr-, rem, margin-right, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:mb-, rem, margin-bottom, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:ml-, rem, margin-left, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
+  @include spacingNumbers(md\:my-, rem, margin-block, 11, 30, 1, 1rem);
 }
 @include lg {
   // flex
@@ -153,4 +212,33 @@
   @include sizingNumbers(lg\:max-w-, rem, max-width, 1, 100, 1, 1rem);
   @include sizingNumbers(lg\:max-w-, per, max-width, 1, 100, 1, 1%);
   @include sizingNumbers(lg\:max-w-, vw, max-width, 1, 100, 1, 1vw);
+  // spacing
+  @include spacingNumbers(lg\:p-, px, padding, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:pt-, px, padding-top, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:pr-, px, padding-right, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:pb-, px, padding-bottom, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:pl-, px, padding-left, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:px-, px, padding-inline, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:py-, px, padding-block, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:p-, rem, padding, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:pt-, rem, padding-top, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:pr-, rem, padding-right, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:pb-, rem, padding-bottom, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:pl-, rem, padding-left, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:px-, rem, padding-inline, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:py-, rem, padding-block, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:m-, px, margin, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:mt-, px, margin-top, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:mr-, px, margin-right, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:mb-, px, margin-bottom, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:ml-, px, margin-left, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:mx-, px, margin-inline, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:my-, px, margin-block, 1, 100, 1, 1px);
+  @include spacingNumbers(lg\:m-, rem, margin, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:mt-, rem, margin-top, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:mr-, rem, margin-right, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:mb-, rem, margin-bottom, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:ml-, rem, margin-left, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
+  @include spacingNumbers(lg\:my-, rem, margin-block, 11, 30, 1, 1rem);
 }
