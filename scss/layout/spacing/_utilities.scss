@@ -2,13 +2,13 @@
 
 // $bp: '', $classname: width, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1px
 // padding 1-100px
-@include spacingNumbers(p-, '', padding, 1, 100, 1, 1px);
-@include spacingNumbers(pt-, '', padding-top, 1, 100, 1, 1px);
-@include spacingNumbers(pr-, '', padding-right, 1, 100, 1, 1px);
-@include spacingNumbers(pb-, '', padding-bottom, 1, 100, 1, 1px);
-@include spacingNumbers(pl-, '', padding-left, 1, 100, 1, 1px);
-@include spacingNumbers(px-, '', padding-inline, 1, 100, 1, 1px);
-@include spacingNumbers(py-, '', padding-block, 1, 100, 1, 1px);
+@include spacingNumbers(p-, px, padding, 1, 100, 1, 1px);
+@include spacingNumbers(pt-, px, padding-top, 1, 100, 1, 1px);
+@include spacingNumbers(pr-, px, padding-right, 1, 100, 1, 1px);
+@include spacingNumbers(pb-, px, padding-bottom, 1, 100, 1, 1px);
+@include spacingNumbers(pl-, px, padding-left, 1, 100, 1, 1px);
+@include spacingNumbers(px-, px, padding-inline, 1, 100, 1, 1px);
+@include spacingNumbers(py-, px, padding-block, 1, 100, 1, 1px);
 // padding 11rem-30rem
 @include spacingNumbers(p-, rem, padding, 11, 30, 1, 1rem);
 @include spacingNumbers(pt-, rem, padding-top, 11, 30, 1, 1rem);
@@ -17,3 +17,20 @@
 @include spacingNumbers(pl-, rem, padding-left, 11, 30, 1, 1rem);
 @include spacingNumbers(px-, rem, padding-inline, 11, 30, 1, 1rem);
 @include spacingNumbers(py-, rem, padding-block, 11, 30, 1, 1rem);
+
+// margin 1-100px
+@include spacingNumbers(m-, px, margin, 1, 100, 1, 1px);
+@include spacingNumbers(mt-, px, margin-top, 1, 100, 1, 1px);
+@include spacingNumbers(mr-, px, margin-right, 1, 100, 1, 1px);
+@include spacingNumbers(mb-, px, margin-bottom, 1, 100, 1, 1px);
+@include spacingNumbers(ml-, px, margin-left, 1, 100, 1, 1px);
+@include spacingNumbers(mx-, px, margin-inline, 1, 100, 1, 1px);
+@include spacingNumbers(my-, px, margin-block, 1, 100, 1, 1px);
+// margin 11rem-30rem
+@include spacingNumbers(m-, rem, margin, 11, 30, 1, 1rem);
+@include spacingNumbers(mt-, rem, margin-top, 11, 30, 1, 1rem);
+@include spacingNumbers(mr-, rem, margin-right, 11, 30, 1, 1rem);
+@include spacingNumbers(mb-, rem, margin-bottom, 11, 30, 1, 1rem);
+@include spacingNumbers(ml-, rem, margin-left, 11, 30, 1, 1rem);
+@include spacingNumbers(mx-, rem, margin-inline, 11, 30, 1, 1rem);
+@include spacingNumbers(my-, rem, margin-block, 11, 30, 1, 1rem);
