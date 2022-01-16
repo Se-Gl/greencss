@@ -4,17 +4,17 @@
 @include sizingValues('', $sizingValues);
 // $bp: '', $classname: width, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1px
 // width
-@include sizingNumbers(w-, rem, width, 1, 100, 1, 1rem);
+@include sizingNumbers(w-, rem, width, 11, 100, 1, 1rem);
 @include sizingNumbers(w-, per, width, 1, 100, 1, 1%);
 @include sizingNumbers(w-, vw, width, 1, 100, 1, 1vw);
-@include sizingNumbers(max-w-, rem, max-width, 1, 100, 1, 1rem);
+@include sizingNumbers(max-w-, rem, max-width, 11, 100, 1, 1rem);
 @include sizingNumbers(max-w-, per, max-width, 1, 100, 1, 1%);
 @include sizingNumbers(max-w-, vw, max-width, 1, 100, 1, 1vw);
 
 // height
-@include sizingNumbers(h-, rem, height, 1, 100, 1, 1rem);
+@include sizingNumbers(h-, rem, height, 11, 100, 1, 1rem);
 @include sizingNumbers(h-, per, height, 1, 100, 1, 1%);
-@include sizingNumbers(h-, vw, height, 1, 100, 1, 1vh);
-@include sizingNumbers(max-h-, rem, max-height, 1, 100, 1, 1rem);
+@include sizingNumbers(h-, vh, height, 1, 100, 1, 1vh);
+@include sizingNumbers(max-h-, rem, max-height, 11, 100, 1, 1rem);
 @include sizingNumbers(max-h-, per, max-height, 1, 100, 1, 1%);
-@include sizingNumbers(max-h-, vw, max-height, 1, 100, 1, 1vh);
+@include sizingNumbers(max-h-, vh, max-height, 1, 100, 1, 1vh);
