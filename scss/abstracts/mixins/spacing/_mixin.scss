@@ -1,0 +1,17 @@
+@mixin spacingNumbers(
+  $bp: '',
+  $postfix: '',
+  $classname: padding,
+  $firstnumber: 1,
+  $secondnumber: 100,
+  $calculate: 1,
+  $multiply: 1px
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $spacing: $i * $calculate;
+
+    .#{$bp}#{$spacing}#{$postfix} {
+      #{$classname}: $spacing * $multiply;
+    }
+  }
+}
