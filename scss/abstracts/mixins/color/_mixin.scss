@@ -47,8 +47,8 @@
 
 // custom background gradient with initial colors props and hover state
 // gradient-to-right from-purple to-orange
-@mixin bggradient($bp: '') {
-  @each $name, $char in $fullcolors {
+@mixin bggradient($bp: '', $loop: $fullcolors) {
+  @each $name, $char in $loop {
     .#{$bp}from-#{$name} {
       --gradient-from-color: #{$char};
       --gradient-color-merge: var(--gradient-from-color), var(--gradient-to-color);

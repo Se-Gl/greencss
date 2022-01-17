@@ -8,6 +8,7 @@
 @include lightColor(text-, 0, 0, color, $lightdark);
 @include lightColor(bg-, 0, 0, background-color, $lightdark);
 @include bggradient();
+@include bggradient('', $lightdark);
 @include bgGradientToFrom();
 
 // active and focus color classes
