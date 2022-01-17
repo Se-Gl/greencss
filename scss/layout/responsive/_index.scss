@@ -18,6 +18,12 @@
   @include flexvalues(sm\:);
   @include flexbasis(1rem, '', sm\:);
   @include flexbasis(1%, per, sm\:);
+  @include gap(sm\:gap-, 0, 100, gap, px, 1px);
+  @include gap(sm\:gap-x-, 0, 100, column-gap, px, 1px);
+  @include gap(sm\:gap-y-, 0, 100, row-gap, px, 1px);
+  @include gap(sm\:gap-, 11, 30, gap, rem, 10rem);
+  @include gap(sm\:gap-x-, 11, 30, column-gap, rem, 10rem);
+  @include gap(sm\:gap-y-, 11, 30, row-gap, rem, 10rem);
   // color
   @include initialColor(sm\:text-, color);
   @include initialColor(sm\:bg-, background-color);
@@ -117,6 +123,12 @@
   @include flexvalues(md\:);
   @include flexbasis(1rem, '', md\:);
   @include flexbasis(1%, per, md\:);
+  @include gap(md\:gap-, 0, 100, gap, px, 1px);
+  @include gap(md\:gap-x-, 0, 100, column-gap, px, 1px);
+  @include gap(md\:gap-y-, 0, 100, row-gap, px, 1px);
+  @include gap(md\:gap-, 11, 30, gap, rem, 10rem);
+  @include gap(md\:gap-x-, 11, 30, column-gap, rem, 10rem);
+  @include gap(md\:gap-y-, 11, 30, row-gap, rem, 10rem);
   // color
   @include initialColor(md\:text-, color);
   @include initialColor(md\:bg-, background-color);
@@ -216,6 +228,12 @@
   @include flexvalues(lg\:);
   @include flexbasis(1rem, '', lg\:);
   @include flexbasis(1%, per, lg\:);
+  @include gap(lg\:gap-, 0, 100, gap, px, 1px);
+  @include gap(lg\:gap-x-, 0, 100, column-gap, px, 1px);
+  @include gap(lg\:gap-y-, 0, 100, row-gap, px, 1px);
+  @include gap(lg\:gap-, 11, 30, gap, rem, 10rem);
+  @include gap(lg\:gap-x-, 11, 30, column-gap, rem, 10rem);
+  @include gap(lg\:gap-y-, 11, 30, row-gap, rem, 10rem);
   // color
   @include initialColor(lg\:text-, color);
   @include initialColor(lg\:bg-, background-color);

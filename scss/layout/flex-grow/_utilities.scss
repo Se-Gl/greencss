@@ -1,9 +1,14 @@
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
 
-// // generate responsive utility classes
+// generate responsive utility classes
 @include flexvalues();
-
 // responsive flex basis numbers 0rem-100rem
-
 @include flexbasis(1rem, '');
 @include flexbasis(1%, per);
+// gap
+@include gap(gap-, 0, 100, gap, px, 1px);
+@include gap(gap-x-, 0, 100, column-gap, px, 1px);
+@include gap(gap-y-, 0, 100, row-gap, px, 1px);
+@include gap(gap-, 11, 30, gap, rem, 10rem);
+@include gap(gap-x-, 11, 30, column-gap, rem, 10rem);
+@include gap(gap-y-, 11, 30, row-gap, rem, 10rem);
