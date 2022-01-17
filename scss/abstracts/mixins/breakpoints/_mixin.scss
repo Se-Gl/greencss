@@ -1,20 +1,19 @@
 @use '../../variables/breakpoints/variables' as *;
 
 @mixin sm {
-  @media (max-width: map-get($breakpoints, 'sm')) {
+  @media (max-width: #{$sm}) {
     @content;
   }
 }
 
 @mixin md {
-  @media (min-width: map-get($breakpoints, 'sm+')) and (max-width: map-get($breakpoints, 'md')),
-    (orientation: landscape) {
+  @media (min-width: #{$sm + 1px}) and (max-width: #{$md}) {
     @content;
   }
 }
 
 @mixin lg {
-  @media (min-width: map-get($breakpoints, 'md+')) and (max-width: map-get($breakpoints, 'lg')) {
+  @media (min-width: #{$md + 1px}) and (max-width: #{$lg}) {
     @content;
   }
 }
