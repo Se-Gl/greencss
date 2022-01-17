@@ -13,5 +13,8 @@
     .#{$bp}#{$animationvalue}#{$postfix} {
       #{$classname}: $animationvalue * $multiply;
     }
+    .hover\:#{$bp}#{$animationvalue}#{$postfix} {
+      #{$classname}: $animationvalue * $multiply;
+    }
   }
 }
