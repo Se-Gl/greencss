@@ -6,8 +6,14 @@
 @use '../../abstracts/mixins/layout/mixin' as *;
 @use '../../abstracts/mixins/sizing/mixin' as *;
 @use '../../abstracts/mixins/spacing/mixin' as *;
+@use '../../abstracts/mixins/typography/mixin' as *;
 
 @include sm {
+  // typography
+  @include typoNumbers(sm\:text-, font-size, 1, 100, 1, 1px);
+  @include typoNumbers(sm\:text-, font-size, 11, 30, 10, 1px);
+  @include typoNumbers(sm\:rel-text-, font-size, 1, 100, 1, 1vw);
+  @include typoNumbers(sm\:font-, font-weight, 1, 9, 100, 1);
   // flex
   @include flexvalues(sm\:);
   @include flexbasis(1rem, '', sm\:);
@@ -103,6 +109,11 @@
   @include spacingNumbers(sm\:my-, rem, margin-block, 11, 30, 1, 1rem);
 }
 @include md {
+  // typography
+  @include typoNumbers(md\:text-, font-size, 1, 100, 1, 1px);
+  @include typoNumbers(md\:text-, font-size, 11, 30, 10, 1px);
+  @include typoNumbers(md\:rel-text-, font-size, 1, 100, 1, 1vw);
+  @include typoNumbers(md\:font-, font-weight, 1, 9, 100, 1);
   // flex
   @include flexvalues(md\:);
   @include flexbasis(1rem, '', md\:);
@@ -200,6 +211,11 @@
   @include spacingNumbers(md\:my-, rem, margin-block, 11, 30, 1, 1rem);
 }
 @include lg {
+  // typography
+  @include typoNumbers(lg\:text-, font-size, 1, 100, 1, 1px);
+  @include typoNumbers(lg\:text-, font-size, 11, 30, 10, 1px);
+  @include typoNumbers(lg\:rel-text-, font-size, 1, 100, 1, 1vw);
+  @include typoNumbers(lg\:font-, font-weight, 1, 9, 100, 1);
   // flex
   @include flexvalues(lg\:);
   @include flexbasis(1rem, '', lg\:);
