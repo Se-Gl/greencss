@@ -1,0 +1,3 @@
+@use '../../abstracts/mixins/animations/mixin' as *;
+
+@include animation(delay-, 1, 100, animation-delay, '', 100ms);

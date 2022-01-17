@@ -1,0 +1,8 @@
+@mixin animation($bp: '', $firstnumber: 1, $secondnumber: 9, $classname: animation-delay, $postfix: '', $value: 1) {
+  @for $i from $firstnumber through $secondnumber {
+    $gapbasis: $i;
+    .#{$bp}#{$gapbasis * $value} {
+      #{$classname}: $gapbasis * $value;
+    }
+  }
+}
