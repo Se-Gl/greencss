@@ -114,7 +114,7 @@
   @include spacingNumbers(sm\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
   @include spacingNumbers(sm\:my-, rem, margin-block, 11, 30, 1, 1rem);
   // animation
-  @include animation(sm\:delay-, 1, 100, animation-delay, '', 100ms);
+  @include animation(sm\:delay-, 1, 20, animation-delay, 100, ms, 1ms);
 }
 @include md {
   // typography
@@ -221,7 +221,7 @@
   @include spacingNumbers(md\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
   @include spacingNumbers(md\:my-, rem, margin-block, 11, 30, 1, 1rem);
   // animation
-  @include animation(md\:delay-, 1, 100, animation-delay, '', 100ms);
+  @include animation(md\:delay-, 1, 20, animation-delay, 100, ms, 1ms);
 }
 @include lg {
   // typography
@@ -328,5 +328,5 @@
   @include spacingNumbers(lg\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
   @include spacingNumbers(lg\:my-, rem, margin-block, 11, 30, 1, 1rem);
   // animation
-  @include animation(lg\:delay-, 1, 100, animation-delay, '', 100ms);
+  @include animation(lg\:delay-, 1, 20, animation-delay, 100, ms, 1ms);
 }

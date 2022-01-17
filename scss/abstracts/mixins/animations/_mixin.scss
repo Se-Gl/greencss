@@ -1,8 +1,17 @@
-@mixin animation($bp: '', $firstnumber: 1, $secondnumber: 9, $classname: animation-delay, $postfix: '', $value: 1) {
+@mixin animation(
+  $bp: delay-,
+  $firstnumber: 1,
+  $secondnumber: 100,
+  $classname: animation-delay,
+  $calculate: 100,
+  $postfix: ms,
+  $multiply: 1ms
+) {
   @for $i from $firstnumber through $secondnumber {
-    $gapbasis: $i;
-    .#{$bp}#{$gapbasis * $value} {
-      #{$classname}: $gapbasis * $value;
+    $animationvalue: $i * $calculate;
+
+    .#{$bp}#{$animationvalue}#{$postfix} {
+      #{$classname}: $animationvalue * $multiply;
     }
   }
 }
