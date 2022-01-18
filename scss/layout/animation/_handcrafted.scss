@@ -51,13 +51,23 @@
   }
 }
 
-.poke-left {
-  @include animationname(pokeLeft);
+.poke-top {
+  @include animationname(pokeTop);
   @include backfacevisibility(hidden);
-  @include pokeKeyframe();
+  @include pokeKeyframe(pokeTop, 0, translateY(25px), rotate(2deg));
 }
 .poke-right {
   @include animationname(pokeRight);
   @include backfacevisibility(hidden);
   @include pokeKeyframe(pokeRight, 0, translateX(-25px), rotate(-2deg));
+}
+.poke-bottom {
+  @include animationname(pokeBottom);
+  @include backfacevisibility(hidden);
+  @include pokeKeyframe(pokeBottom, 0, translateY(-25px), rotate(-2deg));
+}
+.poke-left {
+  @include animationname(pokeLeft);
+  @include backfacevisibility(hidden);
+  @include pokeKeyframe();
 }
