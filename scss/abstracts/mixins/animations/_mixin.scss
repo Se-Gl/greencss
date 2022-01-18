@@ -61,3 +61,8 @@
   -webkit-animation-timing-function: $cubic;
   animation-timing-function: $cubic;
 }
+
+@mixin backfacevisibility($state) {
+  -webkit-backface-visibility: $state;
+  backface-visibility: $state;
+}
