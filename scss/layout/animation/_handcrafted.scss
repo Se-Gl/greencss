@@ -54,16 +54,10 @@
 .poke-left {
   @include animationname(pokeLeft);
   @include backfacevisibility(hidden);
+  @include pokeKeyframe();
 }
-
-@keyframes pokeLeft {
-  0% {
-    @include cubic(ease-out);
-    @include transform(translateX(0));
-  }
-
-  40% {
-    @include cubic(ease-in);
-    @include transform(translateX(25px) rotate(2deg));
-  }
+.poke-right {
+  @include animationname(pokeRight);
+  @include backfacevisibility(hidden);
+  @include pokeKeyframe(pokeRight, 0, translateX(-25px), rotate(-2deg));
 }

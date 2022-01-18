@@ -66,3 +66,18 @@
   -webkit-backface-visibility: $state;
   backface-visibility: $state;
 }
+
+// handcrafted keyframes
+@mixin pokeKeyframe($keyframeName: pokeLeft, $firstvalue: 0, $translateX: translateX(25px), $rotate: rotate(2deg)) {
+  @keyframes #{$keyframeName} {
+    0% {
+      @include cubic(ease-out);
+      @include transform(translateX(0));
+    }
+
+    40% {
+      @include cubic(ease-in);
+      @include transform($translateX $rotate);
+    }
+  }
+}
