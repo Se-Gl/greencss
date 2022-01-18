@@ -114,6 +114,7 @@
   @include spacingNumbers(sm\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
   @include spacingNumbers(sm\:my-, rem, margin-block, 11, 30, 1, 1rem);
   // animation
+  @include animationvalues(sm\:);
   @include animation(sm\:delay-, 1, 100, animation-delay, 100, ms, 1ms);
   @include animation(sm\:duration-, 1, 100, animation-duration, 100, ms, 1ms);
 }
@@ -222,6 +223,7 @@
   @include spacingNumbers(md\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
   @include spacingNumbers(md\:my-, rem, margin-block, 11, 30, 1, 1rem);
   // animation
+  @include animationvalues(md\:);
   @include animation(md\:delay-, 1, 100, animation-delay, 100, ms, 1ms);
   @include animation(md\:duration-, 1, 100, animation-duration, 100, ms, 1ms);
 }
@@ -330,6 +332,7 @@
   @include spacingNumbers(lg\:mx-, rem, margin-inline, 11, 30, 1, 1rem);
   @include spacingNumbers(lg\:my-, rem, margin-block, 11, 30, 1, 1rem);
   // animation
+  @include animationvalues(lg\:);
   @include animation(lg\:delay-, 1, 100, animation-delay, 100, ms, 1ms);
   @include animation(lg\:duration-, 1, 100, animation-duration, 100, ms, 1ms);
 }

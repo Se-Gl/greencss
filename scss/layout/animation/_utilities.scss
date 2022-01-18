@@ -1,4 +1,5 @@
 @use '../../abstracts/mixins/animations/mixin' as *;
 
+@include animationvalues();
 @include animation(delay-, 1, 100, animation-delay, 100, ms, 1ms);
 @include animation(duration-, 1, 100, animation-duration, 100, ms, 1ms);

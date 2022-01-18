@@ -1,3 +1,5 @@
+@use '../../variables/animation/variables' as *;
+
 @mixin animation(
   $bp: delay-,
   $firstnumber: 1,
@@ -16,6 +18,19 @@
     }
     .hover\:#{$bp}#{$animationvalue}#{$postfix} {
       #{$classname}: $animationvalue * $multiply;
+    }
+  }
+}
+
+@mixin animationvalues($bp: '') {
+  @each $property, $map in $animationutilities {
+    $key: map-get($map, 'keys');
+    $values: map-get($map, 'values');
+
+    @each $k, $v in $values {
+      .#{$bp}#{$key}#{$k} {
+        #{$property}: $v;
+      }
     }
   }
 }
