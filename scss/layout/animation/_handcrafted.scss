@@ -2,13 +2,13 @@
 @use '../../abstracts/variables/animation/variables' as *;
 
 .animate {
-  -webkit-animation-duration: 0.8s;
+  -webkit-animation-duration: 750ms;
   -webkit-animation-fill-mode: both;
-  animation-duration: 0.8s;
+  animation-duration: 750ms;
   animation-fill-mode: both;
 }
 
-// animations
+// single animations
 .pulse {
   @include animationname(pulse);
   @include transformorigin(center);
@@ -25,5 +25,28 @@
   100% {
     @include animationtimingfunction($cubic);
     @include transform(scale3d(1, 1, 1));
+  }
+}
+
+.flash {
+  @include animationname(flash);
+  @include cubic($cubic);
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

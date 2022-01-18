@@ -56,3 +56,8 @@
   -webkit-transform: $transform;
   transform: $transform;
 }
+
+@mixin cubic($cubic) {
+  -webkit-animation-timing-function: $cubic;
+  animation-timing-function: $cubic;
+}
