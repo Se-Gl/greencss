@@ -29,6 +29,7 @@
 
     @each $k, $v in $values {
       .#{$bp}#{$key}#{$k} {
+        -webkit-#{$property}: $v;
         #{$property}: $v;
       }
     }

@@ -8,11 +8,6 @@
   animation-fill-mode: both;
 }
 
-.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-}
-
 // animations
 .pulse {
   @include animationname(pulse);

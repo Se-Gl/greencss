@@ -7,7 +7,13 @@ $animationutilities: (
       ease: ease,
       ease-in: ease-in,
       ease-out: ease-out,
-      ease-in-out: ease-in-out
+      ease-in-out: ease-in-out,
+      cubic: cubic-bezier(0.75, 0.25, 0.75, 0.25)
+    )
+  ),
+  'animation-iteration-count': (
+    'values': (
+      animation-infinite: infinite
     )
   )
 );
