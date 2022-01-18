@@ -15,5 +15,12 @@ $animationutilities: (
     'values': (
       animation-infinite: infinite
     )
+  ),
+  'animation-fill-mode': (
+    'values': (
+      animation-forwards: forwards,
+      animation-backwards: backwards,
+      animation-both: both
+    )
   )
 );
