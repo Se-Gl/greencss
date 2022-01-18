@@ -1,10 +1,4 @@
 @use '../../abstracts/mixins/animations/mixin' as *;
 
-// $bp: delay-,
-// $firstnumber: 1,
-// $secondnumber: 100,
-// $classname: animation-delay,
-// $calculate: 100,
-// $postfix: ms,
-// $multiply: 1ms
-@include animation(delay-, 1, 20, animation-delay, 100, ms, 1ms);
+@include animation(delay-, 1, 100, animation-delay, 100, ms, 1ms);
+@include animation(duration-, 1, 100, animation-duration, 100, ms, 1ms);

@@ -11,6 +11,7 @@
     $animationvalue: $i * $calculate;
 
     .#{$bp}#{$animationvalue}#{$postfix} {
+      -webkit-#{$classname}: $animationvalue * $multiply;
       #{$classname}: $animationvalue * $multiply;
     }
     .hover\:#{$bp}#{$animationvalue}#{$postfix} {
