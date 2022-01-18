@@ -19,3 +19,24 @@
     }
   }
 }
+
+// handcrafted animation mixins
+@mixin animationname($name) {
+  -webkit-animation-name: $name;
+  animation-name: $name;
+}
+
+@mixin transformorigin($origin) {
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+
+@mixin animationtimingfunction($bezier) {
+  -webkit-animation-timing-function: $bezier;
+  animation-timing-function: $bezier;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  transform: $transform;
+}
