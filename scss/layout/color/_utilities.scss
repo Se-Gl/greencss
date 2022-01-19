@@ -30,3 +30,4 @@
 // shadow
 @include shadowColor(shadow-, 0, 0, $lightdark, hover);
 @include shadowColor(shadow-, 1, 5, $colors, hover);
+@include shadowColor(shadow-, 0, 0, $colors, hover);

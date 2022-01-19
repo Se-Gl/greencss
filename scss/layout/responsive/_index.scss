@@ -37,6 +37,7 @@
   @include bgGradientToFrom(sm\:);
   @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(sm\:shadow-, 1, 5, $colors, hover);
+  @include shadowColor(sm\:shadow-, 0, 0, $colors, hover);
   // active and focus color classes
   @include initialColor(sm\:text-, color, active);
   @include initialColor(sm\:text-, color, focus);
@@ -148,6 +149,7 @@
   @include bgGradientToFrom(md\:);
   @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(md\:shadow-, 1, 5, $colors, hover);
+  @include shadowColor(md\:shadow-, 0, 0, $colors, hover);
   // active and focus color classes
   @include initialColor(md\:text-, color, active);
   @include initialColor(md\:text-, color, focus);
@@ -259,6 +261,7 @@
   @include bgGradientToFrom(lg\:);
   @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(lg\:shadow-, 1, 5, $colors, hover);
+  @include shadowColor(lg\:shadow-, 0, 0, $colors, hover);
   // active and focus color classes
   @include initialColor(lg\:text-, color, active);
   @include initialColor(lg\:text-, color, focus);

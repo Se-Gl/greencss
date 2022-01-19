@@ -89,11 +89,11 @@
     @if ($firstnumber == 0) {
       @for $i from $firstnumber through $secondnumber {
         .#{$bp}#{$key} {
-          box-shadow: 5px 5px 10px 0 $val;
+          box-shadow: 2.5px 2.5px 5px 0 $val;
         }
         .#{$selector}\:#{$bp}#{$key} {
           &:#{$selector} {
-            box-shadow: 5px 5px 10px 0 $val;
+            box-shadow: 2.5px 2.5px 5px 0 $val;
           }
         }
       }
@@ -102,11 +102,11 @@
         $lighten: $i * 7%;
 
         .#{$bp}#{$key}-#{$i} {
-          box-shadow: 5px 5px 10px 0 lighten($val, $lighten);
+          box-shadow: 2.5px 2.5px 5px 0 lighten($val, $lighten);
         }
         .#{$selector}\:#{$bp}#{$key}-#{$i} {
           &:#{$selector} {
-            box-shadow: 5px 5px 10px 0 lighten($val, $lighten);
+            box-shadow: 2.5px 2.5px 5px 0 lighten($val, $lighten);
           }
         }
       }
