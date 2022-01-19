@@ -26,3 +26,7 @@
 @include lightColor(text-, 0, 0, color, $lightdark, focus);
 @include lightColor(bg-, 0, 0, background-color, $lightdark, active);
 @include lightColor(bg-, 0, 0, background-color, $lightdark, focus);
+
+// shadow
+@include shadowColor(shadow-, 0, 0, $lightdark, hover);
+@include shadowColor(shadow-, 1, 5, $colors, hover);

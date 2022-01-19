@@ -83,3 +83,33 @@
     }
   }
 }
+
+@mixin shadowColor($bp: '', $firstnumber, $secondnumber, $loop, $selector: hover) {
+  @each $key, $val in $loop {
+    @if ($firstnumber == 0) {
+      @for $i from $firstnumber through $secondnumber {
+        .#{$bp}#{$key} {
+          box-shadow: 5px 5px 10px 0 $val;
+        }
+        .#{$selector}\:#{$bp}#{$key} {
+          &:#{$selector} {
+            box-shadow: 5px 5px 10px 0 $val;
+          }
+        }
+      }
+    } @else {
+      @for $i from $firstnumber through $secondnumber {
+        $lighten: $i * 7%;
+
+        .#{$bp}#{$key}-#{$i} {
+          box-shadow: 5px 5px 10px 0 lighten($val, $lighten);
+        }
+        .#{$selector}\:#{$bp}#{$key}-#{$i} {
+          &:#{$selector} {
+            box-shadow: 5px 5px 10px 0 lighten($val, $lighten);
+          }
+        }
+      }
+    }
+  }
+}
