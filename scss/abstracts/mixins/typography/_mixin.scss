@@ -31,7 +31,15 @@
   }
 }
 
-@mixin typoNumbers($bp: '', $classname: font-size, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1px) {
+@mixin typoNumbers(
+  $bp: '',
+  $classname: font-size,
+  $firstnumber: 1,
+  $secondnumber: 100,
+  $calculate: 1,
+  $multiply: 1px,
+  $postfix: px
+) {
   @if ($classname == 'letter-spacing') {
     @for $i from $firstnumber through $secondnumber {
       $fontsize: $i * $calculate;
@@ -53,7 +61,7 @@
     @for $i from $firstnumber through $secondnumber {
       $fontsize: $i * $calculate;
 
-      .#{$bp}#{$fontsize} {
+      .#{$bp}#{$fontsize}#{$postfix} {
         #{$classname}: $fontsize * $multiply;
       }
     }
