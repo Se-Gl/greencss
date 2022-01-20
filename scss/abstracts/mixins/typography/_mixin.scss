@@ -52,7 +52,7 @@
     @for $i from $firstnumber through $secondnumber {
       $fontsize: $i * $calculate;
 
-      .#{$bp}#{$fontsize} {
+      .#{$bp}#{$fontsize}#{$postfix} {
         display: inline;
         #{$classname}: $fontsize * $multiply;
       }
