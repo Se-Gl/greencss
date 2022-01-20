@@ -1,6 +1,7 @@
 $sizingValues: (
   'width': (
     'values': (
+      w-auto: auto,
       w-min-content: min-content,
       w-max-content: max-content,
       w-fit-content: fit-content
@@ -8,6 +9,7 @@ $sizingValues: (
   ),
   'min-width': (
     'values': (
+      min-w-auto: auto,
       min-w-0: 0px,
       min-w-full: 100%,
       min-w-min-content: min-content,
@@ -17,6 +19,7 @@ $sizingValues: (
   ),
   'max-width': (
     'values': (
+      max-w-auto: auto,
       max-w-min-content: min-content,
       max-w-max-content: max-content,
       max-w-fit-content: fit-content
@@ -24,6 +27,7 @@ $sizingValues: (
   ),
   'height': (
     'values': (
+      h-auto: auto,
       h-min-content: min-content,
       h-max-content: max-content,
       h-fit-content: fit-content
@@ -31,6 +35,7 @@ $sizingValues: (
   ),
   'min-height': (
     'values': (
+      min-h-auto: auto,
       min-h-0: 0px,
       min-h-full: 100%,
       min-h-min-content: min-content,
@@ -40,6 +45,7 @@ $sizingValues: (
   ),
   'max-height': (
     'values': (
+      max-h-auto: auto,
       max-h-min-content: min-content,
       max-h-max-content: max-content,
       max-h-fit-content: fit-content
