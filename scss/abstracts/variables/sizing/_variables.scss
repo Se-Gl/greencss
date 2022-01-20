@@ -1,3 +1,5 @@
+// includes spacing and sizing variables
+
 $sizingValues: (
   'width': (
     'values': (
@@ -49,6 +51,36 @@ $sizingValues: (
       max-h-min-content: min-content,
       max-h-max-content: max-content,
       max-h-fit-content: fit-content
+    )
+  ),
+  'margin': (
+    'values': (
+      m-auto: auto
+    )
+  ),
+  'margin-inline': (
+    'values': (
+      mx-auto: auto
+    )
+  ),
+  'margin-block': (
+    'values': (
+      my-auto: auto
+    )
+  ),
+  'padding': (
+    'values': (
+      p-auto: auto
+    )
+  ),
+  'padding-inline': (
+    'values': (
+      px-auto: auto
+    )
+  ),
+  'padding-block': (
+    'values': (
+      py-auto: auto
     )
   )
 );
