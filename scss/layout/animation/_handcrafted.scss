@@ -148,9 +148,18 @@
   @include backfacevisibility(hidden);
   @include revealMixin(revealUp, center bottom, scale3d(0, 0, 0), scale3d(1, 0, 1), scale3d(1, 1, 1));
 }
-
 .reveal-down {
   @include animationname(revealDown);
   @include backfacevisibility(hidden);
   @include revealMixin(revealDown, center top, scale3d(0, 0, 0), scale3d(1, 0, 1), scale3d(1, 1, 1));
+}
+.reveal-left {
+  @include animationname(revealLeft);
+  @include backfacevisibility(hidden);
+  @include revealMixin(revealLeft, center left, scale3d(0, 1, 1), scale3d(0, 1, 1), scale3d(1, 1, 1));
+}
+.reveal-right {
+  @include animationname(revealRight);
+  @include backfacevisibility(hidden);
+  @include revealMixin(revealRight, center right, scale3d(0, 1, 1), scale3d(0, 1, 1), scale3d(1, 1, 1));
 }
