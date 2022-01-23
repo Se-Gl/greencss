@@ -140,3 +140,24 @@
     @include transform(translate3d(0, 0, 0));
   }
 }
+
+// REVEAL
+.reveal-up {
+  @include animationname(revealUp);
+  @include backfacevisibility(hidden);
+}
+
+@keyframes revealUp {
+  0% {
+    @include transform(scale3d(0, 0, 0));
+  }
+  30% {
+    @include cubic($cubic);
+    @include transform(scale3d(1, 0, 1));
+    @include transformorigin(center bottom);
+  }
+  100% {
+    @include cubic($cubic);
+    @include transform(scale3d(1, 1, 1));
+  }
+}
