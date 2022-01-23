@@ -1,6 +1,7 @@
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/variables/animation/variables' as *;
 @use '../../abstracts/mixins/animations/reveal-mixin' as *;
+@use '../../abstracts/mixins/animations/rotate-mixin' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -162,4 +163,19 @@
   @include animationname(revealRight);
   @include backfacevisibility(hidden);
   @include revealMixin(revealRight, center right, scale3d(0, 1, 1), scale3d(0, 1, 1), scale3d(1, 1, 1));
+}
+
+// Rotate-in
+// $name, $value1, $value2, $value3, $value4
+.rotate-in-left {
+  @include animationname(rotateInLeft);
+  @include cubic($cubic);
+  @include backfacevisibility(hidden);
+  @include rotateMixin(
+    rotateInLeft,
+    scale3d(0.75, 0.75, 0.75) rotate(-45deg),
+    scale3d(1.25, 1.25, 1.25) rotate(15deg),
+    scale3d(0.75, 0.75, 0.75) rotate(-15deg),
+    scale3d(1, 1, 1) rotate(0deg)
+  );
 }

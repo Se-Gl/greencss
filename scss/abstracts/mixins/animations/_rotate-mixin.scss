@@ -1,0 +1,22 @@
+@use './mixin' as *;
+@use '../../variables/animation/variables' as *;
+
+@mixin rotateMixin($name, $value1, $value2, $value3, $value4) {
+  @keyframes #{$name} {
+    0% {
+      opacity: 0;
+      @include transform($value1);
+    }
+
+    50% {
+      opacity: 1;
+      @include transform($value2);
+    }
+    75% {
+      @include transform($value3);
+    }
+    100% {
+      @include transform($value4);
+    }
+  }
+}
