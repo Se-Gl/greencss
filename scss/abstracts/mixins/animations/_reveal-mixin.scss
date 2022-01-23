@@ -1,0 +1,19 @@
+@use './mixin' as *;
+@use '../../variables/animation/variables' as *;
+
+@mixin revealMixin($name, $position, $transform1, $transform2, $transform3) {
+  @keyframes #{$name} {
+    0% {
+      @include transform($transform1);
+    }
+    50% {
+      @include cubic($cubic);
+      @include transform($transform2);
+      @include transformorigin($position);
+    }
+    100% {
+      @include cubic($cubic);
+      @include transform($transform3);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/variables/animation/variables' as *;
+@use '../../abstracts/mixins/animations/reveal-mixin' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -145,19 +146,11 @@
 .reveal-up {
   @include animationname(revealUp);
   @include backfacevisibility(hidden);
+  @include revealMixin(revealUp, center bottom, scale3d(0, 0, 0), scale3d(1, 0, 1), scale3d(1, 1, 1));
 }
 
-@keyframes revealUp {
-  0% {
-    @include transform(scale3d(0, 0, 0));
-  }
-  30% {
-    @include cubic($cubic);
-    @include transform(scale3d(1, 0, 1));
-    @include transformorigin(center bottom);
-  }
-  100% {
-    @include cubic($cubic);
-    @include transform(scale3d(1, 1, 1));
-  }
+.reveal-down {
+  @include animationname(revealDown);
+  @include backfacevisibility(hidden);
+  @include revealMixin(revealDown, center top, scale3d(0, 0, 0), scale3d(1, 0, 1), scale3d(1, 1, 1));
 }
