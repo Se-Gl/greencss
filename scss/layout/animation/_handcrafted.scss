@@ -71,3 +71,37 @@
   @include backfacevisibility(hidden);
   @include pokeKeyframe();
 }
+
+.jolt {
+  @include animationname(jolt);
+  @include cubic($cubic);
+}
+@keyframes jolt {
+  10% {
+    @include transform(translateX(-5px));
+  }
+  20% {
+    @include transform(translateX(10px));
+  }
+  30% {
+    @include transform(translateX(-5px));
+  }
+  40% {
+    @include transform(translateX(10px));
+  }
+  50% {
+    @include transform(translateX(-5px));
+  }
+  60% {
+    @include transform(translateX(10px));
+  }
+  70% {
+    @include transform(translateX(-5px));
+  }
+  80% {
+    @include transform(translateX(10px));
+  }
+  90% {
+    @include transform(translateX(-5px));
+  }
+}
