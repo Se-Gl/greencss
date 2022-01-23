@@ -1,0 +1,22 @@
+@use './mixin' as *;
+@use '../../variables/animation/variables' as *;
+
+@mixin spinMixin($name, $value1, $value2, $value3) {
+  @keyframes #{$name} {
+    0% {
+      @include cubic($cubic);
+      @include transform($value1);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      @include transform($value2);
+    }
+    100% {
+      @include cubic($cubic);
+      @include transform($value3);
+    }
+  }
+}

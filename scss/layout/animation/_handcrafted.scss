@@ -2,6 +2,7 @@
 @use '../../abstracts/variables/animation/variables' as *;
 @use '../../abstracts/mixins/animations/reveal-mixin' as *;
 @use '../../abstracts/mixins/animations/rotate-mixin' as *;
+@use '../../abstracts/mixins/animations/spin-mixin' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -165,8 +166,7 @@
   @include revealMixin(revealRight, center right, scale3d(0, 1, 1), scale3d(0, 1, 1), scale3d(1, 1, 1));
 }
 
-// Rotate-in
-// $name, $value1, $value2, $value3, $value4
+// Rotate
 .rotate-in-left {
   @include animationname(rotateInLeft);
   @include cubic($cubic);
@@ -215,5 +215,18 @@
     scale3d(1.25, 1.25, 1.25) rotate(-15deg),
     scale3d(0.75, 0.75, 0.75) rotate(45deg),
     false
+  );
+}
+
+// spin
+// $name, $value1, $value2, $value3
+.spin-in-left {
+  @include animationname(spinInLeft);
+  @include backfacevisibility(hidden);
+  @include spinMixin(
+    spinInLeft,
+    translateX(-100px) rotate(540deg),
+    translateX(45px) rotate(45deg),
+    translateX(0) rotate(0deg)
   );
 }
