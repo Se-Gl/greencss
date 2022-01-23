@@ -179,3 +179,15 @@
     scale3d(1, 1, 1) rotate(0deg)
   );
 }
+.rotate-in-right {
+  @include animationname(rotateInRight);
+  @include cubic($cubic);
+  @include backfacevisibility(hidden);
+  @include rotateMixin(
+    rotateInRight,
+    scale3d(0.75, 0.75, 0.75) rotate(45deg),
+    scale3d(1.25, 1.25, 1.25) rotate(-15deg),
+    scale3d(0.75, 0.75, 0.75) rotate(15deg),
+    scale3d(1, 1, 1) rotate(0deg)
+  );
+}
