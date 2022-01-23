@@ -1,20 +1,30 @@
 @use './mixin' as *;
 @use '../../variables/animation/variables' as *;
 
-@mixin spinMixin($name, $value1, $value2, $value3) {
+@mixin spinMixin($name, $value1, $value2, $value3, $isTrue: true) {
   @keyframes #{$name} {
     0% {
       @include cubic($cubic);
       @include transform($value1);
-      opacity: 0;
+      @if ($isTrue == true) {
+        opacity: 0;
+      }
     }
     50% {
-      opacity: 1;
+      @if ($isTrue == true) {
+        opacity: 1;
+      }
     }
     75% {
       @include transform($value2);
+      @if ($isTrue == false) {
+        opacity: 1;
+      }
     }
     100% {
+      @if ($isTrue == false) {
+        opacity: 0;
+      }
       @include cubic($cubic);
       @include transform($value3);
     }
