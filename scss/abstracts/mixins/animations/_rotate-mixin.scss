@@ -1,21 +1,31 @@
 @use './mixin' as *;
 @use '../../variables/animation/variables' as *;
 
-@mixin rotateMixin($name, $value1, $value2, $value3, $value4) {
+@mixin rotateMixin($name, $value1, $value2, $value3, $value4, $isTrue: true) {
   @keyframes #{$name} {
     0% {
-      opacity: 0;
+      @if ($isTrue == true) {
+        opacity: 0;
+      }
       @include transform($value1);
     }
 
     50% {
-      opacity: 1;
+      @if ($isTrue == true) {
+        opacity: 1;
+      }
       @include transform($value2);
     }
     75% {
+      @if ($isTrue == false) {
+        opacity: 1;
+      }
       @include transform($value3);
     }
     100% {
+      @if ($isTrue == false) {
+        opacity: 0;
+      }
       @include transform($value4);
     }
   }

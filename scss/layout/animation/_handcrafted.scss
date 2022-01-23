@@ -179,6 +179,19 @@
     scale3d(1, 1, 1) rotate(0deg)
   );
 }
+.rotate-out-left {
+  @include animationname(rotateOutLeft);
+  @include cubic($cubic);
+  @include backfacevisibility(hidden);
+  @include rotateMixin(
+    rotateOutLeft,
+    scale3d(1, 1, 1) rotate(0deg),
+    scale3d(0.75, 0.75, 0.75) rotate(-15deg),
+    scale3d(1.25, 1.25, 1.25) rotate(15deg),
+    scale3d(0.75, 0.75, 0.75) rotate(-45deg),
+    false
+  );
+}
 .rotate-in-right {
   @include animationname(rotateInRight);
   @include cubic($cubic);
@@ -189,5 +202,18 @@
     scale3d(1.25, 1.25, 1.25) rotate(-15deg),
     scale3d(0.75, 0.75, 0.75) rotate(15deg),
     scale3d(1, 1, 1) rotate(0deg)
+  );
+}
+.rotate-out-right {
+  @include animationname(rotateOutRight);
+  @include cubic($cubic);
+  @include backfacevisibility(hidden);
+  @include rotateMixin(
+    rotateOutRight,
+    scale3d(1, 1, 1) rotate(0deg),
+    scale3d(0.75, 0.75, 0.75) rotate(15deg),
+    scale3d(1.25, 1.25, 1.25) rotate(-15deg),
+    scale3d(0.75, 0.75, 0.75) rotate(45deg),
+    false
   );
 }
