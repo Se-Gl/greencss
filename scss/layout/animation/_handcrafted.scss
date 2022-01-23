@@ -105,3 +105,38 @@
     @include transform(translateX(-5px));
   }
 }
+
+.jump {
+  @include animationname(jump);
+}
+
+@keyframes jump {
+  0% {
+    @include cubic(cubic-bezier(0.2, 0.9, 0.3, 1.3));
+    @include transform(translate3d(0, 5px, 0));
+  }
+  25% {
+    @include cubic(cubic-bezier(0.4, 0, 1, 1));
+    @include transform(translate3d(0, -50px, 0));
+  }
+  35% {
+    @include cubic(cubic-bezier(0, 0, 0.6, 1));
+    @include transform(translate3d(0, 0, 0));
+  }
+  50% {
+    @include cubic(cubic-bezier(0.4, 0, 1, 1));
+    @include transform(translate3d(0, -20px, 0));
+  }
+  70% {
+    @include cubic(cubic-bezier(0, 0, 0.6, 1));
+    @include transform(translate3d(0, 0, 0));
+  }
+  85% {
+    @include cubic(cubic-bezier(0.4, 0, 1, 1));
+    @include transform(translate3d(0, -10px, 0));
+  }
+  100% {
+    @include cubic(cubic-bezier(0.4, 0, 0.6, 1));
+    @include transform(translate3d(0, 0, 0));
+  }
+}
