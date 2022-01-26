@@ -1,0 +1,26 @@
+@use './mixin' as *;
+@use '../../variables/animation/variables' as *;
+
+@mixin flipMixin($name, $transform1, $cubic1, $transform2, $cubic2, $transform3, $cubic3, $isTrue: true) {
+  @keyframes #{$name} {
+    0% {
+      @include transform($transform1);
+      @include cubic($cubic1);
+      @if ($isTrue == true) {
+        opacity: 0;
+      }
+    }
+    50% {
+      @include transform($transform2);
+      @include cubic($cubic2);
+      opacity: 1;
+    }
+    100% {
+      @include transform($transform3);
+      @include cubic($cubic3);
+      @if ($isTrue == false) {
+        opacity: 0;
+      }
+    }
+  }
+}

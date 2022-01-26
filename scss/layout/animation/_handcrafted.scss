@@ -4,6 +4,7 @@
 @use '../../abstracts/mixins/animations/rotate-mixin' as *;
 @use '../../abstracts/mixins/animations/spin-mixin' as *;
 @use '../../abstracts/mixins/animations/snap-mixin' as *;
+@use '../../abstracts/mixins/animations/flip-mixin' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -307,7 +308,6 @@
 }
 
 // snap
-//   $name, $value1, $beziervalue1, $value2, $beziervalue2, $value3, $value4, $beziervalue3, $value5, $isTrue: true
 .snap-in {
   @include animationname(snapIn);
   @include backfacevisibility(hidden);
@@ -471,5 +471,20 @@
     ease-in,
     scale3d(0.5, 0.5, 0.5) translate3d(0, 300px, 0),
     false
+  );
+}
+
+// flip
+// $name, $transform1, $cubic1, $transform2, $cubic2, $transform3, $cubic3, $isTrue: true
+.flip {
+  @include animationname(flip);
+  @include flipMixin(
+    flip,
+    perspective(250px) rotateY(-360deg) scale3d(1, 1, 1),
+    ease-in,
+    perspective(250px) rotateY(-180deg) scale3d(1.1, 1.1, 1.1),
+    ease-out,
+    perspective(250px) rotateY(0deg) scale3d(1, 1, 1),
+    ease-in
   );
 }
