@@ -219,7 +219,6 @@
 }
 
 // spin
-// $name, $value1, $value2, $value3, isTrue: true
 .spin-in-left {
   @include animationname(spinInLeft);
   @include backfacevisibility(hidden);
@@ -291,6 +290,17 @@
     translateY(0) rotate(0deg),
     translateY(45px) rotate(-45deg),
     translateY(-100px) rotate(-540deg),
+    false
+  );
+}
+.spin-out-bottom {
+  @include animationname(spinOutBottom);
+  @include backfacevisibility(hidden);
+  @include spinMixin(
+    spinOutBottom,
+    translateY(0) rotate(0deg),
+    translateY(45px) rotate(-45deg),
+    translateY(100px) rotate(-540deg),
     false
   );
 }
