@@ -314,9 +314,25 @@
     snapIn,
     scale3d(0, 0, 0),
     ease-in,
-    scale3d(1.08, 1.08, 1.08),
-    cubic-bezier(0.42, 0, 0.58, 1),
+    scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.45, 0, 0.65, 1),
     scale3d(1, 1, 1),
+    cubic-bezier(0.45, 0, 0.65, 1),
+    scale3d(1.05, 1.05, 1.05),
+    ease-out,
+    scale3d(1, 1, 1)
+  );
+}
+.snap-in-left {
+  @include animationname(snapInLeft);
+  @include snapMixin(
+    snapInLeft,
+    translate3d(-300px, 0, 0) scale3d(0.25, 0.25, 0.25),
+    ease-in,
+    translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1, 1, 1),
+    cubic-bezier(0.25, 0, 0.85, 1),
     scale3d(1.05, 1.05, 1.05),
     ease-out,
     scale3d(1, 1, 1)

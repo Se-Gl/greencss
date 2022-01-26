@@ -8,8 +8,9 @@
   $value2,
   $beziervalue2,
   $value3,
-  $value4,
   $beziervalue3,
+  $value4,
+  $beziervalue4,
   $value5,
   $isTrue: true
 ) {
@@ -39,10 +40,11 @@
       }
     }
     80% {
+      @include cubic($beziervalue3);
       @include transform($value4);
     }
     100% {
-      @include cubic($beziervalue3);
+      @include cubic($beziervalue4);
       @include transform($value5);
       @if ($isTrue == false) {
         opacity: 0;
