@@ -383,3 +383,19 @@
     scale3d(1, 1, 1)
   );
 }
+.snap-out {
+  @include animationname(snapOut);
+  @include snapMixin(
+    snapOut,
+    scale3d(1, 1, 1),
+    ease-out,
+    scale3d(1.05, 1.05, 1.05),
+    scale3d(1, 1, 1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    ease-in,
+    scale3d(0.25, 0.25, 0.25),
+    false
+  );
+}
