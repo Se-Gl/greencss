@@ -399,3 +399,35 @@
     false
   );
 }
+.snap-out-left {
+  @include animationname(snapOutLeft);
+  @include snapMixin(
+    snapOutLeft,
+    scale3d(1, 1, 1) translate3d(0, 0, 0),
+    ease-out,
+    scale3d(1.05, 1.05, 1.05) translate3d(0, 0, 0),
+    translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1, 1, 1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    ease-in,
+    scale3d(0.5, 0.5, 0.5) translate3d(-200px, 0, 0),
+    false
+  );
+}
+.snap-out-right {
+  @include animationname(snapOutRight);
+  @include snapMixin(
+    snapOutRight,
+    scale3d(1, 1, 1) translate3d(0, 0, 0),
+    ease-out,
+    scale3d(1.05, 1.05, 1.05) translate3d(0, 0, 0),
+    translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1, 1, 1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    ease-in,
+    scale3d(0.5, 0.5, 0.5) translate3d(200px, 0, 0),
+    false
+  );
+}
