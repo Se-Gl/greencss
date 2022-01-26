@@ -353,3 +353,33 @@
     scale3d(1, 1, 1)
   );
 }
+.snap-in-top {
+  @include animationname(snapInTop);
+  @include snapMixin(
+    snapInTop,
+    translate3d(0, -300px, 0) scale3d(0.25, 0.25, 0.25),
+    ease-in,
+    translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1, 1, 1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1.05, 1.05, 1.05),
+    ease-out,
+    scale3d(1, 1, 1)
+  );
+}
+.snap-in-bottom {
+  @include animationname(snapInBottom);
+  @include snapMixin(
+    snapInBottom,
+    translate3d(0, 300px, 0) scale3d(0.25, 0.25, 0.25),
+    ease-in,
+    translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1, 1, 1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1.05, 1.05, 1.05),
+    ease-out,
+    scale3d(1, 1, 1)
+  );
+}
