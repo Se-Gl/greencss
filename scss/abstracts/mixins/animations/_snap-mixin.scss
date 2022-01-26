@@ -1,0 +1,52 @@
+@use './mixin' as *;
+@use '../../variables/animation/variables' as *;
+
+@mixin snapMixin(
+  $name,
+  $value1,
+  $beziervalue1,
+  $value2,
+  $beziervalue2,
+  $value3,
+  $value4,
+  $beziervalue3,
+  $value5,
+  $isTrue: true
+) {
+  @keyframes #{$name} {
+    0% {
+      @include transform($value1);
+      @if ($isTrue == true) {
+        opacity: 0;
+      }
+    }
+    25% {
+      @if ($isTrue == true) {
+        opacity: 1;
+      }
+    }
+    40% {
+      @include cubic($beziervalue1);
+      @include transform($value2);
+    }
+    60% {
+      @include cubic($beziervalue2);
+      @include transform($value3);
+    }
+    75% {
+      @if ($isTrue == false) {
+        opacity: 1;
+      }
+    }
+    80% {
+      @include transform($value4);
+    }
+    100% {
+      @include cubic($beziervalue3);
+      @include transform($value5);
+      @if ($isTrue == false) {
+        opacity: 0;
+      }
+    }
+  }
+}
