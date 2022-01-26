@@ -83,8 +83,6 @@ video {
   padding: 0;
   border: 0;
   font: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Arial, 'Helvetica Neue', 'Segoe UI', Oxygen, Ubuntu, Cantarell,
-    'Open Sans', sans-serif;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -143,4 +141,44 @@ html {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
 }
