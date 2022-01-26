@@ -272,3 +272,14 @@
     false
   );
 }
+.spin-out-right {
+  @include animationname(spinOutRight);
+  @include backfacevisibility(hidden);
+  @include spinMixin(
+    spinOutRight,
+    translateX(0) rotate(0deg),
+    translateX(45px) rotate(-45deg),
+    translateX(100px) rotate(-540deg),
+    false
+  );
+}
