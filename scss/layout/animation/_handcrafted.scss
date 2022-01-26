@@ -310,6 +310,7 @@
 //   $name, $value1, $beziervalue1, $value2, $beziervalue2, $value3, $value4, $beziervalue3, $value5, $isTrue: true
 .snap-in {
   @include animationname(snapIn);
+  @include backfacevisibility(hidden);
   @include snapMixin(
     snapIn,
     scale3d(0, 0, 0),
@@ -325,6 +326,7 @@
 }
 .snap-in-left {
   @include animationname(snapInLeft);
+  @include backfacevisibility(hidden);
   @include snapMixin(
     snapInLeft,
     translate3d(-300px, 0, 0) scale3d(0.25, 0.25, 0.25),
@@ -340,6 +342,7 @@
 }
 .snap-in-right {
   @include animationname(snapInRight);
+  @include backfacevisibility(hidden);
   @include snapMixin(
     snapInRight,
     translate3d(300px, 0, 0) scale3d(0.25, 0.25, 0.25),
@@ -355,6 +358,7 @@
 }
 .snap-in-top {
   @include animationname(snapInTop);
+  @include backfacevisibility(hidden);
   @include snapMixin(
     snapInTop,
     translate3d(0, -300px, 0) scale3d(0.25, 0.25, 0.25),
@@ -370,6 +374,7 @@
 }
 .snap-in-bottom {
   @include animationname(snapInBottom);
+  @include backfacevisibility(hidden);
   @include snapMixin(
     snapInBottom,
     translate3d(0, 300px, 0) scale3d(0.25, 0.25, 0.25),
@@ -385,6 +390,7 @@
 }
 .snap-out {
   @include animationname(snapOut);
+  @include backfacevisibility(hidden);
   @include snapMixin(
     snapOut,
     scale3d(1, 1, 1),
@@ -401,6 +407,7 @@
 }
 .snap-out-left {
   @include animationname(snapOutLeft);
+  @include backfacevisibility(hidden);
   @include snapMixin(
     snapOutLeft,
     scale3d(1, 1, 1) translate3d(0, 0, 0),
@@ -417,6 +424,7 @@
 }
 .snap-out-right {
   @include animationname(snapOutRight);
+  @include backfacevisibility(hidden);
   @include snapMixin(
     snapOutRight,
     scale3d(1, 1, 1) translate3d(0, 0, 0),
@@ -428,6 +436,40 @@
     cubic-bezier(0.25, 0, 0.85, 1),
     ease-in,
     scale3d(0.5, 0.5, 0.5) translate3d(200px, 0, 0),
+    false
+  );
+}
+.snap-out-top {
+  @include animationname(snapOutTop);
+  @include backfacevisibility(hidden);
+  @include snapMixin(
+    snapOutTop,
+    scale3d(1, 1, 1) translate3d(0, 0, 0),
+    ease-out,
+    scale3d(1.05, 1.05, 1.05) translate3d(0, 0, 0),
+    translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1, 1, 1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    ease-in,
+    scale3d(0.5, 0.5, 0.5) translate3d(0, -300px, 0),
+    false
+  );
+}
+.snap-out-bottom {
+  @include animationname(snapOutBottom);
+  @include backfacevisibility(hidden);
+  @include snapMixin(
+    snapOutBottom,
+    scale3d(1, 1, 1) translate3d(0, 0, 0),
+    ease-out,
+    scale3d(1.05, 1.05, 1.05) translate3d(0, 0, 0),
+    translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    scale3d(1, 1, 1),
+    cubic-bezier(0.25, 0, 0.85, 1),
+    ease-in,
+    scale3d(0.5, 0.5, 0.5) translate3d(0, 300px, 0),
     false
   );
 }
