@@ -485,6 +485,30 @@
     perspective(250px) rotateY(-180deg) scale3d(1.1, 1.1, 1.1),
     ease-out,
     perspective(250px) rotateY(0deg) scale3d(1, 1, 1),
-    ease-in
+    ease-in-out
+  );
+}
+.flip-in-left {
+  @include animationname(flipInLeft);
+  @include flipMixin(
+    flipInLeft,
+    perspective(250px) rotateY(-90deg) scale3d(1.1, 1.1, 1.1),
+    ease-in,
+    perspective(250px) rotateY(-45deg) scale3d(0.95, 0.95, 0.95),
+    ease-out,
+    perspective(250px) rotateY(0deg) scale3d(1, 1, 1),
+    ease-in-out
+  );
+}
+.flip-in-right {
+  @include animationname(flipInRight);
+  @include flipMixin(
+    flipInRight,
+    perspective(250px) rotateY(90deg) scale3d(1.1, 1.1, 1.1),
+    ease-in,
+    perspective(250px) rotateY(45deg) scale3d(0.95, 0.95, 0.95),
+    ease-out,
+    perspective(250px) rotateY(0deg) scale3d(1, 1, 1),
+    ease-in-out
   );
 }
