@@ -512,3 +512,27 @@
     ease-in-out
   );
 }
+.flip-in-top {
+  @include animationname(flipInTop);
+  @include flipMixin(
+    flipInTop,
+    perspective(250px) rotateX(90deg) scale3d(1.1, 1.1, 1.1),
+    ease-in,
+    perspective(250px) rotateX(45deg) scale3d(0.95, 0.95, 0.95),
+    ease-out,
+    perspective(250px) rotateX(0deg) scale3d(1, 1, 1),
+    ease-in-out
+  );
+}
+.flip-in-bottom {
+  @include animationname(flipInBottom);
+  @include flipMixin(
+    flipInBottom,
+    perspective(250px) rotateX(-90deg) scale3d(1.1, 1.1, 1.1),
+    ease-in,
+    perspective(250px) rotateX(-45deg) scale3d(0.95, 0.95, 0.95),
+    ease-out,
+    perspective(250px) rotateX(0deg) scale3d(1, 1, 1),
+    ease-in-out
+  );
+}
