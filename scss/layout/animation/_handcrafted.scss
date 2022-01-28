@@ -5,6 +5,7 @@
 @use '../../abstracts/mixins/animations/spin-mixin' as *;
 @use '../../abstracts/mixins/animations/snap-mixin' as *;
 @use '../../abstracts/mixins/animations/flip-mixin' as *;
+@use '../../abstracts/mixins/animations/fade-mixin' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -588,4 +589,12 @@
     ease-in-out,
     false
   );
+}
+
+// Fade
+.fade-in {
+  @include animationname(fadeIn);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeIn);
 }
