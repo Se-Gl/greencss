@@ -13,6 +13,9 @@
         opacity: 1;
       }
     }
+    45% {
+      opacity: 0.33;
+    }
     100% {
       @if ($transform2 != '') {
         @include transform($transform2);

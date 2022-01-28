@@ -605,10 +605,10 @@
   @include fadeMixin(fadeInRight, translate3d(200px, 0, 0), translate3d(0, 0, 0));
 }
 .fade-in-left {
-  @include animationname(fadeInRight);
+  @include animationname(fadeInLeft);
   @include backfacevisibility(hidden);
   @include cubic(ease-in-out);
-  @include fadeMixin(fadeInRight, translate3d(-200px, 0, 0), translate3d(0, 0, 0));
+  @include fadeMixin(fadeInLeft, translate3d(-200px, 0, 0), translate3d(0, 0, 0));
 }
 
 .fade-in-top {
@@ -642,4 +642,18 @@
   @include backfacevisibility(hidden);
   @include cubic(ease-in-out);
   @include fadeMixin(fadeOutRight, translate3d(0, 0, 0), translate3d(200px, 0, 0), false);
+}
+
+.fade-out-top {
+  @include animationname(fadeOutTop);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeOutTop, translate3d(0, 0, 0), translate3d(0, -200px, 0), false);
+}
+
+.fade-out-bottom {
+  @include animationname(fadeOutBottom);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeOutBottom, translate3d(0, 0, 0), translate3d(0, 200px, 0), false);
 }
