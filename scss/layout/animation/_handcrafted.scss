@@ -610,3 +610,16 @@
   @include cubic(ease-in-out);
   @include fadeMixin(fadeInRight, translate3d(-200px, 0, 0), translate3d(0, 0, 0));
 }
+
+.fade-in-top {
+  @include animationname(fadeInTop);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeInTop, translate3d(0, -200px, 0), translate3d(0, 0, 0));
+}
+.fade-in-bottom {
+  @include animationname(fadeInBottom);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeInBottom, translate3d(0, 200px, 0), translate3d(0, 0, 0));
+}
