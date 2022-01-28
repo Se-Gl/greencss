@@ -660,11 +660,6 @@
 }
 
 // bounce
-.bounce-in {
-  @include animationname(bounceIn);
-  @include backfacevisibility(hidden);
-  @include bounceMixin(bounceIn, translate3d(0, 0, -1px), translate3d(1px, 1px, 1px), translate3d(0, 0, 0));
-}
 .bounce-in-left {
   @include animationname(bounceInLeft);
   @include backfacevisibility(hidden);
@@ -684,4 +679,14 @@
   @include animationname(bounceInBottom);
   @include backfacevisibility(hidden);
   @include bounceMixin(bounceInBottom, translate3d(0, 200px, 0), translate3d(0, -20px, 0), translate3d(0, 0, 0));
+}
+.bounce-out-left {
+  @include animationname(bounceOutLeft);
+  @include backfacevisibility(hidden);
+  @include bounceMixin(bounceOutLeft, translate3d(0, 0, 0), translate3d(20px, 0, 0), translate3d(-200px, 0, 0), false);
+}
+.bounce-out-right {
+  @include animationname(bounceOutLeft);
+  @include backfacevisibility(hidden);
+  @include bounceMixin(bounceOutLeft, translate3d(0, 0, 0), translate3d(-20px, 0, 0), translate3d(200px, 0, 0), false);
 }
