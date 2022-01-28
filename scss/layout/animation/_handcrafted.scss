@@ -675,3 +675,13 @@
   @include backfacevisibility(hidden);
   @include bounceMixin(bounceInRight, translate3d(200px, 0, 0), translate3d(-20px, 0, 0), translate3d(0, 0, 0));
 }
+.bounce-in-top {
+  @include animationname(bounceInTop);
+  @include backfacevisibility(hidden);
+  @include bounceMixin(bounceInTop, translate3d(0, -200px, 0), translate3d(0, 20px, 0), translate3d(0, 0, 0));
+}
+.bounce-in-bottom {
+  @include animationname(bounceInBottom);
+  @include backfacevisibility(hidden);
+  @include bounceMixin(bounceInBottom, translate3d(0, 200px, 0), translate3d(0, -20px, 0), translate3d(0, 0, 0));
+}
