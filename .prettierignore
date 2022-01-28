@@ -11,3 +11,6 @@ package-lock.json
 # all .json files
 *.json
 *.txt
+
+# js markdown
+/js/**/*md

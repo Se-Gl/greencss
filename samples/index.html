@@ -60,5 +60,19 @@
         <div class="bg-red-4 h-50px flex items-center justify-center">04</div>
       </div>
     </div>
+    <div class="min-h-100vh bg-darkblue"></div>
+    <div id="first-animation" class="min-h-100vh bg-purple opacity-0"></div>
+    <inView class="opacity-0">
+      <div class="flex min-h-100vh bg-blue">
+        <h1 id="animated-title" class="text-50px font-bold text-light m-auto">Animated!</h1>
+      </div>
+    </inView>
+
+    <script type="module">
+      import { isInView } from '../js/inView.js'
+      isInView('fade-in', 'duration-500ms', 'animation-forwards', 0.25, '#first-animation')
+      isInView('fade-in', 'duration-500ms')
+      isInView('bounce-in-right', 'duration-1500ms', 'animation-forwards', 1, '#animated-title')
+    </script>
   </body>
 </html>
