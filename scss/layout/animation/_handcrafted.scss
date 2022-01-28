@@ -596,5 +596,11 @@
   @include animationname(fadeIn);
   @include backfacevisibility(hidden);
   @include cubic(ease-in-out);
-  @include fadeMixin(fadeIn);
+  @include fadeMixin(fadeIn, '', '');
+}
+.fade-in-right {
+  @include animationname(fadeInRight);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeInRight, translate3d(200px, 0, 0), translate3d(0, 0, 0));
 }
