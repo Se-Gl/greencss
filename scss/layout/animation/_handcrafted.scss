@@ -6,6 +6,7 @@
 @use '../../abstracts/mixins/animations/snap-mixin' as *;
 @use '../../abstracts/mixins/animations/flip-mixin' as *;
 @use '../../abstracts/mixins/animations/fade-mixin' as *;
+@use '../../abstracts/mixins/animations/bounce-mixin' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -656,4 +657,11 @@
   @include backfacevisibility(hidden);
   @include cubic(ease-in-out);
   @include fadeMixin(fadeOutBottom, translate3d(0, 0, 0), translate3d(0, 200px, 0), false);
+}
+
+// bounce
+.bounce-in {
+  @include animationname(bounceIn);
+  @include backfacevisibility(hidden);
+  @include bounceMixin(bounceIn, translate3d(0, 0, -1px), translate3d(1px, 1px, 1px), translate3d(0, 0, 0));
 }
