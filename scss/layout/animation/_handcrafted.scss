@@ -604,3 +604,9 @@
   @include cubic(ease-in-out);
   @include fadeMixin(fadeInRight, translate3d(200px, 0, 0), translate3d(0, 0, 0));
 }
+.fade-in-left {
+  @include animationname(fadeInRight);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeInRight, translate3d(-200px, 0, 0), translate3d(0, 0, 0));
+}
