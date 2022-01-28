@@ -690,3 +690,19 @@
   @include backfacevisibility(hidden);
   @include bounceMixin(bounceOutLeft, translate3d(0, 0, 0), translate3d(-20px, 0, 0), translate3d(200px, 0, 0), false);
 }
+.bounce-out-top {
+  @include animationname(bounceOutTop);
+  @include backfacevisibility(hidden);
+  @include bounceMixin(bounceOutTop, translate3d(0, 0, 0), translate3d(0, 20px, 0), translate3d(0, -200px, 0), false);
+}
+.bounce-out-bottom {
+  @include animationname(bounceOutBottom);
+  @include backfacevisibility(hidden);
+  @include bounceMixin(
+    bounceOutBottom,
+    translate3d(0, 0, 0),
+    translate3d(0, -20px, 0),
+    translate3d(0, 200px, 0),
+    false
+  );
+}
