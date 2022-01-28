@@ -630,3 +630,16 @@
   @include cubic(ease-in-out);
   @include fadeMixin(fadeOut, '', '', false);
 }
+
+.fade-out-left {
+  @include animationname(fadeOutLeft);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeOutLeft, translate3d(0, 0, 0), translate3d(-200px, 0, 0), false);
+}
+.fade-out-right {
+  @include animationname(fadeOutRight);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeOutRight, translate3d(0, 0, 0), translate3d(200px, 0, 0), false);
+}
