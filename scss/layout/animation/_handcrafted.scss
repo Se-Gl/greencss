@@ -623,3 +623,10 @@
   @include cubic(ease-in-out);
   @include fadeMixin(fadeInBottom, translate3d(0, 200px, 0), translate3d(0, 0, 0));
 }
+
+.fade-out {
+  @include animationname(fadeOut);
+  @include backfacevisibility(hidden);
+  @include cubic(ease-in-out);
+  @include fadeMixin(fadeOut, '', '', false);
+}

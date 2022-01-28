@@ -1,24 +1,26 @@
 @use './mixin' as *;
 // @use '../../variables/animation/variables' as *;
 
-@mixin fadeMixin($name, $transform1, $transform2, $outTrue: false) {
+@mixin fadeMixin($name, $transform1, $transform2, $inTrue: true) {
   @keyframes #{$name} {
     0% {
-      opacity: 0;
       @if ($transform1 != '') {
         @include transform($transform1);
       }
-      @if ($outTrue == true) {
+      @if ($inTrue == true) {
         opacity: 0;
+      } @else {
+        opacity: 1;
       }
     }
     100% {
-      opacity: 1;
       @if ($transform2 != '') {
         @include transform($transform2);
       }
-      @if ($outTrue == true) {
+      @if ($inTrue == false) {
         opacity: 0;
+      } @else {
+        opacity: 1;
       }
     }
   }
