@@ -775,3 +775,20 @@
     scaleX(1) translate3d(0, 0, 0)
   );
 }
+.pop-in-right {
+  @include animationname(popInRight);
+  @include backfacevisibility(hidden);
+  @include popMixin(
+    popInRight,
+    ease-in,
+    scaleX(1.25) translate3d(200px, 0, 0),
+    linear,
+    scaleX(1.15) translate3d(-20px, 0, 0),
+    linear,
+    scaleX(1.05) translate3d(20px, 0, 0),
+    ease-out,
+    scaleX(1) translate3d(-20px, 0, 0),
+    ease-in-out,
+    scaleX(1) translate3d(0, 0, 0)
+  );
+}
