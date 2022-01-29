@@ -1,0 +1,51 @@
+@use './mixin' as *;
+
+@mixin twistMixin(
+  $name,
+  $cubic1,
+  $transform1,
+  $cubic2,
+  $transform2,
+  $cubic3,
+  $transform3,
+  $cubic4,
+  $transform4,
+  $inTrue: true
+) {
+  @keyframes #{$name} {
+    0% {
+      @if ($inTrue == true) {
+        opacity: 0;
+      } @else {
+        opacity: 1;
+      }
+      @include cubic($cubic1);
+      @include transform($transform1);
+      @include transformorigin(center center);
+    }
+    33% {
+      @if ($inTrue == true) {
+        opacity: 0.45;
+      }
+      @include cubic($cubic2);
+      @include transform($transform2);
+      @include transformorigin(center center);
+    }
+    66% {
+      @if ($inTrue == false) {
+        opacity: 0.66;
+      }
+      @include cubic($cubic3);
+      @include transform($transform3);
+      @include transformorigin(center center);
+    }
+    100% {
+      @if ($inTrue == false) {
+        opacity: 0;
+      }
+      @include cubic($cubic4);
+      @include transform($transform4);
+      @include transformorigin(center center);
+    }
+  }
+}
