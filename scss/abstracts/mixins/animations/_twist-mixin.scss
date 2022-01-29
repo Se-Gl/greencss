@@ -25,7 +25,7 @@
     }
     33% {
       @if ($inTrue == true) {
-        opacity: 0.45;
+        opacity: 0.66;
       }
       @include cubic($cubic2);
       @include transform($transform2);
@@ -33,7 +33,7 @@
     }
     66% {
       @if ($inTrue == false) {
-        opacity: 0.66;
+        opacity: 1;
       }
       @include cubic($cubic3);
       @include transform($transform3);
