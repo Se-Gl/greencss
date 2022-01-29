@@ -724,11 +724,11 @@
     rotateZ(360deg)
   );
 }
-.spin-in {
-  @include animationname(spinIn);
+.twist-in {
+  @include animationname(twistIn);
   @include backfacevisibility(hidden);
   @include twistMixin(
-    spinIn,
+    twistIn,
     ease-out,
     rotateZ(0deg) scale3d(0, 0, 0),
     linear,
@@ -737,5 +737,21 @@
     rotateZ(405deg) scale3d(0.8, 0.8, 0.8),
     ease-in,
     rotateZ(360deg) scale3d(1, 1, 1)
+  );
+}
+.twist-out {
+  @include animationname(twistOut);
+  @include backfacevisibility(hidden);
+  @include twistMixin(
+    twistOut,
+    ease-out,
+    rotateZ(0deg) scale3d(1, 1, 1),
+    linear,
+    rotateZ(405deg) scale3d(0.8, 0.8, 0.8),
+    linear,
+    rotateZ(-45deg) scale3d(0.6, 0.6, 0.6),
+    ease-in,
+    rotateZ(360deg) scale3d(0, 0, 0),
+    false
   );
 }
