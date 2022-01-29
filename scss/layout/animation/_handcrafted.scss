@@ -10,6 +10,7 @@
 @use '../../abstracts/mixins/animations/bounce-mixin' as *;
 @use '../../abstracts/mixins/animations/twist-mixin' as *;
 @use '../../abstracts/mixins/animations/pop-mixin' as *;
+@use '../../abstracts/mixins/animations/form-mixin' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -896,6 +897,39 @@
     scaleX(1.15) translate3d(0, -20px, 0),
     ease-in,
     scaleX(1.25) translate3d(0, 200px, 0),
+    false
+  );
+}
+
+// turn
+//------------------------------------------------------------------------------
+
+.form-out {
+  @include animationname(form);
+  @include formMixin(
+    form,
+    ease-out,
+    scale3d(1, 1, 1),
+    ease-in-out,
+    scale3d(1, 0.66, 1),
+    ease-out,
+    scale3d(0.33, 0.33, 1),
+    ease-in,
+    scale3d(0.25, 0.25, 0.25)
+  );
+}
+.form-in {
+  @include animationname(deform);
+  @include formMixin(
+    deform,
+    ease-out,
+    scale3d(0, 0, 0),
+    ease-out,
+    scale3d(0.33, 0.33, 1),
+    ease-in-out,
+    scale3d(1, 0.66, 1),
+    ease-in,
+    scale3d(1, 1, 1),
     false
   );
 }
