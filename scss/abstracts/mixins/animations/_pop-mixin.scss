@@ -18,8 +18,6 @@
     0% {
       @if ($inTrue == true) {
         opacity: 0;
-      } @else {
-        opacity: 1;
       }
       @include cubic($cubic1);
       @include transform($transform1);
@@ -37,7 +35,7 @@
     }
     75% {
       @if ($inTrue == false) {
-        opacity: 1;
+        opacity: 0.66;
       }
       @include cubic($cubic4);
       @include transform($transform4);

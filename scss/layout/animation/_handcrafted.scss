@@ -826,3 +826,40 @@
     scaleX(1) translate3d(0, 0, 0)
   );
 }
+
+.pop-out-left {
+  @include animationname(popOutLeft);
+  @include backfacevisibility(hidden);
+  @include popMixin(
+    popOutLeft,
+    ease-in-out,
+    scaleX(1) translate3d(0, 0, 0),
+    ease-out,
+    scaleX(1) translate3d(20px, 0, 0),
+    linear,
+    scaleX(1.05) translate3d(-20px, 0, 0),
+    linear,
+    scaleX(1.15) translate3d(20px, 0, 0),
+    ease-in,
+    scaleX(1.25) translate3d(-200px, 0, 0),
+    false
+  );
+}
+.pop-out-right {
+  @include animationname(popOutRight);
+  @include backfacevisibility(hidden);
+  @include popMixin(
+    popOutRight,
+    ease-in-out,
+    scaleX(1) translate3d(0, 0, 0),
+    ease-out,
+    scaleX(1) translate3d(-20px, 0, 0),
+    linear,
+    scaleX(1.05) translate3d(20px, 0, 0),
+    linear,
+    scaleX(1.15) translate3d(-20px, 0, 0),
+    ease-in,
+    scaleX(1.25) translate3d(200px, 0, 0),
+    false
+  );
+}
