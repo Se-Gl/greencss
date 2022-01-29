@@ -792,3 +792,37 @@
     scaleX(1) translate3d(0, 0, 0)
   );
 }
+.pop-in-top {
+  @include animationname(popInTop);
+  @include backfacevisibility(hidden);
+  @include popMixin(
+    popInTop,
+    ease-in,
+    scaleX(1.25) translate3d(0, -200px, 0),
+    linear,
+    scaleX(1.15) translate3d(0, 20px, 0),
+    linear,
+    scaleX(1.05) translate3d(0, -20px, 0),
+    ease-out,
+    scaleX(1) translate3d(0, 20px, 0),
+    ease-in-out,
+    scaleX(1) translate3d(0, 0, 0)
+  );
+}
+.pop-in-bottom {
+  @include animationname(popInBottom);
+  @include backfacevisibility(hidden);
+  @include popMixin(
+    popInBottom,
+    ease-in,
+    scaleX(1.25) translate3d(0, 200px, 0),
+    linear,
+    scaleX(1.15) translate3d(0, -20px, 0),
+    linear,
+    scaleX(1.05) translate3d(0, 20px, 0),
+    ease-out,
+    scaleX(1) translate3d(0, -20px, 0),
+    ease-in-out,
+    scaleX(1) translate3d(0, 0, 0)
+  );
+}
