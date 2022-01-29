@@ -18,3 +18,23 @@ export function isInView(className, duration, type = 'animation-forwards', thres
     observer.observe(element)
   })
 }
+
+// Idea from:
+// https://medium.com/fasal-engineering/image-lazy-loading-using-browsers-intersection-observer-api-a-step-by-step-guide-with-examples-b1a867614e8
+export function lazy() {
+  let lazyImages = [].slice.call(document.querySelectorAll('.lazyload'))
+  let lazyImageObserver = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        let lazyImage = entry.target
+        lazyImage.src = lazyImage.dataset.src
+        lazyImage.classList.remove('lazyload')
+        lazyImageObserver.unobserve(lazyImage)
+      }
+    })
+  })
+
+  lazyImages.forEach(function (lazyImage) {
+    lazyImageObserver.observe(lazyImage)
+  })
+}
