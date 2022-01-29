@@ -3,3 +3,6 @@
 @include animationvalues();
 @include animation(delay-, 1, 100, animation-delay, 100, ms, 1ms);
 @include animation(duration-, 1, 100, animation-duration, 100, ms, 1ms);
+
+@include transitionvalues();
+@include animation(transition-duration-, 1, 100, transition-duration, 100, ms, 1ms);

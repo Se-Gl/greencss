@@ -121,6 +121,8 @@
   @include animationvalues(sm\:);
   @include animation(sm\:delay-, 1, 100, animation-delay, 100, ms, 1ms);
   @include animation(sm\:duration-, 1, 100, animation-duration, 100, ms, 1ms);
+  @include transitionvalues(sm\:);
+  @include animation(sm\:transition-duration-, 1, 100, transition-duration, 100, ms, 1ms);
 }
 @include md {
   // typography
@@ -234,6 +236,8 @@
   @include animationvalues(md\:);
   @include animation(md\:delay-, 1, 100, animation-delay, 100, ms, 1ms);
   @include animation(md\:duration-, 1, 100, animation-duration, 100, ms, 1ms);
+  @include transitionvalues(md\:);
+  @include animation(md\:transition-duration-, 1, 100, transition-duration, 100, ms, 1ms);
 }
 @include lg {
   // typography
@@ -347,4 +351,6 @@
   @include animationvalues(lg\:);
   @include animation(lg\:delay-, 1, 100, animation-delay, 100, ms, 1ms);
   @include animation(lg\:duration-, 1, 100, animation-duration, 100, ms, 1ms);
+  @include transitionvalues(lg\:);
+  @include animation(lg\:transition-duration-, 1, 100, transition-duration, 100, ms, 1ms);
 }
