@@ -118,6 +118,7 @@ Create a script tag at the bottom of the HTML file - just above the `</body>` ta
 - Add a placeholder URL to the src attribute. This image must be tiny. It will be displayed up until the definitive image is loaded. It can be a common image format where a loading information is shown. However, a BASE64 image is recommended because it is extremely compact. Check [devsdash.com](https://devsdash.com/tools/png-pixel-generator) to get a BASE64 string - ❗in result, click HTML and copy the src string.
 - Add the original image URL to the data-scr attribute. omenCSS `lazy` will merge the data-src URL to the src URL, once the client's browser has loaded the entire URL.
 - Lazy can also be paired with the inView function, this way the placeholder image is animated. if the inView function is used, do not forget to import it cf. [example](#multiple-imports)
+- ❗Within the image tag, it is mandatory to create a class with the name "lazyload". Otherwise lazy loading does not work. Here you can add more omenCSS- or your own CSS classes, in order to provide additional styling.
 
 ## Full lazy example in an HTML File
 
