@@ -1,5 +1,6 @@
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/variables/animation/variables' as *;
+@use '../../abstracts/mixins/animations/poke-mixin' as *;
 @use '../../abstracts/mixins/animations/reveal-mixin' as *;
 @use '../../abstracts/mixins/animations/rotate-mixin' as *;
 @use '../../abstracts/mixins/animations/spin-mixin' as *;
@@ -78,7 +79,7 @@
 .poke-left {
   @include animationname(pokeLeft);
   @include backfacevisibility(hidden);
-  @include pokeKeyframe();
+  @include pokeKeyframe(pokeLeft, 0, translateX(25px), rotate(2deg));
 }
 
 .jolt {

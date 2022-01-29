@@ -1,0 +1,15 @@
+@use './mixin' as *;
+
+@mixin pokeKeyframe($keyframeName, $firstvalue, $translateX, $rotate) {
+  @keyframes #{$keyframeName} {
+    0% {
+      @include cubic(ease-out);
+      @include transform(translateX(0));
+    }
+
+    40% {
+      @include cubic(ease-in);
+      @include transform($translateX $rotate);
+    }
+  }
+}
