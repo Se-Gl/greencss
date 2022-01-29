@@ -8,6 +8,7 @@
 @use '../../abstracts/mixins/animations/fade-mixin' as *;
 @use '../../abstracts/mixins/animations/bounce-mixin' as *;
 @use '../../abstracts/mixins/animations/twist-mixin' as *;
+@use '../../abstracts/mixins/animations/pop-mixin' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -753,5 +754,24 @@
     ease-in,
     rotateZ(360deg) scale3d(0, 0, 0),
     false
+  );
+}
+
+// pop
+.pop-in-left {
+  @include animationname(popInLeft);
+  @include backfacevisibility(hidden);
+  @include popMixin(
+    popInLeft,
+    ease-in,
+    scaleX(1.25) translate3d(-200px, 0, 0),
+    linear,
+    scaleX(1.15) translate3d(20px, 0, 0),
+    linear,
+    scaleX(1.05) translate3d(-20px, 0, 0),
+    ease-out,
+    scaleX(1) translate3d(20px, 0, 0),
+    ease-in-out,
+    scaleX(1) translate3d(0, 0, 0)
   );
 }
