@@ -1,4 +1,10 @@
-export function isInView(className, duration, type = 'animation-forwards', threshold = 0.1, target = 'inView') {
+export function isInView(
+  className = 'fade-in',
+  duration = 'duration-800ms',
+  type = 'animation-forwards',
+  threshold = 0.1,
+  target = 'inView'
+) {
   const inView = document.querySelectorAll(target)
 
   let observer = new IntersectionObserver(
