@@ -20,12 +20,9 @@
 }
 
 // single animations
-.infinite-spin {
+.spin {
   @include animationname(spin);
   @include backfacevisibility(hidden);
-  @include cubic(linear);
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
 
   @keyframes spin {
     from {
