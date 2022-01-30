@@ -19,7 +19,7 @@ The following attributes may be added. `className, duration, type, threshold, ta
 | Default Values: | |
 |--- |--- |
 | **className**   | 'fade-in'   |
-| **duration**   | 'duration-800ms'   |
+| **duration**   | 'animation-duration-800ms'   |
 | **type**   | 'animation-forwards'   |
 | **threshold**   | 0.1   |
 | **target**   | 'inView'   |
@@ -39,13 +39,13 @@ The following attributes may be added. `className, duration, type, threshold, ta
       import { isInView } from '../js/omenJS.js'
 
     //    1. Custom fade-in animation with: a duration of 500ms, an infinite loop, a 25% treshold and targeting an HTML element with the id of #first-animation
-        isInView('fade-in', 'duration-500ms', 'animation-infinite', 0.25, '#first-animation')
+        isInView('fade-in', 'animation-duration-500ms', 'animation-infinite', 0.25, '#first-animation')
 
     //    2. Default fade-in animation with: a duration of 500ms, a forwards animation, a 10% treshold and targeting the inView element
-        isInView('fade-in', 'duration-500ms')
+        isInView('fade-in', 'animation-duration-500ms')
 
     //    3. Custom Title bounce-in-right animation with: a duration of 1500ms, a forwards animation, a 100% treshold and targeting the #animated-title id
-        isInView('bounce-in-right', 'duration-1500ms', 'animation-forwards', 1, '#animated-title')
+        isInView('bounce-in-right', 'animation-duration-1500ms', 'animation-forwards', 1, '#animated-title')
     </script>
 ```
 
@@ -87,9 +87,9 @@ The following attributes may be added. `className, duration, type, threshold, ta
 
     <script type="module">
       import { isInView } from '../js/omenJS.js'
-      isInView('fade-in', 'duration-500ms', 'animation-forwards', 0.25, '#first-animation')
-      isInView('fade-in', 'duration-500ms')
-      isInView('bounce-in-right', 'duration-1500ms', 'animation-forwards', 1, '#animated-title')
+      isInView('fade-in', 'animation-duration-500ms', 'animation-forwards', 0.25, '#first-animation')
+      isInView('fade-in', 'animation-duration-500ms')
+      isInView('bounce-in-right', 'animation-duration-1500ms', 'animation-forwards', 1, '#animated-title')
     </script>
   </body>
 </html>
