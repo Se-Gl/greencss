@@ -8,6 +8,7 @@
 @use '../../abstracts/mixins/spacing/mixin' as *;
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/animations/mixin' as *;
+@use '../../abstracts/mixins/background/mixin' as *;
 
 @include sm {
   // typography
@@ -124,6 +125,8 @@
   @include transitionvalues(sm\:);
   @include animation(sm\:transition-duration-, 1, 100, transition-duration, 100, ms, 1ms);
   @include animation(sm\:transition-delay-, 1, 100, transition-delay, 100, ms, 1ms);
+  // background
+  @include backgroundvalues(sm\:);
 }
 @include md {
   // typography
@@ -240,6 +243,8 @@
   @include transitionvalues(md\:);
   @include animation(md\:transition-duration-, 1, 100, transition-duration, 100, ms, 1ms);
   @include animation(md\:transition-delay-, 1, 100, transition-delay, 100, ms, 1ms);
+  // background
+  @include backgroundvalues(md\:);
 }
 @include lg {
   // typography
@@ -355,5 +360,7 @@
   @include animation(lg\:animation-duration-, 1, 100, animation-duration, 100, ms, 1ms);
   @include transitionvalues(lg\:);
   @include animation(lg\:transition-duration-, 1, 100, transition-duration, 100, ms, 1ms);
-  @include animation(sm\:transition-delay-, 1, 100, transition-delay, 100, ms, 1ms);
+  @include animation(lg\:transition-delay-, 1, 100, transition-delay, 100, ms, 1ms);
+  // background
+  @include backgroundvalues(lg\:);
 }
