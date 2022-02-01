@@ -13,5 +13,12 @@ $background: (
       bg-clip-content: content-box,
       bg-clip-text: text
     )
+  ),
+  'background-origin': (
+    'values': (
+      bg-origin-border: border-box,
+      bg-origin-padding: padding-box,
+      bg-origin-content: content-box
+    )
   )
 );
