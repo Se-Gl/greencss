@@ -20,5 +20,18 @@ $background: (
       bg-origin-padding: padding-box,
       bg-origin-content: content-box
     )
+  ),
+  'background-position': (
+    'values': (
+      bg-center: center,
+      bg-top: top,
+      bg-top-right: top right,
+      bg-right: right,
+      bg-right-bottom: right bottom,
+      bg-bottom: bottom,
+      bg-left-bottom: left bottom,
+      bg-left: left,
+      bg-left-top: left top
+    )
   )
 );
