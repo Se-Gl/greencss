@@ -8,4 +8,7 @@
 @forward './animation/utilities';
 @forward './animation/handcrafted';
 @forward './background/utilities';
+@forward './effects/utilities';
+
+// must to be last in the list!
 @forward './responsive/index';

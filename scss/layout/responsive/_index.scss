@@ -9,6 +9,7 @@
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/mixins/background/mixin' as *;
+@use '../../abstracts/mixins/effects/mixin' as *;
 
 @include sm {
   // typography
