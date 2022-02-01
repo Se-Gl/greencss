@@ -43,5 +43,12 @@ $background: (
       bg-repeat-round: round,
       bg-repeat-space: space
     )
+  ),
+  'background-size': (
+    'values': (
+      bg-auto: auto,
+      bg-cover: cover,
+      bg-contain: contain
+    )
   )
 );
