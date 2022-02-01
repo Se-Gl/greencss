@@ -5,5 +5,13 @@ $background: (
       bg-local: local,
       bg-scroll: scroll
     )
+  ),
+  'background-clip': (
+    'values': (
+      bg-clip-border: border-box,
+      bg-clip-padding: padding-box,
+      bg-clip-content: content-box,
+      bg-clip-text: text
+    )
   )
 );
