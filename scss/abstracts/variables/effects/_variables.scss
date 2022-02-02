@@ -18,5 +18,25 @@ $blendModes: (
       mix-blend-color: color,
       mix-blend-luminosity: luminosity
     )
+  ),
+  'background-blend-mode': (
+    'values': (
+      bg-blend-normal: normal,
+      bg-blend-multiply: multiply,
+      bg-blend-screen: screen,
+      bg-blend-overlay: overlay,
+      bg-blend-darken: darken,
+      bg-blend-lighten: lighten,
+      bg-blend-color-dodge: color-dodge,
+      bg-blend-color-burn: color-burn,
+      bg-blend-hard-light: hard-light,
+      bg-blend-soft-light: soft-light,
+      bg-blend-difference: difference,
+      bg-blend-exclusion: exclusion,
+      bg-blend-hue: hue,
+      bg-blend-saturation: saturation,
+      bg-blend-color: color,
+      bg-blend-luminosity: luminosity
+    )
   )
 );
