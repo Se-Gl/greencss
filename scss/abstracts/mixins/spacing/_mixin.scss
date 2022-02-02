@@ -10,8 +10,14 @@
   @for $i from $firstnumber through $secondnumber {
     $spacing: $i * $calculate;
 
-    .#{$bp}#{$spacing}#{$postfix} {
-      #{$classname}: $spacing * $multiply;
+    @if ($secondnumber <= 0) {
+      .#{$bp}-neg#{$spacing}#{$postfix} {
+        #{$classname}: $spacing * $multiply;
+      }
+    } @else {
+      .#{$bp}#{$spacing}#{$postfix} {
+        #{$classname}: $spacing * $multiply;
+      }
     }
   }
 }
