@@ -38,9 +38,6 @@
   @include bggradient(sm\:);
   @include bggradient(sm\:, $lightdark);
   @include bgGradientToFrom(sm\:);
-  @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(sm\:shadow-, 1, 5, $colors, hover);
-  @include shadowColor(sm\:shadow-, 0, 0, $colors, hover);
   // active and focus color classes
   @include initialColor(sm\:text-, color, active);
   @include initialColor(sm\:text-, color, focus);
@@ -128,6 +125,11 @@
   @include animation(sm\:transition-delay-, 1, 100, transition-delay, 100, ms, 1ms);
   // background
   @include backgroundvalues(sm\:);
+  // effects
+  @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(sm\:shadow-, 1, 5, $colors, hover);
+  @include shadowColor(sm\:shadow-, 0, 0, $colors, hover);
+  @include opacityMixin(sm\:opacity-, 0, 10, opacity, 10);
 }
 @include md {
   // typography
@@ -156,9 +158,6 @@
   @include bggradient(md\:);
   @include bggradient(md\:, $lightdark);
   @include bgGradientToFrom(md\:);
-  @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(md\:shadow-, 1, 5, $colors, hover);
-  @include shadowColor(md\:shadow-, 0, 0, $colors, hover);
   // active and focus color classes
   @include initialColor(md\:text-, color, active);
   @include initialColor(md\:text-, color, focus);
@@ -246,6 +245,11 @@
   @include animation(md\:transition-delay-, 1, 100, transition-delay, 100, ms, 1ms);
   // background
   @include backgroundvalues(md\:);
+  // effects
+  @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(md\:shadow-, 1, 5, $colors, hover);
+  @include shadowColor(md\:shadow-, 0, 0, $colors, hover);
+  @include opacityMixin(md\:opacity-, 0, 10, opacity, 10);
 }
 @include lg {
   // typography
@@ -274,9 +278,6 @@
   @include bggradient(lg\:);
   @include bgGradientToFrom(lg\:);
   @include bgGradientToFrom(lg\:);
-  @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(lg\:shadow-, 1, 5, $colors, hover);
-  @include shadowColor(lg\:shadow-, 0, 0, $colors, hover);
   // active and focus color classes
   @include initialColor(lg\:text-, color, active);
   @include initialColor(lg\:text-, color, focus);
@@ -364,4 +365,9 @@
   @include animation(lg\:transition-delay-, 1, 100, transition-delay, 100, ms, 1ms);
   // background
   @include backgroundvalues(lg\:);
+  // effects
+  @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(lg\:shadow-, 1, 5, $colors, hover);
+  @include shadowColor(lg\:shadow-, 0, 0, $colors, hover);
+  @include opacityMixin(lg\:opacity-, 0, 10, opacity, 10);
 }

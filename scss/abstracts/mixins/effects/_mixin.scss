@@ -1,3 +1,4 @@
+@use 'sass:math';
 @use '../../variables/color/variables' as *;
 
 @mixin shadowColor($bp: '', $firstnumber, $secondnumber, $loop, $selector: hover) {
@@ -27,6 +28,20 @@
           }
         }
       }
+    }
+  }
+}
+
+@mixin opacityMixin($bp: opacity-, $firstnumber: 0, $secondnumber: 1, $classname: opacity, $calculate: 10) {
+  @for $i from $firstnumber through $secondnumber {
+    $animationvalue: math.div($i, $calculate);
+    $postfix: $i * 10 + 'per';
+
+    .#{$bp}#{$postfix} {
+      #{$classname}: $animationvalue;
+    }
+    .hover\:#{$bp}#{$postfix} {
+      #{$classname}: $animationvalue;
     }
   }
 }
