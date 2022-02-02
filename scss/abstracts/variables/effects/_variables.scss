@@ -1,0 +1,22 @@
+$blendModes: (
+  'mix-blend-mode': (
+    'values': (
+      mix-blend-normal: normal,
+      mix-blend-multiply: multiply,
+      mix-blend-screen: screen,
+      mix-blend-overlay: overlay,
+      mix-blend-darken: darken,
+      mix-blend-lighten: lighten,
+      mix-blend-color-dodge: color-dodge,
+      mix-blend-color-burn: color-burn,
+      mix-blend-hard-light: hard-light,
+      mix-blend-soft-light: soft-light,
+      mix-blend-difference: difference,
+      mix-blend-exclusion: exclusion,
+      mix-blend-hue: hue,
+      mix-blend-saturation: saturation,
+      mix-blend-color: color,
+      mix-blend-luminosity: luminosity
+    )
+  )
+);

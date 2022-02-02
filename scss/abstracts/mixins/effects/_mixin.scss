@@ -41,7 +41,27 @@
       #{$classname}: $animationvalue;
     }
     .hover\:#{$bp}#{$postfix} {
-      #{$classname}: $animationvalue;
+      &:hover {
+        #{$classname}: $animationvalue;
+      }
+    }
+  }
+}
+
+@mixin blendModeMixin($bp: '', $loop) {
+  @each $property, $map in $loop {
+    $key: map-get($map, 'keys');
+    $values: map-get($map, 'values');
+
+    @each $k, $v in $values {
+      .#{$bp}#{$key}#{$k} {
+        #{$property}: $v;
+      }
+      .hover\:#{$bp}#{$key}#{$k} {
+        &:hover {
+          #{$property}: $v;
+        }
+      }
     }
   }
 }

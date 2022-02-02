@@ -1,8 +1,10 @@
 @use '../../abstracts/mixins/effects/mixin' as *;
 @use '../../abstracts/variables/color/variables' as *;
+@use '../../abstracts/variables/effects/variables' as *;
 
 // shadow
 @include shadowColor(shadow-, 0, 0, $lightdark, hover);
 @include shadowColor(shadow-, 1, 5, $colors, hover);
 @include shadowColor(shadow-, 0, 0, $colors, hover);
 @include opacityMixin(opacity-, 0, 10, opacity, 10);
+@include blendModeMixin('', $blendModes);

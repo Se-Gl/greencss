@@ -10,6 +10,7 @@
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/mixins/background/mixin' as *;
 @use '../../abstracts/mixins/effects/mixin' as *;
+@use '../../abstracts/variables/effects/variables' as *;
 
 @include sm {
   // typography
@@ -130,6 +131,7 @@
   @include shadowColor(sm\:shadow-, 1, 5, $colors, hover);
   @include shadowColor(sm\:shadow-, 0, 0, $colors, hover);
   @include opacityMixin(sm\:opacity-, 0, 10, opacity, 10);
+  @include blendModeMixin(sm\:, $blendModes);
 }
 @include md {
   // typography
@@ -250,6 +252,7 @@
   @include shadowColor(md\:shadow-, 1, 5, $colors, hover);
   @include shadowColor(md\:shadow-, 0, 0, $colors, hover);
   @include opacityMixin(md\:opacity-, 0, 10, opacity, 10);
+  @include blendModeMixin(md\:, $blendModes);
 }
 @include lg {
   // typography
@@ -370,4 +373,5 @@
   @include shadowColor(lg\:shadow-, 1, 5, $colors, hover);
   @include shadowColor(lg\:shadow-, 0, 0, $colors, hover);
   @include opacityMixin(lg\:opacity-, 0, 10, opacity, 10);
+  @include blendModeMixin(lg\:, $blendModes);
 }
