@@ -1115,3 +1115,25 @@
   @include animationname(clipInsetOutTopLeft);
   @include clipMixin(clipInsetOutTopLeft, inset(0 0 0 0), inset(0 100% 100% 0));
 }
+.clip-reveal-top {
+  @include animationname(clipRevealTop);
+  @include clipMixin(clipRevealTop, inset(0 0 100% 0), inset(100% 0 0 0), true, inset(0 0 0 0));
+}
+.clip-reveal-right {
+  @include animationname(clipRevealRight);
+  @include clipMixin(clipRevealRight, inset(100% 0 100% 100%), inset(100% 100% 100% 0), true, inset(100% 0 100% 0));
+}
+.clip-reveal-bottom {
+  @include animationname(clipRevealBottom);
+  @include clipMixin(
+    clipRevealBottom,
+    inset(100% 100% 0 100%),
+    inset(0 100% 100% 100%),
+    true,
+    inset(100% 100% 100% 100%)
+  );
+}
+.clip-reveal-left {
+  @include animationname(clipRevealLeft);
+  @include clipMixin(clipRevealLeft, inset(0 100% 0 0), inset(0 0 0 100%), true, inset(0 100% 0 100%));
+}
