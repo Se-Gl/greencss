@@ -978,27 +978,31 @@
   @include clipMixin(clipCircleInTopLeft, circle(0% at 0 0), circle(100%));
 }
 
-// .clip-circle-out {
-//   @include animationname(clipCircleOut);
-//   @include clipMixin(clipCircleOut, circle(0%), circle(100%));
-// }
-// .clip-ellipse-in {
-//   @include animationname(clipEllipseIn);
-//   @include clipMixin(clipEllipseIn, ellipse(100% 100%), ellipse(0% 0%));
-// }
-// .clip-ellipse-out {
-//   @include animationname(clipEllipseOut);
-//   @include clipMixin(clipEllipseOut, ellipse(0% 0%), ellipse(100% 100%));
-// }
-// .clip-inset {
-//   @include animationname(clipInsetIn);
-//   @include clipMixin(clipInsetIn, inset(100% round 100%), inset(0% round 0%));
-// }
-// .clip-star {
-//   @include animationname(clipStar);
-//   @include clipMixin(
-//     clipStar,
-//     polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%),
-//     polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%)
-//   );
-// }
+.clip-circle-out {
+  @include animationname(clipCircleOut);
+  @include clipMixin(clipCircleOut, circle(100%), circle(0%));
+}
+.clip-circle-out-top {
+  @include animationname(clipCircleOutTop);
+  @include clipMixin(clipCircleOutTop, circle(100%), circle(0% at 50% 0));
+}
+.clip-circle-out-topright {
+  @include animationname(clipCircleOutTopRight);
+  @include clipMixin(clipCircleOutTopRight, circle(100%), circle(0% at 100% 0));
+}
+.clip-circle-out-right {
+  @include animationname(clipCircleOutRight);
+  @include clipMixin(clipCircleOutRight, circle(100%), circle(0% at 100% 50%));
+}
+.clip-circle-out-bottom {
+  @include animationname(clipCircleOutBottom);
+  @include clipMixin(clipCircleOutBottom, circle(100%), circle(0% at 50% 100%));
+}
+.clip-circle-out-left {
+  @include animationname(clipCircleOutLeft);
+  @include clipMixin(clipCircleOutLeft, circle(100%), circle(0% at 0 50%));
+}
+.clip-circle-out-topleft {
+  @include animationname(clipCircleOutTopLeft);
+  @include clipMixin(clipCircleOutTopLeft, circle(100%), circle(0% at 0 0));
+}
