@@ -1,0 +1,12 @@
+@use './mixin' as *;
+
+@mixin clipMixin($name, $clipvalue1, $clipvalue2) {
+  @keyframes #{$name} {
+    0% {
+      clip-path: $clipvalue1;
+    }
+    100% {
+      clip-path: $clipvalue2;
+    }
+  }
+}

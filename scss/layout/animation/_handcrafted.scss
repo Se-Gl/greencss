@@ -11,6 +11,7 @@
 @use '../../abstracts/mixins/animations/twist-mixin' as *;
 @use '../../abstracts/mixins/animations/pop-mixin' as *;
 @use '../../abstracts/mixins/animations/form-mixin' as *;
+@use '../../abstracts/mixins/animations/clip-path' as *;
 
 .animate {
   -webkit-animation-duration: 750ms;
@@ -945,4 +946,10 @@
     scale3d(1, 1, 1),
     false
   );
+}
+
+// clip path
+.clip-circle-in {
+  @include animationname(circleIn);
+  @include clipMixin(circleIn, circle(100%), circle(0%));
 }
