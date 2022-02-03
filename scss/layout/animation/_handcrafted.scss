@@ -1006,3 +1006,20 @@
   @include animationname(clipCircleOutTopLeft);
   @include clipMixin(clipCircleOutTopLeft, circle(100%), circle(0% at 0 0));
 }
+
+.clip-arrow-right {
+  @include animationname(clipArrowRight);
+  @include clipMixin(
+    clipArrowRight,
+    polygon(0 50%, 0 50%, 0 50%, 0 50%, 0 50%, 0 50%, 0 50%),
+    polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%)
+  );
+}
+.clip-arrow-left {
+  @include animationname(clipArrowLeft);
+  @include clipMixin(
+    clipArrowLeft,
+    polygon(100% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 50%, 100% 50%),
+    polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%)
+  );
+}
