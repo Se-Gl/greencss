@@ -965,3 +965,7 @@
   @include animationname(clipEllipseOut);
   @include clipMixin(clipEllipseOut, ellipse(0% 0%), ellipse(100% 100%));
 }
+.clip-inset {
+  @include animationname(clipInsetIn);
+  @include clipMixin(clipInsetIn, inset(100% round 100%), inset(0% round 0%));
+}
