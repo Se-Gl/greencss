@@ -1,9 +1,14 @@
 @use './mixin' as *;
 
-@mixin clipMixin($name, $clipvalue1, $clipvalue2) {
+@mixin clipMixin($name, $clipvalue1, $clipvalue2, $has50: false, $clipvalue50: '') {
   @keyframes #{$name} {
     0% {
       clip-path: $clipvalue1;
+    }
+    @if ($has50 == true) {
+      50% {
+        clip-path: $clipvalue50;
+      }
     }
     100% {
       clip-path: $clipvalue2;

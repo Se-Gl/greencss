@@ -1023,7 +1023,6 @@
     polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%)
   );
 }
-
 .clip-trapezoid-in {
   @include animationname(clipTrapezoidIn);
   @include clipMixin(
@@ -1038,5 +1037,25 @@
     clipTrapezoidOut,
     polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%),
     polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)
+  );
+}
+.clip-parallelogram-in {
+  @include animationname(clipparallelogramIn);
+  @include clipMixin(
+    clipparallelogramIn,
+    polygon(100% 0, 100% 0, 100% 100%, 100% 100%),
+    polygon(100% 0, 0 0, 0 100%, 100% 100%),
+    true,
+    polygon(100% 0, 25% 0, 0 100%, 75% 100%)
+  );
+}
+.clip-parallelogram-out {
+  @include animationname(clipparallelogramout);
+  @include clipMixin(
+    clipparallelogramout,
+    polygon(100% 0, 0 0, 0 100%, 100% 100%),
+    polygon(100% 0, 100% 0, 100% 100%, 100% 100%),
+    true,
+    polygon(100% 0, 25% 0, 0 100%, 75% 100%)
   );
 }
