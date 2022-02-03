@@ -957,3 +957,11 @@
   @include animationname(clipCircleOut);
   @include clipMixin(clipCircleOut, circle(0%), circle(100%));
 }
+.clip-ellipse-in {
+  @include animationname(clipEllipseIn);
+  @include clipMixin(clipEllipseIn, ellipse(100% 100%), ellipse(0% 0%));
+}
+.clip-ellipse-out {
+  @include animationname(clipEllipseOut);
+  @include clipMixin(clipEllipseOut, ellipse(0% 0%), ellipse(100% 100%));
+}
