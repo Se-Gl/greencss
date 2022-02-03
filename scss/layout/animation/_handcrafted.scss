@@ -1059,3 +1059,31 @@
     polygon(100% 0, 25% 0, 0 100%, 75% 100%)
   );
 }
+.clip-inset-in {
+  @include animationname(clipInsetIn);
+  @include clipMixin(clipInsetIn, inset(50% 50% 50% 50%), inset(100% 0 100% 0));
+}
+.clip-inset-in-top {
+  @include animationname(clipInsetInTop);
+  @include clipMixin(clipInsetInTop, inset(0 0 100% 0), inset(0 0 0 0));
+}
+.clip-inset-in-topright {
+  @include animationname(clipInsetInTopRight);
+  @include clipMixin(clipInsetInTopRight, inset(0 0 100% 100%), inset(0 0 0 0));
+}
+.clip-inset-in-right {
+  @include animationname(clipInsetInRight);
+  @include clipMixin(clipInsetInRight, inset(0 0 0 100%), inset(0 0 0 0));
+}
+.clip-inset-in-bottom {
+  @include animationname(clipInsetInBottom);
+  @include clipMixin(clipInsetInBottom, inset(100% 0 0 0), inset(0 0 0 0));
+}
+.clip-inset-in-left {
+  @include animationname(clipInsetInLeft);
+  @include clipMixin(clipInsetInLeft, inset(0 100% 0 0), inset(0 0 0 0));
+}
+.clip-inset-in-topleft {
+  @include animationname(clipInsetInTopLeft);
+  @include clipMixin(clipInsetInTopLeft, inset(0 100% 100% 0), inset(0 0 0 0));
+}
