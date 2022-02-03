@@ -950,6 +950,10 @@
 
 // clip path
 .clip-circle-in {
-  @include animationname(circleIn);
-  @include clipMixin(circleIn, circle(100%), circle(0%));
+  @include animationname(clipCircleIn);
+  @include clipMixin(clipCircleIn, circle(100%), circle(0%));
+}
+.clip-circle-out {
+  @include animationname(clipCircleOut);
+  @include clipMixin(clipCircleOut, circle(0%), circle(100%));
 }
