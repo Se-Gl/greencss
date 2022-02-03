@@ -951,21 +951,54 @@
 // clip path
 .clip-circle-in {
   @include animationname(clipCircleIn);
-  @include clipMixin(clipCircleIn, circle(100%), circle(0%));
+  @include clipMixin(clipCircleIn, circle(0%), circle(100%));
 }
-.clip-circle-out {
-  @include animationname(clipCircleOut);
-  @include clipMixin(clipCircleOut, circle(0%), circle(100%));
+.clip-circle-in-top {
+  @include animationname(clipCircleInTop);
+  @include clipMixin(clipCircleInTop, circle(0% at 50% 0), circle(100%));
 }
-.clip-ellipse-in {
-  @include animationname(clipEllipseIn);
-  @include clipMixin(clipEllipseIn, ellipse(100% 100%), ellipse(0% 0%));
+.clip-circle-in-topright {
+  @include animationname(clipCircleInTopRight);
+  @include clipMixin(clipCircleInTopRight, circle(0% at 100% 0), circle(100%));
 }
-.clip-ellipse-out {
-  @include animationname(clipEllipseOut);
-  @include clipMixin(clipEllipseOut, ellipse(0% 0%), ellipse(100% 100%));
+.clip-circle-in-right {
+  @include animationname(clipCircleInRight);
+  @include clipMixin(clipCircleInRight, circle(0% at 100% 50%), circle(100%));
 }
-.clip-inset {
-  @include animationname(clipInsetIn);
-  @include clipMixin(clipInsetIn, inset(100% round 100%), inset(0% round 0%));
+.clip-circle-in-bottom {
+  @include animationname(clipCircleInBottom);
+  @include clipMixin(clipCircleInBottom, circle(0% at 50% 100%), circle(100%));
 }
+.clip-circle-in-left {
+  @include animationname(clipCircleInLeft);
+  @include clipMixin(clipCircleInLeft, circle(0% at 0 50%), circle(100%));
+}
+.clip-circle-in-topleft {
+  @include animationname(clipCircleInTopLeft);
+  @include clipMixin(clipCircleInTopLeft, circle(0% at 0 0), circle(100%));
+}
+
+// .clip-circle-out {
+//   @include animationname(clipCircleOut);
+//   @include clipMixin(clipCircleOut, circle(0%), circle(100%));
+// }
+// .clip-ellipse-in {
+//   @include animationname(clipEllipseIn);
+//   @include clipMixin(clipEllipseIn, ellipse(100% 100%), ellipse(0% 0%));
+// }
+// .clip-ellipse-out {
+//   @include animationname(clipEllipseOut);
+//   @include clipMixin(clipEllipseOut, ellipse(0% 0%), ellipse(100% 100%));
+// }
+// .clip-inset {
+//   @include animationname(clipInsetIn);
+//   @include clipMixin(clipInsetIn, inset(100% round 100%), inset(0% round 0%));
+// }
+// .clip-star {
+//   @include animationname(clipStar);
+//   @include clipMixin(
+//     clipStar,
+//     polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%),
+//     polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%)
+//   );
+// }
