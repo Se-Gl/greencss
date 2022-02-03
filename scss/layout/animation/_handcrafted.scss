@@ -1087,3 +1087,31 @@
   @include animationname(clipInsetInTopLeft);
   @include clipMixin(clipInsetInTopLeft, inset(0 100% 100% 0), inset(0 0 0 0));
 }
+.clip-inset-out {
+  @include animationname(clipInsetOut);
+  @include clipMixin(clipInsetOut, inset(100% 0 100% 0), inset(50% 50% 50% 50%));
+}
+.clip-inset-out-top {
+  @include animationname(clipInsetOutTop);
+  @include clipMixin(clipInsetOutTop, inset(0 0 0 0), inset(0 0 100% 0));
+}
+.clip-inset-out-topright {
+  @include animationname(clipInsetOutTopRight);
+  @include clipMixin(clipInsetOutTopRight, inset(0 0 0 0), inset(0 0 100% 100%));
+}
+.clip-inset-out-right {
+  @include animationname(clipInsetOutRight);
+  @include clipMixin(clipInsetOutRight, inset(0 0 0 0), inset(0 0 0 100%));
+}
+.clip-inset-out-bottom {
+  @include animationname(clipInsetOutBottom);
+  @include clipMixin(clipInsetOutBottom, inset(0 0 0 0), inset(100% 0 0 0));
+}
+.clip-inset-out-left {
+  @include animationname(clipInsetOutLeft);
+  @include clipMixin(clipInsetOutLeft, inset(0 0 0 0), inset(0 100% 0 0));
+}
+.clip-inset-out-topleft {
+  @include animationname(clipInsetOutTopLeft);
+  @include clipMixin(clipInsetOutTopLeft, inset(0 0 0 0), inset(0 100% 100% 0));
+}
