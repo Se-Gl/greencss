@@ -22,6 +22,14 @@ $animationutilities: (
       animation-backwards: backwards,
       animation-both: both
     )
+  ),
+  'animation-direction': (
+    'values': (
+      animation-normal: normal,
+      animation-reverse: reverse,
+      animation-alternate: alternate,
+      animation-alternate-reverse: alternate-reverse
+    )
   )
 );
 
