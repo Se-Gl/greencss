@@ -11,6 +11,7 @@
 @use '../../abstracts/mixins/background/mixin' as *;
 @use '../../abstracts/mixins/effects/mixin' as *;
 @use '../../abstracts/variables/effects/variables' as *;
+@use '../../abstracts/mixins/transforms/mixin' as *;
 
 @include sm {
   // typography
@@ -132,6 +133,10 @@
   @include shadowColor(sm\:shadow-, 0, 0, $colors, hover);
   @include opacityMixin(sm\:opacity-, 0, 10, opacity, 10);
   @include blendModeMixin(sm\:, $blendModes);
+  // transforms
+  @include scaleNumbers(sm\:scale-, transform, -30, 30, 0.1);
+  @include scaleNumbers(sm\:scale-y-, transform, -30, 30, 0.1);
+  @include scaleNumbers(sm\:scale-x-, transform, -30, 30, 0.1);
 }
 @include md {
   // typography
@@ -253,6 +258,10 @@
   @include shadowColor(md\:shadow-, 0, 0, $colors, hover);
   @include opacityMixin(md\:opacity-, 0, 10, opacity, 10);
   @include blendModeMixin(md\:, $blendModes);
+  // transforms
+  @include scaleNumbers(md\:scale-, transform, -30, 30, 0.1);
+  @include scaleNumbers(md\:scale-y-, transform, -30, 30, 0.1);
+  @include scaleNumbers(md\:scale-x-, transform, -30, 30, 0.1);
 }
 @include lg {
   // typography
@@ -374,4 +383,8 @@
   @include shadowColor(lg\:shadow-, 0, 0, $colors, hover);
   @include opacityMixin(lg\:opacity-, 0, 10, opacity, 10);
   @include blendModeMixin(lg\:, $blendModes);
+  // transforms
+  @include scaleNumbers(lg\:scale-, transform, -30, 30, 0.1);
+  @include scaleNumbers(lg\:scale-y-, transform, -30, 30, 0.1);
+  @include scaleNumbers(lg\:scale-x-, transform, -30, 30, 0.1);
 }

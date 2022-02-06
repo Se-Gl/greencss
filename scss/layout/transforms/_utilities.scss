@@ -1,0 +1,5 @@
+@use '../../abstracts/mixins/transforms/mixin' as *;
+
+@include scaleNumbers();
+@include scaleNumbers(scale-y-, transform, -30, 30, 0.1);
+@include scaleNumbers(scale-x-, transform, -30, 30, 0.1);
