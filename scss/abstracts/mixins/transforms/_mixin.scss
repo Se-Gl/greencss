@@ -65,3 +65,18 @@
     }
   }
 }
+
+@mixin rotateNumbers($bp: 'rotate-', $classname: transform, $firstnumber: 0, $secondnumber: 360, $calculate: 1) {
+  @for $i from $firstnumber through $secondnumber {
+    $spacing: $i * $calculate;
+
+    .#{$bp}#{$spacing} {
+      #{$classname}: rotate($spacing * 1deg);
+    }
+    .hover\:#{$bp}#{$spacing} {
+      &:hover {
+        #{$classname}: rotate($spacing * 1deg);
+      }
+    }
+  }
+}

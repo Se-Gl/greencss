@@ -137,6 +137,7 @@
   @include scaleNumbers(sm\:scale-, transform, -30, 30, 0.1);
   @include scaleNumbers(sm\:scale-y-, transform, -30, 30, 0.1);
   @include scaleNumbers(sm\:scale-x-, transform, -30, 30, 0.1);
+  @include rotateNumbers(sm\:rotate-);
 }
 @include md {
   // typography
@@ -262,6 +263,7 @@
   @include scaleNumbers(md\:scale-, transform, -30, 30, 0.1);
   @include scaleNumbers(md\:scale-y-, transform, -30, 30, 0.1);
   @include scaleNumbers(md\:scale-x-, transform, -30, 30, 0.1);
+  @include rotateNumbers(md\:rotate-);
 }
 @include lg {
   // typography
@@ -387,4 +389,5 @@
   @include scaleNumbers(lg\:scale-, transform, -30, 30, 0.1);
   @include scaleNumbers(lg\:scale-y-, transform, -30, 30, 0.1);
   @include scaleNumbers(lg\:scale-x-, transform, -30, 30, 0.1);
+  @include rotateNumbers(lg\:rotate-);
 }
