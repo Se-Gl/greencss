@@ -1,3 +1,5 @@
+@use '../../variables/transforms/variables' as *;
+
 @mixin scaleNumbers($bp: 'scale-', $classname: transform, $firstnumber: -30, $secondnumber: 30, $calculate: 0.1) {
   @for $i from $firstnumber through $secondnumber {
     $spacing: $i * $calculate;
@@ -174,6 +176,19 @@
         &:hover {
           transform: skewY($arc * $multiply);
         }
+      }
+    }
+  }
+}
+
+@mixin transformvalues($bp: '') {
+  @each $property, $map in $transforms {
+    $key: map-get($map, 'keys');
+    $values: map-get($map, 'values');
+
+    @each $k, $v in $values {
+      .#{$bp}#{$key}#{$k} {
+        #{$property}: $v;
       }
     }
   }

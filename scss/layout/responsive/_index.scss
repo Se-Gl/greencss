@@ -144,6 +144,7 @@
   @include translateYMixin(sm\:translate-y-, rem, transform, 11, 30, 1, 1rem);
   @include skewXMixin(sm\:, 1deg);
   @include skewYMixin(sm\:, 1deg);
+  @include transformvalues(sm\:);
 }
 @include md {
   // typography
@@ -276,6 +277,7 @@
   @include translateYMixin(md\:translate-y-, rem, transform, 11, 30, 1, 1rem);
   @include skewXMixin(md\:, 1deg);
   @include skewYMixin(md\:, 1deg);
+  @include transformvalues(md\:);
 }
 @include lg {
   // typography
@@ -408,4 +410,5 @@
   @include translateYMixin(lg\:translate-y-, rem, transform, 11, 30, 1, 1rem);
   @include skewXMixin(lg\:, 1deg);
   @include skewYMixin(lg\:, 1deg);
+  @include transformvalues(lg\:);
 }
