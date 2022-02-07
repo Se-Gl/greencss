@@ -1,0 +1,4 @@
+@use '../../abstracts/mixins/borders/mixin' as *;
+
+@include borderMixin(rounded-, px, border-radius, 0, 50, 1, 1px);
+@include borderMixin(rounded-, rem, border-radius, 6, 10, 10, 1rem);

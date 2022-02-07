@@ -1,0 +1,22 @@
+@mixin borderMixin(
+  $bp: '',
+  $postfix: px,
+  $classname: border-radius,
+  $firstnumber: 1,
+  $secondnumber: 50,
+  $calculate: 1,
+  $multiply: 1px
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $value: $i * $calculate;
+
+    .#{$bp}#{$value}#{$postfix} {
+      #{$classname}: $value * $multiply;
+    }
+    .hover\:#{$bp}#{$value}#{$postfix} {
+      &:hover {
+        #{$classname}: $value * $multiply;
+      }
+    }
+  }
+}

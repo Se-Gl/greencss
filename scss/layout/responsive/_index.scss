@@ -12,6 +12,7 @@
 @use '../../abstracts/mixins/effects/mixin' as *;
 @use '../../abstracts/variables/effects/variables' as *;
 @use '../../abstracts/mixins/transforms/mixin' as *;
+@use '../../abstracts/mixins/borders/mixin' as *;
 
 @include sm {
   // typography
@@ -145,6 +146,9 @@
   @include skewXMixin(sm\:, 1deg);
   @include skewYMixin(sm\:, 1deg);
   @include transformvalues(sm\:);
+  // borders
+  @include borderMixin(sm\:rounded-, px, border-radius, 0, 50, 1, 1px);
+  @include borderMixin(sm\:rounded-, rem, border-radius, 6, 10, 10, 1rem);
 }
 @include md {
   // typography
@@ -278,6 +282,9 @@
   @include skewXMixin(md\:, 1deg);
   @include skewYMixin(md\:, 1deg);
   @include transformvalues(md\:);
+  // borders
+  @include borderMixin(md\:rounded-, px, border-radius, 0, 50, 1, 1px);
+  @include borderMixin(md\:rounded-, rem, border-radius, 6, 10, 10, 1rem);
 }
 @include lg {
   // typography
@@ -411,4 +418,7 @@
   @include skewXMixin(lg\:, 1deg);
   @include skewYMixin(lg\:, 1deg);
   @include transformvalues(lg\:);
+  // borders
+  @include borderMixin(lg\:rounded-, px, border-radius, 0, 50, 1, 1px);
+  @include borderMixin(lg\:rounded-, rem, border-radius, 6, 10, 10, 1rem);
 }
