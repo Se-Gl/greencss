@@ -80,3 +80,49 @@
     }
   }
 }
+
+@mixin translateXMixin(
+  $bp: '',
+  $postfix: '',
+  $classname: transform,
+  $firstnumber: 1,
+  $secondnumber: 100,
+  $calculate: 1,
+  $multiply: 1px
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $width: $i * $calculate;
+
+    .#{$bp}#{$width}#{$postfix} {
+      #{$classname}: translateX($width * $multiply);
+    }
+    .hover\:#{$bp}#{$width}#{$postfix} {
+      &:hover {
+        #{$classname}: translateX($width * $multiply);
+      }
+    }
+  }
+}
+
+@mixin translateYMixin(
+  $bp: '',
+  $postfix: '',
+  $classname: transform,
+  $firstnumber: 1,
+  $secondnumber: 100,
+  $calculate: 1,
+  $multiply: 1px
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $width: $i * $calculate;
+
+    .#{$bp}#{$width}#{$postfix} {
+      #{$classname}: translateY($width * $multiply);
+    }
+    .hover\:#{$bp}#{$width}#{$postfix} {
+      &:hover {
+        #{$classname}: translateY($width * $multiply);
+      }
+    }
+  }
+}
