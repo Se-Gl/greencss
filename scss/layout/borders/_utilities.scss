@@ -1,4 +1,7 @@
 @use '../../abstracts/mixins/borders/mixin' as *;
 
-@include borderMixin(rounded-, px, border-radius, 0, 50, 1, 1px);
-@include borderMixin(rounded-, rem, border-radius, 6, 10, 10, 1rem);
+@include borderMixin(rounded-, px, border-radius, 0, 100, 5, 1px);
+@include borderMixin(rounded-top-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-top-right-radius);
+@include borderMixin(rounded-right-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
+@include borderMixin(rounded-bottom-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+@include borderMixin(rounded-left-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);

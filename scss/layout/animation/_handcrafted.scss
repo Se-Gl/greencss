@@ -716,13 +716,7 @@
 .bounce-out-bottom {
   @include animationname(bounceOutBottom);
   @include backfacevisibility(hidden);
-  @include bounceMixin(
-    bounceOutBottom,
-    translate3d(0, 0, 0),
-    translate3d(0, -20px, 0),
-    translate3d(0, 200px, 0),
-    false
-  );
+  @include bounceMixin(bounceOutBottom, translate3d(0, 0, 0), translate3d(0, -20px, 0), translate3d(0, 200px, 0), false);
 }
 
 // twist
@@ -1125,13 +1119,7 @@
 }
 .clip-reveal-bottom {
   @include animationname(clipRevealBottom);
-  @include clipMixin(
-    clipRevealBottom,
-    inset(100% 100% 0 100%),
-    inset(0 100% 100% 100%),
-    true,
-    inset(100% 100% 100% 100%)
-  );
+  @include clipMixin(clipRevealBottom, inset(100% 100% 0 100%), inset(0 100% 100% 100%), true, inset(100% 100% 100% 100%));
 }
 .clip-reveal-left {
   @include animationname(clipRevealLeft);

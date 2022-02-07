@@ -147,8 +147,11 @@
   @include skewYMixin(sm\:, 1deg);
   @include transformvalues(sm\:);
   // borders
-  @include borderMixin(sm\:rounded-, px, border-radius, 0, 50, 1, 1px);
-  @include borderMixin(sm\:rounded-, rem, border-radius, 6, 10, 10, 1rem);
+  @include borderMixin(sm\:rounded-, px, border-radius, 0, 100, 5, 1px);
+  @include borderMixin(sm\:rounded-top-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-top-right-radius);
+  @include borderMixin(sm\:rounded-right-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
+  @include borderMixin(sm\:rounded-bottom-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+  @include borderMixin(sm\:rounded-left-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
 }
 @include md {
   // typography
@@ -283,8 +286,11 @@
   @include skewYMixin(md\:, 1deg);
   @include transformvalues(md\:);
   // borders
-  @include borderMixin(md\:rounded-, px, border-radius, 0, 50, 1, 1px);
-  @include borderMixin(md\:rounded-, rem, border-radius, 6, 10, 10, 1rem);
+  @include borderMixin(md\:rounded-, px, border-radius, 0, 100, 5, 1px);
+  @include borderMixin(md\:rounded-top-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-top-right-radius);
+  @include borderMixin(md\:rounded-right-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
+  @include borderMixin(md\:rounded-bottom-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+  @include borderMixin(md\:rounded-left-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
 }
 @include lg {
   // typography
@@ -419,6 +425,9 @@
   @include skewYMixin(lg\:, 1deg);
   @include transformvalues(lg\:);
   // borders
-  @include borderMixin(lg\:rounded-, px, border-radius, 0, 50, 1, 1px);
-  @include borderMixin(lg\:rounded-, rem, border-radius, 6, 10, 10, 1rem);
+  @include borderMixin(lg\:rounded-, px, border-radius, 0, 100, 5, 1px);
+  @include borderMixin(lg\:rounded-top-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-top-right-radius);
+  @include borderMixin(lg\:rounded-right-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
+  @include borderMixin(lg\:rounded-bottom-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+  @include borderMixin(lg\:rounded-left-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
 }

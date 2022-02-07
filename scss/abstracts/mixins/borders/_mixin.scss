@@ -5,17 +5,32 @@
   $firstnumber: 1,
   $secondnumber: 50,
   $calculate: 1,
-  $multiply: 1px
+  $multiply: 1px,
+  $hasMultiple: false,
+  $secondclassname: ''
 ) {
   @for $i from $firstnumber through $secondnumber {
     $value: $i * $calculate;
 
-    .#{$bp}#{$value}#{$postfix} {
-      #{$classname}: $value * $multiply;
-    }
-    .hover\:#{$bp}#{$value}#{$postfix} {
-      &:hover {
+    @if $hasMultiple == true {
+      .#{$bp}#{$value}#{$postfix} {
         #{$classname}: $value * $multiply;
+        #{$secondclassname}: $value * $multiply;
+      }
+      .hover\:#{$bp}#{$value}#{$postfix} {
+        &:hover {
+          #{$classname}: $value * $multiply;
+          #{$secondclassname}: $value * $multiply;
+        }
+      }
+    } @else {
+      .#{$bp}#{$value}#{$postfix} {
+        #{$classname}: $value * $multiply;
+      }
+      .hover\:#{$bp}#{$value}#{$postfix} {
+        &:hover {
+          #{$classname}: $value * $multiply;
+        }
       }
     }
   }
