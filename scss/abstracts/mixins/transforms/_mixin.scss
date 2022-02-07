@@ -126,3 +126,55 @@
     }
   }
 }
+
+@mixin skewXMixin($bp: '', $multiply: 1deg) {
+  @for $i from -25 through 25 {
+    $arc: $i;
+
+    @if $i <= -1 {
+      .#{$bp}skew-neg-x#{$arc}deg {
+        transform: skewX($arc * $multiply);
+      }
+      .#{$bp}hover\:skew-neg-x#{$arc}deg {
+        &:hover {
+          transform: skewX($arc * $multiply);
+        }
+      }
+    } @else if $i >= 0 {
+      .#{$bp}skew-x-#{$arc}deg {
+        transform: skewY($arc * $multiply);
+      }
+      .#{$bp}hover\:skew-x-#{$arc}deg {
+        &:hover {
+          transform: skewY($arc * $multiply);
+        }
+      }
+    }
+  }
+}
+
+@mixin skewYMixin($bp: '', $multiply: 1deg) {
+  @for $i from -25 through 25 {
+    $arc: $i;
+
+    @if $i <= -1 {
+      .#{$bp}skew-neg-y#{$arc}deg {
+        transform: skewY($arc * $multiply);
+      }
+      .#{$bp}hover\:skew-neg-y#{$arc}deg {
+        &:hover {
+          transform: skewY($arc * $multiply);
+        }
+      }
+    } @else if $i >= 0 {
+      .#{$bp}skew-y-#{$arc}deg {
+        transform: skewY($arc * $multiply);
+      }
+      .#{$bp}hover\:skew-y-#{$arc}deg {
+        &:hover {
+          transform: skewY($arc * $multiply);
+        }
+      }
+    }
+  }
+}
