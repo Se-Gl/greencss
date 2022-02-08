@@ -171,6 +171,8 @@
   @include blurMixin(sm\:blur-, px);
   @include brightnessMixin(sm\:brightness-);
   @include contrastMixin(sm\:contrast-);
+  @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $fullcolors, hover);
+  @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $lightdark, hover);
 }
 @include md {
   // typography
@@ -328,6 +330,8 @@
   @include blurMixin(md\:blur-, px);
   @include brightnessMixin(md\:brightness-);
   @include contrastMixin(md\:contrast-);
+  @include dropShadowMixin(md\:drop-shadow-, 0, 0, $fullcolors, hover);
+  @include dropShadowMixin(md\:drop-shadow-, 0, 0, $lightdark, hover);
 }
 @include lg {
   // typography
@@ -485,4 +489,6 @@
   @include blurMixin(lg\:blur-);
   @include brightnessMixin(lg\:brightness-);
   @include contrastMixin(lg\:contrast-);
+  @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $fullcolors, hover);
+  @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $lightdark, hover);
 }

@@ -1,4 +1,6 @@
+@use 'sass:math';
 @use '../../variables/borders/variables' as *;
+@use '../../variables/color/variables' as *;
 
 @mixin blurMixin($bp: '', $postfix: px) {
   @for $i from 0 through 20 {
@@ -42,6 +44,37 @@
     .hover\:#{$bp}#{$classNameValue} {
       &:hover {
         filter: contrast($value);
+      }
+    }
+  }
+}
+
+@mixin dropShadowMixin($bp: '', $firstnumber, $secondnumber, $loop, $selector: hover) {
+  @each $key, $val in $loop {
+    $shadowSize: 10px 10px 20px;
+    @if ($firstnumber == 0) {
+      @for $i from $firstnumber through $secondnumber {
+        .#{$bp}#{$key} {
+          filter: drop-shadow($shadowSize $val);
+        }
+        .#{$selector}\:#{$bp}#{$key} {
+          &:#{$selector} {
+            filter: drop-shadow($shadowSize $val);
+          }
+        }
+      }
+    } @else {
+      @for $i from $firstnumber through $secondnumber {
+        $lighten: $i * 7%;
+
+        .#{$bp}#{$key}-#{$i} {
+          filter: drop-shadow($shadowSize lighten($val, $lighten));
+        }
+        .#{$selector}\:#{$bp}#{$key}-#{$i} {
+          &:#{$selector} {
+            filter: drop-shadow($shadowSize lighten($val, $lighten));
+          }
+        }
       }
     }
   }
