@@ -152,6 +152,9 @@
   @include borderMixin(sm\:rounded-right-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
   @include borderMixin(sm\:rounded-bottom-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
   @include borderMixin(sm\:rounded-left-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+  @include borderMixin(sm\:border-, px, border-width, 0, 10, 1, 1px);
+  @include borderMixin(sm\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
+  @include borderMixin(sm\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
 }
 @include md {
   // typography
@@ -291,6 +294,9 @@
   @include borderMixin(md\:rounded-right-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
   @include borderMixin(md\:rounded-bottom-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
   @include borderMixin(md\:rounded-left-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+  @include borderMixin(md\:border-, px, border-width, 0, 10, 1, 1px);
+  @include borderMixin(md\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
+  @include borderMixin(md\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
 }
 @include lg {
   // typography
@@ -430,4 +436,7 @@
   @include borderMixin(lg\:rounded-right-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
   @include borderMixin(lg\:rounded-bottom-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
   @include borderMixin(lg\:rounded-left-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+  @include borderMixin(lg\:border-, px, border-width, 0, 10, 1, 1px);
+  @include borderMixin(lg\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
+  @include borderMixin(lg\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
 }
