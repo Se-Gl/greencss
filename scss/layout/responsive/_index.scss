@@ -155,6 +155,10 @@
   @include borderMixin(sm\:border-, px, border-width, 0, 10, 1, 1px);
   @include borderMixin(sm\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
   @include borderMixin(sm\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+  @include borderMixin(sm\:border-top-, px, border-top-width, 0, 10, 1, 1px);
+  @include borderMixin(sm\:border-right-, px, border-right-width, 0, 10, 1, 1px);
+  @include borderMixin(sm\:border-bottom-, px, border-bottom-width, 0, 10, 1, 1px);
+  @include borderMixin(sm\:border-left-, px, border-left-width, 0, 10, 1, 1px);
   @include bordervalues(sm\:);
 }
 @include md {
@@ -298,6 +302,10 @@
   @include borderMixin(md\:border-, px, border-width, 0, 10, 1, 1px);
   @include borderMixin(md\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
   @include borderMixin(md\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+  @include borderMixin(md\:border-top-, px, border-top-width, 0, 10, 1, 1px);
+  @include borderMixin(md\:border-right-, px, border-right-width, 0, 10, 1, 1px);
+  @include borderMixin(md\:border-bottom-, px, border-bottom-width, 0, 10, 1, 1px);
+  @include borderMixin(md\:border-left-, px, border-left-width, 0, 10, 1, 1px);
   @include bordervalues(md\:);
 }
 @include lg {
@@ -441,5 +449,9 @@
   @include borderMixin(lg\:border-, px, border-width, 0, 10, 1, 1px);
   @include borderMixin(lg\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
   @include borderMixin(lg\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+  @include borderMixin(lg\:border-top-, px, border-top-width, 0, 10, 1, 1px);
+  @include borderMixin(lg\:border-right-, px, border-right-width, 0, 10, 1, 1px);
+  @include borderMixin(lg\:border-bottom-, px, border-bottom-width, 0, 10, 1, 1px);
+  @include borderMixin(lg\:border-left-, px, border-left-width, 0, 10, 1, 1px);
   @include bordervalues(lg\:);
 }

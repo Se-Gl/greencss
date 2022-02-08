@@ -10,6 +10,10 @@
 @include borderMixin(border-, px, border-width, 0, 10, 1, 1px);
 @include borderMixin(border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
 @include borderMixin(border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+@include borderMixin(border-top-, px, border-top-width, 0, 10, 1, 1px);
+@include borderMixin(border-right-, px, border-right-width, 0, 10, 1, 1px);
+@include borderMixin(border-bottom-, px, border-bottom-width, 0, 10, 1, 1px);
+@include borderMixin(border-left-, px, border-left-width, 0, 10, 1, 1px);
 
 @include borderColorMixin(border-, $fullcolors, border-color, hover);
 @include borderColorMixin(border-, $lightdark, border-color, hover);
