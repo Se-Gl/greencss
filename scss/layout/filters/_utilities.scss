@@ -1,4 +1,4 @@
 @use '../../abstracts/mixins/filters/mixin' as *;
 
 @include blurMixin(blur-, px);
-@include brightnessMixin(brightness-, px);
+@include brightnessMixin(brightness-);
