@@ -162,6 +162,8 @@
   @include borderColorMixin(sm\:border-, $fullcolors, border-color, hover);
   @include borderColorMixin(sm\:border-, $lightdark, border-color, hover);
   @include borderMixin(sm\:outline-, px, outline-width, 0, 10, 1, 1px);
+  @include borderColorMixin(sm\:outline-, $fullcolors, outline-color, hover);
+  @include borderColorMixin(sm\:outline-, $lightdark, outline-color, hover);
   @include bordervalues(sm\:);
 }
 @include md {
@@ -312,6 +314,8 @@
   @include borderColorMixin(md\:border-, $fullcolors, border-color, hover);
   @include borderColorMixin(md\:border-, $lightdark, border-color, hover);
   @include borderMixin(md\:outline-, px, outline-width, 0, 10, 1, 1px);
+  @include borderColorMixin(md\:outline-, $fullcolors, outline-color, hover);
+  @include borderColorMixin(md\:outline-, $lightdark, outline-color, hover);
   @include bordervalues(md\:);
 }
 @include lg {
@@ -462,5 +466,7 @@
   @include borderColorMixin(lg\:border-, $fullcolors, border-color, hover);
   @include borderColorMixin(lg\:border-, $lightdark, border-color, hover);
   @include borderMixin(lg\:outline-, px, outline-width, 0, 10, 1, 1px);
+  @include borderColorMixin(lg\:outline-, $fullcolors, outline-color, hover);
+  @include borderColorMixin(lg\:outline-, $lightdark, outline-color, hover);
   @include bordervalues(lg\:);
 }
