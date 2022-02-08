@@ -1,23 +1,30 @@
 @use '../../variables/borders/variables' as *;
 
-@mixin filterMixin(
-  $bp: '',
-  $postfix: px,
-  $classname: border-radius,
-  $firstnumber: 1,
-  $secondnumber: 50,
-  $calculate: 1,
-  $multiply: 1px
-) {
-  @for $i from $firstnumber through $secondnumber {
-    $value: $i * $calculate;
+@mixin blurMixin($bp: '', $postfix: px) {
+  @for $i from 1 through 50 {
+    $value: $i * 1;
 
     .#{$bp}#{$value}#{$postfix} {
-      #{$classname}: blur($value * $multiply);
+      filter: blur($value * 1px);
     }
     .hover\:#{$bp}#{$value}#{$postfix} {
       &:hover {
-        #{$classname}: blur($value * $multiply);
+        filter: blur($value * 1px);
+      }
+    }
+  }
+}
+
+@mixin brightnessMixin($bp: '', $postfix: px) {
+  @for $i from 1 through 50 {
+    $value: $i * 1;
+
+    .#{$bp}#{$value}#{$postfix} {
+      filter: brightness($value * 1px);
+    }
+    .hover\:#{$bp}#{$value}#{$postfix} {
+      &:hover {
+        filter: brightness($value * 1px);
       }
     }
   }
