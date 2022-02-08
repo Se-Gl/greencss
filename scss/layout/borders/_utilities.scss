@@ -14,3 +14,4 @@
 @include borderColorMixin(border-, $fullcolors, border-color, hover);
 @include borderColorMixin(border-, $lightdark, border-color, hover);
 
+@include bordervalues();
