@@ -15,6 +15,8 @@
 @include borderMixin(border-bottom-, px, border-bottom-width, 0, 10, 1, 1px);
 @include borderMixin(border-left-, px, border-left-width, 0, 10, 1, 1px);
 
+@include borderMixin(outline-, px, outline-width, 0, 10, 1, 1px);
+
 @include borderColorMixin(border-, $fullcolors, border-color, hover);
 @include borderColorMixin(border-, $lightdark, border-color, hover);
 
