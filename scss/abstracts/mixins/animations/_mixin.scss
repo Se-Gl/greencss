@@ -9,6 +9,9 @@
       .#{$bp}transition-#{$key}#{$k} {
         #{$property}: $v;
       }
+      .hover\:#{$bp}transition-#{$key}#{$k} {
+        #{$property}: $v;
+      }
     }
   }
 }
