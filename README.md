@@ -27,6 +27,8 @@ npm run dev
 # 6. start your development server
 ```
 
+TODO: before releasing V, adjust husky pre-commit `npm run css && npm run format && npm run compressed-css && git add -A .` -> check commit 243
+
 ### SASS Commands
 
 Run the following command during development and after the first installation to the repo. It will convert the scss files to css files. It will have an immediate impact on the `samples/index.html` file.
@@ -73,7 +75,7 @@ sass/
 |   |   |– components        # Components Mixins with subfolders
 |   |   |– flex-grid         # Flex & Grid Mixins
 |   |   |– typography        # Typography Mixins
-|   |– variables          # Basic Project Variables
+|   |   |– variables          # Basic Project Variables
 |   |   |– breakpoints       # Breakpoint Variables
 |   |   |– color             # Color Variables
 |   |   |– components        # Components Variables with subfolders
