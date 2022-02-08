@@ -35,3 +35,16 @@
     }
   }
 }
+
+@mixin borderColorMixin($bp, $loop, $classname, $selector: hover) {
+  @each $key, $val in $loop {
+    .#{$bp}#{$key} {
+      #{$classname}: $val;
+    }
+    .#{$selector}\:#{$bp}#{$key} {
+      &:#{$selector} {
+        #{$classname}: $val;
+      }
+    }
+  }
+}

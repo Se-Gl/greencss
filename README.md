@@ -27,7 +27,7 @@ npm run dev
 # 6. start your development server
 ```
 
-TODO: before releasing V, adjust husky pre-commit `npm run css && npm run format && npm run compressed-css && git add -A .` -> check commit 243
+TODO: before releasing V1, adjust husky pre-commit `npm run css && npm run format && npm run compressed-css && git add -A .` -> check commit 243
 
 ### SASS Commands
 

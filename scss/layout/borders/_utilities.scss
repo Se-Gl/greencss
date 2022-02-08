@@ -1,4 +1,5 @@
 @use '../../abstracts/mixins/borders/mixin' as *;
+@use '../../abstracts/variables/color/variables' as *;
 
 @include borderMixin(rounded-, px, border-radius, 0, 100, 5, 1px);
 @include borderMixin(rounded-top-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-top-right-radius);
@@ -9,3 +10,7 @@
 @include borderMixin(border-, px, border-width, 0, 10, 1, 1px);
 @include borderMixin(border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
 @include borderMixin(border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+
+@include borderColorMixin(border-, $fullcolors, border-color, hover);
+@include borderColorMixin(border-, $lightdark, border-color, hover);
+
