@@ -8,5 +8,15 @@ $border-style: (
       border-hidden: hidden,
       border-none: none
     )
+  ),
+  'outline-style': (
+    'values': (
+      outline-none: none,
+      outline-solid: solid,
+      outline-dashed: dashed,
+      outline-dotted: dotted,
+      outline-double: double,
+      outline-hidden: hidden
+    )
   )
 );
