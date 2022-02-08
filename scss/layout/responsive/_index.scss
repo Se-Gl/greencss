@@ -13,6 +13,7 @@
 @use '../../abstracts/variables/effects/variables' as *;
 @use '../../abstracts/mixins/transforms/mixin' as *;
 @use '../../abstracts/mixins/borders/mixin' as *;
+@use '../../abstracts/mixins/filters/mixin' as *;
 
 @include sm {
   // typography
@@ -166,6 +167,8 @@
   @include borderColorMixin(sm\:outline-, $lightdark, outline-color, hover);
   @include borderMixin(sm\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(sm\:);
+  // filters
+  @include filterMixin(sm\:blur-, px, filter, 0, 20, 10, 1px);
 }
 @include md {
   // typography
@@ -319,6 +322,8 @@
   @include borderColorMixin(md\:outline-, $lightdark, outline-color, hover);
   @include borderMixin(md\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(md\:);
+  // filters
+  @include filterMixin(md\:blur-, px, filter, 0, 20, 10, 1px);
 }
 @include lg {
   // typography
@@ -472,4 +477,6 @@
   @include borderColorMixin(lg\:outline-, $lightdark, outline-color, hover);
   @include borderMixin(lg\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(lg\:);
+  // filters
+  @include filterMixin(lg\:blur-, px, filter, 0, 20, 10, 1px);
 }
