@@ -1,0 +1,3 @@
+@use '../../abstracts/mixins/filters/mixin' as *;
+
+@include filterMixin(blur-, px, filter, 0, 20, 10, 1px);
