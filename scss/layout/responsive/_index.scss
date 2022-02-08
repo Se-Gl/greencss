@@ -170,6 +170,7 @@
   // filters
   @include blurMixin(sm\:blur-, px);
   @include brightnessMixin(sm\:brightness-);
+  @include contrastMixin(sm\:contrast-);
 }
 @include md {
   // typography
@@ -326,6 +327,7 @@
   // filters
   @include blurMixin(md\:blur-, px);
   @include brightnessMixin(md\:brightness-);
+  @include contrastMixin(md\:contrast-);
 }
 @include lg {
   // typography
@@ -482,4 +484,5 @@
   // filters
   @include blurMixin(lg\:blur-);
   @include brightnessMixin(lg\:brightness-);
+  @include contrastMixin(lg\:contrast-);
 }

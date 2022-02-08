@@ -1,7 +1,7 @@
 @use '../../variables/borders/variables' as *;
 
 @mixin blurMixin($bp: '', $postfix: px) {
-  @for $i from 1 through 20 {
+  @for $i from 0 through 20 {
     $value: $i * 10;
 
     .#{$bp}#{$value}#{$postfix} {
@@ -16,7 +16,7 @@
 }
 
 @mixin brightnessMixin($bp: '') {
-  @for $i from 1 through 50 {
+  @for $i from 0 through 50 {
     $value: $i * 0.1;
     $classNameValue: $i * 10;
 
@@ -26,6 +26,22 @@
     .hover\:#{$bp}#{$classNameValue} {
       &:hover {
         filter: brightness($value);
+      }
+    }
+  }
+}
+
+@mixin contrastMixin($bp: '') {
+  @for $i from 0 through 50 {
+    $value: $i * 0.1;
+    $classNameValue: $i * 10;
+
+    .#{$bp}#{$classNameValue} {
+      filter: contrast($value);
+    }
+    .hover\:#{$bp}#{$classNameValue} {
+      &:hover {
+        filter: contrast($value);
       }
     }
   }
