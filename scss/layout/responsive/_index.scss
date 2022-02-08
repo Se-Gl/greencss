@@ -131,8 +131,7 @@
   @include backgroundvalues(sm\:);
   // effects
   @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(sm\:shadow-, 1, 5, $colors, hover);
-  @include shadowColor(sm\:shadow-, 0, 0, $colors, hover);
+  @include shadowColor(sm\:shadow-, 0, 0, $fullcolors, hover);
   @include opacityMixin(sm\:opacity-, 0, 10, opacity, 10);
   @include blendModeMixin(sm\:, $blendModes);
   // transforms
@@ -290,8 +289,7 @@
   @include backgroundvalues(md\:);
   // effects
   @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(md\:shadow-, 1, 5, $colors, hover);
-  @include shadowColor(md\:shadow-, 0, 0, $colors, hover);
+  @include shadowColor(md\:shadow-, 0, 0, $fullcolors, hover);
   @include opacityMixin(md\:opacity-, 0, 10, opacity, 10);
   @include blendModeMixin(md\:, $blendModes);
   // transforms
@@ -449,8 +447,7 @@
   @include backgroundvalues(lg\:);
   // effects
   @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(lg\:shadow-, 1, 5, $colors, hover);
-  @include shadowColor(lg\:shadow-, 0, 0, $colors, hover);
+  @include shadowColor(lg\:shadow-, 0, 0, $fullcolors, hover);
   @include opacityMixin(lg\:opacity-, 0, 10, opacity, 10);
   @include blendModeMixin(lg\:, $blendModes);
   // transforms

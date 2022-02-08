@@ -4,28 +4,14 @@
 @mixin shadowColor($bp: '', $firstnumber, $secondnumber, $loop, $selector: hover) {
   @each $key, $val in $loop {
     $shadowSize: 10px 10px 20px -2.5px;
-    @if ($firstnumber == 0) {
-      @for $i from $firstnumber through $secondnumber {
-        .#{$bp}#{$key} {
-          box-shadow: $shadowSize $val;
-        }
-        .#{$selector}\:#{$bp}#{$key} {
-          &:#{$selector} {
-            box-shadow: $shadowSize $val;
-          }
-        }
-      }
-    } @else {
-      @for $i from $firstnumber through $secondnumber {
-        $lighten: $i * 7%;
 
-        .#{$bp}#{$key}-#{$i} {
-          box-shadow: $shadowSize lighten($val, $lighten);
-        }
-        .#{$selector}\:#{$bp}#{$key}-#{$i} {
-          &:#{$selector} {
-            box-shadow: $shadowSize lighten($val, $lighten);
-          }
+    @for $i from $firstnumber through $secondnumber {
+      .#{$bp}#{$key} {
+        box-shadow: $shadowSize $val;
+      }
+      .#{$selector}\:#{$bp}#{$key} {
+        &:#{$selector} {
+          box-shadow: $shadowSize $val;
         }
       }
     }
