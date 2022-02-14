@@ -68,6 +68,16 @@ $sizingValues: (
       my-auto: auto
     )
   ),
+  'margin-top': (
+    'values': (
+      mt-auto: auto
+    )
+  ),
+  'margin-bottom': (
+    'values': (
+      mb-auto: auto
+    )
+  ),
   'margin-left': (
     'values': (
       ml-auto: auto
@@ -91,6 +101,16 @@ $sizingValues: (
   'padding-block': (
     'values': (
       py-auto: auto
+    )
+  ),
+  'padding-top': (
+    'values': (
+      pt-auto: auto
+    )
+  ),
+  'padding-bottom': (
+    'values': (
+      pb-auto: auto
     )
   ),
   'padding-left': (
