@@ -59,12 +59,11 @@
   @include layoutvalues(sm\:);
   @include layoutNumbers(sm\:col-, columns, '', 1, 12, 1);
   @include layoutNumbers(sm\:col-, columns, '', 1, 100, 1rem);
-  @include layoutNumbers(sm\:top-, top, per, 0, 100, 1, 1%);
-  @include layoutNumbers(sm\:right-, right, per, 0, 100, 1, 1%);
-  @include layoutNumbers(sm\:bottom-, bottom, per, 0, 100, 1, 1%);
-  @include layoutNumbers(sm\:left-, left, per, 0, 100, 1, 1%);
-  @include layoutNumbers(sm\:z-neg, z-index, '', -10, -1, 1);
-  @include layoutNumbers(sm\:z-, z-index, '', 0, 100, 1);
+  @include layoutNumbers(sm\:top-, top, per, -100, 100, 1, 1%);
+  @include layoutNumbers(sm\:right-, right, per, -100, 100, 1, 1%);
+  @include layoutNumbers(sm\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include layoutNumbers(sm\:left-, left, per, -100, 100, 1, 1%);
+  @include layoutNumbers(sm\:z-, z-index, '', -10, 100, 1);
   // sizing
   @include sizingValues(sm\:, $sizingValues);
   @include sizingNumbers(sm\:w-, px, width, 1, 100, 1, 1px);
@@ -217,12 +216,11 @@
   @include layoutvalues(md\:);
   @include layoutNumbers(md\:col-, columns, '', 1, 12, 1);
   @include layoutNumbers(md\:col-, columns, '', 1, 100, 1rem);
-  @include layoutNumbers(md\:top-, top, per, 0, 100, 1, 1%);
-  @include layoutNumbers(md\:right-, right, per, 0, 100, 1, 1%);
-  @include layoutNumbers(md\:bottom-, bottom, per, 0, 100, 1, 1%);
-  @include layoutNumbers(md\:left-, left, per, 0, 100, 1, 1%);
-  @include layoutNumbers(md\:z-neg, z-index, '', -10, -1, 1);
-  @include layoutNumbers(md\:z-, z-index, '', 0, 100, 1);
+  @include layoutNumbers(md\:top-, top, per, -100, 100, 1, 1%);
+  @include layoutNumbers(md\:right-, right, per, -100, 100, 1, 1%);
+  @include layoutNumbers(md\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include layoutNumbers(md\:left-, left, per, -100, 100, 1, 1%);
+  @include layoutNumbers(md\:z-, z-index, '', -10, 100, 1);
   // sizing
   @include sizingValues(md\:, $sizingValues);
   @include sizingNumbers(md\:w-, px, width, 1, 100, 1, 1px);
@@ -375,12 +373,11 @@
   @include layoutvalues(lg\:);
   @include layoutNumbers(lg\:col-, columns, '', 1, 12, 1);
   @include layoutNumbers(lg\:col-, columns, '', 1, 100, 1rem);
-  @include layoutNumbers(lg\:top-, top, per, 0, 100, 1, 1%);
-  @include layoutNumbers(lg\:right-, right, per, 0, 100, 1, 1%);
-  @include layoutNumbers(lg\:bottom-, bottom, per, 0, 100, 1, 1%);
-  @include layoutNumbers(lg\:left-, left, per, 0, 100, 1, 1%);
-  @include layoutNumbers(lg\:z-neg, z-index, '', -10, -1, 1);
-  @include layoutNumbers(lg\:z-, z-index, '', 0, 100, 1);
+  @include layoutNumbers(lg\:top-, top, per, -100, 100, 1, 1%);
+  @include layoutNumbers(lg\:right-, right, per, -100, 100, 1, 1%);
+  @include layoutNumbers(lg\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include layoutNumbers(lg\:left-, left, per, -100, 100, 1, 1%);
+  @include layoutNumbers(lg\:z-, z-index, '', -10, 100, 1);
   // sizing
   @include sizingValues(lg\:, $sizingValues);
   @include sizingNumbers(lg\:w-, px, width, 1, 100, 1, 1px);

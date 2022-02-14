@@ -5,9 +5,8 @@
 // $bp:   $bp: '', $classname: font-size, $postfix: -rem, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1
 @include layoutNumbers(col-, columns, '', 1, 12, 1);
 @include layoutNumbers(col-, columns, '', 1, 100, 1rem);
-@include layoutNumbers(top-, top, per, 0, 100, 1, 1%);
-@include layoutNumbers(right-, right, per, 0, 100, 1, 1%);
-@include layoutNumbers(bottom-, bottom, per, 0, 100, 1, 1%);
-@include layoutNumbers(left-, left, per, 0, 100, 1, 1%);
-@include layoutNumbers(z-neg, z-index, '', -10, -1, 1);
-@include layoutNumbers(z-, z-index, '', 0, 100, 1);
+@include layoutNumbers(top-, top, per, -100, 100, 1, 1%);
+@include layoutNumbers(right-, right, per, -100, 100, 1, 1%);
+@include layoutNumbers(bottom-, bottom, per, -100, 100, 1, 1%);
+@include layoutNumbers(left-, left, per, -100, 100, 1, 1%);
+@include layoutNumbers(z-, z-index, '', -10, 100, 1);
