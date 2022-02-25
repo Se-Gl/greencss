@@ -137,7 +137,7 @@
       .#{$bp}skew-neg-x#{$arc}deg {
         transform: skewX($arc * $multiply);
       }
-      .#{$bp}hover\:skew-neg-x#{$arc}deg {
+      .hover\:#{$bp}skew-neg-x#{$arc}deg {
         &:hover {
           transform: skewX($arc * $multiply);
         }
@@ -146,7 +146,7 @@
       .#{$bp}skew-x-#{$arc}deg {
         transform: skewY($arc * $multiply);
       }
-      .#{$bp}hover\:skew-x-#{$arc}deg {
+      .hover\:#{$bp}skew-x-#{$arc}deg {
         &:hover {
           transform: skewY($arc * $multiply);
         }
@@ -163,7 +163,7 @@
       .#{$bp}skew-neg-y#{$arc}deg {
         transform: skewY($arc * $multiply);
       }
-      .#{$bp}hover\:skew-neg-y#{$arc}deg {
+      .hover\:#{$bp}skew-neg-y#{$arc}deg {
         &:hover {
           transform: skewY($arc * $multiply);
         }
@@ -172,7 +172,7 @@
       .#{$bp}skew-y-#{$arc}deg {
         transform: skewY($arc * $multiply);
       }
-      .#{$bp}hover\:skew-y-#{$arc}deg {
+      .hover\:#{$bp}skew-y-#{$arc}deg {
         &:hover {
           transform: skewY($arc * $multiply);
         }
