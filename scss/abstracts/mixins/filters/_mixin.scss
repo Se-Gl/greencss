@@ -20,22 +20,6 @@
   }
 }
 
-@mixin contrastMixin($bp: '') {
-  @for $i from 0 through 50 {
-    $value: $i * 0.1;
-    $classNameValue: $i * 10;
-
-    .#{$bp}#{$classNameValue} {
-      filter: contrast($value);
-    }
-    .hover\:#{$bp}#{$classNameValue} {
-      &:hover {
-        filter: contrast($value);
-      }
-    }
-  }
-}
-
 @mixin dropShadowMixin($bp: '', $firstnumber, $secondnumber, $loop, $selector: hover) {
   @each $key, $val in $loop {
     $shadowSize: 10px 10px 20px;

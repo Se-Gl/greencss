@@ -168,8 +168,8 @@
   // filters
   @include filterMixin(sm\:blur-, 1, 100, 1, 1px, blur, px);
   @include filterMixin(sm\:grayscale-, 1, 100, 1, 1%, grayscale, per);
-  @include filterMixin(sm\:brightness-, 1, 20, 1, 0.1, brightness, '');
-  @include contrastMixin(sm\:contrast-);
+  @include filterMixin(sm\:brightness-, 1, 50, 1, 0.1, brightness, '');
+  @include filterMixin(sm\:contrast-, 1, 50, 1, 0.1, brightness, '');
   @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $lightdark, hover);
 }
@@ -326,8 +326,8 @@
   // filters
   @include filterMixin(md\:blur-, 1, 100, 1, 1px, blur, px);
   @include filterMixin(md\:grayscale-, 1, 100, 1, 1%, grayscale, per);
-  @include filterMixin(md\:brightness-, 1, 20, 1, 0.1, brightness, '');
-  @include contrastMixin(md\:contrast-);
+  @include filterMixin(md\:brightness-, 1, 50, 1, 0.1, brightness, '');
+  @include filterMixin(md\:contrast-, 1, 50, 1, 0.1, brightness, '');
   @include dropShadowMixin(md\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(md\:drop-shadow-, 0, 0, $lightdark, hover);
 }
@@ -484,8 +484,8 @@
   // filters
   @include filterMixin(lg\:blur-, 1, 100, 1, 1px, blur, px);
   @include filterMixin(lg\:grayscale-, 1, 100, 1, 1%, grayscale, per);
-  @include filterMixin(lg\:brightness-, 1, 20, 1, 0.1, brightness, '');
-  @include contrastMixin(lg\:contrast-);
+  @include filterMixin(lg\:brightness-, 1, 50, 1, 0.1, brightness, '');
+  @include filterMixin(lg\:contrast-, 1, 50, 1, 0.1, brightness, '');
   @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $lightdark, hover);
 }
