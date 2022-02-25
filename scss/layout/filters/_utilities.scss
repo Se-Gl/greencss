@@ -1,8 +1,9 @@
 @use '../../abstracts/mixins/filters/mixin' as *;
 @use '../../abstracts/variables/color/variables' as *;
 
-@include blurMixin(blur-, px);
+@include filterMixin(blur-, blur, px);
 @include brightnessMixin(brightness-);
 @include contrastMixin(contrast-);
 @include dropShadowMixin(drop-shadow-, 0, 0, $fullcolors, hover);
 @include dropShadowMixin(drop-shadow-, 0, 0, $lightdark, hover);
+@include filterMixin(grayscale-, grayscale, per);
