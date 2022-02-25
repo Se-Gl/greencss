@@ -3,15 +3,17 @@
 @use '../../variables/color/variables' as *;
 
 @mixin blurMixin($bp: '', $postfix: px) {
-  @for $i from 0 through 20 {
-    $value: $i * 10;
+  @for $i from 0 through 100 {
+    $value: $i * 1;
 
     .#{$bp}#{$value}#{$postfix} {
       filter: blur($value * 1px);
+      -webkit-filter: blur($value * 1px);
     }
     .hover\:#{$bp}#{$value}#{$postfix} {
       &:hover {
         filter: blur($value * 1px);
+        -webkit-filter: blur($value * 1px);
       }
     }
   }
