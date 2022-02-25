@@ -8,6 +8,7 @@
 @include filterMixin(hue-rotate-, 1, 180, 1, 1%, hue-rotate, per);
 @include filterMixin(invert-, 1, 100, 1, 1%, invert, per);
 @include filterMixin(saturate-, 1, 50, 1, 0.1, saturate, '');
+@include filterMixin(sepia-, 1, 100, 1, 1%, sepia, per);
 
 @include dropShadowMixin(drop-shadow-, 0, 0, $fullcolors, hover);
 @include dropShadowMixin(drop-shadow-, 0, 0, $lightdark, hover);
