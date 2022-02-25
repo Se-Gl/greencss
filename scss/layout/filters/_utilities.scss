@@ -1,14 +1,14 @@
 @use '../../abstracts/mixins/filters/mixin' as *;
 @use '../../abstracts/variables/color/variables' as *;
 
-@include filterMixin(blur-, 1, 100, 1, 1px, blur, px);
-@include filterMixin(grayscale-, 1, 100, 1, 1%, grayscale, per);
-@include filterMixin(brightness-, 1, 50, 1, 0.1, brightness, '');
-@include filterMixin(contrast-, 1, 50, 1, 0.1, contrast, '');
-@include filterMixin(hue-rotate-, 1, 180, 1, 1%, hue-rotate, per);
-@include filterMixin(invert-, 1, 100, 1, 1%, invert, per);
-@include filterMixin(saturate-, 1, 50, 1, 0.1, saturate, '');
-@include filterMixin(sepia-, 1, 100, 1, 1%, sepia, per);
+@include filterMixin(blur-, 0, 100, 1, 1px, blur, px);
+@include filterMixin(grayscale-, 0, 100, 1, 1%, grayscale, per);
+@include filterMixin(brightness-, 0, 50, 1, 0.1, brightness, '');
+@include filterMixin(contrast-, 0, 50, 1, 0.1, contrast, '');
+@include filterMixin(hue-rotate-, 0, 180, 1, 1%, hue-rotate, per);
+@include filterMixin(invert-, 0, 100, 1, 1%, invert, per);
+@include filterMixin(saturate-, 0, 50, 1, 0.1, saturate, '');
+@include filterMixin(sepia-, 0, 100, 1, 1%, sepia, per);
 
 @include dropShadowMixin(drop-shadow-, 0, 0, $fullcolors, hover);
 @include dropShadowMixin(drop-shadow-, 0, 0, $lightdark, hover);

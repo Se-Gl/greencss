@@ -166,14 +166,14 @@
   @include borderMixin(sm\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(sm\:);
   // filters
-  @include filterMixin(sm\:blur-, 1, 100, 1, 1px, blur, px);
-  @include filterMixin(sm\:grayscale-, 1, 100, 1, 1%, grayscale, per);
-  @include filterMixin(sm\:brightness-, 1, 50, 1, 0.1, brightness, '');
-  @include filterMixin(sm\:contrast-, 1, 50, 1, 0.1, contrast, '');
-  @include filterMixin(sm\:hue-rotate-, 1, 180, 1, 1%, hue-rotate, per);
-  @include filterMixin(sm\:invert-, 1, 100, 1, 1%, invert, per);
-  @include filterMixin(sm\:saturate-, 1, 50, 1, 0.1, saturate, '');
-  @include filterMixin(sm\:sepia-, 1, 100, 1, 1%, sepia, per);
+  @include filterMixin(sm\:blur-, 0, 100, 1, 1px, blur, px);
+  @include filterMixin(sm\:grayscale-, 0, 100, 1, 1%, grayscale, per);
+  @include filterMixin(sm\:brightness-, 0, 50, 1, 0.1, brightness, '');
+  @include filterMixin(sm\:contrast-, 0, 50, 1, 0.1, contrast, '');
+  @include filterMixin(sm\:hue-rotate-, 0, 180, 1, 1%, hue-rotate, per);
+  @include filterMixin(sm\:invert-, 0, 100, 1, 1%, invert, per);
+  @include filterMixin(sm\:saturate-, 0, 50, 1, 0.1, saturate, '');
+  @include filterMixin(sm\:sepia-, 0, 100, 1, 1%, sepia, per);
   @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $lightdark, hover);
 }
@@ -328,14 +328,14 @@
   @include borderMixin(md\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(md\:);
   // filters
-  @include filterMixin(md\:blur-, 1, 100, 1, 1px, blur, px);
-  @include filterMixin(md\:grayscale-, 1, 100, 1, 1%, grayscale, per);
-  @include filterMixin(md\:brightness-, 1, 50, 1, 0.1, brightness, '');
-  @include filterMixin(md\:contrast-, 1, 50, 1, 0.1, contrast, '');
-  @include filterMixin(md\:hue-rotate-, 1, 180, 1, 1%, hue-rotate, per);
-  @include filterMixin(md\:invert-, 1, 100, 1, 1%, invert, per);
-  @include filterMixin(md\:saturate-, 1, 50, 1, 0.1, saturate, '');
-  @include filterMixin(md\:sepia-, 1, 100, 1, 1%, sepia, per);
+  @include filterMixin(md\:blur-, 0, 100, 1, 1px, blur, px);
+  @include filterMixin(md\:grayscale-, 0, 100, 1, 1%, grayscale, per);
+  @include filterMixin(md\:brightness-, 0, 50, 1, 0.1, brightness, '');
+  @include filterMixin(md\:contrast-, 0, 50, 1, 0.1, contrast, '');
+  @include filterMixin(md\:hue-rotate-, 0, 180, 1, 1%, hue-rotate, per);
+  @include filterMixin(md\:invert-, 0, 100, 1, 1%, invert, per);
+  @include filterMixin(md\:saturate-, 0, 50, 1, 0.1, saturate, '');
+  @include filterMixin(md\:sepia-, 0, 100, 1, 1%, sepia, per);
   @include dropShadowMixin(md\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(md\:drop-shadow-, 0, 0, $lightdark, hover);
 }
@@ -490,14 +490,14 @@
   @include borderMixin(lg\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(lg\:);
   // filters
-  @include filterMixin(lg\:blur-, 1, 100, 1, 1px, blur, px);
-  @include filterMixin(lg\:grayscale-, 1, 100, 1, 1%, grayscale, per);
-  @include filterMixin(lg\:brightness-, 1, 50, 1, 0.1, brightness, '');
-  @include filterMixin(lg\:contrast-, 1, 50, 1, 0.1, contrast, '');
-  @include filterMixin(lg\:hue-rotate-, 1, 180, 1, 1%, hue-rotate, per);
-  @include filterMixin(lg\:invert-, 1, 100, 1, 1%, invert, per);
-  @include filterMixin(lg\:saturate-, 1, 50, 1, 0.1, saturate, '');
-  @include filterMixin(lg\:sepia-, 1, 100, 1, 1%, sepia, per);
+  @include filterMixin(lg\:blur-, 0, 100, 1, 1px, blur, px);
+  @include filterMixin(lg\:grayscale-, 0, 100, 1, 1%, grayscale, per);
+  @include filterMixin(lg\:brightness-, 0, 50, 1, 0.1, brightness, '');
+  @include filterMixin(lg\:contrast-, 0, 50, 1, 0.1, contrast, '');
+  @include filterMixin(lg\:hue-rotate-, 0, 180, 1, 1%, hue-rotate, per);
+  @include filterMixin(lg\:invert-, 0, 100, 1, 1%, invert, per);
+  @include filterMixin(lg\:saturate-, 0, 50, 1, 0.1, saturate, '');
+  @include filterMixin(lg\:sepia-, 0, 100, 1, 1%, sepia, per);
   @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $lightdark, hover);
 }
