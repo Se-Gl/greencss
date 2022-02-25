@@ -166,9 +166,9 @@
   @include borderMixin(sm\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(sm\:);
   // filters
-  @include filterMixin(sm\:blur-, blur, px);
-  @include filterMixin(sm\:grayscale-, grayscale, per);
-  @include brightnessMixin(sm\:brightness-);
+  @include filterMixin(sm\:blur-, 1, 100, 1, 1px, blur, px);
+  @include filterMixin(sm\:grayscale-, 1, 100, 1, 1%, grayscale, per);
+  @include filterMixin(sm\:brightness-, 1, 20, 1, 0.1, brightness, '');
   @include contrastMixin(sm\:contrast-);
   @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $lightdark, hover);
@@ -324,9 +324,9 @@
   @include borderMixin(md\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(md\:);
   // filters
-  @include filterMixin(md\:blur-, blur, px);
-  @include filterMixin(md\:grayscale-, grayscale, per);
-  @include brightnessMixin(md\:brightness-);
+  @include filterMixin(md\:blur-, 1, 100, 1, 1px, blur, px);
+  @include filterMixin(md\:grayscale-, 1, 100, 1, 1%, grayscale, per);
+  @include filterMixin(md\:brightness-, 1, 20, 1, 0.1, brightness, '');
   @include contrastMixin(md\:contrast-);
   @include dropShadowMixin(md\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(md\:drop-shadow-, 0, 0, $lightdark, hover);
@@ -482,9 +482,9 @@
   @include borderMixin(lg\:outline-offset-, px, outline-offset, 0, 10, 1, 1px);
   @include bordervalues(lg\:);
   // filters
-  @include filterMixin(lg\:blur-, blur, px);
-  @include filterMixin(lg\:grayscale-, grayscale, per);
-  @include brightnessMixin(lg\:brightness-);
+  @include filterMixin(lg\:blur-, 1, 100, 1, 1px, blur, px);
+  @include filterMixin(lg\:grayscale-, 1, 100, 1, 1%, grayscale, per);
+  @include filterMixin(lg\:brightness-, 1, 20, 1, 0.1, brightness, '');
   @include contrastMixin(lg\:contrast-);
   @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $fullcolors, hover);
   @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $lightdark, hover);

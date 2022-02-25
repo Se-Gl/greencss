@@ -2,34 +2,19 @@
 @use '../../variables/borders/variables' as *;
 @use '../../variables/color/variables' as *;
 
-@mixin filterMixin($bp: '', $filter, $postfix: px) {
-  @for $i from 0 through 100 {
-    $value: $i * 1;
+@mixin filterMixin($bp: '', $firstnumber, $secondnumber, $calculate: 1, $calculateValue, $filter, $postfix: px) {
+  @for $i from $firstnumber through $secondnumber {
+    $value: $i * $calculate;
+    $calculattion: ($value * $calculateValue);
 
     .#{$bp}#{$value}#{$postfix} {
-      filter: #{$filter }($value * 1px);
-      -webkit-filter: #{$filter }($value * 1px);
+      filter: #{$filter }($calculattion * 1);
+      -webkit-filter: #{$filter }($calculattion * 1);
     }
     .hover\:#{$bp}#{$value}#{$postfix} {
       &:hover {
-        filter: #{$filter }($value * 1px);
-        -webkit-filter: #{$filter }($value * 1px);
-      }
-    }
-  }
-}
-
-@mixin brightnessMixin($bp: '') {
-  @for $i from 0 through 50 {
-    $value: $i * 0.1;
-    $classNameValue: $i * 10;
-
-    .#{$bp}#{$classNameValue} {
-      filter: brightness($value);
-    }
-    .hover\:#{$bp}#{$classNameValue} {
-      &:hover {
-        filter: brightness($value);
+        filter: #{$filter }($calculattion * 1);
+        -webkit-filter: #{$filter }($calculattion * 1);
       }
     }
   }
