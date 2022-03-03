@@ -39,3 +39,16 @@
 @include bggradient(sm\:);
 @include bggradient(sm\:, $lightdark);
 @include bgGradientToFrom(sm\:);
+// active and focus color classes
+@include initialColor(sm\:text-, color, active);
+@include initialColor(sm\:text-, color, focus);
+@include initialColor(sm\:bg-, background-color, active);
+@include initialColor(sm\:bg-, background-color, focus);
+@include lightColor(sm\:text-, 1, 5, color, $colors, active);
+@include lightColor(sm\:text-, 1, 5, color, $colors, focus);
+@include lightColor(sm\:bg-, 1, 5, background-color, $colors, active);
+@include lightColor(sm\:bg-, 1, 5, background-color, $colors, focus);
+@include lightColor(sm\:text-, 0, 0, color, $lightdark, active);
+@include lightColor(sm\:text-, 0, 0, color, $lightdark, focus);
+@include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, active);
+@include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, focus);
