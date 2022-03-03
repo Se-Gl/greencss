@@ -1,5 +1,6 @@
 @use '../../abstracts/variables/sizing/variables' as *;
 @use '../../abstracts/variables/color/variables' as *;
+@use '../../abstracts/variables/effects/variables' as *;
 
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
@@ -8,6 +9,7 @@
 @use '../../abstracts/mixins/sizing/mixin' as *;
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/mixins/background/mixin' as *;
+@use '../../abstracts/mixins/effects/mixin' as *;
 
 // $isHover: false,
 // $isActive: false,
@@ -132,3 +134,8 @@
 @include universalMixin(true, true, true, transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
 // background
 @include backgroundvalues();
+// effects
+@include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
+@include shadowColor(sm\:shadow-, 0, 0, $fullcolors, hover);
+@include blendModeMixin(sm\:, $blendModes);
+@include universalMixin(true, true, true, opacity-, opacity, per, 1, 100, 1, 1%);
