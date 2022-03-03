@@ -89,4 +89,35 @@
 @include universalMixin(true, true, true, min-h-, min-height, px, 1, 100, 1, 1px);
 @include universalMixin(true, true, true, min-h-, min-height, rem, 11, 100, 1, 1rem);
 @include universalMixin(true, true, true, min-h-, min-height, per, 1, 100, 1, 1%);
-@include universalMixin(true, true, true, min-h-, min-height, h, 1, 100, 1, 1vh);
+@include universalMixin(true, true, true, min-h-, min-height, vh, 1, 100, 1, 1vh);
+
+// spacing - padding
+@include universalMixin(true, true, true, p-, padding, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, pt-, padding-top, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, pr-, padding-right, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, pb-, padding-bottom, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, pl-, padding-left, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, px-, padding-inline, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, py-, padding-block, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, p-, padding, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, pt-, padding-top, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, pr-, padding-right, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, pb-, padding-bottom, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, pl-, padding-left, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, px-, padding-inline, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, py-, padding-block, rem, -30, 30, 1, 1rem);
+// spacing - margin
+@include universalMixin(true, true, true, m-, margin, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, mt-, margin-top, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, mr-, margin-right, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, mb-, margin-bottom, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, ml-, margin-left, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, mx-, margin-inline, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, my-, margin-block, px, -100, 100, 1, 1px);
+@include universalMixin(true, true, true, m-, margin, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, mt-, margin-top, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, mr-, margin-right, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, mb-, margin-bottom, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, ml-, margin-left, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, mx-, margin-inline, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, true, true, my-, margin-block, rem, -30, 30, 1, 1rem);
