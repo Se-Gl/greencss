@@ -1,6 +1,9 @@
-@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/variables/sizing/variables' as *;
 @use '../../abstracts/variables/color/variables' as *;
+
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
+@use '../../abstracts/mixins/color/mixin' as *;
 
 // $isHover: false,
 // $isActive: false,
@@ -26,3 +29,13 @@
 @include universalMixin(false, false, false, gap-, gap, rem, 11, 30, 1, 1rem);
 @include universalMixin(false, false, false, gap-x-, column-gap, rem, 11, 30, 1, 1rem);
 @include universalMixin(false, false, false, gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+// color
+@include initialColor(sm\:text-, color);
+@include initialColor(sm\:bg-, background-color);
+@include lightColor(sm\:text-, 1, 5, color, $colors);
+@include lightColor(sm\:bg-, 1, 5, background-color, $colors);
+@include lightColor(sm\:text-, 0, 0, color, $lightdark);
+@include lightColor(sm\:bg-, 0, 0, background-color, $lightdark);
+@include bggradient(sm\:);
+@include bggradient(sm\:, $lightdark);
+@include bgGradientToFrom(sm\:);
