@@ -1,12 +1,12 @@
 // @forward './typography/utilities';
 // @forward './typography/handcrafted';
-// @forward './color/utilities';
+@forward './color/utilities';
 // @forward './flex-grow/utilities';
 // @forward './layout/utilities';
 // @forward './sizing/utilities';
 // @forward './spacing/utilities';
 // @forward './animation/utilities';
-// @forward './animation/handcrafted';
+@forward './animation/handcrafted';
 // @forward './background/utilities';
 // @forward './effects/utilities';
 // @forward './transforms/utilities';
