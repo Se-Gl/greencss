@@ -1,0 +1,103 @@
+@mixin universalMixin(
+  $isHover: false,
+  $isActive: false,
+  $isFocus: false,
+  $bp: '',
+  $classname: font-size,
+  $postfix: -rem,
+  $firstnumber: 1,
+  $secondnumber: 100,
+  $calculate: 1,
+  $multiply: 1
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $spacing: $i * $calculate;
+
+    @if ($spacing < 0) {
+      .#{$bp}neg#{$spacing}#{$postfix} {
+        #{$classname}: $spacing * $multiply;
+      }
+      @if ($isHover == true) {
+        .hover\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:hover {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+      @if ($isActive == true) {
+        .active\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:active {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+      @if ($isFocus == true) {
+        .focus\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:focus {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+    } @else {
+      .#{$bp}#{$spacing}#{$postfix} {
+        #{$classname}: $spacing * $multiply;
+      }
+      @if ($isHover == true) {
+        .hover\:#{$bp}#{$spacing}#{$postfix} {
+          &:hover {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+      @if ($isActive == true) {
+        .active\:#{$bp}#{$spacing}#{$postfix} {
+          &:active {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+      @if ($isFocus == true) {
+        .focus\:#{$bp}#{$spacing}#{$postfix} {
+          &:focus {
+            #{$classname}: $spacing * $multiply;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @mixin universalrMixin(
+//   $bp: '',
+//   $firstnumber,
+//   $secondnumber,
+//   $calculate: 1,
+//   $calculateValue,
+//   $cssname,
+//   $filter,
+//   $postfix: px
+// ) {
+//   @for $i from $firstnumber through $secondnumber {
+//     $value: $i * $calculate;
+//     $calculattion: ($value * $calculateValue);
+
+//     .#{$bp}#{$value}#{$postfix} {
+//       #{$classname}: $spacing * $multiply;
+//     }
+//     .hover\:#{$bp}#{$value}#{$postfix} {
+//       &:hover {
+//         #{$classname}: $spacing * $multiply;
+//       }
+//     }
+//     .active\:#{$bp}#{$value}#{$postfix} {
+//       &:active {
+//         #{$classname}: $spacing * $multiply;
+//       }
+//     }
+//     .focus\:#{$bp}#{$value}#{$postfix} {
+//       &:focus {
+//         #{$classname}: $spacing * $multiply;
+//       }
+//     }
+//   }
+// }

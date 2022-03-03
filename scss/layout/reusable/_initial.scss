@@ -1,0 +1,28 @@
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/variables/color/variables' as *;
+@use '../../abstracts/mixins/flex-grid/flex-grid' as *;
+
+// $isHover: false,
+// $isActive: false,
+// $isFocus: false,
+// $bp: '',
+// $classname: font-size,
+// $postfix: -rem,
+// $firstnumber: 1,
+// $secondnumber: 100,
+// $calculate: 1,
+// $multiply: 1
+
+// typography
+@include universalMixin(true, true, true, text-, font-size, px, 0, 100, 1, 1px);
+@include universalMixin(true, true, true, text-, font-size, px, 11, 30, 10, 1px);
+@include universalMixin(true, true, true, rel-text-, font-size, vw, 0, 100, 1, 1vw);
+@include universalMixin(true, true, true, font-, font-weight, '', 1, 9, 100, 1);
+// flex
+@include flexvalues();
+@include universalMixin(false, false, false, gap-, gap, px, 0, 100, 1, 1px);
+@include universalMixin(false, false, false, gap-x-, column-gap, px, 0, 100, 1, 1px);
+@include universalMixin(false, false, false, gap-y-, row-gap, px, 0, 100, 1, 1px);
+@include universalMixin(false, false, false, gap-, gap, rem, 11, 30, 1, 1rem);
+@include universalMixin(false, false, false, gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+@include universalMixin(false, false, false, gap-y-, row-gap, rem, 11, 30, 1, 1rem);
