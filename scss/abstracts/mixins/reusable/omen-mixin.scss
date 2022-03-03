@@ -80,37 +80,81 @@
   }
 }
 
-// @mixin universalrMixin(
-//   $bp: '',
-//   $firstnumber,
-//   $secondnumber,
-//   $calculate: 1,
-//   $calculateValue,
-//   $cssname,
-//   $filter,
-//   $postfix: px
-// ) {
-//   @for $i from $firstnumber through $secondnumber {
-//     $value: $i * $calculate;
-//     $calculattion: ($value * $calculateValue);
+@mixin transformMixin(
+  $isHover: false,
+  $isActive: false,
+  $isFocus: false,
+  $bp: '',
+  $classname: '',
+  $postfix: '',
+  $firstnumber,
+  $secondnumber,
+  $calculate: 1,
+  $multiply: 1,
+  $filter: ''
+) {
+  @for $i from $firstnumber through $secondnumber {
+    $spacing: $i * $calculate;
+    $calculattion: ($spacing * $multiply);
 
-//     .#{$bp}#{$value}#{$postfix} {
-//       #{$classname}: $spacing * $multiply;
-//     }
-//     .hover\:#{$bp}#{$value}#{$postfix} {
-//       &:hover {
-//         #{$classname}: $spacing * $multiply;
-//       }
-//     }
-//     .active\:#{$bp}#{$value}#{$postfix} {
-//       &:active {
-//         #{$classname}: $spacing * $multiply;
-//       }
-//     }
-//     .focus\:#{$bp}#{$value}#{$postfix} {
-//       &:focus {
-//         #{$classname}: $spacing * $multiply;
-//       }
-//     }
-//   }
-// }
+    @if ($spacing < 0) {
+      .#{$bp}neg#{$spacing}#{$postfix} {
+        #{$classname}: #{$filter }($calculattion * 1);
+        -webkit-#{$classname}: #{$filter }($calculattion * 1);
+      }
+      @if ($isHover == true) {
+        .hover\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:hover {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+      @if ($isActive == true) {
+        .active\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:active {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+      @if ($isFocus == true) {
+        .focus\:#{$bp}neg#{$spacing}#{$postfix} {
+          &:focus {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+    } @else {
+      .#{$bp}#{$spacing}#{$postfix} {
+        #{$classname}: #{$filter }($calculattion * 1);
+        -webkit-#{$classname}: #{$filter }($calculattion * 1);
+      }
+      @if ($isHover == true) {
+        .hover\:#{$bp}#{$spacing}#{$postfix} {
+          &:hover {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+      @if ($isActive == true) {
+        .active\:#{$bp}#{$spacing}#{$postfix} {
+          &:active {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+      @if ($isFocus == true) {
+        .focus\:#{$bp}#{$spacing}#{$postfix} {
+          &:focus {
+            #{$classname}: #{$filter }($calculattion * 1);
+            -webkit-#{$classname}: #{$filter }($calculattion * 1);
+          }
+        }
+      }
+    }
+  }
+}
