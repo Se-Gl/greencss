@@ -8,7 +8,8 @@
   $firstnumber: 1,
   $secondnumber: 100,
   $calculate: 1,
-  $multiply: 1
+  $multiply: 1,
+  $isAnimation: false
 ) {
   @for $i from $firstnumber through $secondnumber {
     $spacing: $i * $calculate;
@@ -41,11 +42,17 @@
     } @else {
       .#{$bp}#{$spacing}#{$postfix} {
         #{$classname}: $spacing * $multiply;
+        @if ($isAnimation == true) {
+          -webkit-#{$classname}: $spacing * $multiply;
+        }
       }
       @if ($isHover == true) {
         .hover\:#{$bp}#{$spacing}#{$postfix} {
           &:hover {
             #{$classname}: $spacing * $multiply;
+            @if ($isAnimation == true) {
+              -webkit-#{$classname}: $spacing * $multiply;
+            }
           }
         }
       }
@@ -53,6 +60,9 @@
         .active\:#{$bp}#{$spacing}#{$postfix} {
           &:active {
             #{$classname}: $spacing * $multiply;
+            @if ($isAnimation == true) {
+              -webkit-#{$classname}: $spacing * $multiply;
+            }
           }
         }
       }
@@ -60,6 +70,9 @@
         .focus\:#{$bp}#{$spacing}#{$postfix} {
           &:focus {
             #{$classname}: $spacing * $multiply;
+            @if ($isAnimation == true) {
+              -webkit-#{$classname}: $spacing * $multiply;
+            }
           }
         }
       }
