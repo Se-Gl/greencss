@@ -4,6 +4,7 @@
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
+@use '../../abstracts/mixins/layout/mixin' as *;
 
 // $isHover: false,
 // $isActive: false,
@@ -52,3 +53,12 @@
 @include lightColor(sm\:text-, 0, 0, color, $lightdark, focus);
 @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, active);
 @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, focus);
+// layout
+@include layoutvalues();
+@include universalMixin(false, false, false, col-, columns, '', 1, 12, 1, 1);
+@include universalMixin(false, false, false, col-, columns, rem, 1, 100, 1, 1rem);
+@include universalMixin(true, true, true, top-, top, per, -100, 100, 1, 1%);
+@include universalMixin(true, true, true, right-, right, per, -100, 100, 1, 1%);
+@include universalMixin(true, true, true, bottom-, bottom, per, -100, 100, 1, 1%);
+@include universalMixin(true, true, true, left-, left, per, -100, 100, 1, 1%);
+@include universalMixin(true, true, true, z-, z-index, '', -100, 100, 1, 1);
