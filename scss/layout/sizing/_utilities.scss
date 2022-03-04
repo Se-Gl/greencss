@@ -1,32 +1,120 @@
 @use '../../abstracts/mixins/sizing/mixin' as *;
 @use '../../abstracts/variables/sizing/variables' as *;
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
 
+// sizing - width
 @include sizingValues('', $sizingValues);
-// $bp: '', $classname: width, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1px
-// width
-@include sizingNumbers(w-, px, width, 1, 100, 1, 1px);
-@include sizingNumbers(w-, rem, width, 11, 100, 1, 1rem);
-@include sizingNumbers(w-, per, width, 1, 100, 1, 1%);
-@include sizingNumbers(w-, vw, width, 1, 100, 1, 1vw);
-@include sizingNumbers(max-w-, px, max-width, 1, 100, 1, 1px);
-@include sizingNumbers(max-w-, rem, max-width, 11, 100, 1, 1rem);
-@include sizingNumbers(max-w-, per, max-width, 1, 100, 1, 1%);
-@include sizingNumbers(max-w-, vw, max-width, 1, 100, 1, 1vw);
-@include sizingNumbers(min-w-, px, min-width, 1, 100, 1, 1px);
-@include sizingNumbers(min-w-, rem, min-width, 11, 100, 1, 1rem);
-@include sizingNumbers(min-w-, per, min-width, 1, 100, 1, 1%);
-@include sizingNumbers(min-w-, vw, min-width, 1, 100, 1, 1vw);
+@include universalMixin(true, true, true, w-, width, px, 0, 100, 1, 1px);
+@include universalMixin(true, true, true, w-, width, rem, 11, 100, 1, 1rem);
+@include universalMixin(true, true, true, w-, width, per, 1, 100, 1, 1%);
+@include universalMixin(true, true, true, w-, width, vw, 1, 100, 1, 1vw);
+@include universalMixin(true, true, true, max-w-, max-width, px, 1, 100, 1, 1px);
+@include universalMixin(true, true, true, max-w-, max-width, rem, 11, 100, 1, 1rem);
+@include universalMixin(true, true, true, max-w-, max-width, per, 1, 100, 1, 1%);
+@include universalMixin(true, true, true, max-w-, max-width, vw, 1, 100, 1, 1vw);
+@include universalMixin(true, true, true, min-w-, min-width, px, 1, 100, 1, 1px);
+@include universalMixin(true, true, true, min-w-, min-width, rem, 11, 100, 1, 1rem);
+@include universalMixin(true, true, true, min-w-, min-width, per, 1, 100, 1, 1%);
+@include universalMixin(true, true, true, min-w-, min-width, vw, 1, 100, 1, 1vw);
+// sizing - height
+@include universalMixin(true, true, true, h-, height, px, 0, 100, 1, 1px);
+@include universalMixin(true, true, true, h-, height, rem, 11, 100, 1, 1rem);
+@include universalMixin(true, true, true, h-, height, per, 1, 100, 1, 1%);
+@include universalMixin(true, true, true, h-, height, vh, 1, 100, 1, 1vh);
+@include universalMixin(true, true, true, max-h-, max-height, px, 1, 100, 1, 1px);
+@include universalMixin(true, true, true, max-h-, max-height, rem, 11, 100, 1, 1rem);
+@include universalMixin(true, true, true, max-h-, max-height, per, 1, 100, 1, 1%);
+@include universalMixin(true, true, true, max-h-, max-height, vh, 1, 100, 1, 1vh);
+@include universalMixin(true, true, true, min-h-, min-height, px, 1, 100, 1, 1px);
+@include universalMixin(true, true, true, min-h-, min-height, rem, 11, 100, 1, 1rem);
+@include universalMixin(true, true, true, min-h-, min-height, per, 1, 100, 1, 1%);
+@include universalMixin(true, true, true, min-h-, min-height, vh, 1, 100, 1, 1vh);
 
-// height
-@include sizingNumbers(h-, px, height, 1, 100, 1, 1px);
-@include sizingNumbers(h-, rem, height, 11, 100, 1, 1rem);
-@include sizingNumbers(h-, per, height, 1, 100, 1, 1%);
-@include sizingNumbers(h-, vh, height, 1, 100, 1, 1vh);
-@include sizingNumbers(max-h-, px, max-height, 1, 100, 1, 1px);
-@include sizingNumbers(max-h-, rem, max-height, 11, 100, 1, 1rem);
-@include sizingNumbers(max-h-, per, max-height, 1, 100, 1, 1%);
-@include sizingNumbers(max-h-, vh, max-height, 1, 100, 1, 1vh);
-@include sizingNumbers(min-h-, px, min-height, 1, 100, 1, 1px);
-@include sizingNumbers(min-h-, rem, min-height, 11, 100, 1, 1rem);
-@include sizingNumbers(min-h-, per, min-height, 1, 100, 1, 1%);
-@include sizingNumbers(min-h-, vh, min-height, 1, 100, 1, 1vh);
+@include sm {
+  // sizing - width
+  @include sizingValues(sm\:, $sizingValues);
+  @include universalMixin(true, true, true, sm\:w-, width, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:w-, width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:w-, width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:w-, width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, sm\:max-w-, max-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:max-w-, max-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:max-w-, max-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:max-w-, max-width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, sm\:min-w-, min-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:min-w-, min-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:min-w-, min-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:min-w-, min-width, vw, 1, 100, 1, 1vw);
+  // sizing - height
+  @include universalMixin(true, true, true, sm\:h-, height, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:h-, height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:h-, height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:h-, height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, sm\:max-h-, max-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:max-h-, max-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:max-h-, max-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:max-h-, max-height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, sm\:min-h-, min-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:min-h-, min-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:min-h-, min-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:min-h-, min-height, vh, 1, 100, 1, 1vh);
+}
+@include md {
+  // sizing - width
+  @include sizingValues(md\:, $sizingValues);
+  @include universalMixin(true, true, true, md\:w-, width, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:w-, width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:w-, width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:w-, width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, md\:max-w-, max-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:max-w-, max-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:max-w-, max-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:max-w-, max-width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, md\:min-w-, min-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:min-w-, min-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:min-w-, min-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:min-w-, min-width, vw, 1, 100, 1, 1vw);
+  // sizing - height
+  @include universalMixin(true, true, true, md\:h-, height, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:h-, height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:h-, height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:h-, height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, md\:max-h-, max-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:max-h-, max-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:max-h-, max-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:max-h-, max-height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, md\:min-h-, min-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:min-h-, min-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:min-h-, min-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:min-h-, min-height, vh, 1, 100, 1, 1vh);
+}
+@include lg {
+  // sizing - width
+  @include sizingValues(lg\:, $sizingValues);
+  @include universalMixin(true, true, true, lg\:w-, width, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:w-, width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:w-, width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:w-, width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, lg\:max-w-, max-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:max-w-, max-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:max-w-, max-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:max-w-, max-width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, lg\:min-w-, min-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:min-w-, min-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:min-w-, min-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:min-w-, min-width, vw, 1, 100, 1, 1vw);
+  // sizing - height
+  @include universalMixin(true, true, true, lg\:h-, height, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:h-, height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:h-, height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:h-, height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, lg\:max-h-, max-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:max-h-, max-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:max-h-, max-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:max-h-, max-height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, lg\:min-h-, min-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:min-h-, min-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:min-h-, min-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:min-h-, min-height, vh, 1, 100, 1, 1vh);
+}
