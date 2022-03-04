@@ -63,29 +63,62 @@ Building the architecture of a CSS library is probably one of the trickiest task
 
 A common and effective modular method for structuring Sass projects is the 7-1 pattern. This approach will be used in the development process of this library.
 
-A possible structure could look as follows _(as of January 2022)_
+A possible structure could look as follows _(as of March 2022)_
 
 ```txt
 sass/
 |
 |– abstracts/
 |   |– mixins             # Sass Mixins Folder
+|   |   |– animations        # Animations Mixins
+|   |   |– background        # Background Mixins
+|   |   |– borders           # Borders Mixins
 |   |   |– breakpoints       # Breakpoint Mixins
 |   |   |– color             # Color Mixins
 |   |   |– components        # Components Mixins with subfolders
+|   |   |– effects           # Effects Mixins
+|   |   |– filters           # Filters Mixins
 |   |   |– flex-grid         # Flex & Grid Mixins
+|   |   |– layout            # Layout Mixins
+|   |   |– reusable          # Default Reusable Mixins
 |   |   |– typography        # Typography Mixins
-|   |   |– variables          # Basic Project Variables
-|   |   |– breakpoints       # Breakpoint Variables
-|   |   |– color             # Color Variables
-|   |   |– components        # Components Variables with subfolders
-|   |   |– flex-grid         # Flex & Grid Variables
-|   |   |– typography        # Typography Variables
+|   |– variables          # Sass Variables Folder
 |   |– _index.scss        # Sass Index File
 |   |– _license.scss      # Font Related Files
 |
 |– base/
 |   |– _reset.scss        # Reset/normalize
+|   |– _index.scss        # Sass Index File
+|
+|– classes/
+|   |– animations        # Animations Folder
+|   |   |– animations       # Animations utilities
+|   |– background        # Background Folder
+|   |   |– background       # Background utilities
+|   |– borders           # Borders Folder
+|   |   |– borders          # Borders utilities
+|   |– color             # Color Folder
+|   |   |– color            # Color utilities
+|   |– effects           # Effects Folder
+|   |   |– effects          # Effects utilities
+|   |– filters           # Filters Folder
+|   |   |– filters          # Filters utilities
+|   |– flex-grow         # Flex-Grow Folder
+|   |   |– flex-grow        # Flex-Grow utilities
+|   |– layout            # Layout Folder
+|   |   |– layout           # Layout utilities
+|   |– responsive        # Default Responsive Folder
+|   |   |– responsive       # Responsive utilities
+|   |– reusable          # Default Reusable Folder
+|   |   |– reusable         # Reusable utilities
+|   |– sizing            # Sizing Folder
+|   |   |– sizing           # Sizing utilities
+|   |– spacing           # Spacing Folder
+|   |   |– spacing          # Spacing utilities
+|   |– transforms        # Transforms Folder
+|   |   |– transforms       # Transforms utilities
+|   |– typography        # Typography Folder
+|   |   |– typography       # Typography utilities
 |   |– _index.scss        # Sass Index File
 |
 |– components/
@@ -97,17 +130,6 @@ sass/
 |   |– _sidebar.scss      # Sidebar
 |   |– _forms.scss        # Forms
 |   |– _cards.scss        # Cards
-|   |– _index.scss        # Sass Index File
-|
-|– layout/
-|   |– color             # Color Utilities
-|   |   |– _utilities.scss    # Utilities
-|   |– flex-grid         # Flex & Grid Utilities
-|   |   |– _utilities.scss    # Utilities
-|   |– responsive/
-|   |   |– _index.scss        # Responsive Utilities Styles
-|   |– typography        # Typography Utilities
-|   |   |– _utilities.scss    # Utilities
 |   |– _index.scss        # Sass Index File
 |
 |– pages/
