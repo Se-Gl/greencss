@@ -1,9 +1,30 @@
 @use '../../abstracts/mixins/effects/mixin' as *;
 @use '../../abstracts/variables/color/variables' as *;
 @use '../../abstracts/variables/effects/variables' as *;
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
 
-// shadow
+// file for effects classes - for minified omencss-effects css
 @include shadowColor(shadow-, 0, 0, $lightdark, hover);
 @include shadowColor(shadow-, 0, 0, $fullcolors, hover);
-@include opacityMixin(opacity-, 0, 10, opacity, 10);
 @include blendModeMixin('', $blendModes);
+@include universalMixin(true, true, true, opacity-, opacity, per, 1, 100, 1, 1%);
+
+@include sm {
+  @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(sm\:shadow-, 0, 0, $fullcolors, hover);
+  @include blendModeMixin(sm\:, $blendModes);
+  @include universalMixin(true, true, true, sm\:opacity-, opacity, per, 1, 100, 1, 1%);
+}
+@include md {
+  @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(md\:shadow-, 0, 0, $fullcolors, hover);
+  @include blendModeMixin(md\:, $blendModes);
+  @include universalMixin(true, true, true, md\:opacity-, opacity, per, 1, 100, 1, 1%);
+}
+@include lg {
+  @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(lg\:shadow-, 0, 0, $fullcolors, hover);
+  @include blendModeMixin(lg\:, $blendModes);
+  @include universalMixin(true, true, true, lg\:opacity-, opacity, per, 1, 100, 1, 1%);
+}

@@ -18,22 +18,6 @@
   }
 }
 
-@mixin opacityMixin($bp: opacity-, $firstnumber: 0, $secondnumber: 1, $classname: opacity, $calculate: 10) {
-  @for $i from $firstnumber through $secondnumber {
-    $animationvalue: math.div($i, $calculate);
-    $postfix: $i * 10 + 'per';
-
-    .#{$bp}#{$postfix} {
-      #{$classname}: $animationvalue;
-    }
-    .hover\:#{$bp}#{$postfix} {
-      &:hover {
-        #{$classname}: $animationvalue;
-      }
-    }
-  }
-}
-
 @mixin blendModeMixin($bp: '', $loop) {
   @each $property, $map in $loop {
     $key: map-get($map, 'keys');
