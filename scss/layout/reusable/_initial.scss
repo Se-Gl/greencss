@@ -174,10 +174,10 @@
 @include borderColorMixin(outline-, $fullcolors, outline-color, hover);
 @include borderColorMixin(outline-, $lightdark, outline-color, hover);
 @include universalMixin(true, true, true, rounded-, border-radius, px, 0, 100, 1, 1px);
-@include borderMixin(rounded-top-radius-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-top-right-radius);
-@include borderMixin(rounded-right-radius-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
-@include borderMixin(rounded-bottom-radius-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
-@include borderMixin(rounded-left-radius-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+@include borderMixin(rounded-top-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-top-right-radius);
+@include borderMixin(rounded-right-radius-, px, border-top-right-radius, 0, 100, 1, 1px, true, border-bottom-right-radius);
+@include borderMixin(rounded-bottom-radius-, px, border-bottom-right-radius, 0, 100, 1, 1px, true, border-bottom-left-radius);
+@include borderMixin(rounded-left-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-bottom-left-radius);
 @include universalMixin(true, true, true, border-, border-width, px, 0, 10, 1, 1px);
 @include borderMixin(border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
 @include borderMixin(border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
