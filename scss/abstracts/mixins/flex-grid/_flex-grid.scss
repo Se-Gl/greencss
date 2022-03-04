@@ -1,14 +1,5 @@
 @use '../../variables/flex-grid/variables' as *;
 
-@mixin flexbasis($value: 1, $prefix: '', $bp: '') {
-  @for $i from 0 through 100 {
-    $flexbasis: $i;
-    .#{$bp}basis-#{$flexbasis}#{$prefix} {
-      flex-basis: $flexbasis * $value;
-    }
-  }
-}
-
 @mixin flexvalues($bp: '') {
   @each $property, $map in $utilities {
     $key: map-get($map, 'keys');
@@ -18,15 +9,6 @@
       .#{$bp}#{$key}#{$k} {
         #{$property}: $v;
       }
-    }
-  }
-}
-
-@mixin gap($bp: '', $firstnumber: 1, $secondnumber: 200, $classname: gap, $postfix: '', $value: 1) {
-  @for $i from $firstnumber through $secondnumber {
-    $gapbasis: $i;
-    .#{$bp}#{$gapbasis}#{$postfix} {
-      #{$classname}: $gapbasis * $value;
     }
   }
 }

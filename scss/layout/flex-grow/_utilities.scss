@@ -1,14 +1,40 @@
 @use '../../abstracts/mixins/flex-grid/flex-grid' as *;
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
 
-// generate responsive utility classes
+// file for flex classes - for minified omencss-flex css
 @include flexvalues();
-// responsive flex basis numbers 0rem-100rem
-@include flexbasis(1rem, '');
-@include flexbasis(1%, per);
-// gap
-@include gap(gap-, 0, 100, gap, px, 1px);
-@include gap(gap-x-, 0, 100, column-gap, px, 1px);
-@include gap(gap-y-, 0, 100, row-gap, px, 1px);
-@include gap(gap-, 11, 30, gap, rem, 10rem);
-@include gap(gap-x-, 11, 30, column-gap, rem, 10rem);
-@include gap(gap-y-, 11, 30, row-gap, rem, 10rem);
+@include universalMixin(false, false, false, gap-, gap, px, 0, 100, 1, 1px);
+@include universalMixin(false, false, false, gap-x-, column-gap, px, 0, 100, 1, 1px);
+@include universalMixin(false, false, false, gap-y-, row-gap, px, 0, 100, 1, 1px);
+@include universalMixin(false, false, false, gap-, gap, rem, 11, 30, 1, 1rem);
+@include universalMixin(false, false, false, gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+@include universalMixin(false, false, false, gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+
+@include sm {
+  @include flexvalues(sm\:);
+  @include universalMixin(false, false, false, sm\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, sm\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, sm\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, sm\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, sm\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, sm\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+}
+@include md {
+  @include flexvalues(md\:);
+  @include universalMixin(false, false, false, md\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, md\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, md\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, md\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, md\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, md\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+}
+@include lg {
+  @include flexvalues(lg\:);
+  @include universalMixin(false, false, false, lg\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, lg\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, lg\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, lg\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, lg\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, lg\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+}
