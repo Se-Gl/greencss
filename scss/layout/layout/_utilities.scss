@@ -1,12 +1,44 @@
 @use '../../abstracts/mixins/layout/mixin' as *;
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
 
-// generate responsive utility classes
+// // file for layout classes - for minified omencss-layout css
 @include layoutvalues();
-// $bp:   $bp: '', $classname: font-size, $postfix: -rem, $firstnumber: 1, $secondnumber: 100, $calculate: 1, $multiply: 1
-@include layoutNumbers(col-, columns, '', 1, 12, 1);
-@include layoutNumbers(col-, columns, '', 1, 100, 1rem);
-@include layoutNumbers(top-, top, per, -100, 100, 1, 1%);
-@include layoutNumbers(right-, right, per, -100, 100, 1, 1%);
-@include layoutNumbers(bottom-, bottom, per, -100, 100, 1, 1%);
-@include layoutNumbers(left-, left, per, -100, 100, 1, 1%);
-@include layoutNumbers(z-, z-index, '', -10, 100, 1);
+@include universalMixin(false, false, false, col-, columns, '', 1, 12, 1, 1);
+@include universalMixin(false, false, false, col-, columns, rem, 1, 100, 1, 1rem);
+@include universalMixin(true, true, true, top-, top, per, -100, 100, 1, 1%);
+@include universalMixin(true, true, true, right-, right, per, -100, 100, 1, 1%);
+@include universalMixin(true, true, true, bottom-, bottom, per, -100, 100, 1, 1%);
+@include universalMixin(true, true, true, left-, left, per, -100, 100, 1, 1%);
+@include universalMixin(true, true, true, z-, z-index, '', -100, 100, 1, 1);
+
+@include sm {
+  @include layoutvalues(sm\:);
+  @include universalMixin(false, false, false, sm\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(false, false, false, sm\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:top-, top, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:right-, right, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:left-, left, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:z-, z-index, '', -100, 100, 1, 1);
+}
+@include md {
+  @include layoutvalues(md\:);
+  @include universalMixin(false, false, false, md\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(false, false, false, md\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:top-, top, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:right-, right, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:left-, left, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:z-, z-index, '', -100, 100, 1, 1);
+}
+@include lg {
+  @include layoutvalues(lg\:);
+  @include universalMixin(false, false, false, lg\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(false, false, false, lg\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:top-, top, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:right-, right, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:left-, left, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:z-, z-index, '', -100, 100, 1, 1);
+}
