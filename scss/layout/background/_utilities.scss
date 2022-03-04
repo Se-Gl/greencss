@@ -1,3 +1,14 @@
 @use '../../abstracts/mixins/background/mixin' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
 
+// file for background classes - for minified omencss-background css
 @include backgroundvalues();
+@include sm {
+  @include backgroundvalues(sm\:);
+}
+@include md {
+  @include backgroundvalues(md\:);
+}
+@include lg {
+  @include backgroundvalues(lg\:);
+}
