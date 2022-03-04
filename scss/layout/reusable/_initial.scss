@@ -13,6 +13,7 @@
 @use '../../abstracts/mixins/effects/mixin' as *;
 @use '../../abstracts/mixins/transforms/mixin' as *;
 @use '../../abstracts/mixins/filters/mixin' as *;
+@use '../../abstracts/mixins/borders/mixin' as *;
 
 // $isHover: false,
 // $isActive: false,
@@ -41,28 +42,28 @@
 @include universalMixin(false, false, false, gap-x-, column-gap, rem, 11, 30, 1, 1rem);
 @include universalMixin(false, false, false, gap-y-, row-gap, rem, 11, 30, 1, 1rem);
 // color
-@include initialColor(sm\:text-, color);
-@include initialColor(sm\:bg-, background-color);
-@include lightColor(sm\:text-, 1, 5, color, $colors);
-@include lightColor(sm\:bg-, 1, 5, background-color, $colors);
-@include lightColor(sm\:text-, 0, 0, color, $lightdark);
-@include lightColor(sm\:bg-, 0, 0, background-color, $lightdark);
-@include bggradient(sm\:);
-@include bggradient(sm\:, $lightdark);
-@include bgGradientToFrom(sm\:);
+@include initialColor(text-, color);
+@include initialColor(bg-, background-color);
+@include lightColor(text-, 1, 5, color, $colors);
+@include lightColor(bg-, 1, 5, background-color, $colors);
+@include lightColor(text-, 0, 0, color, $lightdark);
+@include lightColor(bg-, 0, 0, background-color, $lightdark);
+@include bggradient();
+@include bggradient('', $lightdark);
+@include bgGradientToFrom();
 // active and focus color classes
-@include initialColor(sm\:text-, color, active);
-@include initialColor(sm\:text-, color, focus);
-@include initialColor(sm\:bg-, background-color, active);
-@include initialColor(sm\:bg-, background-color, focus);
-@include lightColor(sm\:text-, 1, 5, color, $colors, active);
-@include lightColor(sm\:text-, 1, 5, color, $colors, focus);
-@include lightColor(sm\:bg-, 1, 5, background-color, $colors, active);
-@include lightColor(sm\:bg-, 1, 5, background-color, $colors, focus);
-@include lightColor(sm\:text-, 0, 0, color, $lightdark, active);
-@include lightColor(sm\:text-, 0, 0, color, $lightdark, focus);
-@include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, active);
-@include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, focus);
+@include initialColor(text-, color, active);
+@include initialColor(text-, color, focus);
+@include initialColor(bg-, background-color, active);
+@include initialColor(bg-, background-color, focus);
+@include lightColor(text-, 1, 5, color, $colors, active);
+@include lightColor(text-, 1, 5, color, $colors, focus);
+@include lightColor(bg-, 1, 5, background-color, $colors, active);
+@include lightColor(bg-, 1, 5, background-color, $colors, focus);
+@include lightColor(text-, 0, 0, color, $lightdark, active);
+@include lightColor(text-, 0, 0, color, $lightdark, focus);
+@include lightColor(bg-, 0, 0, background-color, $lightdark, active);
+@include lightColor(bg-, 0, 0, background-color, $lightdark, focus);
 // layout
 @include layoutvalues();
 @include universalMixin(false, false, false, col-, columns, '', 1, 12, 1, 1);
@@ -73,7 +74,7 @@
 @include universalMixin(true, true, true, left-, left, per, -100, 100, 1, 1%);
 @include universalMixin(true, true, true, z-, z-index, '', -100, 100, 1, 1);
 // sizing - width
-@include sizingValues(sm\:, $sizingValues);
+@include sizingValues('', $sizingValues);
 @include universalMixin(true, true, true, w-, width, px, 0, 100, 1, 1px);
 @include universalMixin(true, true, true, w-, width, rem, 11, 100, 1, 1rem);
 @include universalMixin(true, true, true, w-, width, per, 1, 100, 1, 1%);
@@ -155,8 +156,8 @@
 @include transformMixin(true, true, true, skew-x-, transform, deg, -30, 30, 1, 1deg, skewX);
 @include transformMixin(true, true, true, skew-y-, transform, deg, -30, 30, 1, 1deg, skewY);
 // filters
-@include dropShadowMixin(sm\:drop-shadow-, 0, 0, $fullcolors, hover);
-@include dropShadowMixin(sm\:drop-shadow-, 0, 0, $lightdark, hover);
+@include dropShadowMixin(drop-shadow-, 0, 0, $fullcolors, hover);
+@include dropShadowMixin(drop-shadow-, 0, 0, $lightdark, hover);
 @include transformMixin(true, true, true, blur-, filter, px, 0, 100, 1, 1px, blur);
 @include transformMixin(true, true, true, grayscale-, filter, per, 0, 100, 1, 1%, grayscale);
 @include transformMixin(true, true, true, brightness-, filter, '', 0, 50, 1, 0.1, brightness);
@@ -166,5 +167,24 @@
 @include transformMixin(true, true, true, invert-, filter, per, 0, 100, 1, 1%, invert);
 @include transformMixin(true, true, true, saturate-, filter, '', 0, 50, 1, 0.1, saturate);
 @include transformMixin(true, true, true, sepia-, filter, per, 0, 100, 1, 1%, sepia);
+// borders
+@include bordervalues();
+@include borderColorMixin(border-, $fullcolors, border-color, hover);
+@include borderColorMixin(border-, $lightdark, border-color, hover);
+@include borderColorMixin(outline-, $fullcolors, outline-color, hover);
+@include borderColorMixin(outline-, $lightdark, outline-color, hover);
+@include universalMixin(true, true, true, rounded-, border-radius, px, 0, 100, 1, 1px);
+@include borderMixin(rounded-top-radius-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-top-right-radius);
+@include borderMixin(rounded-right-radius-, px, border-top-right-radius, 0, 100, 5, 1px, true, border-bottom-right-radius);
+@include borderMixin(rounded-bottom-radius-, px, border-bottom-right-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+@include borderMixin(rounded-left-radius-, px, border-top-left-radius, 0, 100, 5, 1px, true, border-bottom-left-radius);
+@include universalMixin(true, true, true, border-, border-width, px, 0, 10, 1, 1px);
+@include borderMixin(border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
+@include borderMixin(border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+@include universalMixin(true, true, true, border-top-width-, border-top-width, px, 0, 10, 1, 1px);
+@include universalMixin(true, true, true, border-right-width-, border-right-width, px, 0, 10, 1, 1px);
+@include universalMixin(true, true, true, border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
+@include universalMixin(true, true, true, border-left-width-, border-left-width, px, 0, 10, 1, 1px);
+@include universalMixin(true, true, true, outline-offset-, outline-offset, px, 0, 10, 1, 1px);
 
-// TODO: borders, responsive classes in other file
+// TODO: responsive classes in other file, dark classes
