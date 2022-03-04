@@ -2,24 +2,6 @@
 @use '../../variables/borders/variables' as *;
 @use '../../variables/color/variables' as *;
 
-@mixin filterMixin($bp: '', $firstnumber, $secondnumber, $calculate: 1, $calculateValue, $filter, $postfix: px) {
-  @for $i from $firstnumber through $secondnumber {
-    $value: $i * $calculate;
-    $calculattion: ($value * $calculateValue);
-
-    .#{$bp}#{$value}#{$postfix} {
-      filter: #{$filter }($calculattion * 1);
-      -webkit-filter: #{$filter }($calculattion * 1);
-    }
-    .hover\:#{$bp}#{$value}#{$postfix} {
-      &:hover {
-        filter: #{$filter }($calculattion * 1);
-        -webkit-filter: #{$filter }($calculattion * 1);
-      }
-    }
-  }
-}
-
 @mixin dropShadowMixin($bp: '', $firstnumber, $secondnumber, $loop, $selector: hover) {
   @each $key, $val in $loop {
     $shadowSize: 10px 10px 20px;
