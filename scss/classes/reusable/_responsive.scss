@@ -1,0 +1,533 @@
+@use '../../abstracts/variables/sizing/variables' as *;
+@use '../../abstracts/variables/color/variables' as *;
+@use '../../abstracts/variables/effects/variables' as *;
+
+@use '../../abstracts/mixins/typography/mixin' as *;
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/mixins/flex-grid/flex-grid' as *;
+@use '../../abstracts/mixins/color/mixin' as *;
+@use '../../abstracts/mixins/layout/mixin' as *;
+@use '../../abstracts/mixins/sizing/mixin' as *;
+@use '../../abstracts/mixins/animations/mixin' as *;
+@use '../../abstracts/mixins/background/mixin' as *;
+@use '../../abstracts/mixins/effects/mixin' as *;
+@use '../../abstracts/mixins/transforms/mixin' as *;
+@use '../../abstracts/mixins/filters/mixin' as *;
+@use '../../abstracts/mixins/borders/mixin' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
+
+@include sm {
+  // typography
+  @include typobasis(sm\:);
+  @include universalMixin(true, true, true, sm\:text-, font-size, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:text-, font-size, px, 11, 30, 10, 1px);
+  @include universalMixin(true, true, true, sm\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
+  @include universalMixin(true, true, true, sm\:font-, font-weight, '', 1, 9, 100, 1);
+  // flex
+  @include flexvalues();
+  @include universalMixin(false, false, false, sm\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, sm\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, sm\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, sm\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, sm\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, sm\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  // color
+  @include initialColor(sm\:text-, color);
+  @include initialColor(sm\:bg-, background-color);
+  @include lightColor(sm\:text-, 1, 5, color, $colors);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(sm\:text-, 0, 0, color, $lightdark);
+  @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark);
+  @include bggradient(sm\:);
+  @include bggradient(sm\:, $lightdark);
+  @include bgGradientToFrom(sm\:);
+  // active and focus color classes
+  @include initialColor(sm\:text-, color, active);
+  @include initialColor(sm\:text-, color, focus);
+  @include initialColor(sm\:bg-, background-color, active);
+  @include initialColor(sm\:bg-, background-color, focus);
+  @include lightColor(sm\:text-, 1, 5, color, $colors, active);
+  @include lightColor(sm\:text-, 1, 5, color, $colors, focus);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $colors, active);
+  @include lightColor(sm\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(sm\:text-, 0, 0, color, $lightdark, active);
+  @include lightColor(sm\:text-, 0, 0, color, $lightdark, focus);
+  @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, active);
+  @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, focus);
+  // layout
+  @include layoutvalues(sm\:);
+  @include universalMixin(false, false, false, sm\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(false, false, false, sm\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:top-, top, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:right-, right, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:left-, left, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:z-, z-index, '', -100, 100, 1, 1);
+  // sizing - width
+  @include sizingValues(sm\:, $sizingValues);
+  @include universalMixin(true, true, true, sm\:w-, width, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:w-, width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:w-, width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:w-, width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, sm\:max-w-, max-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:max-w-, max-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:max-w-, max-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:max-w-, max-width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, sm\:min-w-, min-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:min-w-, min-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:min-w-, min-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:min-w-, min-width, vw, 1, 100, 1, 1vw);
+  // sizing - height
+  @include universalMixin(true, true, true, sm\:h-, height, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:h-, height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:h-, height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:h-, height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, sm\:max-h-, max-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:max-h-, max-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:max-h-, max-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:max-h-, max-height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, sm\:min-h-, min-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:min-h-, min-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:min-h-, min-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, sm\:min-h-, min-height, vh, 1, 100, 1, 1vh);
+  // spacing - padding
+  @include universalMixin(true, true, true, sm\:p-, padding, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:pt-, padding-top, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:pr-, padding-right, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:pb-, padding-bottom, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:pl-, padding-left, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:px-, padding-inline, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:py-, padding-block, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:p-, padding, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:pt-, padding-top, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:pr-, padding-right, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:pb-, padding-bottom, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:pl-, padding-left, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:px-, padding-inline, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:py-, padding-block, rem, -30, 30, 1, 1rem);
+  // spacing - margin
+  @include universalMixin(true, true, true, sm\:m-, margin, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:mt-, margin-top, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:mr-, margin-right, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:mb-, margin-bottom, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:ml-, margin-left, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:mx-, margin-inline, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:my-, margin-block, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:m-, margin, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:mt-, margin-top, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:mr-, margin-right, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:mb-, margin-bottom, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:ml-, margin-left, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:mx-, margin-inline, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:my-, margin-block, rem, -30, 30, 1, 1rem);
+  // animation
+  @include animationvalues(sm\:);
+  @include transitionvalues(sm\:);
+  @include universalMixin(true, true, true, sm\:animation-delay-, animation-delay, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, sm\:animation-duration-, animation-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, sm\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, sm\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
+  // background
+  @include backgroundvalues(sm\:);
+  // effects
+  @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(sm\:shadow-, 0, 0, $fullcolors, hover);
+  @include blendModeMixin(sm\:, $blendModes);
+  @include universalMixin(true, true, true, sm\:opacity-, opacity, per, 1, 100, 1, 1%);
+  // transforms
+  @include transformvalues();
+  @include transformMixin(true, true, true, sm\:scale-, transform, '', -30, 30, 1, 0.1, scale);
+  @include transformMixin(true, true, true, sm\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
+  @include transformMixin(true, true, true, sm\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
+  @include transformMixin(true, true, true, sm\:translate-x-, transform, px, 1, 100, 1, 1px, translateX);
+  @include transformMixin(true, true, true, sm\:translate-x-, transform, rem, 11, 30, 1, 1rem, translateX);
+  @include transformMixin(true, true, true, sm\:translate-y-, transform, px, 1, 100, 1, 1px, translateY);
+  @include transformMixin(true, true, true, sm\:translate-y-, transform, rem, 11, 30, 1, 1rem, translateY);
+  @include transformMixin(true, true, true, sm\:skew-x-, transform, deg, -30, 30, 1, 1deg, skewX);
+  @include transformMixin(true, true, true, sm\:skew-y-, transform, deg, -30, 30, 1, 1deg, skewY);
+  // filters
+  @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $fullcolors, hover);
+  @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $lightdark, hover);
+  @include transformMixin(true, true, true, sm\:blur-, filter, px, 0, 100, 1, 1px, blur);
+  @include transformMixin(true, true, true, sm\:grayscale-, filter, per, 0, 100, 1, 1%, grayscale);
+  @include transformMixin(true, true, true, sm\:brightness-, filter, '', 0, 50, 1, 0.1, brightness);
+  @include transformMixin(true, true, true, sm\:contrast-, filter, '', 0, 50, 1, 0.1, contrast);
+  @include transformMixin(true, true, true, sm\:hue-rotate-, filter, deg, 0, 180, 1, 1deg, hue-rotate);
+  @include transformMixin(true, true, true, sm\:hue-rotate-, filter, per, 0, 180, 1, 1%, hue-rotate);
+  @include transformMixin(true, true, true, sm\:invert-, filter, per, 0, 100, 1, 1%, invert);
+  @include transformMixin(true, true, true, sm\:saturate-, filter, '', 0, 50, 1, 0.1, saturate);
+  @include transformMixin(true, true, true, sm\:sepia-, filter, per, 0, 100, 1, 1%, sepia);
+  // borders
+  @include bordervalues(sm\:);
+  @include borderColorMixin(sm\:border-, $fullcolors, border-color, hover);
+  @include borderColorMixin(sm\:border-, $lightdark, border-color, hover);
+  @include borderColorMixin(sm\:outline-, $fullcolors, outline-color, hover);
+  @include borderColorMixin(sm\:outline-, $lightdark, outline-color, hover);
+  @include universalMixin(true, true, true, sm\:rounded-, border-radius, px, 0, 100, 1, 1px);
+  @include borderMixin(sm\:rounded-top-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-top-right-radius);
+  @include borderMixin(sm\:rounded-right-radius-, px, border-top-right-radius, 0, 100, 1, 1px, true, border-bottom-right-radius);
+  @include borderMixin(
+    sm\:rounded-bottom-radius-,
+    px,
+    border-bottom-right-radius,
+    0,
+    100,
+    1,
+    1px,
+    true,
+    border-bottom-left-radius
+  );
+  @include borderMixin(sm\:rounded-left-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-bottom-left-radius);
+  @include universalMixin(true, true, true, sm\:border-, border-width, px, 0, 10, 1, 1px);
+  @include borderMixin(sm\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
+  @include borderMixin(sm\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+  @include universalMixin(true, true, true, sm\:border-top-width-, border-top-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, sm\:border-right-width-, border-right-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, sm\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, sm\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, sm\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+}
+
+@include md {
+  // typography
+  @include typobasis(md\:);
+  @include universalMixin(true, true, true, md\:text-, font-size, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:text-, font-size, px, 11, 30, 10, 1px);
+  @include universalMixin(true, true, true, md\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
+  @include universalMixin(true, true, true, md\:font-, font-weight, '', 1, 9, 100, 1);
+  // flex
+  @include flexvalues();
+  @include universalMixin(false, false, false, md\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, md\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, md\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, md\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, md\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, md\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  // color
+  @include initialColor(md\:text-, color);
+  @include initialColor(md\:bg-, background-color);
+  @include lightColor(md\:text-, 1, 5, color, $colors);
+  @include lightColor(md\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(md\:text-, 0, 0, color, $lightdark);
+  @include lightColor(md\:bg-, 0, 0, background-color, $lightdark);
+  @include bggradient(md\:);
+  @include bggradient(md\:, $lightdark);
+  @include bgGradientToFrom(md\:);
+  // active and focus color classes
+  @include initialColor(md\:text-, color, active);
+  @include initialColor(md\:text-, color, focus);
+  @include initialColor(md\:bg-, background-color, active);
+  @include initialColor(md\:bg-, background-color, focus);
+  @include lightColor(md\:text-, 1, 5, color, $colors, active);
+  @include lightColor(md\:text-, 1, 5, color, $colors, focus);
+  @include lightColor(md\:bg-, 1, 5, background-color, $colors, active);
+  @include lightColor(md\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(md\:text-, 0, 0, color, $lightdark, active);
+  @include lightColor(md\:text-, 0, 0, color, $lightdark, focus);
+  @include lightColor(md\:bg-, 0, 0, background-color, $lightdark, active);
+  @include lightColor(md\:bg-, 0, 0, background-color, $lightdark, focus);
+  // layout
+  @include layoutvalues(md\:);
+  @include universalMixin(false, false, false, md\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(false, false, false, md\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:top-, top, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:right-, right, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:left-, left, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:z-, z-index, '', -100, 100, 1, 1);
+  // sizing - width
+  @include sizingValues(md\:, $sizingValues);
+  @include universalMixin(true, true, true, md\:w-, width, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:w-, width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:w-, width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:w-, width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, md\:max-w-, max-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:max-w-, max-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:max-w-, max-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:max-w-, max-width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, md\:min-w-, min-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:min-w-, min-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:min-w-, min-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:min-w-, min-width, vw, 1, 100, 1, 1vw);
+  // sizing - height
+  @include universalMixin(true, true, true, md\:h-, height, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:h-, height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:h-, height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:h-, height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, md\:max-h-, max-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:max-h-, max-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:max-h-, max-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:max-h-, max-height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, md\:min-h-, min-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:min-h-, min-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:min-h-, min-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, md\:min-h-, min-height, vh, 1, 100, 1, 1vh);
+  // spacing - padding
+  @include universalMixin(true, true, true, md\:p-, padding, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:pt-, padding-top, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:pr-, padding-right, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:pb-, padding-bottom, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:pl-, padding-left, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:px-, padding-inline, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:py-, padding-block, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:p-, padding, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:pt-, padding-top, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:pr-, padding-right, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:pb-, padding-bottom, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:pl-, padding-left, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:px-, padding-inline, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:py-, padding-block, rem, -30, 30, 1, 1rem);
+  // spacing - margin
+  @include universalMixin(true, true, true, md\:m-, margin, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:mt-, margin-top, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:mr-, margin-right, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:mb-, margin-bottom, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:ml-, margin-left, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:mx-, margin-inline, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:my-, margin-block, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:m-, margin, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:mt-, margin-top, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:mr-, margin-right, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:mb-, margin-bottom, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:ml-, margin-left, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:mx-, margin-inline, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:my-, margin-block, rem, -30, 30, 1, 1rem);
+  // animation
+  @include animationvalues(md\:);
+  @include transitionvalues(md\:);
+  @include universalMixin(true, true, true, md\:animation-delay-, animation-delay, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, md\:animation-duration-, animation-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, md\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, md\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
+  // background
+  @include backgroundvalues(md\:);
+  // effects
+  @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(md\:shadow-, 0, 0, $fullcolors, hover);
+  @include blendModeMixin(md\:, $blendModes);
+  @include universalMixin(true, true, true, md\:opacity-, opacity, per, 1, 100, 1, 1%);
+  // transforms
+  @include transformvalues();
+  @include transformMixin(true, true, true, md\:scale-, transform, '', -30, 30, 1, 0.1, scale);
+  @include transformMixin(true, true, true, md\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
+  @include transformMixin(true, true, true, md\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
+  @include transformMixin(true, true, true, md\:translate-x-, transform, px, 1, 100, 1, 1px, translateX);
+  @include transformMixin(true, true, true, md\:translate-x-, transform, rem, 11, 30, 1, 1rem, translateX);
+  @include transformMixin(true, true, true, md\:translate-y-, transform, px, 1, 100, 1, 1px, translateY);
+  @include transformMixin(true, true, true, md\:translate-y-, transform, rem, 11, 30, 1, 1rem, translateY);
+  @include transformMixin(true, true, true, md\:skew-x-, transform, deg, -30, 30, 1, 1deg, skewX);
+  @include transformMixin(true, true, true, md\:skew-y-, transform, deg, -30, 30, 1, 1deg, skewY);
+  // filters
+  @include dropShadowMixin(md\:drop-shadow-, 0, 0, $fullcolors, hover);
+  @include dropShadowMixin(md\:drop-shadow-, 0, 0, $lightdark, hover);
+  @include transformMixin(true, true, true, md\:blur-, filter, px, 0, 100, 1, 1px, blur);
+  @include transformMixin(true, true, true, md\:grayscale-, filter, per, 0, 100, 1, 1%, grayscale);
+  @include transformMixin(true, true, true, md\:brightness-, filter, '', 0, 50, 1, 0.1, brightness);
+  @include transformMixin(true, true, true, md\:contrast-, filter, '', 0, 50, 1, 0.1, contrast);
+  @include transformMixin(true, true, true, md\:hue-rotate-, filter, deg, 0, 180, 1, 1deg, hue-rotate);
+  @include transformMixin(true, true, true, md\:hue-rotate-, filter, per, 0, 180, 1, 1%, hue-rotate);
+  @include transformMixin(true, true, true, md\:invert-, filter, per, 0, 100, 1, 1%, invert);
+  @include transformMixin(true, true, true, md\:saturate-, filter, '', 0, 50, 1, 0.1, saturate);
+  @include transformMixin(true, true, true, md\:sepia-, filter, per, 0, 100, 1, 1%, sepia);
+  // borders
+  @include bordervalues(md\:);
+  @include borderColorMixin(md\:border-, $fullcolors, border-color, hover);
+  @include borderColorMixin(md\:border-, $lightdark, border-color, hover);
+  @include borderColorMixin(md\:outline-, $fullcolors, outline-color, hover);
+  @include borderColorMixin(md\:outline-, $lightdark, outline-color, hover);
+  @include universalMixin(true, true, true, md\:rounded-, border-radius, px, 0, 100, 1, 1px);
+  @include borderMixin(md\:rounded-top-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-top-right-radius);
+  @include borderMixin(md\:rounded-right-radius-, px, border-top-right-radius, 0, 100, 1, 1px, true, border-bottom-right-radius);
+  @include borderMixin(
+    md\:rounded-bottom-radius-,
+    px,
+    border-bottom-right-radius,
+    0,
+    100,
+    1,
+    1px,
+    true,
+    border-bottom-left-radius
+  );
+  @include borderMixin(md\:rounded-left-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-bottom-left-radius);
+  @include universalMixin(true, true, true, md\:border-, border-width, px, 0, 10, 1, 1px);
+  @include borderMixin(md\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
+  @include borderMixin(md\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+  @include universalMixin(true, true, true, md\:border-top-width-, border-top-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, md\:border-right-width-, border-right-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, md\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, md\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, md\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+}
+
+@include lg {
+  // typography
+  @include typobasis(lg\:);
+  @include universalMixin(true, true, true, lg\:text-, font-size, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:text-, font-size, px, 11, 30, 10, 1px);
+  @include universalMixin(true, true, true, lg\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
+  @include universalMixin(true, true, true, lg\:font-, font-weight, '', 1, 9, 100, 1);
+  // flex
+  @include flexvalues();
+  @include universalMixin(false, false, false, lg\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, lg\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, lg\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(false, false, false, lg\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, lg\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(false, false, false, lg\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  // color
+  @include initialColor(lg\:text-, color);
+  @include initialColor(lg\:bg-, background-color);
+  @include lightColor(lg\:text-, 1, 5, color, $colors);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(lg\:text-, 0, 0, color, $lightdark);
+  @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark);
+  @include bggradient(lg\:);
+  @include bggradient(lg\:, $lightdark);
+  @include bgGradientToFrom(lg\:);
+  // active and focus color classes
+  @include initialColor(lg\:text-, color, active);
+  @include initialColor(lg\:text-, color, focus);
+  @include initialColor(lg\:bg-, background-color, active);
+  @include initialColor(lg\:bg-, background-color, focus);
+  @include lightColor(lg\:text-, 1, 5, color, $colors, active);
+  @include lightColor(lg\:text-, 1, 5, color, $colors, focus);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $colors, active);
+  @include lightColor(lg\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(lg\:text-, 0, 0, color, $lightdark, active);
+  @include lightColor(lg\:text-, 0, 0, color, $lightdark, focus);
+  @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, active);
+  @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, focus);
+  // layout
+  @include layoutvalues(lg\:);
+  @include universalMixin(false, false, false, lg\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(false, false, false, lg\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:top-, top, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:right-, right, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:bottom-, bottom, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:left-, left, per, -100, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:z-, z-index, '', -100, 100, 1, 1);
+  // sizing - width
+  @include sizingValues(lg\:, $sizingValues);
+  @include universalMixin(true, true, true, lg\:w-, width, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:w-, width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:w-, width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:w-, width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, lg\:max-w-, max-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:max-w-, max-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:max-w-, max-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:max-w-, max-width, vw, 1, 100, 1, 1vw);
+  @include universalMixin(true, true, true, lg\:min-w-, min-width, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:min-w-, min-width, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:min-w-, min-width, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:min-w-, min-width, vw, 1, 100, 1, 1vw);
+  // sizing - height
+  @include universalMixin(true, true, true, lg\:h-, height, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:h-, height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:h-, height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:h-, height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, lg\:max-h-, max-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:max-h-, max-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:max-h-, max-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:max-h-, max-height, vh, 1, 100, 1, 1vh);
+  @include universalMixin(true, true, true, lg\:min-h-, min-height, px, 1, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:min-h-, min-height, rem, 11, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:min-h-, min-height, per, 1, 100, 1, 1%);
+  @include universalMixin(true, true, true, lg\:min-h-, min-height, vh, 1, 100, 1, 1vh);
+  // spacing - padding
+  @include universalMixin(true, true, true, lg\:p-, padding, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:pt-, padding-top, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:pr-, padding-right, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:pb-, padding-bottom, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:pl-, padding-left, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:px-, padding-inline, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:py-, padding-block, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:p-, padding, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:pt-, padding-top, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:pr-, padding-right, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:pb-, padding-bottom, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:pl-, padding-left, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:px-, padding-inline, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:py-, padding-block, rem, -30, 30, 1, 1rem);
+  // spacing - margin
+  @include universalMixin(true, true, true, lg\:m-, margin, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:mt-, margin-top, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:mr-, margin-right, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:mb-, margin-bottom, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:ml-, margin-left, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:mx-, margin-inline, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:my-, margin-block, px, -100, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:m-, margin, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:mt-, margin-top, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:mr-, margin-right, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:mb-, margin-bottom, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:ml-, margin-left, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:mx-, margin-inline, rem, -30, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:my-, margin-block, rem, -30, 30, 1, 1rem);
+  // animation
+  @include animationvalues(lg\:);
+  @include transitionvalues(lg\:);
+  @include universalMixin(true, true, true, lg\:animation-delay-, animation-delay, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, lg\:animation-duration-, animation-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, lg\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, lg\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
+  // background
+  @include backgroundvalues(lg\:);
+  // effects
+  @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
+  @include shadowColor(lg\:shadow-, 0, 0, $fullcolors, hover);
+  @include blendModeMixin(lg\:, $blendModes);
+  @include universalMixin(true, true, true, lg\:opacity-, opacity, per, 1, 100, 1, 1%);
+  // transforms
+  @include transformvalues();
+  @include transformMixin(true, true, true, lg\:scale-, transform, '', -30, 30, 1, 0.1, scale);
+  @include transformMixin(true, true, true, lg\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
+  @include transformMixin(true, true, true, lg\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
+  @include transformMixin(true, true, true, lg\:translate-x-, transform, px, 1, 100, 1, 1px, translateX);
+  @include transformMixin(true, true, true, lg\:translate-x-, transform, rem, 11, 30, 1, 1rem, translateX);
+  @include transformMixin(true, true, true, lg\:translate-y-, transform, px, 1, 100, 1, 1px, translateY);
+  @include transformMixin(true, true, true, lg\:translate-y-, transform, rem, 11, 30, 1, 1rem, translateY);
+  @include transformMixin(true, true, true, lg\:skew-x-, transform, deg, -30, 30, 1, 1deg, skewX);
+  @include transformMixin(true, true, true, lg\:skew-y-, transform, deg, -30, 30, 1, 1deg, skewY);
+  // filters
+  @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $fullcolors, hover);
+  @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $lightdark, hover);
+  @include transformMixin(true, true, true, lg\:blur-, filter, px, 0, 100, 1, 1px, blur);
+  @include transformMixin(true, true, true, lg\:grayscale-, filter, per, 0, 100, 1, 1%, grayscale);
+  @include transformMixin(true, true, true, lg\:brightness-, filter, '', 0, 50, 1, 0.1, brightness);
+  @include transformMixin(true, true, true, lg\:contrast-, filter, '', 0, 50, 1, 0.1, contrast);
+  @include transformMixin(true, true, true, lg\:hue-rotate-, filter, deg, 0, 180, 1, 1deg, hue-rotate);
+  @include transformMixin(true, true, true, lg\:hue-rotate-, filter, per, 0, 180, 1, 1%, hue-rotate);
+  @include transformMixin(true, true, true, lg\:invert-, filter, per, 0, 100, 1, 1%, invert);
+  @include transformMixin(true, true, true, lg\:saturate-, filter, '', 0, 50, 1, 0.1, saturate);
+  @include transformMixin(true, true, true, lg\:sepia-, filter, per, 0, 100, 1, 1%, sepia);
+  // borders
+  @include bordervalues(lg\:);
+  @include borderColorMixin(lg\:border-, $fullcolors, border-color, hover);
+  @include borderColorMixin(lg\:border-, $lightdark, border-color, hover);
+  @include borderColorMixin(lg\:outline-, $fullcolors, outline-color, hover);
+  @include borderColorMixin(lg\:outline-, $lightdark, outline-color, hover);
+  @include universalMixin(true, true, true, lg\:rounded-, border-radius, px, 0, 100, 1, 1px);
+  @include borderMixin(lg\:rounded-top-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-top-right-radius);
+  @include borderMixin(lg\:rounded-right-radius-, px, border-top-right-radius, 0, 100, 1, 1px, true, border-bottom-right-radius);
+  @include borderMixin(
+    lg\:rounded-bottom-radius-,
+    px,
+    border-bottom-right-radius,
+    0,
+    100,
+    1,
+    1px,
+    true,
+    border-bottom-left-radius
+  );
+  @include borderMixin(lg\:rounded-left-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-bottom-left-radius);
+  @include universalMixin(true, true, true, lg\:border-, border-width, px, 0, 10, 1, 1px);
+  @include borderMixin(lg\:border-x-, px, border-left-width, 0, 10, 1, 1px, true, border-right-width);
+  @include borderMixin(lg\:border-y-, px, border-top-width, 0, 10, 1, 1px, true, border-bottom-width);
+  @include universalMixin(true, true, true, lg\:border-top-width-, border-top-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, lg\:border-right-width-, border-right-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, lg\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, lg\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, lg\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+}
