@@ -21,6 +21,7 @@
 @include transformMixin(true, true, true, backdrop-grayscale-, backdrop-filter, per, 0, 100, 1, 1%, grayscale);
 @include transformMixin(true, true, true, backdrop-hue-rotate-, backdrop-filter, deg, -180, 180, 1, 1deg, hue-rotate);
 @include transformMixin(true, true, true, backdrop-invert-, backdrop-filter, per, 0, 100, 1, 1%, invert);
+@include transformMixin(true, true, true, backdrop-opacity-, backdrop-filter, '', 0, 10, 1, 0.1, opacity);
 
 @include sm {
   @include dropShadowMixin(sm\:drop-shadow-, 0, 0, $fullcolors, hover);
@@ -40,6 +41,7 @@
   @include transformMixin(true, true, true, sm\:backdrop-grayscale-, backdrop-filter, per, 0, 100, 1, 1%, grayscale);
   @include transformMixin(true, true, true, sm\:backdrop-hue-rotate-, backdrop-filter, deg, -180, 180, 1, 1deg, hue-rotate);
   @include transformMixin(true, true, true, sm\:backdrop-invert-, backdrop-filter, per, 0, 100, 1, 1%, invert);
+  @include transformMixin(true, true, true, sm\:backdrop-opacity-, backdrop-filter, '', 0, 10, 1, 0.1, opacity);
 }
 @include md {
   @include dropShadowMixin(md\:drop-shadow-, 0, 0, $fullcolors, hover);
@@ -59,6 +61,7 @@
   @include transformMixin(true, true, true, md\:backdrop-grayscale-, backdrop-filter, per, 0, 100, 1, 1%, grayscale);
   @include transformMixin(true, true, true, md\:backdrop-hue-rotate-, backdrop-filter, deg, -180, 180, 1, 1deg, hue-rotate);
   @include transformMixin(true, true, true, md\:backdrop-invert-, backdrop-filter, per, 0, 100, 1, 1%, invert);
+  @include transformMixin(true, true, true, md\:backdrop-opacity-, backdrop-filter, '', 0, 10, 1, 0.1, opacity);
 }
 @include lg {
   @include dropShadowMixin(lg\:drop-shadow-, 0, 0, $fullcolors, hover);
@@ -78,4 +81,5 @@
   @include transformMixin(true, true, true, lg\:backdrop-grayscale-, backdrop-filter, per, 0, 100, 1, 1%, grayscale);
   @include transformMixin(true, true, true, lg\:backdrop-hue-rotate-, backdrop-filter, deg, -180, 180, 1, 1deg, hue-rotate);
   @include transformMixin(true, true, true, lg\:backdrop-invert-, backdrop-filter, per, 0, 100, 1, 1%, invert);
+  @include transformMixin(true, true, true, lg\:backdrop-opacity-, backdrop-filter, '', 0, 10, 1, 0.1, opacity);
 }
