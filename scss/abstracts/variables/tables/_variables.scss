@@ -4,5 +4,11 @@ $tableValues: (
       border-collapse: collapse,
       border-separate: separate
     )
+  ),
+  'table-layout': (
+    'values': (
+      table-auto: auto,
+      table-fixed: fixed
+    )
   )
 );
