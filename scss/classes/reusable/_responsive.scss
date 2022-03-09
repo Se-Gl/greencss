@@ -157,6 +157,7 @@
   @include transformMixin(true, true, true, sm\:invert-, filter, per, 0, 100, 1, 1%, invert);
   @include transformMixin(true, true, true, sm\:saturate-, filter, '', 0, 50, 1, 0.1, saturate);
   @include transformMixin(true, true, true, sm\:sepia-, filter, per, 0, 100, 1, 1%, sepia);
+  @include transformMixin(true, true, true, sm\:backdrop-filter-, backdrop-filter, px, 0, 100, 1, 1px, blur);
   // borders
   @include bordervalues(sm\:);
   @include borderColorMixin(sm\:border-, $fullcolors, border-color, hover);
@@ -329,6 +330,8 @@
   @include transformMixin(true, true, true, md\:invert-, filter, per, 0, 100, 1, 1%, invert);
   @include transformMixin(true, true, true, md\:saturate-, filter, '', 0, 50, 1, 0.1, saturate);
   @include transformMixin(true, true, true, md\:sepia-, filter, per, 0, 100, 1, 1%, sepia);
+  @include transformMixin(true, true, true, md\:backdrop-filter-, backdrop-filter, px, 0, 100, 1, 1px, blur);
+
   // borders
   @include bordervalues(md\:);
   @include borderColorMixin(md\:border-, $fullcolors, border-color, hover);
@@ -501,6 +504,7 @@
   @include transformMixin(true, true, true, lg\:invert-, filter, per, 0, 100, 1, 1%, invert);
   @include transformMixin(true, true, true, lg\:saturate-, filter, '', 0, 50, 1, 0.1, saturate);
   @include transformMixin(true, true, true, lg\:sepia-, filter, per, 0, 100, 1, 1%, sepia);
+  @include transformMixin(true, true, true, lg\:backdrop-filter-, backdrop-filter, px, 0, 100, 1, 1px, blur);
   // borders
   @include bordervalues(lg\:);
   @include borderColorMixin(lg\:border-, $fullcolors, border-color, hover);
