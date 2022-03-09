@@ -2,10 +2,10 @@
 @use '../../abstracts/variables/color/variables' as *;
 @use '../../abstracts/variables/effects/variables' as *;
 @use '../../abstracts/variables/tables/variables' as *;
+@use '../../abstracts/variables/flex-grid/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
-@use '../../abstracts/mixins/flex-grid/flex-grid' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
 @use '../../abstracts/mixins/layout/mixin' as *;
 @use '../../abstracts/mixins/sizing/mixin' as *;
@@ -35,7 +35,7 @@
 @include universalMixin(true, true, true, rel-text-, font-size, vw, 0, 100, 1, 1vw);
 @include universalMixin(true, true, true, font-, font-weight, '', 1, 9, 100, 1);
 // flex
-@include flexvalues();
+@include eachValues('', $utilities);
 @include universalMixin(false, false, false, gap-, gap, px, 0, 100, 1, 1px);
 @include universalMixin(false, false, false, gap-x-, column-gap, px, 0, 100, 1, 1px);
 @include universalMixin(false, false, false, gap-y-, row-gap, px, 0, 100, 1, 1px);

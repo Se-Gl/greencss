@@ -1,9 +1,9 @@
-@use '../../abstracts/mixins/flex-grid/flex-grid' as *;
+@use '../../abstracts/variables/flex-grid/variables' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
 
 // file for flex classes - for minified omencss-flex css
-@include flexvalues();
+@include eachValues('', $utilities);
 @include universalMixin(false, false, false, gap-, gap, px, 0, 100, 1, 1px);
 @include universalMixin(false, false, false, gap-x-, column-gap, px, 0, 100, 1, 1px);
 @include universalMixin(false, false, false, gap-y-, row-gap, px, 0, 100, 1, 1px);
@@ -12,7 +12,7 @@
 @include universalMixin(false, false, false, gap-y-, row-gap, rem, 11, 30, 1, 1rem);
 
 @include sm {
-  @include flexvalues(sm\:);
+  @include eachValues(sm\:, $utilities);
   @include universalMixin(false, false, false, sm\:gap-, gap, px, 0, 100, 1, 1px);
   @include universalMixin(false, false, false, sm\:gap-x-, column-gap, px, 0, 100, 1, 1px);
   @include universalMixin(false, false, false, sm\:gap-y-, row-gap, px, 0, 100, 1, 1px);
@@ -21,7 +21,7 @@
   @include universalMixin(false, false, false, sm\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
 }
 @include md {
-  @include flexvalues(md\:);
+  @include eachValues(md\:, $utilities);
   @include universalMixin(false, false, false, md\:gap-, gap, px, 0, 100, 1, 1px);
   @include universalMixin(false, false, false, md\:gap-x-, column-gap, px, 0, 100, 1, 1px);
   @include universalMixin(false, false, false, md\:gap-y-, row-gap, px, 0, 100, 1, 1px);
@@ -30,7 +30,7 @@
   @include universalMixin(false, false, false, md\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
 }
 @include lg {
-  @include flexvalues(lg\:);
+  @include eachValues(lg\:, $utilities);
   @include universalMixin(false, false, false, lg\:gap-, gap, px, 0, 100, 1, 1px);
   @include universalMixin(false, false, false, lg\:gap-x-, column-gap, px, 0, 100, 1, 1px);
   @include universalMixin(false, false, false, lg\:gap-y-, row-gap, px, 0, 100, 1, 1px);
