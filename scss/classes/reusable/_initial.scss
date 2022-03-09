@@ -1,6 +1,7 @@
 @use '../../abstracts/variables/sizing/variables' as *;
 @use '../../abstracts/variables/color/variables' as *;
 @use '../../abstracts/variables/effects/variables' as *;
+@use '../../abstracts/variables/tables/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
@@ -194,5 +195,7 @@
 @include universalMixin(true, true, true, border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
 @include universalMixin(true, true, true, border-left-width-, border-left-width, px, 0, 10, 1, 1px);
 @include universalMixin(true, true, true, outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+// tables
+@include eachValues('', $tableValues);
 
-// TODO: responsive classes in other file, dark classes
+// TODO: refactor all @each mixins into "eachValues". Add dark-mode classes

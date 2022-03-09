@@ -1,0 +1,4 @@
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/variables/tables/variables' as *;
+
+@include eachValues('', $tableValues);
