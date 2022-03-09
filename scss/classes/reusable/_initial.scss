@@ -3,11 +3,11 @@
 @use '../../abstracts/variables/effects/variables' as *;
 @use '../../abstracts/variables/tables/variables' as *;
 @use '../../abstracts/variables/flex-grid/variables' as *;
+@use '../../abstracts/variables/layout/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
-@use '../../abstracts/mixins/layout/mixin' as *;
 @use '../../abstracts/mixins/sizing/mixin' as *;
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/mixins/background/mixin' as *;
@@ -72,7 +72,7 @@
 @include lightColor(accent-, 0, 0, accent-color, $lightdark, active);
 @include lightColor(accent-, 0, 0, accent-color, $lightdark, focus);
 // layout
-@include layoutvalues();
+@include eachValues('', $layoutVariables);
 @include universalMixin(false, false, false, col-, columns, '', 1, 12, 1, 1);
 @include universalMixin(false, false, false, col-, columns, rem, 1, 100, 1, 1rem);
 @include universalMixin(true, true, true, top-, top, per, -100, 100, 1, 1%);

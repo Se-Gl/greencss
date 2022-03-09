@@ -2,11 +2,11 @@
 @use '../../abstracts/variables/color/variables' as *;
 @use '../../abstracts/variables/effects/variables' as *;
 @use '../../abstracts/variables/flex-grid/variables' as *;
+@use '../../abstracts/variables/layout/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
-@use '../../abstracts/mixins/layout/mixin' as *;
 @use '../../abstracts/mixins/sizing/mixin' as *;
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/mixins/background/mixin' as *;
@@ -61,7 +61,7 @@
   @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark, active);
   @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
-  @include layoutvalues(sm\:);
+  @include eachValues(sm\:, $layoutVariables);
   @include universalMixin(false, false, false, sm\:col-, columns, '', 1, 12, 1, 1);
   @include universalMixin(false, false, false, sm\:col-, columns, rem, 1, 100, 1, 1rem);
   @include universalMixin(true, true, true, sm\:top-, top, per, -100, 100, 1, 1%);
@@ -247,7 +247,7 @@
   @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, active);
   @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
-  @include layoutvalues(md\:);
+  @include eachValues(md\:, $layoutVariables);
   @include universalMixin(false, false, false, md\:col-, columns, '', 1, 12, 1, 1);
   @include universalMixin(false, false, false, md\:col-, columns, rem, 1, 100, 1, 1rem);
   @include universalMixin(true, true, true, md\:top-, top, per, -100, 100, 1, 1%);
@@ -433,7 +433,7 @@
   @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark, active);
   @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
-  @include layoutvalues(lg\:);
+  @include eachValues(lg\:, $layoutVariables);
   @include universalMixin(false, false, false, lg\:col-, columns, '', 1, 12, 1, 1);
   @include universalMixin(false, false, false, lg\:col-, columns, rem, 1, 100, 1, 1rem);
   @include universalMixin(true, true, true, lg\:top-, top, per, -100, 100, 1, 1%);
