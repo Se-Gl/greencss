@@ -9,6 +9,8 @@
 @include lightColor(bg-, 1, 5, background-color, $colors);
 @include lightColor(text-, 0, 0, color, $lightdark);
 @include lightColor(bg-, 0, 0, background-color, $lightdark);
+@include lightColor(accent-, 1, 5, accent-color, $colors);
+@include lightColor(accent-, 0, 0, accent-color, $lightdark);
 @include bggradient();
 @include bggradient('', $lightdark);
 @include bgGradientToFrom();
@@ -25,6 +27,10 @@
 @include lightColor(text-, 0, 0, color, $lightdark, focus);
 @include lightColor(bg-, 0, 0, background-color, $lightdark, active);
 @include lightColor(bg-, 0, 0, background-color, $lightdark, focus);
+@include lightColor(accent-, 1, 5, accent-color, $colors, active);
+@include lightColor(accent-, 1, 5, accent-color, $colors, focus);
+@include lightColor(accent-, 0, 0, accent-color, $lightdark, active);
+@include lightColor(accent-, 0, 0, accent-color, $lightdark, focus);
 
 @include sm {
   @include initialColor(sm\:text-, color);
@@ -33,6 +39,8 @@
   @include lightColor(sm\:bg-, 1, 5, background-color, $colors);
   @include lightColor(sm\:text-, 0, 0, color, $lightdark);
   @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark);
+  @include lightColor(sm\:accent-, 1, 5, accent-color, $colors);
+  @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark);
   @include bggradient(sm\:);
   @include bggradient(sm\:, $lightdark);
   @include bgGradientToFrom(sm\:);
@@ -49,6 +57,10 @@
   @include lightColor(sm\:text-, 0, 0, color, $lightdark, focus);
   @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, active);
   @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, focus);
+  @include lightColor(sm\:accent-, 1, 5, accent-color, $colors, active);
+  @include lightColor(sm\:accent-, 1, 5, accent-color, $colors, focus);
+  @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark, active);
+  @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark, focus);
 }
 @include md {
   @include initialColor(md\:text-, color);
@@ -57,6 +69,8 @@
   @include lightColor(md\:bg-, 1, 5, background-color, $colors);
   @include lightColor(md\:text-, 0, 0, color, $lightdark);
   @include lightColor(md\:bg-, 0, 0, background-color, $lightdark);
+  @include lightColor(md\:accent-, 1, 5, accent-color, $colors);
+  @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark);
   @include bggradient(md\:);
   @include bggradient(md\:, $lightdark);
   @include bgGradientToFrom(md\:);
@@ -73,6 +87,10 @@
   @include lightColor(md\:text-, 0, 0, color, $lightdark, focus);
   @include lightColor(md\:bg-, 0, 0, background-color, $lightdark, active);
   @include lightColor(md\:bg-, 0, 0, background-color, $lightdark, focus);
+  @include lightColor(md\:accent-, 1, 5, accent-color, $colors, active);
+  @include lightColor(md\:accent-, 1, 5, accent-color, $colors, focus);
+  @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, active);
+  @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, focus);
 }
 @include lg {
   @include initialColor(lg\:text-, color);
@@ -81,6 +99,8 @@
   @include lightColor(lg\:bg-, 1, 5, background-color, $colors);
   @include lightColor(lg\:text-, 0, 0, color, $lightdark);
   @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark);
+  @include lightColor(lg\:accent-, 1, 5, accent-color, $colors);
+  @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark);
   @include bggradient(lg\:);
   @include bggradient(lg\:, $lightdark);
   @include bgGradientToFrom(lg\:);
@@ -97,4 +117,8 @@
   @include lightColor(lg\:text-, 0, 0, color, $lightdark, focus);
   @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, active);
   @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, focus);
+  @include lightColor(md\:accent-, 1, 5, accent-color, $colors, active);
+  @include lightColor(md\:accent-, 1, 5, accent-color, $colors, focus);
+  @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, active);
+  @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, focus);
 }

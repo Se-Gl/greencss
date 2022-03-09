@@ -49,6 +49,8 @@
 @include lightColor(bg-, 1, 5, background-color, $colors);
 @include lightColor(text-, 0, 0, color, $lightdark);
 @include lightColor(bg-, 0, 0, background-color, $lightdark);
+@include lightColor(accent-, 1, 5, accent-color, $colors);
+@include lightColor(accent-, 0, 0, accent-color, $lightdark);
 @include bggradient();
 @include bggradient('', $lightdark);
 @include bgGradientToFrom();
@@ -65,6 +67,10 @@
 @include lightColor(text-, 0, 0, color, $lightdark, focus);
 @include lightColor(bg-, 0, 0, background-color, $lightdark, active);
 @include lightColor(bg-, 0, 0, background-color, $lightdark, focus);
+@include lightColor(accent-, 1, 5, accent-color, $colors, active);
+@include lightColor(accent-, 1, 5, accent-color, $colors, focus);
+@include lightColor(accent-, 0, 0, accent-color, $lightdark, active);
+@include lightColor(accent-, 0, 0, accent-color, $lightdark, focus);
 // layout
 @include layoutvalues();
 @include universalMixin(false, false, false, col-, columns, '', 1, 12, 1, 1);
@@ -198,4 +204,4 @@
 // tables
 @include eachValues('', $tableValues);
 
-// TODO: refactor all @each mixins into "eachValues". Add dark-mode classes
+// TODO: refactor all @each mixins into "eachValues". Refactor "lightColor" into 1 reusable mixin. Add dark-mode classes
