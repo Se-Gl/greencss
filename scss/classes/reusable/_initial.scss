@@ -170,6 +170,7 @@
 @include transformMixin(true, true, true, backdrop-filter-, backdrop-filter, px, 0, 100, 1, 1px, blur);
 @include transformMixin(true, true, true, backdrop-brightness-, backdrop-filter, '', 0, 30, 1, 0.1, brightness);
 @include transformMixin(true, true, true, backdrop-contrast-, backdrop-filter, '', 0, 30, 1, 0.1, contrast);
+@include transformMixin(true, true, true, backdrop-grayscale-, backdrop-filter, per, 0, 100, 1, 1%, grayscale);
 // borders
 @include bordervalues();
 @include borderColorMixin(border-, $fullcolors, border-color, hover);
