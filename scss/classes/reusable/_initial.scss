@@ -209,6 +209,7 @@
 @include eachValues('', $interactivityUtilities);
 @include lightColor(caret-, 1, 5, caret-color, $colors);
 @include lightColor(caret-, 0, 0, caret-color, $lightdark);
+// interactivity - scroll margin
 @include universalMixin(true, false, false, scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
 @include universalMixin(true, false, false, scroll-m-, scroll-margin, rem, -30, 30, 1, 1rem);
 @include universalMixin(true, false, false, scroll-mx-, scroll-margin-inline, px, -100, 100, 1, 1px);
@@ -223,5 +224,20 @@
 @include universalMixin(true, false, false, scroll-mb-, scroll-margin-bottom, rem, -30, 30, 1, 1rem);
 @include universalMixin(true, false, false, scroll-ml-, scroll-margin-left, px, -100, 100, 1, 1px);
 @include universalMixin(true, false, false, scroll-ml-, scroll-margin-left, rem, -30, 30, 1, 1rem);
+// interactivity - scroll padding
+@include universalMixin(true, false, false, scroll-p-, scroll-padding, px, -100, 100, 1, 1px);
+@include universalMixin(true, false, false, scroll-p-, scroll-padding, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, false, false, scroll-px-, scroll-padding-inline, px, -100, 100, 1, 1px);
+@include universalMixin(true, false, false, scroll-px-, scroll-padding-inline, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, false, false, scroll-py-, scroll-padding-block, px, -100, 100, 1, 1px);
+@include universalMixin(true, false, false, scroll-py-, scroll-padding-block, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, false, false, scroll-pt-, scroll-padding-top, px, -100, 100, 1, 1px);
+@include universalMixin(true, false, false, scroll-pt-, scroll-padding-top, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, false, false, scroll-pr-, scroll-padding-right, px, -100, 100, 1, 1px);
+@include universalMixin(true, false, false, scroll-pr-, scroll-padding-right, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, false, false, scroll-pb-, scroll-padding-bottom, px, -100, 100, 1, 1px);
+@include universalMixin(true, false, false, scroll-pb-, scroll-padding-bottom, rem, -30, 30, 1, 1rem);
+@include universalMixin(true, false, false, scroll-pl-, scroll-padding-left, px, -100, 100, 1, 1px);
+@include universalMixin(true, false, false, scroll-pl-, scroll-padding-left, rem, -30, 30, 1, 1rem);
 
 // TODO: refactor all @each mixins into "eachValues" (current: sizing). Refactor "lightColor" into 1 reusable mixin. Add dark-mode classes
