@@ -206,7 +206,7 @@
 @include eachValues('', $tableValues);
 // interactivity
 @include eachValues('', $interactivityUtilitiesWebkit, true);
-@include eachValues('', $interactivityUtilities, true);
+@include eachValues('', $interactivityUtilities);
 @include lightColor(caret-, 1, 5, caret-color, $colors);
 @include lightColor(caret-, 0, 0, caret-color, $lightdark);
 
