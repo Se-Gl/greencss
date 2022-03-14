@@ -1,4 +1,15 @@
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/variables/tables/variables' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
 
 @include eachValues('', $tableValues);
+
+@include sm {
+  @include eachValues(sm\:, $tableValues);
+}
+@include md {
+  @include eachValues(md\:, $tableValues);
+}
+@include lg {
+  @include eachValues(lg\:, $tableValues);
+}

@@ -4,6 +4,7 @@
 @use '../../abstracts/variables/tables/variables' as *;
 @use '../../abstracts/variables/flex-grid/variables' as *;
 @use '../../abstracts/variables/layout/variables' as *;
+@use '../../abstracts/variables/interactivity/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
@@ -203,5 +204,7 @@
 @include universalMixin(true, true, true, outline-offset-, outline-offset, px, 0, 10, 1, 1px);
 // tables
 @include eachValues('', $tableValues);
+// interactivity
+@include eachValues('', $interactivityUtilities, true);
 
 // TODO: refactor all @each mixins into "eachValues" (current: sizing). Refactor "lightColor" into 1 reusable mixin. Add dark-mode classes

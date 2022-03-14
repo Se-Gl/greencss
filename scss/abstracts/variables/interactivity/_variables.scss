@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+$interactivityUtilities: (
+  'appearance': (
+    'values': (
+      appearance-none: none,
+      appearance-auto: auto
+    )
+  )
+);

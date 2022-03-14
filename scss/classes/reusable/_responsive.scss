@@ -3,6 +3,8 @@
 @use '../../abstracts/variables/effects/variables' as *;
 @use '../../abstracts/variables/flex-grid/variables' as *;
 @use '../../abstracts/variables/layout/variables' as *;
+@use '../../abstracts/variables/tables/variables' as *;
+@use '../../abstracts/variables/interactivity/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
@@ -200,6 +202,10 @@
   @include universalMixin(true, true, true, sm\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, sm\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, sm\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+  // tables
+  @include eachValues(sm\:, $tableValues);
+  // interactivity
+  @include eachValues(sm\:, $interactivityUtilities, true);
 }
 
 @include md {
@@ -386,6 +392,10 @@
   @include universalMixin(true, true, true, md\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, md\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, md\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+  // tables
+  @include eachValues(md\:, $tableValues);
+  // interactivity
+  @include eachValues(md\:, $interactivityUtilities, true);
 }
 
 @include lg {
@@ -572,4 +582,8 @@
   @include universalMixin(true, true, true, lg\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, lg\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, lg\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+  // tables
+  @include eachValues(lg\:, $tableValues);
+  // interactivity
+  @include eachValues(lg\:, $interactivityUtilities, true);
 }

@@ -161,7 +161,7 @@
 
 // reusable @each mixin
 
-@mixin eachValues($bp: '', $loop) {
+@mixin eachValues($bp: '', $loop, $hasWebkit: false) {
   @each $property, $map in $loop {
     $key: map-get($map, 'keys');
     $values: map-get($map, 'values');
@@ -169,6 +169,9 @@
     @each $k, $v in $values {
       .#{$bp}#{$key}#{$k} {
         #{$property}: $v;
+        @if ($hasWebkit == true) {
+          -webkit-#{$property}: $v;
+        }
       }
     }
   }

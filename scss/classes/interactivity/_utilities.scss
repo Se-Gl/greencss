@@ -1,0 +1,16 @@
+@use '../../abstracts/variables/interactivity/variables' as *;
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
+
+// file for interactivity classes - for minified interactivity css
+@include eachValues('', $interactivityUtilities, true);
+
+@include sm {
+  @include eachValues(sm\:, $interactivityUtilities, true);
+}
+@include md {
+  @include eachValues(md\:, $interactivityUtilities, true);
+}
+@include lg {
+  @include eachValues(lg\:, $interactivityUtilities, true);
+}
