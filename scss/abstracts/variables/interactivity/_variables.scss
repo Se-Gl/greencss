@@ -89,5 +89,15 @@ $interactivityUtilities: (
       snap-normal: normal,
       snap-always: always
     )
+  ),
+  'scroll-snap-type': (
+    'values': (
+      scroll-snap-none: none,
+      scroll-snap-x: x,
+      scroll-snap-y: y,
+      scroll-snap-block: block,
+      scroll-snap-inline: inline,
+      scroll-snap-both: both
+    )
   )
 );
