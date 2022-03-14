@@ -69,5 +69,11 @@ $interactivityUtilities: (
       resize-x: horizontal,
       resize: both
     )
+  ),
+  'scroll-behavior': (
+    'values': (
+      scroll-auto: auto,
+      scroll-smooth: smooth
+    )
   )
 );
