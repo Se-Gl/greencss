@@ -75,5 +75,13 @@ $interactivityUtilities: (
       scroll-auto: auto,
       scroll-smooth: smooth
     )
+  ),
+  'scroll-snap-align': (
+    'values': (
+      snap-start: start,
+      snap-end: end,
+      snap-center: center,
+      snap-align-none: none
+    )
   )
 );
