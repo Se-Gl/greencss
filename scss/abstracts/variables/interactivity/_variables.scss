@@ -61,5 +61,13 @@ $interactivityUtilities: (
       pointer-events-stroke: stroke,
       pointer-events-all: all
     )
+  ),
+  'resize': (
+    'values': (
+      resize-none: none,
+      resize-y: vertical,
+      resize-x: horizontal,
+      resize: both
+    )
   )
 );
