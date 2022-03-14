@@ -122,5 +122,14 @@ $interactivityUtilities: (
       touch-pinch-zoom: pinch-zoom,
       touch-manipulation: manipulation
     )
+  ),
+  'will-change': (
+    'values': (
+      will-change-auto: auto,
+      will-change-scroll: scroll-position,
+      will-change-contents: contents,
+      will-change-transform: transform,
+      will-change-opacity: opacity
+    )
   )
 );
