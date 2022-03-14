@@ -83,5 +83,11 @@ $interactivityUtilities: (
       snap-center: center,
       snap-align-none: none
     )
+  ),
+  'scroll-snap-stop': (
+    'values': (
+      snap-normal: normal,
+      snap-always: always
+    )
   )
 );
