@@ -4,6 +4,15 @@ $interactivityUtilitiesWebkit: (
       appearance-none: none,
       appearance-auto: auto
     )
+  ),
+  'user-select': (
+    'values': (
+      select-none: none,
+      select-text: text,
+      select-all: all,
+      select-auto: auto,
+      select-contain: contain
+    )
   )
 );
 

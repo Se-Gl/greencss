@@ -171,6 +171,7 @@
         #{$property}: $v;
         @if ($hasWebkit == true) {
           -webkit-#{$property}: $v;
+          -moz-#{$property}: $v;
         }
       }
     }
