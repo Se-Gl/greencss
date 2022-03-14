@@ -206,5 +206,7 @@
 @include eachValues('', $tableValues);
 // interactivity
 @include eachValues('', $interactivityUtilities, true);
+@include lightColor(caret-, 1, 5, caret-color, $colors);
+@include lightColor(caret-, 0, 0, caret-color, $lightdark);
 
 // TODO: refactor all @each mixins into "eachValues" (current: sizing). Refactor "lightColor" into 1 reusable mixin. Add dark-mode classes
