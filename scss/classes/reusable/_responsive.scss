@@ -205,6 +205,7 @@
   // tables
   @include eachValues(sm\:, $tableValues);
   // interactivity
+  @include eachValues(sm\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(sm\:, $interactivityUtilities, true);
   @include lightColor(sm\:caret-, 1, 5, caret-color, $colors);
   @include lightColor(sm\:caret-, 0, 0, caret-color, $lightdark);
@@ -397,6 +398,7 @@
   // tables
   @include eachValues(md\:, $tableValues);
   // interactivity
+  @include eachValues(md\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(md\:, $interactivityUtilities, true);
   @include lightColor(md\:caret-, 1, 5, caret-color, $colors);
   @include lightColor(md\:caret-, 0, 0, caret-color, $lightdark);
@@ -589,6 +591,7 @@
   // tables
   @include eachValues(lg\:, $tableValues);
   // interactivity
+  @include eachValues(lg\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(lg\:, $interactivityUtilities, true);
   @include lightColor(lg\:caret-, 1, 5, caret-color, $colors);
   @include lightColor(lg\:caret-, 0, 0, caret-color, $lightdark);

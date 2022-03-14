@@ -5,21 +5,25 @@
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
 
 // file for interactivity classes - for minified interactivity css
+@include eachValues('', $interactivityUtilitiesWebkit, true);
 @include eachValues('', $interactivityUtilities, true);
 @include lightColor(caret-, 1, 5, caret-color, $colors);
 @include lightColor(caret-, 0, 0, caret-color, $lightdark);
 
 @include sm {
+  @include eachValues(sm\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(sm\:, $interactivityUtilities, true);
   @include lightColor(sm\:caret-, 1, 5, caret-color, $colors);
   @include lightColor(sm\:caret-, 0, 0, caret-color, $lightdark);
 }
 @include md {
+  @include eachValues(md\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(md\:, $interactivityUtilities, true);
   @include lightColor(md\:caret-, 1, 5, caret-color, $colors);
   @include lightColor(md\:caret-, 0, 0, caret-color, $lightdark);
 }
 @include lg {
+  @include eachValues(lg\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(lg\:, $interactivityUtilities, true);
   @include lightColor(lg\:caret-, 1, 5, caret-color, $colors);
   @include lightColor(lg\:caret-, 0, 0, caret-color, $lightdark);

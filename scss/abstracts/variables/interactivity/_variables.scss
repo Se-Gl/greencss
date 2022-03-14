@@ -1,10 +1,13 @@
-$interactivityUtilities: (
+$interactivityUtilitiesWebkit: (
   'appearance': (
     'values': (
       appearance-none: none,
       appearance-auto: auto
     )
-  ),
+  )
+);
+
+$interactivityUtilities: (
   'cursor': (
     'values': (
       cursor-auto: auto,
@@ -43,6 +46,20 @@ $interactivityUtilities: (
       cursor-nwse-resize: nwse-resize,
       cursor-zoom-in: zoom-in,
       cursor-zoom-out: zoom-out
+    )
+  ),
+  'pointer-events': (
+    'values': (
+      pointer-events-none: none,
+      pointer-events-auto: auto,
+      pointer-events-visiblePainted: visiblePainted,
+      pointer-events-visibleFill: visibleFill,
+      pointer-events-visibleStroke: visibleStroke,
+      pointer-events-visible: visible,
+      pointer-events-painted: painted,
+      pointer-events-fill: fill,
+      pointer-events-stroke: stroke,
+      pointer-events-all: all
     )
   )
 );
