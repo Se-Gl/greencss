@@ -204,4 +204,4 @@
 // tables
 @include eachValues('', $tableValues);
 
-// TODO: refactor all @each mixins into "eachValues". Refactor "lightColor" into 1 reusable mixin. Add dark-mode classes
+// TODO: refactor all @each mixins into "eachValues" (current: sizing). Refactor "lightColor" into 1 reusable mixin. Add dark-mode classes
