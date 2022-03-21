@@ -6,11 +6,11 @@
 @use '../../abstracts/variables/tables/variables' as *;
 @use '../../abstracts/variables/interactivity/variables' as *;
 @use '../../abstracts/variables/animation/variables' as *;
+@use '../../abstracts/variables/background/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
-@use '../../abstracts/mixins/background/mixin' as *;
 @use '../../abstracts/mixins/effects/mixin' as *;
 @use '../../abstracts/mixins/transforms/mixin' as *;
 @use '../../abstracts/mixins/filters/mixin' as *;
@@ -135,7 +135,7 @@
   @include universalMixin(true, true, true, sm\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
   @include universalMixin(true, true, true, sm\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
   // background
-  @include backgroundvalues(sm\:);
+  @include eachValues(md\:, $background);
   // effects
   @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(sm\:shadow-, 0, 0, $fullcolors, hover);
@@ -359,7 +359,7 @@
   @include universalMixin(true, true, true, md\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
   @include universalMixin(true, true, true, md\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
   // background
-  @include backgroundvalues(md\:);
+  @include eachValues(md\:, $background);
   // effects
   @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(md\:shadow-, 0, 0, $fullcolors, hover);
@@ -583,7 +583,7 @@
   @include universalMixin(true, true, true, lg\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
   @include universalMixin(true, true, true, lg\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
   // background
-  @include backgroundvalues(lg\:);
+  @include eachValues(lg\:, $background);
   // effects
   @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(lg\:shadow-, 0, 0, $fullcolors, hover);

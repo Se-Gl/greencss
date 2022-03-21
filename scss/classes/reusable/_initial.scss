@@ -6,12 +6,12 @@
 @use '../../abstracts/variables/layout/variables' as *;
 @use '../../abstracts/variables/interactivity/variables' as *;
 @use '../../abstracts/variables/animation/variables' as *;
+@use '../../abstracts/variables/background/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
 @use '../../abstracts/mixins/animations/mixin' as *;
-@use '../../abstracts/mixins/background/mixin' as *;
 @use '../../abstracts/mixins/effects/mixin' as *;
 @use '../../abstracts/mixins/transforms/mixin' as *;
 @use '../../abstracts/mixins/filters/mixin' as *;
@@ -146,7 +146,7 @@
 @include universalMixin(true, true, true, transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
 @include universalMixin(true, true, true, transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
 // background
-@include backgroundvalues();
+@include eachValues('', $background);
 // effects
 @include shadowColor(shadow-, 0, 0, $lightdark, hover);
 @include shadowColor(shadow-, 0, 0, $fullcolors, hover);
