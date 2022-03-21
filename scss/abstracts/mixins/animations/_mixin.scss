@@ -1,21 +1,5 @@
 @use '../../variables/animation/variables' as *;
 
-@mixin transitionvalues($bp: '') {
-  @each $property, $map in $transitionutilities {
-    $key: map-get($map, 'keys');
-    $values: map-get($map, 'values');
-
-    @each $k, $v in $values {
-      .#{$bp}transition-#{$key}#{$k} {
-        #{$property}: $v;
-      }
-      .hover\:#{$bp}transition-#{$key}#{$k} {
-        #{$property}: $v;
-      }
-    }
-  }
-}
-
 @mixin animation(
   $bp: delay-,
   $firstnumber: 1,
@@ -34,20 +18,6 @@
     }
     .hover\:#{$bp}#{$animationvalue}#{$postfix} {
       #{$classname}: $animationvalue * $multiply;
-    }
-  }
-}
-
-@mixin animationvalues($bp: '') {
-  @each $property, $map in $animationutilities {
-    $key: map-get($map, 'keys');
-    $values: map-get($map, 'values');
-
-    @each $k, $v in $values {
-      .#{$bp}#{$key}#{$k} {
-        -webkit-#{$property}: $v;
-        #{$property}: $v;
-      }
     }
   }
 }
