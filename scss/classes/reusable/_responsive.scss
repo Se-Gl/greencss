@@ -139,7 +139,7 @@
   // effects
   @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(sm\:shadow-, 0, 0, $fullcolors, hover);
-  @include blendModeMixin(sm\:, $blendModes);
+  @include eachValues(sm\:, $blendModes);
   @include universalMixin(true, true, true, sm\:opacity-, opacity, per, 1, 100, 1, 1%);
   // transforms
   @include transformvalues();
@@ -363,7 +363,7 @@
   // effects
   @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(md\:shadow-, 0, 0, $fullcolors, hover);
-  @include blendModeMixin(md\:, $blendModes);
+  @include eachValues(md\:, $blendModes);
   @include universalMixin(true, true, true, md\:opacity-, opacity, per, 1, 100, 1, 1%);
   // transforms
   @include transformvalues();
@@ -587,7 +587,7 @@
   // effects
   @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
   @include shadowColor(lg\:shadow-, 0, 0, $fullcolors, hover);
-  @include blendModeMixin(lg\:, $blendModes);
+  @include eachValues(lg\:, $blendModes);
   @include universalMixin(true, true, true, lg\:opacity-, opacity, per, 1, 100, 1, 1%);
   // transforms
   @include transformvalues();
