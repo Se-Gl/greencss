@@ -9,7 +9,6 @@
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
-@use '../../abstracts/mixins/sizing/mixin' as *;
 @use '../../abstracts/mixins/animations/mixin' as *;
 @use '../../abstracts/mixins/background/mixin' as *;
 @use '../../abstracts/mixins/effects/mixin' as *;
@@ -82,7 +81,7 @@
 @include universalMixin(true, true, true, left-, left, per, -100, 100, 1, 1%);
 @include universalMixin(true, true, true, z-, z-index, '', -100, 100, 1, 1);
 // sizing - width
-@include sizingValues('', $sizingValues);
+@include eachValues('', $sizingValues);
 @include universalMixin(true, true, true, w-, width, px, 0, 100, 1, 1px);
 @include universalMixin(true, true, true, w-, width, rem, 11, 100, 1, 1rem);
 @include universalMixin(true, true, true, w-, width, per, 1, 100, 1, 1%);
