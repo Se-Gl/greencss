@@ -7,12 +7,12 @@
 @use '../../abstracts/variables/interactivity/variables' as *;
 @use '../../abstracts/variables/animation/variables' as *;
 @use '../../abstracts/variables/background/variables' as *;
+@use '../../abstracts/variables/transforms/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/color/mixin' as *;
 @use '../../abstracts/mixins/effects/mixin' as *;
-@use '../../abstracts/mixins/transforms/mixin' as *;
 @use '../../abstracts/mixins/filters/mixin' as *;
 @use '../../abstracts/mixins/borders/mixin' as *;
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
@@ -142,7 +142,7 @@
   @include eachValues(sm\:, $blendModes);
   @include universalMixin(true, true, true, sm\:opacity-, opacity, per, 1, 100, 1, 1%);
   // transforms
-  @include transformvalues();
+  @include eachValues(sm\:, $transforms);
   @include transformMixin(true, true, true, sm\:scale-, transform, '', -30, 30, 1, 0.1, scale);
   @include transformMixin(true, true, true, sm\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
   @include transformMixin(true, true, true, sm\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
@@ -366,7 +366,7 @@
   @include eachValues(md\:, $blendModes);
   @include universalMixin(true, true, true, md\:opacity-, opacity, per, 1, 100, 1, 1%);
   // transforms
-  @include transformvalues();
+  @include eachValues(md\:, $transforms);
   @include transformMixin(true, true, true, md\:scale-, transform, '', -30, 30, 1, 0.1, scale);
   @include transformMixin(true, true, true, md\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
   @include transformMixin(true, true, true, md\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
@@ -590,7 +590,7 @@
   @include eachValues(lg\:, $blendModes);
   @include universalMixin(true, true, true, lg\:opacity-, opacity, per, 1, 100, 1, 1%);
   // transforms
-  @include transformvalues();
+  @include eachValues(lg\:, $transforms);
   @include transformMixin(true, true, true, lg\:scale-, transform, '', -30, 30, 1, 0.1, scale);
   @include transformMixin(true, true, true, lg\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
   @include transformMixin(true, true, true, lg\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);

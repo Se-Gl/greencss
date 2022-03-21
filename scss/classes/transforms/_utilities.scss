@@ -1,9 +1,10 @@
-@use '../../abstracts/mixins/transforms/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
 
+@use '../../abstracts/variables/transforms/variables' as *;
+
 // file for transforms classes - for minified omencss-transforms css
-@include transformvalues();
+@include eachValues('', $transforms);
 @include transformMixin(true, true, true, scale-, transform, '', -30, 30, 1, 0.1, scale);
 @include transformMixin(true, true, true, scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
 @include transformMixin(true, true, true, scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
@@ -16,7 +17,7 @@
 @include transformMixin(true, true, true, skew-y-, transform, deg, -30, 30, 1, 1deg, skewY);
 
 @include sm {
-  @include transformvalues(sm\:);
+  @include eachValues(sm\:, $transforms);
   @include transformMixin(true, true, true, sm\:scale-, transform, '', -30, 30, 1, 0.1, scale);
   @include transformMixin(true, true, true, sm\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
   @include transformMixin(true, true, true, sm\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
@@ -30,7 +31,7 @@
 }
 
 @include md {
-  @include transformvalues(md\:);
+  @include eachValues(md\:, $transforms);
   @include transformMixin(true, true, true, md\:scale-, transform, '', -30, 30, 1, 0.1, scale);
   @include transformMixin(true, true, true, md\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
   @include transformMixin(true, true, true, md\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
@@ -43,7 +44,7 @@
   @include transformMixin(true, true, true, md\:skew-y-, transform, deg, -30, 30, 1, 1deg, skewY);
 }
 @include lg {
-  @include transformvalues(lg\:);
+  @include eachValues(lg\:, $transforms);
   @include transformMixin(true, true, true, lg\:scale-, transform, '', -30, 30, 1, 0.1, scale);
   @include transformMixin(true, true, true, lg\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
   @include transformMixin(true, true, true, lg\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
