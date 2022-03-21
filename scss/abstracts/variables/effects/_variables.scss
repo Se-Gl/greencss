@@ -38,5 +38,11 @@ $blendModes: (
       bg-blend-color: color,
       bg-blend-luminosity: luminosity
     )
+  ),
+  'opacity': (
+    'values': (
+      opacity-hidden: 0,
+      opacity-visible: 1,
+    )
   )
 );
