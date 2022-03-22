@@ -14,6 +14,7 @@ $purple: #be0aff;
 $magenta: #d03377;
 $darkpurple: #580aff;
 $black: #101010;
+$gray: #101010ba;
 
 // theme color
 $colors: (
@@ -31,7 +32,8 @@ $colors: (
   'purple': $purple,
   'magenta': $magenta,
   'darkpurple': $darkpurple,
-  'black': $black
+  'black': $black,
+  'gray': $gray
 );
 
 $fullcolors: (
@@ -124,7 +126,13 @@ $fullcolors: (
   'black-2': #343434,
   'black-3': #464646,
   'black-4': #575757,
-  'black-5': #696969
+  'black-5': #696969,
+  'gray': $gray,
+  'gray-1': #222222ba,
+  'gray-2': #343434ba,
+  'gray-3': #464646ba,
+  'gray-4': #575757ba,
+  'gray-5': #696969ba
 );
 
 $lightdark: (
