@@ -50,21 +50,3 @@
     }
   }
 }
-
-@mixin bordervalues($bp: '', $selector: hover) {
-  @each $property, $map in $border-style {
-    $key: map-get($map, 'keys');
-    $values: map-get($map, 'values');
-
-    @each $k, $v in $values {
-      .#{$bp}#{$key}#{$k} {
-        #{$property}: $v;
-      }
-      .#{$selector}\:#{$bp}#{$key}#{$k} {
-        &:#{$selector} {
-          #{$property}: $v;
-        }
-      }
-    }
-  }
-}
