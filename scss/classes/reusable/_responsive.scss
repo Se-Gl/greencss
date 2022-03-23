@@ -9,6 +9,7 @@
 @use '../../abstracts/variables/background/variables' as *;
 @use '../../abstracts/variables/transforms/variables' as *;
 @use '../../abstracts/variables/borders/variables' as *;
+@use '../../abstracts/variables/svg/variables' as *;
 
 @use '../../abstracts/mixins/typography/mixin' as *;
 @use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
@@ -240,6 +241,10 @@
   @include universalMixin(true, false, false, sm\:scroll-pb-, scroll-padding-bottom, rem, -30, 30, 1, 1rem);
   @include universalMixin(true, false, false, sm\:scroll-pl-, scroll-padding-left, px, -100, 100, 1, 1px);
   @include universalMixin(true, false, false, sm\:scroll-pl-, scroll-padding-left, rem, -30, 30, 1, 1rem);
+  // svg
+  @include eachValues(sm\:, $svgValues);
+  @include lightColor(sm\:fill-, 0, 0, fill, $lightdark);
+  @include lightColor(sm\:fill-, 1, 5, fill, $colors);
 }
 
 @include md {
@@ -464,6 +469,10 @@
   @include universalMixin(true, false, false, md\:scroll-pb-, scroll-padding-bottom, rem, -30, 30, 1, 1rem);
   @include universalMixin(true, false, false, md\:scroll-pl-, scroll-padding-left, px, -100, 100, 1, 1px);
   @include universalMixin(true, false, false, md\:scroll-pl-, scroll-padding-left, rem, -30, 30, 1, 1rem);
+  // svg
+  @include eachValues(md\:, $svgValues);
+  @include lightColor(md\:fill-, 0, 0, fill, $lightdark);
+  @include lightColor(md\:fill-, 1, 5, fill, $colors);
 }
 
 @include lg {
@@ -688,4 +697,8 @@
   @include universalMixin(true, false, false, lg\:scroll-pb-, scroll-padding-bottom, rem, -30, 30, 1, 1rem);
   @include universalMixin(true, false, false, lg\:scroll-pl-, scroll-padding-left, px, -100, 100, 1, 1px);
   @include universalMixin(true, false, false, lg\:scroll-pl-, scroll-padding-left, rem, -30, 30, 1, 1rem);
+  // svg
+  @include eachValues(lg\:, $svgValues);
+  @include lightColor(lg\:fill-, 0, 0, fill, $lightdark);
+  @include lightColor(lg\:fill-, 1, 5, fill, $colors);
 }
