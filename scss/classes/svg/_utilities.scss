@@ -10,6 +10,7 @@
 @include lightColor(fill-, 1, 5, fill, $colors);
 @include lightColor(stroke-, 0, 0, stroke, $lightdark);
 @include lightColor(stroke-, 1, 5, stroke, $colors);
+@include universalMixin(true, true, true, stroke-, stroke-width, '', 0, 100, 1, 0.1);
 
 @include sm {
   @include eachValues(sm\:, $svgValues);
@@ -17,6 +18,7 @@
   @include lightColor(sm\:fill-, 1, 5, fill, $colors);
   @include lightColor(sm\:stroke-, 0, 0, stroke, $lightdark);
   @include lightColor(sm\:stroke-, 1, 5, stroke, $colors);
+  @include universalMixin(true, true, true, sm\:stroke-, stroke-width, '', 0, 100, 1, 0.1);
 }
 @include md {
   @include eachValues(md\:, $svgValues);
@@ -24,6 +26,7 @@
   @include lightColor(md\:fill-, 1, 5, fill, $colors);
   @include lightColor(md\:stroke-, 0, 0, stroke, $lightdark);
   @include lightColor(md\:stroke-, 1, 5, stroke, $colors);
+  @include universalMixin(true, true, true, md\:stroke-, stroke-width, '', 0, 100, 1, 0.1);
 }
 @include lg {
   @include eachValues(lg\:, $svgValues);
@@ -31,4 +34,5 @@
   @include lightColor(lg\:fill-, 1, 5, fill, $colors);
   @include lightColor(lg\:stroke-, 0, 0, stroke, $lightdark);
   @include lightColor(lg\:stroke-, 1, 5, stroke, $colors);
+  @include universalMixin(true, true, true, lg\:stroke-, stroke-width, '', 0, 100, 1, 0.1);
 }

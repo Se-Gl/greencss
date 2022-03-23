@@ -248,5 +248,6 @@
 @include lightColor(fill-, 1, 5, fill, $colors);
 @include lightColor(stroke-, 0, 0, stroke, $lightdark);
 @include lightColor(stroke-, 1, 5, stroke, $colors);
+@include universalMixin(true, true, true, stroke-, stroke-width, '', 0, 100, 1, 0.1);
 
 // TODO: refactor borderColorMixin into eachValues. double chekc all @each mixins. Refactor "lightColor" into 1 reusable mixin. Add dark-mode classes
