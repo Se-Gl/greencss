@@ -246,5 +246,7 @@
 @include eachValues('', $svgValues);
 @include lightColor(fill-, 0, 0, fill, $lightdark);
 @include lightColor(fill-, 1, 5, fill, $colors);
+@include lightColor(stroke-, 0, 0, stroke, $lightdark);
+@include lightColor(stroke-, 1, 5, stroke, $colors);
 
 // TODO: refactor borderColorMixin into eachValues. double chekc all @each mixins. Refactor "lightColor" into 1 reusable mixin. Add dark-mode classes

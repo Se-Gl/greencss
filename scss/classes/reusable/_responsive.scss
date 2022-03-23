@@ -245,6 +245,8 @@
   @include eachValues(sm\:, $svgValues);
   @include lightColor(sm\:fill-, 0, 0, fill, $lightdark);
   @include lightColor(sm\:fill-, 1, 5, fill, $colors);
+  @include lightColor(sm\:stroke-, 0, 0, stroke, $lightdark);
+  @include lightColor(sm\:stroke-, 1, 5, stroke, $colors);
 }
 
 @include md {
@@ -473,6 +475,8 @@
   @include eachValues(md\:, $svgValues);
   @include lightColor(md\:fill-, 0, 0, fill, $lightdark);
   @include lightColor(md\:fill-, 1, 5, fill, $colors);
+  @include lightColor(md\:stroke-, 0, 0, stroke, $lightdark);
+  @include lightColor(md\:stroke-, 1, 5, stroke, $colors);
 }
 
 @include lg {
@@ -701,4 +705,6 @@
   @include eachValues(lg\:, $svgValues);
   @include lightColor(lg\:fill-, 0, 0, fill, $lightdark);
   @include lightColor(lg\:fill-, 1, 5, fill, $colors);
+  @include lightColor(lg\:stroke-, 0, 0, stroke, $lightdark);
+  @include lightColor(lg\:stroke-, 1, 5, stroke, $colors);
 }
