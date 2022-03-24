@@ -7,7 +7,7 @@
 // file for interactivity classes - for minified interactivity css
 @include eachValues('', $interactivityUtilitiesWebkit, true);
 @include eachValues('', $interactivityUtilities);
-@include lightColor(caret-, 1, 5, caret-color, $colors);
+@include lightColor(caret-, 1, 10, caret-color, $colors);
 @include lightColor(caret-, 0, 0, caret-color, $lightdark);
 // interactivity - scroll margin
 @include universalMixin(true, false, false, scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
@@ -43,7 +43,7 @@
 @include sm {
   @include eachValues(sm\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(sm\:, $interactivityUtilities);
-  @include lightColor(sm\:caret-, 1, 5, caret-color, $colors);
+  @include lightColor(sm\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(sm\:caret-, 0, 0, caret-color, $lightdark);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, sm\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
@@ -79,7 +79,7 @@
 @include md {
   @include eachValues(md\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(md\:, $interactivityUtilities);
-  @include lightColor(md\:caret-, 1, 5, caret-color, $colors);
+  @include lightColor(md\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(md\:caret-, 0, 0, caret-color, $lightdark);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, md\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
@@ -115,7 +115,7 @@
 @include lg {
   @include eachValues(lg\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(lg\:, $interactivityUtilities);
-  @include lightColor(lg\:caret-, 1, 5, caret-color, $colors);
+  @include lightColor(lg\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(lg\:caret-, 0, 0, caret-color, $lightdark);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, lg\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);

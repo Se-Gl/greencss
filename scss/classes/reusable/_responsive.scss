@@ -37,11 +37,11 @@
   // color
   @include initialColor(sm\:text-, color);
   @include initialColor(sm\:bg-, background-color);
-  @include lightColor(sm\:text-, 1, 5, color, $colors);
-  @include lightColor(sm\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(sm\:text-, 1, 10, color, $colors);
+  @include lightColor(sm\:bg-, 1, 10, background-color, $colors);
   @include lightColor(sm\:text-, 0, 0, color, $lightdark);
   @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark);
-  @include lightColor(sm\:accent-, 1, 5, accent-color, $colors);
+  @include lightColor(sm\:accent-, 1, 10, accent-color, $colors);
   @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark);
   @include bggradient(sm\:);
   @include bggradient(sm\:, $lightdark);
@@ -51,16 +51,16 @@
   @include initialColor(sm\:text-, color, focus);
   @include initialColor(sm\:bg-, background-color, active);
   @include initialColor(sm\:bg-, background-color, focus);
-  @include lightColor(sm\:text-, 1, 5, color, $colors, active);
-  @include lightColor(sm\:text-, 1, 5, color, $colors, focus);
-  @include lightColor(sm\:bg-, 1, 5, background-color, $colors, active);
-  @include lightColor(sm\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(sm\:text-, 1, 10, color, $colors, active);
+  @include lightColor(sm\:text-, 1, 10, color, $colors, focus);
+  @include lightColor(sm\:bg-, 1, 10, background-color, $colors, active);
+  @include lightColor(sm\:bg-, 1, 10, background-color, $colors, focus);
   @include lightColor(sm\:text-, 0, 0, color, $lightdark, active);
   @include lightColor(sm\:text-, 0, 0, color, $lightdark, focus);
   @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, active);
   @include lightColor(sm\:bg-, 0, 0, background-color, $lightdark, focus);
-  @include lightColor(sm\:accent-, 1, 5, accent-color, $colors, active);
-  @include lightColor(sm\:accent-, 1, 5, accent-color, $colors, focus);
+  @include lightColor(sm\:accent-, 1, 10, accent-color, $colors, active);
+  @include lightColor(sm\:accent-, 1, 10, accent-color, $colors, focus);
   @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark, active);
   @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
@@ -209,7 +209,7 @@
   // interactivity
   @include eachValues(sm\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(sm\:, $interactivityUtilities);
-  @include lightColor(sm\:caret-, 1, 5, caret-color, $colors);
+  @include lightColor(sm\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(sm\:caret-, 0, 0, caret-color, $lightdark);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, sm\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
@@ -244,9 +244,9 @@
   // svg
   @include eachValues(sm\:, $svgValues);
   @include lightColor(sm\:fill-, 0, 0, fill, $lightdark);
-  @include lightColor(sm\:fill-, 1, 5, fill, $colors);
+  @include lightColor(sm\:fill-, 1, 10, fill, $colors);
   @include lightColor(sm\:stroke-, 0, 0, stroke, $lightdark);
-  @include lightColor(sm\:stroke-, 1, 5, stroke, $colors);
+  @include lightColor(sm\:stroke-, 1, 10, stroke, $colors);
   @include universalMixin(true, true, true, sm\:stroke-, stroke-width, '', 0, 100, 1, 0.1);
 }
 
@@ -268,11 +268,11 @@
   // color
   @include initialColor(md\:text-, color);
   @include initialColor(md\:bg-, background-color);
-  @include lightColor(md\:text-, 1, 5, color, $colors);
-  @include lightColor(md\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(md\:text-, 1, 10, color, $colors);
+  @include lightColor(md\:bg-, 1, 10, background-color, $colors);
   @include lightColor(md\:text-, 0, 0, color, $lightdark);
   @include lightColor(md\:bg-, 0, 0, background-color, $lightdark);
-  @include lightColor(md\:accent-, 1, 5, accent-color, $colors);
+  @include lightColor(md\:accent-, 1, 10, accent-color, $colors);
   @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark);
   @include bggradient(md\:);
   @include bggradient(md\:, $lightdark);
@@ -282,16 +282,16 @@
   @include initialColor(md\:text-, color, focus);
   @include initialColor(md\:bg-, background-color, active);
   @include initialColor(md\:bg-, background-color, focus);
-  @include lightColor(md\:text-, 1, 5, color, $colors, active);
-  @include lightColor(md\:text-, 1, 5, color, $colors, focus);
-  @include lightColor(md\:bg-, 1, 5, background-color, $colors, active);
-  @include lightColor(md\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(md\:text-, 1, 10, color, $colors, active);
+  @include lightColor(md\:text-, 1, 10, color, $colors, focus);
+  @include lightColor(md\:bg-, 1, 10, background-color, $colors, active);
+  @include lightColor(md\:bg-, 1, 10, background-color, $colors, focus);
   @include lightColor(md\:text-, 0, 0, color, $lightdark, active);
   @include lightColor(md\:text-, 0, 0, color, $lightdark, focus);
   @include lightColor(md\:bg-, 0, 0, background-color, $lightdark, active);
   @include lightColor(md\:bg-, 0, 0, background-color, $lightdark, focus);
-  @include lightColor(md\:accent-, 1, 5, accent-color, $colors, active);
-  @include lightColor(md\:accent-, 1, 5, accent-color, $colors, focus);
+  @include lightColor(md\:accent-, 1, 10, accent-color, $colors, active);
+  @include lightColor(md\:accent-, 1, 10, accent-color, $colors, focus);
   @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, active);
   @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
@@ -440,7 +440,7 @@
   // interactivity
   @include eachValues(md\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(md\:, $interactivityUtilities);
-  @include lightColor(md\:caret-, 1, 5, caret-color, $colors);
+  @include lightColor(md\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(md\:caret-, 0, 0, caret-color, $lightdark);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, md\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
@@ -475,9 +475,9 @@
   // svg
   @include eachValues(md\:, $svgValues);
   @include lightColor(md\:fill-, 0, 0, fill, $lightdark);
-  @include lightColor(md\:fill-, 1, 5, fill, $colors);
+  @include lightColor(md\:fill-, 1, 10, fill, $colors);
   @include lightColor(md\:stroke-, 0, 0, stroke, $lightdark);
-  @include lightColor(md\:stroke-, 1, 5, stroke, $colors);
+  @include lightColor(md\:stroke-, 1, 10, stroke, $colors);
   @include universalMixin(true, true, true, md\:stroke-, stroke-width, '', 0, 100, 1, 0.1);
 }
 
@@ -499,11 +499,11 @@
   // color
   @include initialColor(lg\:text-, color);
   @include initialColor(lg\:bg-, background-color);
-  @include lightColor(lg\:text-, 1, 5, color, $colors);
-  @include lightColor(lg\:bg-, 1, 5, background-color, $colors);
+  @include lightColor(lg\:text-, 1, 10, color, $colors);
+  @include lightColor(lg\:bg-, 1, 10, background-color, $colors);
   @include lightColor(lg\:text-, 0, 0, color, $lightdark);
   @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark);
-  @include lightColor(lg\:accent-, 1, 5, accent-color, $colors);
+  @include lightColor(lg\:accent-, 1, 10, accent-color, $colors);
   @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark);
   @include bggradient(lg\:);
   @include bggradient(lg\:, $lightdark);
@@ -513,16 +513,16 @@
   @include initialColor(lg\:text-, color, focus);
   @include initialColor(lg\:bg-, background-color, active);
   @include initialColor(lg\:bg-, background-color, focus);
-  @include lightColor(lg\:text-, 1, 5, color, $colors, active);
-  @include lightColor(lg\:text-, 1, 5, color, $colors, focus);
-  @include lightColor(lg\:bg-, 1, 5, background-color, $colors, active);
-  @include lightColor(lg\:bg-, 1, 5, background-color, $colors, focus);
+  @include lightColor(lg\:text-, 1, 10, color, $colors, active);
+  @include lightColor(lg\:text-, 1, 10, color, $colors, focus);
+  @include lightColor(lg\:bg-, 1, 10, background-color, $colors, active);
+  @include lightColor(lg\:bg-, 1, 10, background-color, $colors, focus);
   @include lightColor(lg\:text-, 0, 0, color, $lightdark, active);
   @include lightColor(lg\:text-, 0, 0, color, $lightdark, focus);
   @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, active);
   @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, focus);
-  @include lightColor(lg\:accent-, 1, 5, accent-color, $colors, active);
-  @include lightColor(lg\:accent-, 1, 5, accent-color, $colors, focus);
+  @include lightColor(lg\:accent-, 1, 10, accent-color, $colors, active);
+  @include lightColor(lg\:accent-, 1, 10, accent-color, $colors, focus);
   @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark, active);
   @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
@@ -671,7 +671,7 @@
   // interactivity
   @include eachValues(lg\:, $interactivityUtilitiesWebkit, true);
   @include eachValues(lg\:, $interactivityUtilities);
-  @include lightColor(lg\:caret-, 1, 5, caret-color, $colors);
+  @include lightColor(lg\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(lg\:caret-, 0, 0, caret-color, $lightdark);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, lg\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
@@ -706,8 +706,8 @@
   // svg
   @include eachValues(lg\:, $svgValues);
   @include lightColor(lg\:fill-, 0, 0, fill, $lightdark);
-  @include lightColor(lg\:fill-, 1, 5, fill, $colors);
+  @include lightColor(lg\:fill-, 1, 10, fill, $colors);
   @include lightColor(lg\:stroke-, 0, 0, stroke, $lightdark);
-  @include lightColor(lg\:stroke-, 1, 5, stroke, $colors);
+  @include lightColor(lg\:stroke-, 1, 10, stroke, $colors);
   @include universalMixin(true, true, true, sm\:stroke-, stroke-width, '', 0, 100, 1, 0.1);
 }

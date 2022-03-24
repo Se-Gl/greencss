@@ -30,7 +30,7 @@
     } @else {
       // // light variations (7%)
       @for $i from $firstnumber through $secondnumber {
-        $lighten: $i * 7%;
+        $lighten: $i * 4.75%;
 
         .#{$bp}#{$key}-#{$i} {
           #{$classname}: lighten($val, $lighten);
