@@ -39,12 +39,13 @@
 @include universalMixin(true, true, true, font-, font-weight, '', 1, 9, 100, 1);
 // flex
 @include eachValues('', $utilities);
-@include universalMixin(false, false, false, gap-, gap, px, 0, 100, 1, 1px);
-@include universalMixin(false, false, false, gap-x-, column-gap, px, 0, 100, 1, 1px);
-@include universalMixin(false, false, false, gap-y-, row-gap, px, 0, 100, 1, 1px);
-@include universalMixin(false, false, false, gap-, gap, rem, 11, 30, 1, 1rem);
-@include universalMixin(false, false, false, gap-x-, column-gap, rem, 11, 30, 1, 1rem);
-@include universalMixin(false, false, false, gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+@include universalMixin(true, true, true, gap-, gap, px, 0, 100, 1, 1px);
+@include universalMixin(true, true, true, gap-x-, column-gap, px, 0, 100, 1, 1px);
+@include universalMixin(true, true, true, gap-y-, row-gap, px, 0, 100, 1, 1px);
+@include universalMixin(true, true, true, gap-, gap, rem, 11, 30, 1, 1rem);
+@include universalMixin(true, true, true, gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+@include universalMixin(true, true, true, gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+@include universalMixin(true, true, true, basis-, flex-basis, per, 0, 100, 1, 1%);
 // color
 @include initialColor(text-, color);
 @include initialColor(bg-, background-color);
@@ -76,8 +77,8 @@
 @include lightColor(accent-, 0, 0, accent-color, $lightdark, focus);
 // layout
 @include eachValues('', $layoutVariables);
-@include universalMixin(false, false, false, col-, columns, '', 1, 12, 1, 1);
-@include universalMixin(false, false, false, col-, columns, rem, 1, 100, 1, 1rem);
+@include universalMixin(true, true, true, col-, columns, '', 1, 12, 1, 1);
+@include universalMixin(true, true, true, col-, columns, rem, 1, 100, 1, 1rem);
 @include universalMixin(true, true, true, top-, top, per, -100, 100, 1, 1%);
 @include universalMixin(true, true, true, right-, right, per, -100, 100, 1, 1%);
 @include universalMixin(true, true, true, bottom-, bottom, per, -100, 100, 1, 1%);

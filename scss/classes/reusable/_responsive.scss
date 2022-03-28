@@ -28,12 +28,13 @@
   @include universalMixin(true, true, true, sm\:font-, font-weight, '', 1, 9, 100, 1);
   // flex
   @include eachValues(sm\:, $utilities);
-  @include universalMixin(false, false, false, sm\:gap-, gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, sm\:gap-x-, column-gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, sm\:gap-y-, row-gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, sm\:gap-, gap, rem, 11, 30, 1, 1rem);
-  @include universalMixin(false, false, false, sm\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
-  @include universalMixin(false, false, false, sm\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:basis-, flex-basis, per, 0, 100, 1, 1%);
   // color
   @include initialColor(sm\:text-, color);
   @include initialColor(sm\:bg-, background-color);
@@ -259,12 +260,13 @@
   @include universalMixin(true, true, true, md\:font-, font-weight, '', 1, 9, 100, 1);
   // flex
   @include eachValues(md\:, $utilities);
-  @include universalMixin(false, false, false, md\:gap-, gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, md\:gap-x-, column-gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, md\:gap-y-, row-gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, md\:gap-, gap, rem, 11, 30, 1, 1rem);
-  @include universalMixin(false, false, false, md\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
-  @include universalMixin(false, false, false, md\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, md\:basis-, flex-basis, per, 0, 100, 1, 1%);
   // color
   @include initialColor(md\:text-, color);
   @include initialColor(md\:bg-, background-color);
@@ -490,12 +492,13 @@
   @include universalMixin(true, true, true, lg\:font-, font-weight, '', 1, 9, 100, 1);
   // flex
   @include eachValues(lg\:, $utilities);
-  @include universalMixin(false, false, false, lg\:gap-, gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, lg\:gap-x-, column-gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, lg\:gap-y-, row-gap, px, 0, 100, 1, 1px);
-  @include universalMixin(false, false, false, lg\:gap-, gap, rem, 11, 30, 1, 1rem);
-  @include universalMixin(false, false, false, lg\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
-  @include universalMixin(false, false, false, lg\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:gap-, gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:gap-x-, column-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:gap-y-, row-gap, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:gap-, gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:gap-x-, column-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:gap-y-, row-gap, rem, 11, 30, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:basis-, flex-basis, per, 0, 100, 1, 1%);
   // color
   @include initialColor(lg\:text-, color);
   @include initialColor(lg\:bg-, background-color);
