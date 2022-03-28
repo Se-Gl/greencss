@@ -41,6 +41,15 @@ $utilities: (
       flex-nowrap: nowrap
     )
   ),
+  'flex': (
+    'values': (
+      flex-none: none,
+      flex-1: 1,
+      flex-2: 2,
+      flex-initial: initial,
+      flex-auto: auto
+    )
+  ),
   'flex-grow': (
     'values': (
       grow: 1,
