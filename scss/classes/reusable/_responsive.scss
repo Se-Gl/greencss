@@ -66,8 +66,8 @@
   @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
   @include eachValues(sm\:, $layoutVariables);
-  @include universalMixin(false, false, false, sm\:col-, columns, '', 1, 12, 1, 1);
-  @include universalMixin(false, false, false, sm\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, sm\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(true, true, true, sm\:col-, columns, rem, 1, 100, 1, 1rem);
   @include universalMixin(true, true, true, sm\:top-, top, per, -100, 100, 1, 1%);
   @include universalMixin(true, true, true, sm\:right-, right, per, -100, 100, 1, 1%);
   @include universalMixin(true, true, true, sm\:bottom-, bottom, per, -100, 100, 1, 1%);
@@ -298,8 +298,8 @@
   @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
   @include eachValues(md\:, $layoutVariables);
-  @include universalMixin(false, false, false, md\:col-, columns, '', 1, 12, 1, 1);
-  @include universalMixin(false, false, false, md\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, md\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(true, true, true, md\:col-, columns, rem, 1, 100, 1, 1rem);
   @include universalMixin(true, true, true, md\:top-, top, per, -100, 100, 1, 1%);
   @include universalMixin(true, true, true, md\:right-, right, per, -100, 100, 1, 1%);
   @include universalMixin(true, true, true, md\:bottom-, bottom, per, -100, 100, 1, 1%);
@@ -530,8 +530,8 @@
   @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark, focus);
   // layout
   @include eachValues(lg\:, $layoutVariables);
-  @include universalMixin(false, false, false, lg\:col-, columns, '', 1, 12, 1, 1);
-  @include universalMixin(false, false, false, lg\:col-, columns, rem, 1, 100, 1, 1rem);
+  @include universalMixin(true, true, true, lg\:col-, columns, '', 1, 12, 1, 1);
+  @include universalMixin(true, true, true, lg\:col-, columns, rem, 1, 100, 1, 1rem);
   @include universalMixin(true, true, true, lg\:top-, top, per, -100, 100, 1, 1%);
   @include universalMixin(true, true, true, lg\:right-, right, per, -100, 100, 1, 1%);
   @include universalMixin(true, true, true, lg\:bottom-, bottom, per, -100, 100, 1, 1%);
