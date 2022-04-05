@@ -170,6 +170,19 @@
       </div>
     </div>
 
+    <!-- <div class="flex">
+      <div class="flex-none bg-purple">first</div>
+      <div class="flex-1 w-50rem bg-purple-3">second</div>
+      <div class="flex-2 w-25rem bg-purple-6">third</div>
+    </div> -->
+    <div class="h-75vh"></div>
+
+    <div class="grid grid-col-2 place-content-center min-h-50vh gap-20px">
+      <div class="bg-purple">first</div>
+      <div class="bg-purple-3">second</div>
+      <div class="bg-purple-6">third</div>
+    </div>
+
     <script type="module">
       import { isInView, lazy } from '../js/omenJS.js'
       isInView('fade-in', 'animation-duration-500ms', 'animation-forwards', 0.25, '#first-animation')

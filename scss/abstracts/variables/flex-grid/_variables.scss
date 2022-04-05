@@ -102,7 +102,7 @@ $utilities: (
     'values': (
       col-auto: auto,
       col-span-1: span 1,
-      col-span-2n: span 2,
+      col-span-2: span 2,
       col-span-3: span 3,
       col-span-4: span 4,
       col-span-5: span 5,
@@ -130,6 +130,7 @@ $utilities: (
       col-start-10: 10,
       col-start-11: 11,
       col-start-12: 12,
+      col-start-13: 13,
       col-start-auto: auto
     )
   ),
@@ -147,6 +148,7 @@ $utilities: (
       col-end-10: 10,
       col-end-11: 11,
       col-end-12: 12,
+      col-end-13: 13,
       col-end-auto: auto
     )
   ),
@@ -158,6 +160,12 @@ $utilities: (
       grid-rows-4: repeat(4, minmax(0, 1fr)),
       grid-rows-5: repeat(5, minmax(0, 1fr)),
       grid-rows-6: repeat(6, minmax(0, 1fr)),
+      grid-rows-7: repeat(7, minmax(0, 1fr)),
+      grid-rows-8: repeat(8, minmax(0, 1fr)),
+      grid-rows-9: repeat(9, minmax(0, 1fr)),
+      grid-rows-10: repeat(10, minmax(0, 1fr)),
+      grid-rows-11: repeat(11, minmax(0, 1fr)),
+      grid-rows-12: repeat(12, minmax(0, 1fr)),
       grid-rows-none: none
     )
   ),
