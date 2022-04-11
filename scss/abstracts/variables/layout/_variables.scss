@@ -18,6 +18,7 @@ $layoutVariables: (
       break-after-auto: auto,
       break-after-avoid: avoid,
       break-after-all: all,
+      break-after-always: always,
       break-after-avoid-page: avoid-page,
       break-after-page: page,
       break-after-left: left,
@@ -30,6 +31,7 @@ $layoutVariables: (
       break-before-auto: auto,
       break-before-avoid: avoid,
       break-before-all: all,
+      break-before-always: always,
       break-before-avoid-page: avoid-page,
       break-before-page: page,
       break-before-left: left,
@@ -53,8 +55,8 @@ $layoutVariables: (
   ),
   'box-sizing': (
     'values': (
-      box-border: border-box,
-      box-content: content-box
+      box-sizing-border: border-box,
+      box-sizing-content: content-box
     )
   ),
   'float': (
@@ -180,7 +182,8 @@ $layoutVariables: (
   'visibility': (
     'values': (
       visible: visible,
-      hidden: hidden
+      hidden: hidden,
+      collapse: collapse
     )
   ),
   'z-index': (

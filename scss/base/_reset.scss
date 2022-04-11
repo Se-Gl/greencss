@@ -184,6 +184,11 @@ h6 {
 }
 
 // remove outline
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 a:focus,
 button:focus,
 input:focus,
