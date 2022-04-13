@@ -26,6 +26,7 @@
   @include universalMixin(true, true, true, sm\:text-, font-size, px, 11, 30, 10, 1px);
   @include universalMixin(true, true, true, sm\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
   @include universalMixin(true, true, true, sm\:font-, font-weight, '', 1, 9, 100, 1);
+  @include universalMixin(true, true, true, sm\:line-height-, line-height, per, 0, 300, 1, 1%);
   // flex
   @include eachValues(sm\:, $utilities);
   @include universalMixin(true, true, true, sm\:gap-, gap, px, 0, 100, 1, 1px);
@@ -259,6 +260,7 @@
   @include universalMixin(true, true, true, md\:text-, font-size, px, 11, 30, 10, 1px);
   @include universalMixin(true, true, true, md\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
   @include universalMixin(true, true, true, md\:font-, font-weight, '', 1, 9, 100, 1);
+  @include universalMixin(true, true, true, md\:line-height-, line-height, per, 0, 300, 1, 1%);
   // flex
   @include eachValues(md\:, $utilities);
   @include universalMixin(true, true, true, md\:gap-, gap, px, 0, 100, 1, 1px);
@@ -492,6 +494,7 @@
   @include universalMixin(true, true, true, lg\:text-, font-size, px, 11, 30, 10, 1px);
   @include universalMixin(true, true, true, lg\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
   @include universalMixin(true, true, true, lg\:font-, font-weight, '', 1, 9, 100, 1);
+  @include universalMixin(true, true, true, lg\:line-height-, line-height, per, 0, 300, 1, 1%);
   // flex
   @include eachValues(lg\:, $utilities);
   @include universalMixin(true, true, true, lg\:gap-, gap, px, 0, 100, 1, 1px);
