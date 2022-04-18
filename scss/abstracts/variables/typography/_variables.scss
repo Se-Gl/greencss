@@ -62,6 +62,8 @@ $typo-utilities: (
       uppercase: uppercase,
       lowercase: lowercase,
       capitalize: capitalize,
+      full-width: full-width,
+      full-size-kana: full-size-kana,
       no-transform: none
     )
   ),
@@ -70,7 +72,8 @@ $typo-utilities: (
     'values': (
       ellipsis: ellipsis,
       clip: clip,
-      unset: unset
+      unset: unset,
+      brackets: ' [..]'
     )
   ),
   'word-break': (
@@ -150,6 +153,36 @@ $typo-utilities: (
         Papyrus,
         fantasy
       )
+    )
+  ),
+  'list-style-position': (
+    'prefix': 'list-style-',
+    'values': (
+      inside: inside,
+      outside: outside
+    )
+  ),
+  'text-decoration-style': (
+    'prefix': 'text-decoration-',
+    'values': (
+      solid: solid,
+      double: double,
+      dotted: dotted,
+      dashed: dashed,
+      wavy: wavy
+    )
+  ),
+  'text-decoration-thickness': (
+    'prefix': 'text-decoration-thickness-',
+    'values': (
+      auto: auto,
+      from-font: from-font
+    )
+  ),
+  'text-underline-offset': (
+    'prefix': 'text-underline-offset-',
+    'values': (
+      auto: auto
     )
   )
 );

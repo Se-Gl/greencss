@@ -1,17 +1,6 @@
 @use './mixin' as *;
 
-@mixin twistMixin(
-  $name,
-  $cubic1,
-  $transform1,
-  $cubic2,
-  $transform2,
-  $cubic3,
-  $transform3,
-  $cubic4,
-  $transform4,
-  $inTrue: true
-) {
+@mixin twistMixin($name, $cubic1, $transform1, $cubic2, $transform2, $cubic3, $transform3, $cubic4, $transform4, $inTrue: true) {
   @keyframes #{$name} {
     0% {
       @if ($inTrue == true) {

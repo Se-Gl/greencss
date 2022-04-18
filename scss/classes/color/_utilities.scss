@@ -14,7 +14,11 @@
 @include bggradient();
 @include bggradient('', $lightdark);
 @include bgGradientToFrom();
+@include lightColor(text-decoration-, 1, 10, text-decoration-color, $colors);
+@include lightColor(text-decoration-, 0, 0, text-decoration-color, $lightdark);
 // active and focus color classes
+@include lightColor(text-decoration-, 1, 10, text-decoration-color, $colors, active);
+@include lightColor(text-decoration-, 1, 10, text-decoration-color, $colors, focus);
 @include initialColor(text-, color, active);
 @include initialColor(text-, color, focus);
 @include initialColor(bg-, background-color, active);
@@ -44,7 +48,11 @@
   @include bggradient(sm\:);
   @include bggradient(sm\:, $lightdark);
   @include bgGradientToFrom(sm\:);
+  @include lightColor(sm\:text-decoration-, 1, 10, text-decoration-color, $colors);
+  @include lightColor(sm\:text-decoration-, 0, 0, text-decoration-color, $lightdark);
   // active and focus color classes
+  @include lightColor(sm\:text-decoration-, 1, 10, text-decoration-color, $colors, active);
+  @include lightColor(sm\:text-decoration-, 1, 10, text-decoration-color, $colors, focus);
   @include initialColor(sm\:text-, color, active);
   @include initialColor(sm\:text-, color, focus);
   @include initialColor(sm\:bg-, background-color, active);
@@ -74,7 +82,11 @@
   @include bggradient(md\:);
   @include bggradient(md\:, $lightdark);
   @include bgGradientToFrom(md\:);
+  @include lightColor(md\:text-decoration-, 1, 10, text-decoration-color, $colors);
+  @include lightColor(md\:text-decoration-, 0, 0, text-decoration-color, $lightdark);
   // active and focus color classes
+  @include lightColor(md\:text-decoration-, 1, 10, text-decoration-color, $colors, active);
+  @include lightColor(md\:text-decoration-, 1, 10, text-decoration-color, $colors, focus);
   @include initialColor(md\:text-, color, active);
   @include initialColor(md\:text-, color, focus);
   @include initialColor(md\:bg-, background-color, active);
@@ -104,7 +116,11 @@
   @include bggradient(lg\:);
   @include bggradient(lg\:, $lightdark);
   @include bgGradientToFrom(lg\:);
+  @include lightColor(lg\:text-decoration-, 1, 10, text-decoration-color, $colors);
+  @include lightColor(lg\:text-decoration-, 0, 0, text-decoration-color, $lightdark);
   // active and focus color classes
+  @include lightColor(lg\:text-decoration-, 1, 10, text-decoration-color, $colors, active);
+  @include lightColor(lg\:text-decoration-, 1, 10, text-decoration-color, $colors, focus);
   @include initialColor(lg\:text-, color, active);
   @include initialColor(lg\:text-, color, focus);
   @include initialColor(lg\:bg-, background-color, active);
@@ -117,8 +133,8 @@
   @include lightColor(lg\:text-, 0, 0, color, $lightdark, focus);
   @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, active);
   @include lightColor(lg\:bg-, 0, 0, background-color, $lightdark, focus);
-  @include lightColor(md\:accent-, 1, 10, accent-color, $colors, active);
-  @include lightColor(md\:accent-, 1, 10, accent-color, $colors, focus);
-  @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, active);
-  @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, focus);
+  @include lightColor(lg\:accent-, 1, 10, accent-color, $colors, active);
+  @include lightColor(lg\:accent-, 1, 10, accent-color, $colors, focus);
+  @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark, active);
+  @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark, focus);
 }

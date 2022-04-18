@@ -244,32 +244,17 @@
 .spin-in-left {
   @include animationname(spinInLeft);
   @include backfacevisibility(hidden);
-  @include spinMixin(
-    spinInLeft,
-    translateX(-100px) rotate(540deg),
-    translateX(45px) rotate(45deg),
-    translateX(0) rotate(0deg)
-  );
+  @include spinMixin(spinInLeft, translateX(-100px) rotate(540deg), translateX(45px) rotate(45deg), translateX(0) rotate(0deg));
 }
 .spin-in-right {
   @include animationname(spinInRight);
   @include backfacevisibility(hidden);
-  @include spinMixin(
-    spinInRight,
-    translateX(100px) rotate(-540deg),
-    translateX(45px) rotate(-45deg),
-    translateX(0) rotate(0deg)
-  );
+  @include spinMixin(spinInRight, translateX(100px) rotate(-540deg), translateX(45px) rotate(-45deg), translateX(0) rotate(0deg));
 }
 .spin-in-top {
   @include animationname(spinInTop);
   @include backfacevisibility(hidden);
-  @include spinMixin(
-    spinInTop,
-    translateY(-100px) rotate(-540deg),
-    translateY(45px) rotate(-45deg),
-    translateY(0) rotate(0deg)
-  );
+  @include spinMixin(spinInTop, translateY(-100px) rotate(-540deg), translateY(45px) rotate(-45deg), translateY(0) rotate(0deg));
 }
 .spin-in-bottom {
   @include animationname(spinInBottom);

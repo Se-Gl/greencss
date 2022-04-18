@@ -27,6 +27,10 @@
   @include universalMixin(true, true, true, sm\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
   @include universalMixin(true, true, true, sm\:font-, font-weight, '', 1, 9, 100, 1);
   @include universalMixin(true, true, true, sm\:line-height-, line-height, per, 0, 300, 1, 1%);
+  @include universalMixin(true, true, true, sm\:letter-spacing-, letter-spacing, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, sm\:text-decoration-thickness-, text-decoration-thickness, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, sm\:text-underline-, text-underline-offset, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, sm\:text-indent-, text-indent, rem, 0, 30, 1, 1rem);
   // flex
   @include eachValues(sm\:, $utilities);
   @include universalMixin(true, true, true, sm\:gap-, gap, px, 0, 100, 1, 1px);
@@ -48,7 +52,14 @@
   @include bggradient(sm\:);
   @include bggradient(sm\:, $lightdark);
   @include bgGradientToFrom(sm\:);
+  @include initialColor(sm\:text-decoration-, text-decoration-color);
+  @include lightColor(sm\:text-decoration-, 1, 10, text-decoration-color, $colors);
+  @include lightColor(sm\:text-decoration-, 0, 0, text-decoration-color, $lightdark);
   // active and focus color classes
+  @include initialColor(sm\:text-decoration-, text-decoration-color, active);
+  @include initialColor(sm\:text-decoration-, text-decoration-color, focus);
+  @include lightColor(sm\:text-decoration-, 1, 10, text-decoration-color, $colors, active);
+  @include lightColor(sm\:text-decoration-, 1, 10, text-decoration-color, $colors, focus);
   @include initialColor(sm\:text-, color, active);
   @include initialColor(sm\:text-, color, focus);
   @include initialColor(sm\:bg-, background-color, active);
@@ -261,6 +272,10 @@
   @include universalMixin(true, true, true, md\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
   @include universalMixin(true, true, true, md\:font-, font-weight, '', 1, 9, 100, 1);
   @include universalMixin(true, true, true, md\:line-height-, line-height, per, 0, 300, 1, 1%);
+  @include universalMixin(true, true, true, md\:letter-spacing-, letter-spacing, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, md\:text-decoration-thickness-, text-decoration-thickness, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, md\:text-underline-, text-underline-offset, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, md\:text-indent-, text-indent, rem, 0, 30, 1, 1rem);
   // flex
   @include eachValues(md\:, $utilities);
   @include universalMixin(true, true, true, md\:gap-, gap, px, 0, 100, 1, 1px);
@@ -282,7 +297,14 @@
   @include bggradient(md\:);
   @include bggradient(md\:, $lightdark);
   @include bgGradientToFrom(md\:);
+  @include initialColor(md\:text-decoration-, text-decoration-color);
+  @include lightColor(md\:text-decoration-, 1, 10, text-decoration-color, $colors);
+  @include lightColor(md\:text-decoration-, 0, 0, text-decoration-color, $lightdark);
   // active and focus color classes
+  @include initialColor(md\:text-decoration-, text-decoration-color, active);
+  @include initialColor(md\:text-decoration-, text-decoration-color, focus);
+  @include lightColor(md\:text-decoration-, 1, 10, text-decoration-color, $colors, active);
+  @include lightColor(md\:text-decoration-, 1, 10, text-decoration-color, $colors, focus);
   @include initialColor(md\:text-, color, active);
   @include initialColor(md\:text-, color, focus);
   @include initialColor(md\:bg-, background-color, active);
@@ -495,6 +517,10 @@
   @include universalMixin(true, true, true, lg\:rel-text-, font-size, vw, 0, 100, 1, 1vw);
   @include universalMixin(true, true, true, lg\:font-, font-weight, '', 1, 9, 100, 1);
   @include universalMixin(true, true, true, lg\:line-height-, line-height, per, 0, 300, 1, 1%);
+  @include universalMixin(true, true, true, lg\:letter-spacing-, letter-spacing, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, lg\:text-decoration-thickness-, text-decoration-thickness, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, lg\:text-underline-, text-underline-offset, px, -30, 30, 1, 1px);
+  @include universalMixin(true, true, true, lg\:text-indent-, text-indent, rem, 0, 30, 1, 1rem);
   // flex
   @include eachValues(lg\:, $utilities);
   @include universalMixin(true, true, true, lg\:gap-, gap, px, 0, 100, 1, 1px);
@@ -516,7 +542,14 @@
   @include bggradient(lg\:);
   @include bggradient(lg\:, $lightdark);
   @include bgGradientToFrom(lg\:);
+  @include initialColor(lg\:text-decoration-, text-decoration-color);
+  @include lightColor(lg\:text-decoration-, 1, 10, text-decoration-color, $colors);
+  @include lightColor(lg\:text-decoration-, 0, 0, text-decoration-color, $lightdark);
   // active and focus color classes
+  @include initialColor(lg\:text-decoration-, text-decoration-color, active);
+  @include initialColor(lg\:text-decoration-, text-decoration-color, focus);
+  @include lightColor(lg\:text-decoration-, 1, 10, text-decoration-color, $colors, active);
+  @include lightColor(lg\:text-decoration-, 1, 10, text-decoration-color, $colors, focus);
   @include initialColor(lg\:text-, color, active);
   @include initialColor(lg\:text-, color, focus);
   @include initialColor(lg\:bg-, background-color, active);
