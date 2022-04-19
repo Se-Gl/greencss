@@ -3,6 +3,8 @@
 /node_modules
 /css/minified/
 /.github
+/css
+/samples
 
 # random
 package-lock.json

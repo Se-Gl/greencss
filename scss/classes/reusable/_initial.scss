@@ -219,6 +219,7 @@
 @include universalMixin(true, true, true, border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
 @include universalMixin(true, true, true, border-left-width-, border-left-width, px, 0, 10, 1, 1px);
 @include universalMixin(true, true, true, outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+@include universalMixin(true, true, true, outline-, outline-width, px, 0, 10, 1, 1px);
 // tables
 @include eachValues('', $tableValues);
 // interactivity

@@ -24,6 +24,7 @@
 @include universalMixin(true, true, true, border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
 @include universalMixin(true, true, true, border-left-width-, border-left-width, px, 0, 10, 1, 1px);
 @include universalMixin(true, true, true, outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+@include universalMixin(true, true, true, outline-, outline-width, px, 0, 10, 1, 1px);
 
 @include sm {
   @include eachValues(sm\:, $border-style);
@@ -54,6 +55,7 @@
   @include universalMixin(true, true, true, sm\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, sm\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, sm\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, sm\:outline-, outline-width, px, 0, 10, 1, 1px);
 }
 @include md {
   @include eachValues(md\:, $border-style);
@@ -84,6 +86,7 @@
   @include universalMixin(true, true, true, md\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, md\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, md\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, md\:outline-, outline-width, px, 0, 10, 1, 1px);
 }
 @include lg {
   @include eachValues(lg\:, $border-style);
@@ -114,4 +117,5 @@
   @include universalMixin(true, true, true, lg\:border-bottom-width-, border-bottom-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, lg\:border-left-width-, border-left-width, px, 0, 10, 1, 1px);
   @include universalMixin(true, true, true, lg\:outline-offset-, outline-offset, px, 0, 10, 1, 1px);
+  @include universalMixin(true, true, true, lg\:outline-, outline-width, px, 0, 10, 1, 1px);
 }
