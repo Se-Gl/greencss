@@ -163,8 +163,12 @@
 // background
 @include eachValues('', $background);
 // effects
-@include shadowColor(shadow-, 0, 0, $lightdark, hover);
-@include shadowColor(shadow-, 0, 0, $fullcolors, hover);
+@include shadowColor(shadow-, 0, 0, $lightdark);
+@include shadowColor(shadow-, 0, 0, $fullcolors);
+@include shadowColor(shadow-small-, 0, 0, $lightdark, 5px, 5px, 10px, -1px);
+@include shadowColor(shadow-small-, 0, 0, $fullcolors, 5px, 5px, 10px, -1px);
+@include shadowColor(shadow-large-, 0, 0, $lightdark, 15px, 15px, 30px, -5px);
+@include shadowColor(shadow-large-, 0, 0, $fullcolors, 15px, 15px, 30px, -5px);
 @include eachValues('', $blendModes);
 @include universalMixin(true, true, true, opacity-, opacity, per, 0, 100, 1, 1%);
 // transforms

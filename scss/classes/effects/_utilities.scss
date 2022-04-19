@@ -5,26 +5,42 @@
 @use '../../abstracts/mixins/breakpoints/mixin' as *;
 
 // file for effects classes - for minified omencss-effects css
-@include shadowColor(shadow-, 0, 0, $lightdark, hover);
-@include shadowColor(shadow-, 0, 0, $fullcolors, hover);
+@include shadowColor(shadow-, 0, 0, $lightdark);
+@include shadowColor(shadow-, 0, 0, $fullcolors);
+@include shadowColor(shadow-small-, 0, 0, $lightdark, 5px, 5px, 10px, -1px);
+@include shadowColor(shadow-small-, 0, 0, $fullcolors, 5px, 5px, 10px, -1px);
+@include shadowColor(shadow-large-, 0, 0, $lightdark, 15px, 15px, 30px, -5px);
+@include shadowColor(shadow-large-, 0, 0, $fullcolors, 15px, 15px, 30px, -5px);
 @include eachValues('', $blendModes);
 @include universalMixin(true, true, true, opacity-, opacity, per, 0, 100, 1, 1%);
 
 @include sm {
-  @include shadowColor(sm\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(sm\:shadow-, 0, 0, $fullcolors, hover);
+  @include shadowColor(sm\:shadow-, 0, 0, $lightdark);
+  @include shadowColor(sm\:shadow-, 0, 0, $fullcolors);
+  @include shadowColor(sm\:shadow-small-, 0, 0, $lightdark, 5px, 5px, 10px, -1px);
+  @include shadowColor(sm\:shadow-small-, 0, 0, $fullcolors, 5px, 5px, 10px, -1px);
+  @include shadowColor(sm\:shadow-large-, 0, 0, $lightdark, 15px, 15px, 30px, -5px);
+  @include shadowColor(sm\:shadow-large-, 0, 0, $fullcolors, 15px, 15px, 30px, -5px);
   @include eachValues(sm\:, $blendModes);
   @include universalMixin(true, true, true, sm\:opacity-, opacity, per, 0, 100, 1, 1%);
 }
 @include md {
-  @include shadowColor(md\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(md\:shadow-, 0, 0, $fullcolors, hover);
+  @include shadowColor(md\:shadow-, 0, 0, $lightdark);
+  @include shadowColor(md\:shadow-, 0, 0, $fullcolors);
+  @include shadowColor(md\:shadow-small-, 0, 0, $lightdark, 5px, 5px, 10px, -1px);
+  @include shadowColor(md\:shadow-small-, 0, 0, $fullcolors, 5px, 5px, 10px, -1px);
+  @include shadowColor(md\:shadow-large-, 0, 0, $lightdark, 15px, 15px, 30px, -5px);
+  @include shadowColor(md\:shadow-large-, 0, 0, $fullcolors, 15px, 15px, 30px, -5px);
   @include eachValues(md\:, $blendModes);
   @include universalMixin(true, true, true, md\:opacity-, opacity, per, 0, 100, 1, 1%);
 }
 @include lg {
-  @include shadowColor(lg\:shadow-, 0, 0, $lightdark, hover);
-  @include shadowColor(lg\:shadow-, 0, 0, $fullcolors, hover);
+  @include shadowColor(lg\:shadow-, 0, 0, $lightdark);
+  @include shadowColor(lg\:shadow-, 0, 0, $fullcolors);
+  @include shadowColor(lg\:shadow-small-, 0, 0, $lightdark, 5px, 5px, 10px, -1px);
+  @include shadowColor(lg\:shadow-small-, 0, 0, $fullcolors, 5px, 5px, 10px, -1px);
+  @include shadowColor(lg\:shadow-large-, 0, 0, $lightdark, 15px, 15px, 30px, -5px);
+  @include shadowColor(lg\:shadow-large-, 0, 0, $fullcolors, 15px, 15px, 30px, -5px);
   @include eachValues(lg\:, $blendModes);
   @include universalMixin(true, true, true, lg\:opacity-, opacity, per, 0, 100, 1, 1%);
 }

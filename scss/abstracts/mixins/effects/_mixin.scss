@@ -1,17 +1,39 @@
 @use 'sass:math';
 @use '../../variables/color/variables' as *;
 
-@mixin shadowColor($bp: '', $firstnumber, $secondnumber, $loop, $selector: hover) {
+@mixin shadowColor($bp: '', $firstnumber, $secondnumber, $loop, $x: 10px, $y: 10px, $z: 20px, $blur: -2.5px) {
   @each $key, $val in $loop {
     $shadowSize: 10px 10px 20px -2.5px;
 
     @for $i from $firstnumber through $secondnumber {
       .#{$bp}#{$key} {
-        box-shadow: $shadowSize $val;
+        box-shadow: $x $y $z $blur $val;
+        -webkit-box-shadow: $x $y $z $blur $val;
+        -moz-box-shadow: $x $y $z $blur $val;
+        -ms-box-shadow: $x $y $z $blur $val;
       }
-      .#{$selector}\:#{$bp}#{$key} {
-        &:#{$selector} {
-          box-shadow: $shadowSize $val;
+      .active\:#{$bp}#{$key} {
+        &:active {
+          box-shadow: $x $y $z $blur $val;
+          -webkit-box-shadow: $x $y $z $blur $val;
+          -moz-box-shadow: $x $y $z $blur $val;
+          -ms-box-shadow: $x $y $z $blur $val;
+        }
+      }
+      .focus\:#{$bp}#{$key} {
+        &:focus {
+          box-shadow: $x $y $z $blur $val;
+          -webkit-box-shadow: $x $y $z $blur $val;
+          -moz-box-shadow: $x $y $z $blur $val;
+          -ms-box-shadow: $x $y $z $blur $val;
+        }
+      }
+      .hover\:#{$bp}#{$key} {
+        &:hover {
+          box-shadow: $x $y $z $blur $val;
+          -webkit-box-shadow: $x $y $z $blur $val;
+          -moz-box-shadow: $x $y $z $blur $val;
+          -ms-box-shadow: $x $y $z $blur $val;
         }
       }
     }
