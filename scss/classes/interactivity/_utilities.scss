@@ -9,6 +9,9 @@
 @include eachValues('', $interactivityUtilities);
 @include lightColor(caret-, 1, 10, caret-color, $colors);
 @include lightColor(caret-, 0, 0, caret-color, $lightdark);
+@include initialColor(caret-, caret-color);
+@include initialColor(caret-, caret-color, active);
+@include initialColor(caret-, caret-color, focus);
 // interactivity - scroll margin
 @include universalMixin(true, false, false, scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
 @include universalMixin(true, false, false, scroll-m-, scroll-margin, rem, -30, 30, 1, 1rem);
@@ -45,6 +48,9 @@
   @include eachValues(sm\:, $interactivityUtilities);
   @include lightColor(sm\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(sm\:caret-, 0, 0, caret-color, $lightdark);
+  @include initialColor(sm\:caret-, caret-color);
+  @include initialColor(sm\:caret-, caret-color, active);
+  @include initialColor(sm\:caret-, caret-color, focus);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, sm\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
   @include universalMixin(true, false, false, sm\:scroll-m-, scroll-margin, rem, -30, 30, 1, 1rem);
@@ -81,6 +87,9 @@
   @include eachValues(md\:, $interactivityUtilities);
   @include lightColor(md\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(md\:caret-, 0, 0, caret-color, $lightdark);
+  @include initialColor(md\:caret-, caret-color);
+  @include initialColor(md\:caret-, caret-color, active);
+  @include initialColor(md\:caret-, caret-color, focus);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, md\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
   @include universalMixin(true, false, false, md\:scroll-m-, scroll-margin, rem, -30, 30, 1, 1rem);
@@ -117,6 +126,9 @@
   @include eachValues(lg\:, $interactivityUtilities);
   @include lightColor(lg\:caret-, 1, 10, caret-color, $colors);
   @include lightColor(lg\:caret-, 0, 0, caret-color, $lightdark);
+  @include initialColor(lg\:caret-, caret-color);
+  @include initialColor(lg\:caret-, caret-color, active);
+  @include initialColor(lg\:caret-, caret-color, focus);
   // interactivity - scroll margin
   @include universalMixin(true, false, false, lg\:scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
   @include universalMixin(true, false, false, lg\:scroll-m-, scroll-margin, rem, -30, 30, 1, 1rem);

@@ -58,6 +58,7 @@
 @include lightColor(bg-, 1, 10, background-color, $colors);
 @include lightColor(text-, 0, 0, color, $lightdark);
 @include lightColor(bg-, 0, 0, background-color, $lightdark);
+@include initialColor(accent-, accent-color);
 @include lightColor(accent-, 1, 10, accent-color, $colors);
 @include lightColor(accent-, 0, 0, accent-color, $lightdark);
 @include bggradient();
@@ -87,6 +88,8 @@
 @include lightColor(accent-, 1, 10, accent-color, $colors, focus);
 @include lightColor(accent-, 0, 0, accent-color, $lightdark, active);
 @include lightColor(accent-, 0, 0, accent-color, $lightdark, focus);
+@include initialColor(accent-, accent-color, active);
+@include initialColor(accent-, accent-color, focus);
 // layout
 @include eachValues('', $layoutVariables);
 @include universalMixin(true, true, true, col-, columns, '', 1, 12, 1, 1);
@@ -234,6 +237,9 @@
 @include eachValues('', $interactivityUtilities);
 @include lightColor(caret-, 1, 10, caret-color, $colors);
 @include lightColor(caret-, 0, 0, caret-color, $lightdark);
+@include initialColor(caret-, caret-color);
+@include initialColor(caret-, caret-color, active);
+@include initialColor(caret-, caret-color, focus);
 // interactivity - scroll margin
 @include universalMixin(true, false, false, scroll-m-, scroll-margin, px, -100, 100, 1, 1px);
 @include universalMixin(true, false, false, scroll-m-, scroll-margin, rem, -30, 30, 1, 1rem);

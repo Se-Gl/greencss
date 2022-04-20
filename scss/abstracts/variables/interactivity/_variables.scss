@@ -74,9 +74,9 @@ $interactivityUtilities: (
   'resize': (
     'values': (
       resize-none: none,
-      resize-y: vertical,
-      resize-x: horizontal,
-      resize: both
+      resize-vertical: vertical,
+      resize-horizontal: horizontal,
+      resize-both: both
     )
   ),
   'scroll-behavior': (
