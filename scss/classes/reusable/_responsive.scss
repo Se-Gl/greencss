@@ -206,6 +206,7 @@
   @include borderColorMixin(sm\:outline-, $fullcolors, outline-color, hover);
   @include borderColorMixin(sm\:outline-, $lightdark, outline-color, hover);
   @include universalMixin(true, true, true, sm\:rounded-, border-radius, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, sm\:rounded-, border-radius, per, 0, 100, 1, 1%);
   @include borderMixin(sm\:rounded-top-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-top-right-radius);
   @include borderMixin(sm\:rounded-right-radius-, px, border-top-right-radius, 0, 100, 1, 1px, true, border-bottom-right-radius);
   @include borderMixin(
@@ -465,6 +466,7 @@
   @include borderColorMixin(md\:outline-, $fullcolors, outline-color, hover);
   @include borderColorMixin(md\:outline-, $lightdark, outline-color, hover);
   @include universalMixin(true, true, true, md\:rounded-, border-radius, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, md\:rounded-, border-radius, per, 0, 100, 1, 1%);
   @include borderMixin(md\:rounded-top-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-top-right-radius);
   @include borderMixin(md\:rounded-right-radius-, px, border-top-right-radius, 0, 100, 1, 1px, true, border-bottom-right-radius);
   @include borderMixin(
@@ -724,6 +726,7 @@
   @include borderColorMixin(lg\:outline-, $fullcolors, outline-color, hover);
   @include borderColorMixin(lg\:outline-, $lightdark, outline-color, hover);
   @include universalMixin(true, true, true, lg\:rounded-, border-radius, px, 0, 100, 1, 1px);
+  @include universalMixin(true, true, true, lg\:rounded-, border-radius, per, 0, 100, 1, 1%);
   @include borderMixin(lg\:rounded-top-radius-, px, border-top-left-radius, 0, 100, 1, 1px, true, border-top-right-radius);
   @include borderMixin(lg\:rounded-right-radius-, px, border-top-right-radius, 0, 100, 1, 1px, true, border-bottom-right-radius);
   @include borderMixin(
