@@ -3,6 +3,7 @@ $red: #f90606;
 $orange: #f99106;
 $yellow: #f9cf06;
 $green: #80f906;
+$greencss: #3e7a02;
 $blue: #066ef9;
 $turquoise: #06f9f9;
 $purple: #8006f9;
@@ -15,6 +16,7 @@ $colors: (
   'orange': $orange,
   'yellow': $yellow,
   'green': $green,
+  'greencss': $greencss,
   'blue': $blue,
   'turquoise': $turquoise,
   'purple': $purple,
@@ -67,6 +69,17 @@ $fullcolors: (
   'green-8': #e1fec3,
   'green-9': #edfedb,
   'green-10': #f9fff3,
+  'greencss': $greencss,
+  'greencss-1': #4a9202,
+  'greencss-2': #56aa03,
+  'greencss-3': #62c203,
+  'greencss-4': #6ed904,
+  'greencss-5': #7bf104,
+  'greencss-6': #87fb12,
+  'greencss-7': #93fc2a,
+  'greencss-8': #9ffc42,
+  'greencss-9': #abfc5a,
+  'greencss-10': #b7fd72,
   'blue': $blue,
   'blue-1': #1e7cfa,
   'blue-2': #358afa,
