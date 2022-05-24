@@ -1,5 +1,5 @@
 {
-  "name": "omencss",
+  "name": "greencss",
   "version": "0.0.1",
   "description": "The classy way to write design.",
   "main": "index.js",
@@ -16,7 +16,7 @@
     "css",
     "design",
     "library",
-    "omencss"
+    "greencss"
   ],
   "author": "SeGl",
   "license": "MIT",

@@ -1,6 +1,6 @@
-# omenCSS - A dynamic animated design library
+# greenCSS - A dynamic animated design library
 
-[![Prettier Code Style](https://github.com/Se-Gl/omencss/actions/workflows/prettier.yml/badge.svg)](https://github.com/Se-Gl/omencss/actions/workflows/prettier.yml)
+[![Prettier Code Style](https://github.com/Se-Gl/greencss/actions/workflows/prettier.yml/badge.svg)](https://github.com/Se-Gl/greencss/actions/workflows/prettier.yml)
 
 ## Development Process
 
