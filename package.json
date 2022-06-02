@@ -21,9 +21,9 @@
   "author": "SeGl",
   "license": "MIT",
   "devDependencies": {
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "prettier": "^2.6.2",
-    "sass": "^1.50.1"
+    "sass": "^1.52.1"
   },
   "type": "module"
 }
