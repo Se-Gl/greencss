@@ -5,9 +5,9 @@
 
 // file for transforms classes - for minified omencss-transforms css
 @include eachValues('', $transforms);
-@include transformMixin(true, true, true, scale-, transform, '', -30, 30, 1, 0.1, scale);
-@include transformMixin(true, true, true, scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
-@include transformMixin(true, true, true, scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
+@include transformMixin(true, true, true, scale-, transform, '', 80, 130, 1, 0.01, scale);
+@include transformMixin(true, true, true, scale-x-, transform, '', 80, 130, 1, 0.01, scaleX);
+@include transformMixin(true, true, true, scale-y-, transform, '', 80, 130, 1, 0.01, scaleY);
 @include transformMixin(true, true, true, rotate-, transform, deg, -180, 180, 1, 1deg, rotate);
 @include transformMixin(true, true, true, translate-, transform, per, 0, 100, 1, 1%, translate);
 @include transformMixin(true, true, true, translate-x-, transform, per, -100, 100, 1, 1%, translateX);
@@ -21,9 +21,9 @@
 
 @include sm {
   @include eachValues(sm\:, $transforms);
-  @include transformMixin(true, true, true, sm\:scale-, transform, '', -30, 30, 1, 0.1, scale);
-  @include transformMixin(true, true, true, sm\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
-  @include transformMixin(true, true, true, sm\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
+  @include transformMixin(true, true, true, sm\:scale-, transform, '', 80, 130, 1, 0.01, scale);
+  @include transformMixin(true, true, true, sm\:scale-x-, transform, '', 80, 130, 1, 0.01, scaleX);
+  @include transformMixin(true, true, true, sm\:scale-y-, transform, '', 80, 130, 1, 0.01, scaleY);
   @include transformMixin(true, true, true, sm\:rotate-, transform, deg, -180, 180, 1, 1deg, rotate);
   @include transformMixin(true, true, true, sm\:translate-, transform, per, 0, 100, 1, 1%, translate);
   @include transformMixin(true, true, true, sm\:translate-x-, transform, per, -100, 100, 1, 1%, translateX);
@@ -38,9 +38,9 @@
 
 @include md {
   @include eachValues(md\:, $transforms);
-  @include transformMixin(true, true, true, md\:scale-, transform, '', -30, 30, 1, 0.1, scale);
-  @include transformMixin(true, true, true, md\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
-  @include transformMixin(true, true, true, md\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
+  @include transformMixin(true, true, true, md\:scale-, transform, '', 80, 130, 1, 0.01, scale);
+  @include transformMixin(true, true, true, md\:scale-x-, transform, '', 80, 130, 1, 0.01, scaleX);
+  @include transformMixin(true, true, true, md\:scale-y-, transform, '', 80, 130, 1, 0.01, scaleY);
   @include transformMixin(true, true, true, md\:rotate-, transform, deg, -180, 180, 1, 1deg, rotate);
   @include transformMixin(true, true, true, md\:translate-, transform, per, 0, 100, 1, 1%, translate);
   @include transformMixin(true, true, true, md\:translate-x-, transform, per, -100, 100, 1, 1%, translateX);
@@ -54,9 +54,9 @@
 }
 @include lg {
   @include eachValues(lg\:, $transforms);
-  @include transformMixin(true, true, true, lg\:scale-, transform, '', -30, 30, 1, 0.1, scale);
-  @include transformMixin(true, true, true, lg\:scale-x-, transform, '', -30, 30, 1, 0.1, scaleX);
-  @include transformMixin(true, true, true, lg\:scale-y-, transform, '', -30, 30, 1, 0.1, scaleY);
+  @include transformMixin(true, true, true, lg\:scale-, transform, '', 80, 130, 1, 0.01, scale);
+  @include transformMixin(true, true, true, lg\:scale-x-, transform, '', 80, 130, 1, 0.01, scaleX);
+  @include transformMixin(true, true, true, lg\:scale-y-, transform, '', 80, 130, 1, 0.01, scaleY);
   @include transformMixin(true, true, true, lg\:rotate-, transform, deg, -180, 180, 1, 1deg, rotate);
   @include transformMixin(true, true, true, lg\:translate-, transform, per, 0, 100, 1, 1%, translate);
   @include transformMixin(true, true, true, lg\:translate-x-, transform, per, -100, 100, 1, 1%, translateX);
