@@ -1,0 +1,237 @@
+/*
+MIT License
+
+Copyright (c) 2022 Se-Gl
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+    */
+.border-collapse {
+  border-collapse: collapse;
+}
+
+.active\:border-collapse:active {
+  border-collapse: collapse;
+}
+
+.hover\:border-collapse:hover {
+  border-collapse: collapse;
+}
+
+.focus\:border-collapse:focus {
+  border-collapse: collapse;
+}
+
+.border-separate {
+  border-collapse: separate;
+}
+
+.active\:border-separate:active {
+  border-collapse: separate;
+}
+
+.hover\:border-separate:hover {
+  border-collapse: separate;
+}
+
+.focus\:border-separate:focus {
+  border-collapse: separate;
+}
+
+.table-auto {
+  table-layout: auto;
+}
+
+.active\:table-auto:active {
+  table-layout: auto;
+}
+
+.hover\:table-auto:hover {
+  table-layout: auto;
+}
+
+.focus\:table-auto:focus {
+  table-layout: auto;
+}
+
+.table-fixed {
+  table-layout: fixed;
+}
+
+.active\:table-fixed:active {
+  table-layout: fixed;
+}
+
+.hover\:table-fixed:hover {
+  table-layout: fixed;
+}
+
+.focus\:table-fixed:focus {
+  table-layout: fixed;
+}
+
+@media (max-width: 480px) {
+  .sm\:border-collapse {
+    border-collapse: collapse;
+  }
+  .active\:sm\:border-collapse:active {
+    border-collapse: collapse;
+  }
+  .hover\:sm\:border-collapse:hover {
+    border-collapse: collapse;
+  }
+  .focus\:sm\:border-collapse:focus {
+    border-collapse: collapse;
+  }
+  .sm\:border-separate {
+    border-collapse: separate;
+  }
+  .active\:sm\:border-separate:active {
+    border-collapse: separate;
+  }
+  .hover\:sm\:border-separate:hover {
+    border-collapse: separate;
+  }
+  .focus\:sm\:border-separate:focus {
+    border-collapse: separate;
+  }
+  .sm\:table-auto {
+    table-layout: auto;
+  }
+  .active\:sm\:table-auto:active {
+    table-layout: auto;
+  }
+  .hover\:sm\:table-auto:hover {
+    table-layout: auto;
+  }
+  .focus\:sm\:table-auto:focus {
+    table-layout: auto;
+  }
+  .sm\:table-fixed {
+    table-layout: fixed;
+  }
+  .active\:sm\:table-fixed:active {
+    table-layout: fixed;
+  }
+  .hover\:sm\:table-fixed:hover {
+    table-layout: fixed;
+  }
+  .focus\:sm\:table-fixed:focus {
+    table-layout: fixed;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .md\:border-collapse {
+    border-collapse: collapse;
+  }
+  .active\:md\:border-collapse:active {
+    border-collapse: collapse;
+  }
+  .hover\:md\:border-collapse:hover {
+    border-collapse: collapse;
+  }
+  .focus\:md\:border-collapse:focus {
+    border-collapse: collapse;
+  }
+  .md\:border-separate {
+    border-collapse: separate;
+  }
+  .active\:md\:border-separate:active {
+    border-collapse: separate;
+  }
+  .hover\:md\:border-separate:hover {
+    border-collapse: separate;
+  }
+  .focus\:md\:border-separate:focus {
+    border-collapse: separate;
+  }
+  .md\:table-auto {
+    table-layout: auto;
+  }
+  .active\:md\:table-auto:active {
+    table-layout: auto;
+  }
+  .hover\:md\:table-auto:hover {
+    table-layout: auto;
+  }
+  .focus\:md\:table-auto:focus {
+    table-layout: auto;
+  }
+  .md\:table-fixed {
+    table-layout: fixed;
+  }
+  .active\:md\:table-fixed:active {
+    table-layout: fixed;
+  }
+  .hover\:md\:table-fixed:hover {
+    table-layout: fixed;
+  }
+  .focus\:md\:table-fixed:focus {
+    table-layout: fixed;
+  }
+}
+@media (min-width: 769px) and (max-width: 1080px) {
+  .lg\:border-collapse {
+    border-collapse: collapse;
+  }
+  .active\:lg\:border-collapse:active {
+    border-collapse: collapse;
+  }
+  .hover\:lg\:border-collapse:hover {
+    border-collapse: collapse;
+  }
+  .focus\:lg\:border-collapse:focus {
+    border-collapse: collapse;
+  }
+  .lg\:border-separate {
+    border-collapse: separate;
+  }
+  .active\:lg\:border-separate:active {
+    border-collapse: separate;
+  }
+  .hover\:lg\:border-separate:hover {
+    border-collapse: separate;
+  }
+  .focus\:lg\:border-separate:focus {
+    border-collapse: separate;
+  }
+  .lg\:table-auto {
+    table-layout: auto;
+  }
+  .active\:lg\:table-auto:active {
+    table-layout: auto;
+  }
+  .hover\:lg\:table-auto:hover {
+    table-layout: auto;
+  }
+  .focus\:lg\:table-auto:focus {
+    table-layout: auto;
+  }
+  .lg\:table-fixed {
+    table-layout: fixed;
+  }
+  .active\:lg\:table-fixed:active {
+    table-layout: fixed;
+  }
+  .hover\:lg\:table-fixed:hover {
+    table-layout: fixed;
+  }
+  .focus\:lg\:table-fixed:focus {
+    table-layout: fixed;
+  }
+}

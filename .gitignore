@@ -1,9 +1,9 @@
 # dependencies
 /node_modules
+/samples
 
 # production
 /build
-/css
 
 # local env files
 .env
