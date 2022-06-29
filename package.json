@@ -1,6 +1,6 @@
 {
   "name": "greencss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The classy way to write sustainable CSS.",
   "main": "index.js",
   "scripts": {
