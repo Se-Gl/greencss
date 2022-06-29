@@ -1,0 +1,16 @@
+@use '../../abstracts/mixins/reusable/omen-mixin' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
+
+@use '../../abstracts/variables/background/variables' as *;
+
+// file for background classes - for minified omencss-background css
+@include eachValues(dark\:, $background);
+@include sm {
+  @include eachValues(dark\:sm\:, $background);
+}
+@include md {
+  @include eachValues(dark\:md\:, $background);
+}
+@include lg {
+  @include eachValues(dark\:lg\:, $background);
+}

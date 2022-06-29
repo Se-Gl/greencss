@@ -100,10 +100,10 @@ Values & unit sizes should have intuitive notation and resemble the original CSS
 
 In the example above, the element has an opacity of 50 percent, it is 100 pixels wide and 20 REM (200pixel) tall. On small screens it has a negative tilt of 180 degrees.
 
-All examples mentioned above can also be adapted to the darkmode. Just add the prefix "dark-" in front of each class.
+All examples mentioned above can also be adapted to the darkmode. Add the prefix "dark-" where applicable.
 
 ```html
-<p class="text-blue dark:text-blue-10 sm:text-purple dark:sm:text-purple-10 dark:sm:active:text-purple-5">Darkmode example</p>
+<p class="text-blue dark:text-blue-10 sm:text-purple dark:sm:text-purple-10 hover:dark:sm:text-purple-5">Darkmode example</p>
 ```
 
 ## Contribute

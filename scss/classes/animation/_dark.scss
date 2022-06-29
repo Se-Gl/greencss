@@ -1,0 +1,37 @@
+@use '../../abstracts/mixins/reusable/omen-mixin.scss' as *;
+@use '../../abstracts/mixins/breakpoints/mixin' as *;
+
+@use '../../abstracts/variables/animation/variables' as *;
+
+// file for animation classes - for minified omencss-animation css
+@include eachValues(dark\:, $animationutilities, true);
+@include eachValues(dark\:, $transitionutilities);
+@include universalMixin(true, true, true, dark\:animation-delay-, animation-delay, ms, 1, 100, 100, 1ms, true);
+@include universalMixin(true, true, true, dark\:animation-duration-, animation-duration, ms, 1, 100, 100, 1ms, true);
+@include universalMixin(true, true, true, dark\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
+@include universalMixin(true, true, true, dark\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
+
+@include sm {
+  @include eachValues(dark\:sm\:, $animationutilities, true);
+  @include eachValues(dark\:sm\:, $transitionutilities);
+  @include universalMixin(true, true, true, dark\:sm\:animation-delay-, animation-delay, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:sm\:animation-duration-, animation-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:sm\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:sm\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
+}
+@include md {
+  @include eachValues(dark\:md\:, $animationutilities, true);
+  @include eachValues(dark\:md\:, $transitionutilities);
+  @include universalMixin(true, true, true, dark\:md\:animation-delay-, animation-delay, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:md\:animation-duration-, animation-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:md\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:md\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
+}
+@include lg {
+  @include eachValues(dark\:lg\:, $animationutilities, true);
+  @include eachValues(dark\:lg\:, $transitionutilities);
+  @include universalMixin(true, true, true, dark\:lg\:animation-delay-, animation-delay, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:lg\:animation-duration-, animation-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:lg\:transition-duration-, transition-duration, ms, 1, 100, 100, 1ms, true);
+  @include universalMixin(true, true, true, dark\:lg\:transition-delay-, transition-delay, ms, 1, 100, 100, 1ms, true);
+}

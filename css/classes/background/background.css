@@ -1483,3 +1483,1465 @@ SOFTWARE.
     background-size: contain;
   }
 }
+.dark\:bg-fixed {
+  background-attachment: fixed;
+}
+
+.active\:dark\:bg-fixed:active {
+  background-attachment: fixed;
+}
+
+.hover\:dark\:bg-fixed:hover {
+  background-attachment: fixed;
+}
+
+.focus\:dark\:bg-fixed:focus {
+  background-attachment: fixed;
+}
+
+.dark\:bg-local {
+  background-attachment: local;
+}
+
+.active\:dark\:bg-local:active {
+  background-attachment: local;
+}
+
+.hover\:dark\:bg-local:hover {
+  background-attachment: local;
+}
+
+.focus\:dark\:bg-local:focus {
+  background-attachment: local;
+}
+
+.dark\:bg-scroll {
+  background-attachment: scroll;
+}
+
+.active\:dark\:bg-scroll:active {
+  background-attachment: scroll;
+}
+
+.hover\:dark\:bg-scroll:hover {
+  background-attachment: scroll;
+}
+
+.focus\:dark\:bg-scroll:focus {
+  background-attachment: scroll;
+}
+
+.dark\:bg-clip-border {
+  background-clip: border-box;
+}
+
+.active\:dark\:bg-clip-border:active {
+  background-clip: border-box;
+}
+
+.hover\:dark\:bg-clip-border:hover {
+  background-clip: border-box;
+}
+
+.focus\:dark\:bg-clip-border:focus {
+  background-clip: border-box;
+}
+
+.dark\:bg-clip-padding {
+  background-clip: padding-box;
+}
+
+.active\:dark\:bg-clip-padding:active {
+  background-clip: padding-box;
+}
+
+.hover\:dark\:bg-clip-padding:hover {
+  background-clip: padding-box;
+}
+
+.focus\:dark\:bg-clip-padding:focus {
+  background-clip: padding-box;
+}
+
+.dark\:bg-clip-content {
+  background-clip: content-box;
+}
+
+.active\:dark\:bg-clip-content:active {
+  background-clip: content-box;
+}
+
+.hover\:dark\:bg-clip-content:hover {
+  background-clip: content-box;
+}
+
+.focus\:dark\:bg-clip-content:focus {
+  background-clip: content-box;
+}
+
+.dark\:bg-clip-text {
+  background-clip: text;
+}
+
+.active\:dark\:bg-clip-text:active {
+  background-clip: text;
+}
+
+.hover\:dark\:bg-clip-text:hover {
+  background-clip: text;
+}
+
+.focus\:dark\:bg-clip-text:focus {
+  background-clip: text;
+}
+
+.dark\:bg-origin-border {
+  background-origin: border-box;
+}
+
+.active\:dark\:bg-origin-border:active {
+  background-origin: border-box;
+}
+
+.hover\:dark\:bg-origin-border:hover {
+  background-origin: border-box;
+}
+
+.focus\:dark\:bg-origin-border:focus {
+  background-origin: border-box;
+}
+
+.dark\:bg-origin-padding {
+  background-origin: padding-box;
+}
+
+.active\:dark\:bg-origin-padding:active {
+  background-origin: padding-box;
+}
+
+.hover\:dark\:bg-origin-padding:hover {
+  background-origin: padding-box;
+}
+
+.focus\:dark\:bg-origin-padding:focus {
+  background-origin: padding-box;
+}
+
+.dark\:bg-origin-content {
+  background-origin: content-box;
+}
+
+.active\:dark\:bg-origin-content:active {
+  background-origin: content-box;
+}
+
+.hover\:dark\:bg-origin-content:hover {
+  background-origin: content-box;
+}
+
+.focus\:dark\:bg-origin-content:focus {
+  background-origin: content-box;
+}
+
+.dark\:bg-center {
+  background-position: center;
+}
+
+.active\:dark\:bg-center:active {
+  background-position: center;
+}
+
+.hover\:dark\:bg-center:hover {
+  background-position: center;
+}
+
+.focus\:dark\:bg-center:focus {
+  background-position: center;
+}
+
+.dark\:bg-top {
+  background-position: top;
+}
+
+.active\:dark\:bg-top:active {
+  background-position: top;
+}
+
+.hover\:dark\:bg-top:hover {
+  background-position: top;
+}
+
+.focus\:dark\:bg-top:focus {
+  background-position: top;
+}
+
+.dark\:bg-top-right {
+  background-position: top right;
+}
+
+.active\:dark\:bg-top-right:active {
+  background-position: top right;
+}
+
+.hover\:dark\:bg-top-right:hover {
+  background-position: top right;
+}
+
+.focus\:dark\:bg-top-right:focus {
+  background-position: top right;
+}
+
+.dark\:bg-right {
+  background-position: right;
+}
+
+.active\:dark\:bg-right:active {
+  background-position: right;
+}
+
+.hover\:dark\:bg-right:hover {
+  background-position: right;
+}
+
+.focus\:dark\:bg-right:focus {
+  background-position: right;
+}
+
+.dark\:bg-right-bottom {
+  background-position: right bottom;
+}
+
+.active\:dark\:bg-right-bottom:active {
+  background-position: right bottom;
+}
+
+.hover\:dark\:bg-right-bottom:hover {
+  background-position: right bottom;
+}
+
+.focus\:dark\:bg-right-bottom:focus {
+  background-position: right bottom;
+}
+
+.dark\:bg-bottom {
+  background-position: bottom;
+}
+
+.active\:dark\:bg-bottom:active {
+  background-position: bottom;
+}
+
+.hover\:dark\:bg-bottom:hover {
+  background-position: bottom;
+}
+
+.focus\:dark\:bg-bottom:focus {
+  background-position: bottom;
+}
+
+.dark\:bg-left-bottom {
+  background-position: left bottom;
+}
+
+.active\:dark\:bg-left-bottom:active {
+  background-position: left bottom;
+}
+
+.hover\:dark\:bg-left-bottom:hover {
+  background-position: left bottom;
+}
+
+.focus\:dark\:bg-left-bottom:focus {
+  background-position: left bottom;
+}
+
+.dark\:bg-left {
+  background-position: left;
+}
+
+.active\:dark\:bg-left:active {
+  background-position: left;
+}
+
+.hover\:dark\:bg-left:hover {
+  background-position: left;
+}
+
+.focus\:dark\:bg-left:focus {
+  background-position: left;
+}
+
+.dark\:bg-left-top {
+  background-position: left top;
+}
+
+.active\:dark\:bg-left-top:active {
+  background-position: left top;
+}
+
+.hover\:dark\:bg-left-top:hover {
+  background-position: left top;
+}
+
+.focus\:dark\:bg-left-top:focus {
+  background-position: left top;
+}
+
+.dark\:bg-repeat {
+  background-repeat: repeat;
+}
+
+.active\:dark\:bg-repeat:active {
+  background-repeat: repeat;
+}
+
+.hover\:dark\:bg-repeat:hover {
+  background-repeat: repeat;
+}
+
+.focus\:dark\:bg-repeat:focus {
+  background-repeat: repeat;
+}
+
+.dark\:bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.active\:dark\:bg-no-repeat:active {
+  background-repeat: no-repeat;
+}
+
+.hover\:dark\:bg-no-repeat:hover {
+  background-repeat: no-repeat;
+}
+
+.focus\:dark\:bg-no-repeat:focus {
+  background-repeat: no-repeat;
+}
+
+.dark\:bg-repeat-x {
+  background-repeat: repeat-x;
+}
+
+.active\:dark\:bg-repeat-x:active {
+  background-repeat: repeat-x;
+}
+
+.hover\:dark\:bg-repeat-x:hover {
+  background-repeat: repeat-x;
+}
+
+.focus\:dark\:bg-repeat-x:focus {
+  background-repeat: repeat-x;
+}
+
+.dark\:bg-repeat-y {
+  background-repeat: repeat-y;
+}
+
+.active\:dark\:bg-repeat-y:active {
+  background-repeat: repeat-y;
+}
+
+.hover\:dark\:bg-repeat-y:hover {
+  background-repeat: repeat-y;
+}
+
+.focus\:dark\:bg-repeat-y:focus {
+  background-repeat: repeat-y;
+}
+
+.dark\:bg-repeat-round {
+  background-repeat: round;
+}
+
+.active\:dark\:bg-repeat-round:active {
+  background-repeat: round;
+}
+
+.hover\:dark\:bg-repeat-round:hover {
+  background-repeat: round;
+}
+
+.focus\:dark\:bg-repeat-round:focus {
+  background-repeat: round;
+}
+
+.dark\:bg-repeat-space {
+  background-repeat: space;
+}
+
+.active\:dark\:bg-repeat-space:active {
+  background-repeat: space;
+}
+
+.hover\:dark\:bg-repeat-space:hover {
+  background-repeat: space;
+}
+
+.focus\:dark\:bg-repeat-space:focus {
+  background-repeat: space;
+}
+
+.dark\:bg-auto {
+  background-size: auto;
+}
+
+.active\:dark\:bg-auto:active {
+  background-size: auto;
+}
+
+.hover\:dark\:bg-auto:hover {
+  background-size: auto;
+}
+
+.focus\:dark\:bg-auto:focus {
+  background-size: auto;
+}
+
+.dark\:bg-cover {
+  background-size: cover;
+}
+
+.active\:dark\:bg-cover:active {
+  background-size: cover;
+}
+
+.hover\:dark\:bg-cover:hover {
+  background-size: cover;
+}
+
+.focus\:dark\:bg-cover:focus {
+  background-size: cover;
+}
+
+.dark\:bg-contain {
+  background-size: contain;
+}
+
+.active\:dark\:bg-contain:active {
+  background-size: contain;
+}
+
+.hover\:dark\:bg-contain:hover {
+  background-size: contain;
+}
+
+.focus\:dark\:bg-contain:focus {
+  background-size: contain;
+}
+
+@media (max-width: 480px) {
+  .dark\:sm\:bg-fixed {
+    background-attachment: fixed;
+  }
+  .active\:dark\:sm\:bg-fixed:active {
+    background-attachment: fixed;
+  }
+  .hover\:dark\:sm\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+  .focus\:dark\:sm\:bg-fixed:focus {
+    background-attachment: fixed;
+  }
+  .dark\:sm\:bg-local {
+    background-attachment: local;
+  }
+  .active\:dark\:sm\:bg-local:active {
+    background-attachment: local;
+  }
+  .hover\:dark\:sm\:bg-local:hover {
+    background-attachment: local;
+  }
+  .focus\:dark\:sm\:bg-local:focus {
+    background-attachment: local;
+  }
+  .dark\:sm\:bg-scroll {
+    background-attachment: scroll;
+  }
+  .active\:dark\:sm\:bg-scroll:active {
+    background-attachment: scroll;
+  }
+  .hover\:dark\:sm\:bg-scroll:hover {
+    background-attachment: scroll;
+  }
+  .focus\:dark\:sm\:bg-scroll:focus {
+    background-attachment: scroll;
+  }
+  .dark\:sm\:bg-clip-border {
+    background-clip: border-box;
+  }
+  .active\:dark\:sm\:bg-clip-border:active {
+    background-clip: border-box;
+  }
+  .hover\:dark\:sm\:bg-clip-border:hover {
+    background-clip: border-box;
+  }
+  .focus\:dark\:sm\:bg-clip-border:focus {
+    background-clip: border-box;
+  }
+  .dark\:sm\:bg-clip-padding {
+    background-clip: padding-box;
+  }
+  .active\:dark\:sm\:bg-clip-padding:active {
+    background-clip: padding-box;
+  }
+  .hover\:dark\:sm\:bg-clip-padding:hover {
+    background-clip: padding-box;
+  }
+  .focus\:dark\:sm\:bg-clip-padding:focus {
+    background-clip: padding-box;
+  }
+  .dark\:sm\:bg-clip-content {
+    background-clip: content-box;
+  }
+  .active\:dark\:sm\:bg-clip-content:active {
+    background-clip: content-box;
+  }
+  .hover\:dark\:sm\:bg-clip-content:hover {
+    background-clip: content-box;
+  }
+  .focus\:dark\:sm\:bg-clip-content:focus {
+    background-clip: content-box;
+  }
+  .dark\:sm\:bg-clip-text {
+    background-clip: text;
+  }
+  .active\:dark\:sm\:bg-clip-text:active {
+    background-clip: text;
+  }
+  .hover\:dark\:sm\:bg-clip-text:hover {
+    background-clip: text;
+  }
+  .focus\:dark\:sm\:bg-clip-text:focus {
+    background-clip: text;
+  }
+  .dark\:sm\:bg-origin-border {
+    background-origin: border-box;
+  }
+  .active\:dark\:sm\:bg-origin-border:active {
+    background-origin: border-box;
+  }
+  .hover\:dark\:sm\:bg-origin-border:hover {
+    background-origin: border-box;
+  }
+  .focus\:dark\:sm\:bg-origin-border:focus {
+    background-origin: border-box;
+  }
+  .dark\:sm\:bg-origin-padding {
+    background-origin: padding-box;
+  }
+  .active\:dark\:sm\:bg-origin-padding:active {
+    background-origin: padding-box;
+  }
+  .hover\:dark\:sm\:bg-origin-padding:hover {
+    background-origin: padding-box;
+  }
+  .focus\:dark\:sm\:bg-origin-padding:focus {
+    background-origin: padding-box;
+  }
+  .dark\:sm\:bg-origin-content {
+    background-origin: content-box;
+  }
+  .active\:dark\:sm\:bg-origin-content:active {
+    background-origin: content-box;
+  }
+  .hover\:dark\:sm\:bg-origin-content:hover {
+    background-origin: content-box;
+  }
+  .focus\:dark\:sm\:bg-origin-content:focus {
+    background-origin: content-box;
+  }
+  .dark\:sm\:bg-center {
+    background-position: center;
+  }
+  .active\:dark\:sm\:bg-center:active {
+    background-position: center;
+  }
+  .hover\:dark\:sm\:bg-center:hover {
+    background-position: center;
+  }
+  .focus\:dark\:sm\:bg-center:focus {
+    background-position: center;
+  }
+  .dark\:sm\:bg-top {
+    background-position: top;
+  }
+  .active\:dark\:sm\:bg-top:active {
+    background-position: top;
+  }
+  .hover\:dark\:sm\:bg-top:hover {
+    background-position: top;
+  }
+  .focus\:dark\:sm\:bg-top:focus {
+    background-position: top;
+  }
+  .dark\:sm\:bg-top-right {
+    background-position: top right;
+  }
+  .active\:dark\:sm\:bg-top-right:active {
+    background-position: top right;
+  }
+  .hover\:dark\:sm\:bg-top-right:hover {
+    background-position: top right;
+  }
+  .focus\:dark\:sm\:bg-top-right:focus {
+    background-position: top right;
+  }
+  .dark\:sm\:bg-right {
+    background-position: right;
+  }
+  .active\:dark\:sm\:bg-right:active {
+    background-position: right;
+  }
+  .hover\:dark\:sm\:bg-right:hover {
+    background-position: right;
+  }
+  .focus\:dark\:sm\:bg-right:focus {
+    background-position: right;
+  }
+  .dark\:sm\:bg-right-bottom {
+    background-position: right bottom;
+  }
+  .active\:dark\:sm\:bg-right-bottom:active {
+    background-position: right bottom;
+  }
+  .hover\:dark\:sm\:bg-right-bottom:hover {
+    background-position: right bottom;
+  }
+  .focus\:dark\:sm\:bg-right-bottom:focus {
+    background-position: right bottom;
+  }
+  .dark\:sm\:bg-bottom {
+    background-position: bottom;
+  }
+  .active\:dark\:sm\:bg-bottom:active {
+    background-position: bottom;
+  }
+  .hover\:dark\:sm\:bg-bottom:hover {
+    background-position: bottom;
+  }
+  .focus\:dark\:sm\:bg-bottom:focus {
+    background-position: bottom;
+  }
+  .dark\:sm\:bg-left-bottom {
+    background-position: left bottom;
+  }
+  .active\:dark\:sm\:bg-left-bottom:active {
+    background-position: left bottom;
+  }
+  .hover\:dark\:sm\:bg-left-bottom:hover {
+    background-position: left bottom;
+  }
+  .focus\:dark\:sm\:bg-left-bottom:focus {
+    background-position: left bottom;
+  }
+  .dark\:sm\:bg-left {
+    background-position: left;
+  }
+  .active\:dark\:sm\:bg-left:active {
+    background-position: left;
+  }
+  .hover\:dark\:sm\:bg-left:hover {
+    background-position: left;
+  }
+  .focus\:dark\:sm\:bg-left:focus {
+    background-position: left;
+  }
+  .dark\:sm\:bg-left-top {
+    background-position: left top;
+  }
+  .active\:dark\:sm\:bg-left-top:active {
+    background-position: left top;
+  }
+  .hover\:dark\:sm\:bg-left-top:hover {
+    background-position: left top;
+  }
+  .focus\:dark\:sm\:bg-left-top:focus {
+    background-position: left top;
+  }
+  .dark\:sm\:bg-repeat {
+    background-repeat: repeat;
+  }
+  .active\:dark\:sm\:bg-repeat:active {
+    background-repeat: repeat;
+  }
+  .hover\:dark\:sm\:bg-repeat:hover {
+    background-repeat: repeat;
+  }
+  .focus\:dark\:sm\:bg-repeat:focus {
+    background-repeat: repeat;
+  }
+  .dark\:sm\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  .active\:dark\:sm\:bg-no-repeat:active {
+    background-repeat: no-repeat;
+  }
+  .hover\:dark\:sm\:bg-no-repeat:hover {
+    background-repeat: no-repeat;
+  }
+  .focus\:dark\:sm\:bg-no-repeat:focus {
+    background-repeat: no-repeat;
+  }
+  .dark\:sm\:bg-repeat-x {
+    background-repeat: repeat-x;
+  }
+  .active\:dark\:sm\:bg-repeat-x:active {
+    background-repeat: repeat-x;
+  }
+  .hover\:dark\:sm\:bg-repeat-x:hover {
+    background-repeat: repeat-x;
+  }
+  .focus\:dark\:sm\:bg-repeat-x:focus {
+    background-repeat: repeat-x;
+  }
+  .dark\:sm\:bg-repeat-y {
+    background-repeat: repeat-y;
+  }
+  .active\:dark\:sm\:bg-repeat-y:active {
+    background-repeat: repeat-y;
+  }
+  .hover\:dark\:sm\:bg-repeat-y:hover {
+    background-repeat: repeat-y;
+  }
+  .focus\:dark\:sm\:bg-repeat-y:focus {
+    background-repeat: repeat-y;
+  }
+  .dark\:sm\:bg-repeat-round {
+    background-repeat: round;
+  }
+  .active\:dark\:sm\:bg-repeat-round:active {
+    background-repeat: round;
+  }
+  .hover\:dark\:sm\:bg-repeat-round:hover {
+    background-repeat: round;
+  }
+  .focus\:dark\:sm\:bg-repeat-round:focus {
+    background-repeat: round;
+  }
+  .dark\:sm\:bg-repeat-space {
+    background-repeat: space;
+  }
+  .active\:dark\:sm\:bg-repeat-space:active {
+    background-repeat: space;
+  }
+  .hover\:dark\:sm\:bg-repeat-space:hover {
+    background-repeat: space;
+  }
+  .focus\:dark\:sm\:bg-repeat-space:focus {
+    background-repeat: space;
+  }
+  .dark\:sm\:bg-auto {
+    background-size: auto;
+  }
+  .active\:dark\:sm\:bg-auto:active {
+    background-size: auto;
+  }
+  .hover\:dark\:sm\:bg-auto:hover {
+    background-size: auto;
+  }
+  .focus\:dark\:sm\:bg-auto:focus {
+    background-size: auto;
+  }
+  .dark\:sm\:bg-cover {
+    background-size: cover;
+  }
+  .active\:dark\:sm\:bg-cover:active {
+    background-size: cover;
+  }
+  .hover\:dark\:sm\:bg-cover:hover {
+    background-size: cover;
+  }
+  .focus\:dark\:sm\:bg-cover:focus {
+    background-size: cover;
+  }
+  .dark\:sm\:bg-contain {
+    background-size: contain;
+  }
+  .active\:dark\:sm\:bg-contain:active {
+    background-size: contain;
+  }
+  .hover\:dark\:sm\:bg-contain:hover {
+    background-size: contain;
+  }
+  .focus\:dark\:sm\:bg-contain:focus {
+    background-size: contain;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .dark\:md\:bg-fixed {
+    background-attachment: fixed;
+  }
+  .active\:dark\:md\:bg-fixed:active {
+    background-attachment: fixed;
+  }
+  .hover\:dark\:md\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+  .focus\:dark\:md\:bg-fixed:focus {
+    background-attachment: fixed;
+  }
+  .dark\:md\:bg-local {
+    background-attachment: local;
+  }
+  .active\:dark\:md\:bg-local:active {
+    background-attachment: local;
+  }
+  .hover\:dark\:md\:bg-local:hover {
+    background-attachment: local;
+  }
+  .focus\:dark\:md\:bg-local:focus {
+    background-attachment: local;
+  }
+  .dark\:md\:bg-scroll {
+    background-attachment: scroll;
+  }
+  .active\:dark\:md\:bg-scroll:active {
+    background-attachment: scroll;
+  }
+  .hover\:dark\:md\:bg-scroll:hover {
+    background-attachment: scroll;
+  }
+  .focus\:dark\:md\:bg-scroll:focus {
+    background-attachment: scroll;
+  }
+  .dark\:md\:bg-clip-border {
+    background-clip: border-box;
+  }
+  .active\:dark\:md\:bg-clip-border:active {
+    background-clip: border-box;
+  }
+  .hover\:dark\:md\:bg-clip-border:hover {
+    background-clip: border-box;
+  }
+  .focus\:dark\:md\:bg-clip-border:focus {
+    background-clip: border-box;
+  }
+  .dark\:md\:bg-clip-padding {
+    background-clip: padding-box;
+  }
+  .active\:dark\:md\:bg-clip-padding:active {
+    background-clip: padding-box;
+  }
+  .hover\:dark\:md\:bg-clip-padding:hover {
+    background-clip: padding-box;
+  }
+  .focus\:dark\:md\:bg-clip-padding:focus {
+    background-clip: padding-box;
+  }
+  .dark\:md\:bg-clip-content {
+    background-clip: content-box;
+  }
+  .active\:dark\:md\:bg-clip-content:active {
+    background-clip: content-box;
+  }
+  .hover\:dark\:md\:bg-clip-content:hover {
+    background-clip: content-box;
+  }
+  .focus\:dark\:md\:bg-clip-content:focus {
+    background-clip: content-box;
+  }
+  .dark\:md\:bg-clip-text {
+    background-clip: text;
+  }
+  .active\:dark\:md\:bg-clip-text:active {
+    background-clip: text;
+  }
+  .hover\:dark\:md\:bg-clip-text:hover {
+    background-clip: text;
+  }
+  .focus\:dark\:md\:bg-clip-text:focus {
+    background-clip: text;
+  }
+  .dark\:md\:bg-origin-border {
+    background-origin: border-box;
+  }
+  .active\:dark\:md\:bg-origin-border:active {
+    background-origin: border-box;
+  }
+  .hover\:dark\:md\:bg-origin-border:hover {
+    background-origin: border-box;
+  }
+  .focus\:dark\:md\:bg-origin-border:focus {
+    background-origin: border-box;
+  }
+  .dark\:md\:bg-origin-padding {
+    background-origin: padding-box;
+  }
+  .active\:dark\:md\:bg-origin-padding:active {
+    background-origin: padding-box;
+  }
+  .hover\:dark\:md\:bg-origin-padding:hover {
+    background-origin: padding-box;
+  }
+  .focus\:dark\:md\:bg-origin-padding:focus {
+    background-origin: padding-box;
+  }
+  .dark\:md\:bg-origin-content {
+    background-origin: content-box;
+  }
+  .active\:dark\:md\:bg-origin-content:active {
+    background-origin: content-box;
+  }
+  .hover\:dark\:md\:bg-origin-content:hover {
+    background-origin: content-box;
+  }
+  .focus\:dark\:md\:bg-origin-content:focus {
+    background-origin: content-box;
+  }
+  .dark\:md\:bg-center {
+    background-position: center;
+  }
+  .active\:dark\:md\:bg-center:active {
+    background-position: center;
+  }
+  .hover\:dark\:md\:bg-center:hover {
+    background-position: center;
+  }
+  .focus\:dark\:md\:bg-center:focus {
+    background-position: center;
+  }
+  .dark\:md\:bg-top {
+    background-position: top;
+  }
+  .active\:dark\:md\:bg-top:active {
+    background-position: top;
+  }
+  .hover\:dark\:md\:bg-top:hover {
+    background-position: top;
+  }
+  .focus\:dark\:md\:bg-top:focus {
+    background-position: top;
+  }
+  .dark\:md\:bg-top-right {
+    background-position: top right;
+  }
+  .active\:dark\:md\:bg-top-right:active {
+    background-position: top right;
+  }
+  .hover\:dark\:md\:bg-top-right:hover {
+    background-position: top right;
+  }
+  .focus\:dark\:md\:bg-top-right:focus {
+    background-position: top right;
+  }
+  .dark\:md\:bg-right {
+    background-position: right;
+  }
+  .active\:dark\:md\:bg-right:active {
+    background-position: right;
+  }
+  .hover\:dark\:md\:bg-right:hover {
+    background-position: right;
+  }
+  .focus\:dark\:md\:bg-right:focus {
+    background-position: right;
+  }
+  .dark\:md\:bg-right-bottom {
+    background-position: right bottom;
+  }
+  .active\:dark\:md\:bg-right-bottom:active {
+    background-position: right bottom;
+  }
+  .hover\:dark\:md\:bg-right-bottom:hover {
+    background-position: right bottom;
+  }
+  .focus\:dark\:md\:bg-right-bottom:focus {
+    background-position: right bottom;
+  }
+  .dark\:md\:bg-bottom {
+    background-position: bottom;
+  }
+  .active\:dark\:md\:bg-bottom:active {
+    background-position: bottom;
+  }
+  .hover\:dark\:md\:bg-bottom:hover {
+    background-position: bottom;
+  }
+  .focus\:dark\:md\:bg-bottom:focus {
+    background-position: bottom;
+  }
+  .dark\:md\:bg-left-bottom {
+    background-position: left bottom;
+  }
+  .active\:dark\:md\:bg-left-bottom:active {
+    background-position: left bottom;
+  }
+  .hover\:dark\:md\:bg-left-bottom:hover {
+    background-position: left bottom;
+  }
+  .focus\:dark\:md\:bg-left-bottom:focus {
+    background-position: left bottom;
+  }
+  .dark\:md\:bg-left {
+    background-position: left;
+  }
+  .active\:dark\:md\:bg-left:active {
+    background-position: left;
+  }
+  .hover\:dark\:md\:bg-left:hover {
+    background-position: left;
+  }
+  .focus\:dark\:md\:bg-left:focus {
+    background-position: left;
+  }
+  .dark\:md\:bg-left-top {
+    background-position: left top;
+  }
+  .active\:dark\:md\:bg-left-top:active {
+    background-position: left top;
+  }
+  .hover\:dark\:md\:bg-left-top:hover {
+    background-position: left top;
+  }
+  .focus\:dark\:md\:bg-left-top:focus {
+    background-position: left top;
+  }
+  .dark\:md\:bg-repeat {
+    background-repeat: repeat;
+  }
+  .active\:dark\:md\:bg-repeat:active {
+    background-repeat: repeat;
+  }
+  .hover\:dark\:md\:bg-repeat:hover {
+    background-repeat: repeat;
+  }
+  .focus\:dark\:md\:bg-repeat:focus {
+    background-repeat: repeat;
+  }
+  .dark\:md\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  .active\:dark\:md\:bg-no-repeat:active {
+    background-repeat: no-repeat;
+  }
+  .hover\:dark\:md\:bg-no-repeat:hover {
+    background-repeat: no-repeat;
+  }
+  .focus\:dark\:md\:bg-no-repeat:focus {
+    background-repeat: no-repeat;
+  }
+  .dark\:md\:bg-repeat-x {
+    background-repeat: repeat-x;
+  }
+  .active\:dark\:md\:bg-repeat-x:active {
+    background-repeat: repeat-x;
+  }
+  .hover\:dark\:md\:bg-repeat-x:hover {
+    background-repeat: repeat-x;
+  }
+  .focus\:dark\:md\:bg-repeat-x:focus {
+    background-repeat: repeat-x;
+  }
+  .dark\:md\:bg-repeat-y {
+    background-repeat: repeat-y;
+  }
+  .active\:dark\:md\:bg-repeat-y:active {
+    background-repeat: repeat-y;
+  }
+  .hover\:dark\:md\:bg-repeat-y:hover {
+    background-repeat: repeat-y;
+  }
+  .focus\:dark\:md\:bg-repeat-y:focus {
+    background-repeat: repeat-y;
+  }
+  .dark\:md\:bg-repeat-round {
+    background-repeat: round;
+  }
+  .active\:dark\:md\:bg-repeat-round:active {
+    background-repeat: round;
+  }
+  .hover\:dark\:md\:bg-repeat-round:hover {
+    background-repeat: round;
+  }
+  .focus\:dark\:md\:bg-repeat-round:focus {
+    background-repeat: round;
+  }
+  .dark\:md\:bg-repeat-space {
+    background-repeat: space;
+  }
+  .active\:dark\:md\:bg-repeat-space:active {
+    background-repeat: space;
+  }
+  .hover\:dark\:md\:bg-repeat-space:hover {
+    background-repeat: space;
+  }
+  .focus\:dark\:md\:bg-repeat-space:focus {
+    background-repeat: space;
+  }
+  .dark\:md\:bg-auto {
+    background-size: auto;
+  }
+  .active\:dark\:md\:bg-auto:active {
+    background-size: auto;
+  }
+  .hover\:dark\:md\:bg-auto:hover {
+    background-size: auto;
+  }
+  .focus\:dark\:md\:bg-auto:focus {
+    background-size: auto;
+  }
+  .dark\:md\:bg-cover {
+    background-size: cover;
+  }
+  .active\:dark\:md\:bg-cover:active {
+    background-size: cover;
+  }
+  .hover\:dark\:md\:bg-cover:hover {
+    background-size: cover;
+  }
+  .focus\:dark\:md\:bg-cover:focus {
+    background-size: cover;
+  }
+  .dark\:md\:bg-contain {
+    background-size: contain;
+  }
+  .active\:dark\:md\:bg-contain:active {
+    background-size: contain;
+  }
+  .hover\:dark\:md\:bg-contain:hover {
+    background-size: contain;
+  }
+  .focus\:dark\:md\:bg-contain:focus {
+    background-size: contain;
+  }
+}
+@media (min-width: 769px) and (max-width: 1080px) {
+  .dark\:lg\:bg-fixed {
+    background-attachment: fixed;
+  }
+  .active\:dark\:lg\:bg-fixed:active {
+    background-attachment: fixed;
+  }
+  .hover\:dark\:lg\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+  .focus\:dark\:lg\:bg-fixed:focus {
+    background-attachment: fixed;
+  }
+  .dark\:lg\:bg-local {
+    background-attachment: local;
+  }
+  .active\:dark\:lg\:bg-local:active {
+    background-attachment: local;
+  }
+  .hover\:dark\:lg\:bg-local:hover {
+    background-attachment: local;
+  }
+  .focus\:dark\:lg\:bg-local:focus {
+    background-attachment: local;
+  }
+  .dark\:lg\:bg-scroll {
+    background-attachment: scroll;
+  }
+  .active\:dark\:lg\:bg-scroll:active {
+    background-attachment: scroll;
+  }
+  .hover\:dark\:lg\:bg-scroll:hover {
+    background-attachment: scroll;
+  }
+  .focus\:dark\:lg\:bg-scroll:focus {
+    background-attachment: scroll;
+  }
+  .dark\:lg\:bg-clip-border {
+    background-clip: border-box;
+  }
+  .active\:dark\:lg\:bg-clip-border:active {
+    background-clip: border-box;
+  }
+  .hover\:dark\:lg\:bg-clip-border:hover {
+    background-clip: border-box;
+  }
+  .focus\:dark\:lg\:bg-clip-border:focus {
+    background-clip: border-box;
+  }
+  .dark\:lg\:bg-clip-padding {
+    background-clip: padding-box;
+  }
+  .active\:dark\:lg\:bg-clip-padding:active {
+    background-clip: padding-box;
+  }
+  .hover\:dark\:lg\:bg-clip-padding:hover {
+    background-clip: padding-box;
+  }
+  .focus\:dark\:lg\:bg-clip-padding:focus {
+    background-clip: padding-box;
+  }
+  .dark\:lg\:bg-clip-content {
+    background-clip: content-box;
+  }
+  .active\:dark\:lg\:bg-clip-content:active {
+    background-clip: content-box;
+  }
+  .hover\:dark\:lg\:bg-clip-content:hover {
+    background-clip: content-box;
+  }
+  .focus\:dark\:lg\:bg-clip-content:focus {
+    background-clip: content-box;
+  }
+  .dark\:lg\:bg-clip-text {
+    background-clip: text;
+  }
+  .active\:dark\:lg\:bg-clip-text:active {
+    background-clip: text;
+  }
+  .hover\:dark\:lg\:bg-clip-text:hover {
+    background-clip: text;
+  }
+  .focus\:dark\:lg\:bg-clip-text:focus {
+    background-clip: text;
+  }
+  .dark\:lg\:bg-origin-border {
+    background-origin: border-box;
+  }
+  .active\:dark\:lg\:bg-origin-border:active {
+    background-origin: border-box;
+  }
+  .hover\:dark\:lg\:bg-origin-border:hover {
+    background-origin: border-box;
+  }
+  .focus\:dark\:lg\:bg-origin-border:focus {
+    background-origin: border-box;
+  }
+  .dark\:lg\:bg-origin-padding {
+    background-origin: padding-box;
+  }
+  .active\:dark\:lg\:bg-origin-padding:active {
+    background-origin: padding-box;
+  }
+  .hover\:dark\:lg\:bg-origin-padding:hover {
+    background-origin: padding-box;
+  }
+  .focus\:dark\:lg\:bg-origin-padding:focus {
+    background-origin: padding-box;
+  }
+  .dark\:lg\:bg-origin-content {
+    background-origin: content-box;
+  }
+  .active\:dark\:lg\:bg-origin-content:active {
+    background-origin: content-box;
+  }
+  .hover\:dark\:lg\:bg-origin-content:hover {
+    background-origin: content-box;
+  }
+  .focus\:dark\:lg\:bg-origin-content:focus {
+    background-origin: content-box;
+  }
+  .dark\:lg\:bg-center {
+    background-position: center;
+  }
+  .active\:dark\:lg\:bg-center:active {
+    background-position: center;
+  }
+  .hover\:dark\:lg\:bg-center:hover {
+    background-position: center;
+  }
+  .focus\:dark\:lg\:bg-center:focus {
+    background-position: center;
+  }
+  .dark\:lg\:bg-top {
+    background-position: top;
+  }
+  .active\:dark\:lg\:bg-top:active {
+    background-position: top;
+  }
+  .hover\:dark\:lg\:bg-top:hover {
+    background-position: top;
+  }
+  .focus\:dark\:lg\:bg-top:focus {
+    background-position: top;
+  }
+  .dark\:lg\:bg-top-right {
+    background-position: top right;
+  }
+  .active\:dark\:lg\:bg-top-right:active {
+    background-position: top right;
+  }
+  .hover\:dark\:lg\:bg-top-right:hover {
+    background-position: top right;
+  }
+  .focus\:dark\:lg\:bg-top-right:focus {
+    background-position: top right;
+  }
+  .dark\:lg\:bg-right {
+    background-position: right;
+  }
+  .active\:dark\:lg\:bg-right:active {
+    background-position: right;
+  }
+  .hover\:dark\:lg\:bg-right:hover {
+    background-position: right;
+  }
+  .focus\:dark\:lg\:bg-right:focus {
+    background-position: right;
+  }
+  .dark\:lg\:bg-right-bottom {
+    background-position: right bottom;
+  }
+  .active\:dark\:lg\:bg-right-bottom:active {
+    background-position: right bottom;
+  }
+  .hover\:dark\:lg\:bg-right-bottom:hover {
+    background-position: right bottom;
+  }
+  .focus\:dark\:lg\:bg-right-bottom:focus {
+    background-position: right bottom;
+  }
+  .dark\:lg\:bg-bottom {
+    background-position: bottom;
+  }
+  .active\:dark\:lg\:bg-bottom:active {
+    background-position: bottom;
+  }
+  .hover\:dark\:lg\:bg-bottom:hover {
+    background-position: bottom;
+  }
+  .focus\:dark\:lg\:bg-bottom:focus {
+    background-position: bottom;
+  }
+  .dark\:lg\:bg-left-bottom {
+    background-position: left bottom;
+  }
+  .active\:dark\:lg\:bg-left-bottom:active {
+    background-position: left bottom;
+  }
+  .hover\:dark\:lg\:bg-left-bottom:hover {
+    background-position: left bottom;
+  }
+  .focus\:dark\:lg\:bg-left-bottom:focus {
+    background-position: left bottom;
+  }
+  .dark\:lg\:bg-left {
+    background-position: left;
+  }
+  .active\:dark\:lg\:bg-left:active {
+    background-position: left;
+  }
+  .hover\:dark\:lg\:bg-left:hover {
+    background-position: left;
+  }
+  .focus\:dark\:lg\:bg-left:focus {
+    background-position: left;
+  }
+  .dark\:lg\:bg-left-top {
+    background-position: left top;
+  }
+  .active\:dark\:lg\:bg-left-top:active {
+    background-position: left top;
+  }
+  .hover\:dark\:lg\:bg-left-top:hover {
+    background-position: left top;
+  }
+  .focus\:dark\:lg\:bg-left-top:focus {
+    background-position: left top;
+  }
+  .dark\:lg\:bg-repeat {
+    background-repeat: repeat;
+  }
+  .active\:dark\:lg\:bg-repeat:active {
+    background-repeat: repeat;
+  }
+  .hover\:dark\:lg\:bg-repeat:hover {
+    background-repeat: repeat;
+  }
+  .focus\:dark\:lg\:bg-repeat:focus {
+    background-repeat: repeat;
+  }
+  .dark\:lg\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+  .active\:dark\:lg\:bg-no-repeat:active {
+    background-repeat: no-repeat;
+  }
+  .hover\:dark\:lg\:bg-no-repeat:hover {
+    background-repeat: no-repeat;
+  }
+  .focus\:dark\:lg\:bg-no-repeat:focus {
+    background-repeat: no-repeat;
+  }
+  .dark\:lg\:bg-repeat-x {
+    background-repeat: repeat-x;
+  }
+  .active\:dark\:lg\:bg-repeat-x:active {
+    background-repeat: repeat-x;
+  }
+  .hover\:dark\:lg\:bg-repeat-x:hover {
+    background-repeat: repeat-x;
+  }
+  .focus\:dark\:lg\:bg-repeat-x:focus {
+    background-repeat: repeat-x;
+  }
+  .dark\:lg\:bg-repeat-y {
+    background-repeat: repeat-y;
+  }
+  .active\:dark\:lg\:bg-repeat-y:active {
+    background-repeat: repeat-y;
+  }
+  .hover\:dark\:lg\:bg-repeat-y:hover {
+    background-repeat: repeat-y;
+  }
+  .focus\:dark\:lg\:bg-repeat-y:focus {
+    background-repeat: repeat-y;
+  }
+  .dark\:lg\:bg-repeat-round {
+    background-repeat: round;
+  }
+  .active\:dark\:lg\:bg-repeat-round:active {
+    background-repeat: round;
+  }
+  .hover\:dark\:lg\:bg-repeat-round:hover {
+    background-repeat: round;
+  }
+  .focus\:dark\:lg\:bg-repeat-round:focus {
+    background-repeat: round;
+  }
+  .dark\:lg\:bg-repeat-space {
+    background-repeat: space;
+  }
+  .active\:dark\:lg\:bg-repeat-space:active {
+    background-repeat: space;
+  }
+  .hover\:dark\:lg\:bg-repeat-space:hover {
+    background-repeat: space;
+  }
+  .focus\:dark\:lg\:bg-repeat-space:focus {
+    background-repeat: space;
+  }
+  .dark\:lg\:bg-auto {
+    background-size: auto;
+  }
+  .active\:dark\:lg\:bg-auto:active {
+    background-size: auto;
+  }
+  .hover\:dark\:lg\:bg-auto:hover {
+    background-size: auto;
+  }
+  .focus\:dark\:lg\:bg-auto:focus {
+    background-size: auto;
+  }
+  .dark\:lg\:bg-cover {
+    background-size: cover;
+  }
+  .active\:dark\:lg\:bg-cover:active {
+    background-size: cover;
+  }
+  .hover\:dark\:lg\:bg-cover:hover {
+    background-size: cover;
+  }
+  .focus\:dark\:lg\:bg-cover:focus {
+    background-size: cover;
+  }
+  .dark\:lg\:bg-contain {
+    background-size: contain;
+  }
+  .active\:dark\:lg\:bg-contain:active {
+    background-size: contain;
+  }
+  .hover\:dark\:lg\:bg-contain:hover {
+    background-size: contain;
+  }
+  .focus\:dark\:lg\:bg-contain:focus {
+    background-size: contain;
+  }
+}
