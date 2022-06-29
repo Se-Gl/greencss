@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run css && npm run format && npm run compressed-css && npm --no-git-tag-version version patch && git add -A .
+npm run css && npm run format && npm run compressed-css && git add -A .
