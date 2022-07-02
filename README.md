@@ -28,6 +28,24 @@ import 'greencss/css/greencss.css'
 import 'greencss/css/classes/animation/animation.css'
 ```
 
+Currently, the following categories are available:
+
+- animation/animation.css
+- background/background.css
+- borders/borders.css
+- color/color.css
+- effects/effects.css
+- filters/filters.css
+- flex-grow/flex-grow.css
+- interactivity/interactivity.css
+- layout/layout.css
+- sizing/sizing.css
+- spacing/spacing.css
+- svg/svg.css
+- tables/tables.css
+- transforms/transforms.css
+- typography/typography.css
+
 You will find all [CSS categories](https://www.greencss.dev/docs) here.
 
 ## Lightweight Version
@@ -109,6 +127,14 @@ All examples mentioned above can also be adapted to the darkmode. Add the prefix
 ## Contribute
 
 You want to collaborate? Have a look at the documentation in the information folder.
+
+For commits, use semantig writing:
+
+| Commit                                                             |      Usage       |
+| ------------------------------------------------------------------ | :--------------: |
+| fix(pencil): stop graphite breaking when too much pressure applied |   Fix Release    |
+| feat(pencil): add 'graphiteWidth' option                           | Feature Release  |
+| perf(pencil): remove graphiteWidth option                          | Breaking Release |
 
 ## Useful links
 

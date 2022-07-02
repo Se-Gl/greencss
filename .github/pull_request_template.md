@@ -15,6 +15,6 @@ TODO:
 
 Checklist / Reminders:
 
-- [ ] Responsive Code Snippets are included
+- [ ] run "git tag" to check if your Version matches
 - [ ] Documentation is created / adapted
 
