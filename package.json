@@ -1,8 +1,12 @@
 {
   "name": "greencss",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "The classy way to write sustainable CSS.",
-  "main": "index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "sass --watch --no-source-map scss:css",
     "prepare": "husky install",
@@ -26,9 +30,11 @@
   "author": "Severin Glaser",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
-    "sass": "^1.53.0"
-  },
-  "type": "module"
+    "sass": "^1.53.0",
+    "semantic-release": "^19.0.3"
+  }
 }
