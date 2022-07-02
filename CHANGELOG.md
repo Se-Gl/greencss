@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Se-Gl/greencss/compare/v1.2.0...v1.2.1) (2022-07-02)
+
+
+### Bug Fixes
+
+* **package:** adjusted package.json version ([a8a3cfe](https://github.com/Se-Gl/greencss/commit/a8a3cfe1e4e911737b229543e364df19ff632d54))
+
 # [1.2.0](https://github.com/Se-Gl/greencss/compare/v1.1.0...v1.2.0) (2022-07-02)
 
 ### Bug Fixes
