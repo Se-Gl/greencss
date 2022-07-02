@@ -1,7 +1,6 @@
 # A classy way to write sustainable CSS
 
 [![Prettier Code Style](https://github.com/Se-Gl/greencss/actions/workflows/prettier.yml/badge.svg)](https://github.com/Se-Gl/greencss/actions/workflows/prettier.yml)
-[![NPM](https://github.com/Se-Gl/greencss/actions/workflows/npm.yml/badge.svg)](https://github.com/Se-Gl/greencss/actions/workflows/npm.yml)
 [![Downloads p/week](https://badgen.net/npm/dw/greencss)](https://badgen.net/npm/dw/greencss)
 [![NPM version](https://badgen.net/npm/v/greencss)](https://badgen.net/npm/v/greencss)
 [![License](https://badgen.net/npm/license/greencss)](https://badgen.net/npm/license/greencss)
