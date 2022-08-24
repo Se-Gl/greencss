@@ -196,17 +196,6 @@ input:focus,
   outline: none;
 }
 
-a::-moz-focus-inner,
-button::-moz-focus-inner,
-input::-moz-focus-inner,
-::-moz-focus-inner {
-  border: 0;
-}
-
 :focus {
   outline: none;
-}
-
-::-moz-focus-inner {
-  border: 0;
 }

@@ -1,6 +1,6 @@
 {
   "name": "greencss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The classy way to write sustainable CSS.",
   "private": false,
   "publishConfig": {
