@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/Se-Gl/greencss/compare/v1.3.0...v1.3.1) (2022-10-13)
+
+
+### Bug Fixes
+
+* **color:** deleted duplicated import ([3e8cd1c](https://github.com/Se-Gl/greencss/commit/3e8cd1cae017cdf9aa3b4b0f8b1a83af1df42c8f))
+
 # [1.3.0](https://github.com/Se-Gl/greencss/compare/v1.2.2...v1.3.0) (2022-10-13)
 
 ### Features
