@@ -19,18 +19,6 @@
 @use '../../abstracts/mixins/filters/mixin' as *;
 @use '../../abstracts/mixins/borders/mixin' as *;
 
-// $isHover: false,
-// $isActive: false,
-// $isFocus: false,
-// $bp: '',
-// $classname: font-size,
-// $postfix: -rem,
-// $firstnumber: 1,
-// $secondnumber: 100,
-// $calculate: 1,
-// $multiply: 1,
-// $isAnimation: false
-
 // typography
 @include typobasis();
 @include universalMixin(true, true, true, text-, font-size, px, 0, 100, 1, 1px);
@@ -91,6 +79,13 @@
 @include lightColor(accent-, 0, 0, accent-color, $lightdark, focus);
 @include initialColor(accent-, accent-color, active);
 @include initialColor(accent-, accent-color, focus);
+// custom colors
+@include customColor('', text-, color);
+@include customColor('', bg-, background-color);
+@include customColor('', border-, border-color);
+@include customColor('', fill-, fill);
+@include customColor('', accent-, accent-color);
+@include customColor('', text-decoration-, text-decoration-color);
 // layout
 @include eachValues('', $layoutVariables);
 @include universalMixin(true, true, true, col-, columns, '', 1, 12, 1, 1);

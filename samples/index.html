@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testing HTML Site</title>
-    <link rel="stylesheet" href="../css/omencss.css" />
+    <link rel="stylesheet" href="../css/greencss.css" />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
   </head>
+  <style>
+    :root {
+      --custom-color-blue: blue;
+      --custom-color-red: red;
+      --custom-color-green: greenyellow;
+}
+  </style>
   <body>
+    
     <section class="bg-dark hov:text-venetianred-1 gradient-to-right from-darkpurple-4 to-lightgreen-2">
-      <h1 class="text-light hov:bg-carrotorange">test</h1>
-      <h2>test</h2>
+      <h1 class="text-red hover:bg-orange">test</h1>
+      <h2 class="custom-text-blue sm:custom-text-red active:sm:custom-text-blue focus:sm:custom-text-blue hover:custom-text-green px-20px py-10px custom-bg-green">test</h2>
       <h3>test</h3>
       <h4>test</h4>
       <h5>test</h5>

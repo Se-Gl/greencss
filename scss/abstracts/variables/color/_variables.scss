@@ -26,6 +26,18 @@ $colors: (
   'gray': $gray
 );
 
+// custom user color
+$customcolors: (
+  'yellow': --custom-yellow,
+  'red': --custom-red,
+  'blue': --custom-blue,
+  'purple': --custom-purple,
+  'green': --custom-green,
+  'orange': --custom-orange,
+  'primary': --custom-primary,
+  'secondary': --custom-secondary
+);
+
 $fullcolors: (
   'red': $red,
   'red-1': #fa1e1e,

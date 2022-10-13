@@ -80,6 +80,13 @@
   @include lightColor(sm\:accent-, 0, 0, accent-color, $lightdark, focus);
   @include initialColor(sm\:accent-, accent-color, active);
   @include initialColor(sm\:accent-, accent-color, focus);
+  // custom colors
+  @include customColor(sm\:, text-, color);
+  @include customColor(sm\:, bg-, background-color);
+  @include customColor(sm\:, border-, border-color);
+  @include customColor(sm\:, fill-, fill);
+  @include customColor(sm\:, accent-, accent-color);
+  @include customColor(sm\:, text-decoration-, text-decoration-color);
   // layout
   @include eachValues(sm\:, $layoutVariables);
   @include universalMixin(true, true, true, sm\:col-, columns, '', 1, 12, 1, 1);
@@ -343,6 +350,13 @@
   @include lightColor(md\:accent-, 0, 0, accent-color, $lightdark, focus);
   @include initialColor(md\:accent-, accent-color, active);
   @include initialColor(md\:accent-, accent-color, focus);
+  // custom colors
+  @include customColor(md\:, text-, color);
+  @include customColor(md\:, bg-, background-color);
+  @include customColor(md\:, border-, border-color);
+  @include customColor(md\:, fill-, fill);
+  @include customColor(md\:, accent-, accent-color);
+  @include customColor(md\:, text-decoration-, text-decoration-color);
   // layout
   @include eachValues(md\:, $layoutVariables);
   @include universalMixin(true, true, true, md\:col-, columns, '', 1, 12, 1, 1);
@@ -606,6 +620,13 @@
   @include lightColor(lg\:accent-, 0, 0, accent-color, $lightdark, focus);
   @include initialColor(lg\:accent-, accent-color, active);
   @include initialColor(lg\:accent-, accent-color, focus);
+  // custom colors
+  @include customColor(lg\:, text-, color);
+  @include customColor(lg\:, bg-, background-color);
+  @include customColor(lg\:, border-, border-color);
+  @include customColor(lg\:, fill-, fill);
+  @include customColor(lg\:, accent-, accent-color);
+  @include customColor(lg\:, text-decoration-, text-decoration-color);
   // layout
   @include eachValues(lg\:, $layoutVariables);
   @include universalMixin(true, true, true, lg\:col-, columns, '', 1, 12, 1, 1);

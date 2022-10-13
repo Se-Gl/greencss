@@ -13811,6 +13811,774 @@ SOFTWARE.
   accent-color: #7d7d7d;
 }
 
+.custom-text-yellow {
+  color: var(--custom-color-yellow);
+}
+
+.active\:custom-text-yellow:active {
+  color: var(--custom-color-yellow);
+}
+
+.focus\:custom-text-yellow:focus {
+  color: var(--custom-color-yellow);
+}
+
+.hover\:custom-text-yellow:hover {
+  color: var(--custom-color-yellow);
+}
+
+.custom-text-red {
+  color: var(--custom-color-red);
+}
+
+.active\:custom-text-red:active {
+  color: var(--custom-color-red);
+}
+
+.focus\:custom-text-red:focus {
+  color: var(--custom-color-red);
+}
+
+.hover\:custom-text-red:hover {
+  color: var(--custom-color-red);
+}
+
+.custom-text-blue {
+  color: var(--custom-color-blue);
+}
+
+.active\:custom-text-blue:active {
+  color: var(--custom-color-blue);
+}
+
+.focus\:custom-text-blue:focus {
+  color: var(--custom-color-blue);
+}
+
+.hover\:custom-text-blue:hover {
+  color: var(--custom-color-blue);
+}
+
+.custom-text-purple {
+  color: var(--custom-color-purple);
+}
+
+.active\:custom-text-purple:active {
+  color: var(--custom-color-purple);
+}
+
+.focus\:custom-text-purple:focus {
+  color: var(--custom-color-purple);
+}
+
+.hover\:custom-text-purple:hover {
+  color: var(--custom-color-purple);
+}
+
+.custom-text-green {
+  color: var(--custom-color-green);
+}
+
+.active\:custom-text-green:active {
+  color: var(--custom-color-green);
+}
+
+.focus\:custom-text-green:focus {
+  color: var(--custom-color-green);
+}
+
+.hover\:custom-text-green:hover {
+  color: var(--custom-color-green);
+}
+
+.custom-text-orange {
+  color: var(--custom-color-orange);
+}
+
+.active\:custom-text-orange:active {
+  color: var(--custom-color-orange);
+}
+
+.focus\:custom-text-orange:focus {
+  color: var(--custom-color-orange);
+}
+
+.hover\:custom-text-orange:hover {
+  color: var(--custom-color-orange);
+}
+
+.custom-text-primary {
+  color: var(--custom-color-primary);
+}
+
+.active\:custom-text-primary:active {
+  color: var(--custom-color-primary);
+}
+
+.focus\:custom-text-primary:focus {
+  color: var(--custom-color-primary);
+}
+
+.hover\:custom-text-primary:hover {
+  color: var(--custom-color-primary);
+}
+
+.custom-text-secondary {
+  color: var(--custom-color-secondary);
+}
+
+.active\:custom-text-secondary:active {
+  color: var(--custom-color-secondary);
+}
+
+.focus\:custom-text-secondary:focus {
+  color: var(--custom-color-secondary);
+}
+
+.hover\:custom-text-secondary:hover {
+  color: var(--custom-color-secondary);
+}
+
+.custom-bg-yellow {
+  background-color: var(--custom-color-yellow);
+}
+
+.active\:custom-bg-yellow:active {
+  background-color: var(--custom-color-yellow);
+}
+
+.focus\:custom-bg-yellow:focus {
+  background-color: var(--custom-color-yellow);
+}
+
+.hover\:custom-bg-yellow:hover {
+  background-color: var(--custom-color-yellow);
+}
+
+.custom-bg-red {
+  background-color: var(--custom-color-red);
+}
+
+.active\:custom-bg-red:active {
+  background-color: var(--custom-color-red);
+}
+
+.focus\:custom-bg-red:focus {
+  background-color: var(--custom-color-red);
+}
+
+.hover\:custom-bg-red:hover {
+  background-color: var(--custom-color-red);
+}
+
+.custom-bg-blue {
+  background-color: var(--custom-color-blue);
+}
+
+.active\:custom-bg-blue:active {
+  background-color: var(--custom-color-blue);
+}
+
+.focus\:custom-bg-blue:focus {
+  background-color: var(--custom-color-blue);
+}
+
+.hover\:custom-bg-blue:hover {
+  background-color: var(--custom-color-blue);
+}
+
+.custom-bg-purple {
+  background-color: var(--custom-color-purple);
+}
+
+.active\:custom-bg-purple:active {
+  background-color: var(--custom-color-purple);
+}
+
+.focus\:custom-bg-purple:focus {
+  background-color: var(--custom-color-purple);
+}
+
+.hover\:custom-bg-purple:hover {
+  background-color: var(--custom-color-purple);
+}
+
+.custom-bg-green {
+  background-color: var(--custom-color-green);
+}
+
+.active\:custom-bg-green:active {
+  background-color: var(--custom-color-green);
+}
+
+.focus\:custom-bg-green:focus {
+  background-color: var(--custom-color-green);
+}
+
+.hover\:custom-bg-green:hover {
+  background-color: var(--custom-color-green);
+}
+
+.custom-bg-orange {
+  background-color: var(--custom-color-orange);
+}
+
+.active\:custom-bg-orange:active {
+  background-color: var(--custom-color-orange);
+}
+
+.focus\:custom-bg-orange:focus {
+  background-color: var(--custom-color-orange);
+}
+
+.hover\:custom-bg-orange:hover {
+  background-color: var(--custom-color-orange);
+}
+
+.custom-bg-primary {
+  background-color: var(--custom-color-primary);
+}
+
+.active\:custom-bg-primary:active {
+  background-color: var(--custom-color-primary);
+}
+
+.focus\:custom-bg-primary:focus {
+  background-color: var(--custom-color-primary);
+}
+
+.hover\:custom-bg-primary:hover {
+  background-color: var(--custom-color-primary);
+}
+
+.custom-bg-secondary {
+  background-color: var(--custom-color-secondary);
+}
+
+.active\:custom-bg-secondary:active {
+  background-color: var(--custom-color-secondary);
+}
+
+.focus\:custom-bg-secondary:focus {
+  background-color: var(--custom-color-secondary);
+}
+
+.hover\:custom-bg-secondary:hover {
+  background-color: var(--custom-color-secondary);
+}
+
+.custom-border-yellow {
+  border-color: var(--custom-color-yellow);
+}
+
+.active\:custom-border-yellow:active {
+  border-color: var(--custom-color-yellow);
+}
+
+.focus\:custom-border-yellow:focus {
+  border-color: var(--custom-color-yellow);
+}
+
+.hover\:custom-border-yellow:hover {
+  border-color: var(--custom-color-yellow);
+}
+
+.custom-border-red {
+  border-color: var(--custom-color-red);
+}
+
+.active\:custom-border-red:active {
+  border-color: var(--custom-color-red);
+}
+
+.focus\:custom-border-red:focus {
+  border-color: var(--custom-color-red);
+}
+
+.hover\:custom-border-red:hover {
+  border-color: var(--custom-color-red);
+}
+
+.custom-border-blue {
+  border-color: var(--custom-color-blue);
+}
+
+.active\:custom-border-blue:active {
+  border-color: var(--custom-color-blue);
+}
+
+.focus\:custom-border-blue:focus {
+  border-color: var(--custom-color-blue);
+}
+
+.hover\:custom-border-blue:hover {
+  border-color: var(--custom-color-blue);
+}
+
+.custom-border-purple {
+  border-color: var(--custom-color-purple);
+}
+
+.active\:custom-border-purple:active {
+  border-color: var(--custom-color-purple);
+}
+
+.focus\:custom-border-purple:focus {
+  border-color: var(--custom-color-purple);
+}
+
+.hover\:custom-border-purple:hover {
+  border-color: var(--custom-color-purple);
+}
+
+.custom-border-green {
+  border-color: var(--custom-color-green);
+}
+
+.active\:custom-border-green:active {
+  border-color: var(--custom-color-green);
+}
+
+.focus\:custom-border-green:focus {
+  border-color: var(--custom-color-green);
+}
+
+.hover\:custom-border-green:hover {
+  border-color: var(--custom-color-green);
+}
+
+.custom-border-orange {
+  border-color: var(--custom-color-orange);
+}
+
+.active\:custom-border-orange:active {
+  border-color: var(--custom-color-orange);
+}
+
+.focus\:custom-border-orange:focus {
+  border-color: var(--custom-color-orange);
+}
+
+.hover\:custom-border-orange:hover {
+  border-color: var(--custom-color-orange);
+}
+
+.custom-border-primary {
+  border-color: var(--custom-color-primary);
+}
+
+.active\:custom-border-primary:active {
+  border-color: var(--custom-color-primary);
+}
+
+.focus\:custom-border-primary:focus {
+  border-color: var(--custom-color-primary);
+}
+
+.hover\:custom-border-primary:hover {
+  border-color: var(--custom-color-primary);
+}
+
+.custom-border-secondary {
+  border-color: var(--custom-color-secondary);
+}
+
+.active\:custom-border-secondary:active {
+  border-color: var(--custom-color-secondary);
+}
+
+.focus\:custom-border-secondary:focus {
+  border-color: var(--custom-color-secondary);
+}
+
+.hover\:custom-border-secondary:hover {
+  border-color: var(--custom-color-secondary);
+}
+
+.custom-fill-yellow {
+  fill: var(--custom-color-yellow);
+}
+
+.active\:custom-fill-yellow:active {
+  fill: var(--custom-color-yellow);
+}
+
+.focus\:custom-fill-yellow:focus {
+  fill: var(--custom-color-yellow);
+}
+
+.hover\:custom-fill-yellow:hover {
+  fill: var(--custom-color-yellow);
+}
+
+.custom-fill-red {
+  fill: var(--custom-color-red);
+}
+
+.active\:custom-fill-red:active {
+  fill: var(--custom-color-red);
+}
+
+.focus\:custom-fill-red:focus {
+  fill: var(--custom-color-red);
+}
+
+.hover\:custom-fill-red:hover {
+  fill: var(--custom-color-red);
+}
+
+.custom-fill-blue {
+  fill: var(--custom-color-blue);
+}
+
+.active\:custom-fill-blue:active {
+  fill: var(--custom-color-blue);
+}
+
+.focus\:custom-fill-blue:focus {
+  fill: var(--custom-color-blue);
+}
+
+.hover\:custom-fill-blue:hover {
+  fill: var(--custom-color-blue);
+}
+
+.custom-fill-purple {
+  fill: var(--custom-color-purple);
+}
+
+.active\:custom-fill-purple:active {
+  fill: var(--custom-color-purple);
+}
+
+.focus\:custom-fill-purple:focus {
+  fill: var(--custom-color-purple);
+}
+
+.hover\:custom-fill-purple:hover {
+  fill: var(--custom-color-purple);
+}
+
+.custom-fill-green {
+  fill: var(--custom-color-green);
+}
+
+.active\:custom-fill-green:active {
+  fill: var(--custom-color-green);
+}
+
+.focus\:custom-fill-green:focus {
+  fill: var(--custom-color-green);
+}
+
+.hover\:custom-fill-green:hover {
+  fill: var(--custom-color-green);
+}
+
+.custom-fill-orange {
+  fill: var(--custom-color-orange);
+}
+
+.active\:custom-fill-orange:active {
+  fill: var(--custom-color-orange);
+}
+
+.focus\:custom-fill-orange:focus {
+  fill: var(--custom-color-orange);
+}
+
+.hover\:custom-fill-orange:hover {
+  fill: var(--custom-color-orange);
+}
+
+.custom-fill-primary {
+  fill: var(--custom-color-primary);
+}
+
+.active\:custom-fill-primary:active {
+  fill: var(--custom-color-primary);
+}
+
+.focus\:custom-fill-primary:focus {
+  fill: var(--custom-color-primary);
+}
+
+.hover\:custom-fill-primary:hover {
+  fill: var(--custom-color-primary);
+}
+
+.custom-fill-secondary {
+  fill: var(--custom-color-secondary);
+}
+
+.active\:custom-fill-secondary:active {
+  fill: var(--custom-color-secondary);
+}
+
+.focus\:custom-fill-secondary:focus {
+  fill: var(--custom-color-secondary);
+}
+
+.hover\:custom-fill-secondary:hover {
+  fill: var(--custom-color-secondary);
+}
+
+.custom-accent-yellow {
+  accent-color: var(--custom-color-yellow);
+}
+
+.active\:custom-accent-yellow:active {
+  accent-color: var(--custom-color-yellow);
+}
+
+.focus\:custom-accent-yellow:focus {
+  accent-color: var(--custom-color-yellow);
+}
+
+.hover\:custom-accent-yellow:hover {
+  accent-color: var(--custom-color-yellow);
+}
+
+.custom-accent-red {
+  accent-color: var(--custom-color-red);
+}
+
+.active\:custom-accent-red:active {
+  accent-color: var(--custom-color-red);
+}
+
+.focus\:custom-accent-red:focus {
+  accent-color: var(--custom-color-red);
+}
+
+.hover\:custom-accent-red:hover {
+  accent-color: var(--custom-color-red);
+}
+
+.custom-accent-blue {
+  accent-color: var(--custom-color-blue);
+}
+
+.active\:custom-accent-blue:active {
+  accent-color: var(--custom-color-blue);
+}
+
+.focus\:custom-accent-blue:focus {
+  accent-color: var(--custom-color-blue);
+}
+
+.hover\:custom-accent-blue:hover {
+  accent-color: var(--custom-color-blue);
+}
+
+.custom-accent-purple {
+  accent-color: var(--custom-color-purple);
+}
+
+.active\:custom-accent-purple:active {
+  accent-color: var(--custom-color-purple);
+}
+
+.focus\:custom-accent-purple:focus {
+  accent-color: var(--custom-color-purple);
+}
+
+.hover\:custom-accent-purple:hover {
+  accent-color: var(--custom-color-purple);
+}
+
+.custom-accent-green {
+  accent-color: var(--custom-color-green);
+}
+
+.active\:custom-accent-green:active {
+  accent-color: var(--custom-color-green);
+}
+
+.focus\:custom-accent-green:focus {
+  accent-color: var(--custom-color-green);
+}
+
+.hover\:custom-accent-green:hover {
+  accent-color: var(--custom-color-green);
+}
+
+.custom-accent-orange {
+  accent-color: var(--custom-color-orange);
+}
+
+.active\:custom-accent-orange:active {
+  accent-color: var(--custom-color-orange);
+}
+
+.focus\:custom-accent-orange:focus {
+  accent-color: var(--custom-color-orange);
+}
+
+.hover\:custom-accent-orange:hover {
+  accent-color: var(--custom-color-orange);
+}
+
+.custom-accent-primary {
+  accent-color: var(--custom-color-primary);
+}
+
+.active\:custom-accent-primary:active {
+  accent-color: var(--custom-color-primary);
+}
+
+.focus\:custom-accent-primary:focus {
+  accent-color: var(--custom-color-primary);
+}
+
+.hover\:custom-accent-primary:hover {
+  accent-color: var(--custom-color-primary);
+}
+
+.custom-accent-secondary {
+  accent-color: var(--custom-color-secondary);
+}
+
+.active\:custom-accent-secondary:active {
+  accent-color: var(--custom-color-secondary);
+}
+
+.focus\:custom-accent-secondary:focus {
+  accent-color: var(--custom-color-secondary);
+}
+
+.hover\:custom-accent-secondary:hover {
+  accent-color: var(--custom-color-secondary);
+}
+
+.custom-text-decoration-yellow {
+  text-decoration-color: var(--custom-color-yellow);
+}
+
+.active\:custom-text-decoration-yellow:active {
+  text-decoration-color: var(--custom-color-yellow);
+}
+
+.focus\:custom-text-decoration-yellow:focus {
+  text-decoration-color: var(--custom-color-yellow);
+}
+
+.hover\:custom-text-decoration-yellow:hover {
+  text-decoration-color: var(--custom-color-yellow);
+}
+
+.custom-text-decoration-red {
+  text-decoration-color: var(--custom-color-red);
+}
+
+.active\:custom-text-decoration-red:active {
+  text-decoration-color: var(--custom-color-red);
+}
+
+.focus\:custom-text-decoration-red:focus {
+  text-decoration-color: var(--custom-color-red);
+}
+
+.hover\:custom-text-decoration-red:hover {
+  text-decoration-color: var(--custom-color-red);
+}
+
+.custom-text-decoration-blue {
+  text-decoration-color: var(--custom-color-blue);
+}
+
+.active\:custom-text-decoration-blue:active {
+  text-decoration-color: var(--custom-color-blue);
+}
+
+.focus\:custom-text-decoration-blue:focus {
+  text-decoration-color: var(--custom-color-blue);
+}
+
+.hover\:custom-text-decoration-blue:hover {
+  text-decoration-color: var(--custom-color-blue);
+}
+
+.custom-text-decoration-purple {
+  text-decoration-color: var(--custom-color-purple);
+}
+
+.active\:custom-text-decoration-purple:active {
+  text-decoration-color: var(--custom-color-purple);
+}
+
+.focus\:custom-text-decoration-purple:focus {
+  text-decoration-color: var(--custom-color-purple);
+}
+
+.hover\:custom-text-decoration-purple:hover {
+  text-decoration-color: var(--custom-color-purple);
+}
+
+.custom-text-decoration-green {
+  text-decoration-color: var(--custom-color-green);
+}
+
+.active\:custom-text-decoration-green:active {
+  text-decoration-color: var(--custom-color-green);
+}
+
+.focus\:custom-text-decoration-green:focus {
+  text-decoration-color: var(--custom-color-green);
+}
+
+.hover\:custom-text-decoration-green:hover {
+  text-decoration-color: var(--custom-color-green);
+}
+
+.custom-text-decoration-orange {
+  text-decoration-color: var(--custom-color-orange);
+}
+
+.active\:custom-text-decoration-orange:active {
+  text-decoration-color: var(--custom-color-orange);
+}
+
+.focus\:custom-text-decoration-orange:focus {
+  text-decoration-color: var(--custom-color-orange);
+}
+
+.hover\:custom-text-decoration-orange:hover {
+  text-decoration-color: var(--custom-color-orange);
+}
+
+.custom-text-decoration-primary {
+  text-decoration-color: var(--custom-color-primary);
+}
+
+.active\:custom-text-decoration-primary:active {
+  text-decoration-color: var(--custom-color-primary);
+}
+
+.focus\:custom-text-decoration-primary:focus {
+  text-decoration-color: var(--custom-color-primary);
+}
+
+.hover\:custom-text-decoration-primary:hover {
+  text-decoration-color: var(--custom-color-primary);
+}
+
+.custom-text-decoration-secondary {
+  text-decoration-color: var(--custom-color-secondary);
+}
+
+.active\:custom-text-decoration-secondary:active {
+  text-decoration-color: var(--custom-color-secondary);
+}
+
+.focus\:custom-text-decoration-secondary:focus {
+  text-decoration-color: var(--custom-color-secondary);
+}
+
+.hover\:custom-text-decoration-secondary:hover {
+  text-decoration-color: var(--custom-color-secondary);
+}
+
 @media (max-width: 480px) {
   .sm\:text-red {
     color: #f90606;
@@ -24215,6 +24983,582 @@ SOFTWARE.
   }
   .focus\:sm\:accent-gray:focus {
     accent-color: #7d7d7d;
+  }
+  .sm\:custom-text-yellow {
+    color: var(--custom-color-yellow);
+  }
+  .active\:sm\:custom-text-yellow:active {
+    color: var(--custom-color-yellow);
+  }
+  .focus\:sm\:custom-text-yellow:focus {
+    color: var(--custom-color-yellow);
+  }
+  .hover\:sm\:custom-text-yellow:hover {
+    color: var(--custom-color-yellow);
+  }
+  .sm\:custom-text-red {
+    color: var(--custom-color-red);
+  }
+  .active\:sm\:custom-text-red:active {
+    color: var(--custom-color-red);
+  }
+  .focus\:sm\:custom-text-red:focus {
+    color: var(--custom-color-red);
+  }
+  .hover\:sm\:custom-text-red:hover {
+    color: var(--custom-color-red);
+  }
+  .sm\:custom-text-blue {
+    color: var(--custom-color-blue);
+  }
+  .active\:sm\:custom-text-blue:active {
+    color: var(--custom-color-blue);
+  }
+  .focus\:sm\:custom-text-blue:focus {
+    color: var(--custom-color-blue);
+  }
+  .hover\:sm\:custom-text-blue:hover {
+    color: var(--custom-color-blue);
+  }
+  .sm\:custom-text-purple {
+    color: var(--custom-color-purple);
+  }
+  .active\:sm\:custom-text-purple:active {
+    color: var(--custom-color-purple);
+  }
+  .focus\:sm\:custom-text-purple:focus {
+    color: var(--custom-color-purple);
+  }
+  .hover\:sm\:custom-text-purple:hover {
+    color: var(--custom-color-purple);
+  }
+  .sm\:custom-text-green {
+    color: var(--custom-color-green);
+  }
+  .active\:sm\:custom-text-green:active {
+    color: var(--custom-color-green);
+  }
+  .focus\:sm\:custom-text-green:focus {
+    color: var(--custom-color-green);
+  }
+  .hover\:sm\:custom-text-green:hover {
+    color: var(--custom-color-green);
+  }
+  .sm\:custom-text-orange {
+    color: var(--custom-color-orange);
+  }
+  .active\:sm\:custom-text-orange:active {
+    color: var(--custom-color-orange);
+  }
+  .focus\:sm\:custom-text-orange:focus {
+    color: var(--custom-color-orange);
+  }
+  .hover\:sm\:custom-text-orange:hover {
+    color: var(--custom-color-orange);
+  }
+  .sm\:custom-text-primary {
+    color: var(--custom-color-primary);
+  }
+  .active\:sm\:custom-text-primary:active {
+    color: var(--custom-color-primary);
+  }
+  .focus\:sm\:custom-text-primary:focus {
+    color: var(--custom-color-primary);
+  }
+  .hover\:sm\:custom-text-primary:hover {
+    color: var(--custom-color-primary);
+  }
+  .sm\:custom-text-secondary {
+    color: var(--custom-color-secondary);
+  }
+  .active\:sm\:custom-text-secondary:active {
+    color: var(--custom-color-secondary);
+  }
+  .focus\:sm\:custom-text-secondary:focus {
+    color: var(--custom-color-secondary);
+  }
+  .hover\:sm\:custom-text-secondary:hover {
+    color: var(--custom-color-secondary);
+  }
+  .sm\:custom-bg-yellow {
+    background-color: var(--custom-color-yellow);
+  }
+  .active\:sm\:custom-bg-yellow:active {
+    background-color: var(--custom-color-yellow);
+  }
+  .focus\:sm\:custom-bg-yellow:focus {
+    background-color: var(--custom-color-yellow);
+  }
+  .hover\:sm\:custom-bg-yellow:hover {
+    background-color: var(--custom-color-yellow);
+  }
+  .sm\:custom-bg-red {
+    background-color: var(--custom-color-red);
+  }
+  .active\:sm\:custom-bg-red:active {
+    background-color: var(--custom-color-red);
+  }
+  .focus\:sm\:custom-bg-red:focus {
+    background-color: var(--custom-color-red);
+  }
+  .hover\:sm\:custom-bg-red:hover {
+    background-color: var(--custom-color-red);
+  }
+  .sm\:custom-bg-blue {
+    background-color: var(--custom-color-blue);
+  }
+  .active\:sm\:custom-bg-blue:active {
+    background-color: var(--custom-color-blue);
+  }
+  .focus\:sm\:custom-bg-blue:focus {
+    background-color: var(--custom-color-blue);
+  }
+  .hover\:sm\:custom-bg-blue:hover {
+    background-color: var(--custom-color-blue);
+  }
+  .sm\:custom-bg-purple {
+    background-color: var(--custom-color-purple);
+  }
+  .active\:sm\:custom-bg-purple:active {
+    background-color: var(--custom-color-purple);
+  }
+  .focus\:sm\:custom-bg-purple:focus {
+    background-color: var(--custom-color-purple);
+  }
+  .hover\:sm\:custom-bg-purple:hover {
+    background-color: var(--custom-color-purple);
+  }
+  .sm\:custom-bg-green {
+    background-color: var(--custom-color-green);
+  }
+  .active\:sm\:custom-bg-green:active {
+    background-color: var(--custom-color-green);
+  }
+  .focus\:sm\:custom-bg-green:focus {
+    background-color: var(--custom-color-green);
+  }
+  .hover\:sm\:custom-bg-green:hover {
+    background-color: var(--custom-color-green);
+  }
+  .sm\:custom-bg-orange {
+    background-color: var(--custom-color-orange);
+  }
+  .active\:sm\:custom-bg-orange:active {
+    background-color: var(--custom-color-orange);
+  }
+  .focus\:sm\:custom-bg-orange:focus {
+    background-color: var(--custom-color-orange);
+  }
+  .hover\:sm\:custom-bg-orange:hover {
+    background-color: var(--custom-color-orange);
+  }
+  .sm\:custom-bg-primary {
+    background-color: var(--custom-color-primary);
+  }
+  .active\:sm\:custom-bg-primary:active {
+    background-color: var(--custom-color-primary);
+  }
+  .focus\:sm\:custom-bg-primary:focus {
+    background-color: var(--custom-color-primary);
+  }
+  .hover\:sm\:custom-bg-primary:hover {
+    background-color: var(--custom-color-primary);
+  }
+  .sm\:custom-bg-secondary {
+    background-color: var(--custom-color-secondary);
+  }
+  .active\:sm\:custom-bg-secondary:active {
+    background-color: var(--custom-color-secondary);
+  }
+  .focus\:sm\:custom-bg-secondary:focus {
+    background-color: var(--custom-color-secondary);
+  }
+  .hover\:sm\:custom-bg-secondary:hover {
+    background-color: var(--custom-color-secondary);
+  }
+  .sm\:custom-border-yellow {
+    border-color: var(--custom-color-yellow);
+  }
+  .active\:sm\:custom-border-yellow:active {
+    border-color: var(--custom-color-yellow);
+  }
+  .focus\:sm\:custom-border-yellow:focus {
+    border-color: var(--custom-color-yellow);
+  }
+  .hover\:sm\:custom-border-yellow:hover {
+    border-color: var(--custom-color-yellow);
+  }
+  .sm\:custom-border-red {
+    border-color: var(--custom-color-red);
+  }
+  .active\:sm\:custom-border-red:active {
+    border-color: var(--custom-color-red);
+  }
+  .focus\:sm\:custom-border-red:focus {
+    border-color: var(--custom-color-red);
+  }
+  .hover\:sm\:custom-border-red:hover {
+    border-color: var(--custom-color-red);
+  }
+  .sm\:custom-border-blue {
+    border-color: var(--custom-color-blue);
+  }
+  .active\:sm\:custom-border-blue:active {
+    border-color: var(--custom-color-blue);
+  }
+  .focus\:sm\:custom-border-blue:focus {
+    border-color: var(--custom-color-blue);
+  }
+  .hover\:sm\:custom-border-blue:hover {
+    border-color: var(--custom-color-blue);
+  }
+  .sm\:custom-border-purple {
+    border-color: var(--custom-color-purple);
+  }
+  .active\:sm\:custom-border-purple:active {
+    border-color: var(--custom-color-purple);
+  }
+  .focus\:sm\:custom-border-purple:focus {
+    border-color: var(--custom-color-purple);
+  }
+  .hover\:sm\:custom-border-purple:hover {
+    border-color: var(--custom-color-purple);
+  }
+  .sm\:custom-border-green {
+    border-color: var(--custom-color-green);
+  }
+  .active\:sm\:custom-border-green:active {
+    border-color: var(--custom-color-green);
+  }
+  .focus\:sm\:custom-border-green:focus {
+    border-color: var(--custom-color-green);
+  }
+  .hover\:sm\:custom-border-green:hover {
+    border-color: var(--custom-color-green);
+  }
+  .sm\:custom-border-orange {
+    border-color: var(--custom-color-orange);
+  }
+  .active\:sm\:custom-border-orange:active {
+    border-color: var(--custom-color-orange);
+  }
+  .focus\:sm\:custom-border-orange:focus {
+    border-color: var(--custom-color-orange);
+  }
+  .hover\:sm\:custom-border-orange:hover {
+    border-color: var(--custom-color-orange);
+  }
+  .sm\:custom-border-primary {
+    border-color: var(--custom-color-primary);
+  }
+  .active\:sm\:custom-border-primary:active {
+    border-color: var(--custom-color-primary);
+  }
+  .focus\:sm\:custom-border-primary:focus {
+    border-color: var(--custom-color-primary);
+  }
+  .hover\:sm\:custom-border-primary:hover {
+    border-color: var(--custom-color-primary);
+  }
+  .sm\:custom-border-secondary {
+    border-color: var(--custom-color-secondary);
+  }
+  .active\:sm\:custom-border-secondary:active {
+    border-color: var(--custom-color-secondary);
+  }
+  .focus\:sm\:custom-border-secondary:focus {
+    border-color: var(--custom-color-secondary);
+  }
+  .hover\:sm\:custom-border-secondary:hover {
+    border-color: var(--custom-color-secondary);
+  }
+  .sm\:custom-fill-yellow {
+    fill: var(--custom-color-yellow);
+  }
+  .active\:sm\:custom-fill-yellow:active {
+    fill: var(--custom-color-yellow);
+  }
+  .focus\:sm\:custom-fill-yellow:focus {
+    fill: var(--custom-color-yellow);
+  }
+  .hover\:sm\:custom-fill-yellow:hover {
+    fill: var(--custom-color-yellow);
+  }
+  .sm\:custom-fill-red {
+    fill: var(--custom-color-red);
+  }
+  .active\:sm\:custom-fill-red:active {
+    fill: var(--custom-color-red);
+  }
+  .focus\:sm\:custom-fill-red:focus {
+    fill: var(--custom-color-red);
+  }
+  .hover\:sm\:custom-fill-red:hover {
+    fill: var(--custom-color-red);
+  }
+  .sm\:custom-fill-blue {
+    fill: var(--custom-color-blue);
+  }
+  .active\:sm\:custom-fill-blue:active {
+    fill: var(--custom-color-blue);
+  }
+  .focus\:sm\:custom-fill-blue:focus {
+    fill: var(--custom-color-blue);
+  }
+  .hover\:sm\:custom-fill-blue:hover {
+    fill: var(--custom-color-blue);
+  }
+  .sm\:custom-fill-purple {
+    fill: var(--custom-color-purple);
+  }
+  .active\:sm\:custom-fill-purple:active {
+    fill: var(--custom-color-purple);
+  }
+  .focus\:sm\:custom-fill-purple:focus {
+    fill: var(--custom-color-purple);
+  }
+  .hover\:sm\:custom-fill-purple:hover {
+    fill: var(--custom-color-purple);
+  }
+  .sm\:custom-fill-green {
+    fill: var(--custom-color-green);
+  }
+  .active\:sm\:custom-fill-green:active {
+    fill: var(--custom-color-green);
+  }
+  .focus\:sm\:custom-fill-green:focus {
+    fill: var(--custom-color-green);
+  }
+  .hover\:sm\:custom-fill-green:hover {
+    fill: var(--custom-color-green);
+  }
+  .sm\:custom-fill-orange {
+    fill: var(--custom-color-orange);
+  }
+  .active\:sm\:custom-fill-orange:active {
+    fill: var(--custom-color-orange);
+  }
+  .focus\:sm\:custom-fill-orange:focus {
+    fill: var(--custom-color-orange);
+  }
+  .hover\:sm\:custom-fill-orange:hover {
+    fill: var(--custom-color-orange);
+  }
+  .sm\:custom-fill-primary {
+    fill: var(--custom-color-primary);
+  }
+  .active\:sm\:custom-fill-primary:active {
+    fill: var(--custom-color-primary);
+  }
+  .focus\:sm\:custom-fill-primary:focus {
+    fill: var(--custom-color-primary);
+  }
+  .hover\:sm\:custom-fill-primary:hover {
+    fill: var(--custom-color-primary);
+  }
+  .sm\:custom-fill-secondary {
+    fill: var(--custom-color-secondary);
+  }
+  .active\:sm\:custom-fill-secondary:active {
+    fill: var(--custom-color-secondary);
+  }
+  .focus\:sm\:custom-fill-secondary:focus {
+    fill: var(--custom-color-secondary);
+  }
+  .hover\:sm\:custom-fill-secondary:hover {
+    fill: var(--custom-color-secondary);
+  }
+  .sm\:custom-accent-yellow {
+    accent-color: var(--custom-color-yellow);
+  }
+  .active\:sm\:custom-accent-yellow:active {
+    accent-color: var(--custom-color-yellow);
+  }
+  .focus\:sm\:custom-accent-yellow:focus {
+    accent-color: var(--custom-color-yellow);
+  }
+  .hover\:sm\:custom-accent-yellow:hover {
+    accent-color: var(--custom-color-yellow);
+  }
+  .sm\:custom-accent-red {
+    accent-color: var(--custom-color-red);
+  }
+  .active\:sm\:custom-accent-red:active {
+    accent-color: var(--custom-color-red);
+  }
+  .focus\:sm\:custom-accent-red:focus {
+    accent-color: var(--custom-color-red);
+  }
+  .hover\:sm\:custom-accent-red:hover {
+    accent-color: var(--custom-color-red);
+  }
+  .sm\:custom-accent-blue {
+    accent-color: var(--custom-color-blue);
+  }
+  .active\:sm\:custom-accent-blue:active {
+    accent-color: var(--custom-color-blue);
+  }
+  .focus\:sm\:custom-accent-blue:focus {
+    accent-color: var(--custom-color-blue);
+  }
+  .hover\:sm\:custom-accent-blue:hover {
+    accent-color: var(--custom-color-blue);
+  }
+  .sm\:custom-accent-purple {
+    accent-color: var(--custom-color-purple);
+  }
+  .active\:sm\:custom-accent-purple:active {
+    accent-color: var(--custom-color-purple);
+  }
+  .focus\:sm\:custom-accent-purple:focus {
+    accent-color: var(--custom-color-purple);
+  }
+  .hover\:sm\:custom-accent-purple:hover {
+    accent-color: var(--custom-color-purple);
+  }
+  .sm\:custom-accent-green {
+    accent-color: var(--custom-color-green);
+  }
+  .active\:sm\:custom-accent-green:active {
+    accent-color: var(--custom-color-green);
+  }
+  .focus\:sm\:custom-accent-green:focus {
+    accent-color: var(--custom-color-green);
+  }
+  .hover\:sm\:custom-accent-green:hover {
+    accent-color: var(--custom-color-green);
+  }
+  .sm\:custom-accent-orange {
+    accent-color: var(--custom-color-orange);
+  }
+  .active\:sm\:custom-accent-orange:active {
+    accent-color: var(--custom-color-orange);
+  }
+  .focus\:sm\:custom-accent-orange:focus {
+    accent-color: var(--custom-color-orange);
+  }
+  .hover\:sm\:custom-accent-orange:hover {
+    accent-color: var(--custom-color-orange);
+  }
+  .sm\:custom-accent-primary {
+    accent-color: var(--custom-color-primary);
+  }
+  .active\:sm\:custom-accent-primary:active {
+    accent-color: var(--custom-color-primary);
+  }
+  .focus\:sm\:custom-accent-primary:focus {
+    accent-color: var(--custom-color-primary);
+  }
+  .hover\:sm\:custom-accent-primary:hover {
+    accent-color: var(--custom-color-primary);
+  }
+  .sm\:custom-accent-secondary {
+    accent-color: var(--custom-color-secondary);
+  }
+  .active\:sm\:custom-accent-secondary:active {
+    accent-color: var(--custom-color-secondary);
+  }
+  .focus\:sm\:custom-accent-secondary:focus {
+    accent-color: var(--custom-color-secondary);
+  }
+  .hover\:sm\:custom-accent-secondary:hover {
+    accent-color: var(--custom-color-secondary);
+  }
+  .sm\:custom-text-decoration-yellow {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .active\:sm\:custom-text-decoration-yellow:active {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .focus\:sm\:custom-text-decoration-yellow:focus {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .hover\:sm\:custom-text-decoration-yellow:hover {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .sm\:custom-text-decoration-red {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .active\:sm\:custom-text-decoration-red:active {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .focus\:sm\:custom-text-decoration-red:focus {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .hover\:sm\:custom-text-decoration-red:hover {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .sm\:custom-text-decoration-blue {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .active\:sm\:custom-text-decoration-blue:active {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .focus\:sm\:custom-text-decoration-blue:focus {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .hover\:sm\:custom-text-decoration-blue:hover {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .sm\:custom-text-decoration-purple {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .active\:sm\:custom-text-decoration-purple:active {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .focus\:sm\:custom-text-decoration-purple:focus {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .hover\:sm\:custom-text-decoration-purple:hover {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .sm\:custom-text-decoration-green {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .active\:sm\:custom-text-decoration-green:active {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .focus\:sm\:custom-text-decoration-green:focus {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .hover\:sm\:custom-text-decoration-green:hover {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .sm\:custom-text-decoration-orange {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .active\:sm\:custom-text-decoration-orange:active {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .focus\:sm\:custom-text-decoration-orange:focus {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .hover\:sm\:custom-text-decoration-orange:hover {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .sm\:custom-text-decoration-primary {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .active\:sm\:custom-text-decoration-primary:active {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .focus\:sm\:custom-text-decoration-primary:focus {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .hover\:sm\:custom-text-decoration-primary:hover {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .sm\:custom-text-decoration-secondary {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .active\:sm\:custom-text-decoration-secondary:active {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .focus\:sm\:custom-text-decoration-secondary:focus {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .hover\:sm\:custom-text-decoration-secondary:hover {
+    text-decoration-color: var(--custom-color-secondary);
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -34622,6 +35966,582 @@ SOFTWARE.
   .focus\:md\:accent-gray:focus {
     accent-color: #7d7d7d;
   }
+  .md\:custom-text-yellow {
+    color: var(--custom-color-yellow);
+  }
+  .active\:md\:custom-text-yellow:active {
+    color: var(--custom-color-yellow);
+  }
+  .focus\:md\:custom-text-yellow:focus {
+    color: var(--custom-color-yellow);
+  }
+  .hover\:md\:custom-text-yellow:hover {
+    color: var(--custom-color-yellow);
+  }
+  .md\:custom-text-red {
+    color: var(--custom-color-red);
+  }
+  .active\:md\:custom-text-red:active {
+    color: var(--custom-color-red);
+  }
+  .focus\:md\:custom-text-red:focus {
+    color: var(--custom-color-red);
+  }
+  .hover\:md\:custom-text-red:hover {
+    color: var(--custom-color-red);
+  }
+  .md\:custom-text-blue {
+    color: var(--custom-color-blue);
+  }
+  .active\:md\:custom-text-blue:active {
+    color: var(--custom-color-blue);
+  }
+  .focus\:md\:custom-text-blue:focus {
+    color: var(--custom-color-blue);
+  }
+  .hover\:md\:custom-text-blue:hover {
+    color: var(--custom-color-blue);
+  }
+  .md\:custom-text-purple {
+    color: var(--custom-color-purple);
+  }
+  .active\:md\:custom-text-purple:active {
+    color: var(--custom-color-purple);
+  }
+  .focus\:md\:custom-text-purple:focus {
+    color: var(--custom-color-purple);
+  }
+  .hover\:md\:custom-text-purple:hover {
+    color: var(--custom-color-purple);
+  }
+  .md\:custom-text-green {
+    color: var(--custom-color-green);
+  }
+  .active\:md\:custom-text-green:active {
+    color: var(--custom-color-green);
+  }
+  .focus\:md\:custom-text-green:focus {
+    color: var(--custom-color-green);
+  }
+  .hover\:md\:custom-text-green:hover {
+    color: var(--custom-color-green);
+  }
+  .md\:custom-text-orange {
+    color: var(--custom-color-orange);
+  }
+  .active\:md\:custom-text-orange:active {
+    color: var(--custom-color-orange);
+  }
+  .focus\:md\:custom-text-orange:focus {
+    color: var(--custom-color-orange);
+  }
+  .hover\:md\:custom-text-orange:hover {
+    color: var(--custom-color-orange);
+  }
+  .md\:custom-text-primary {
+    color: var(--custom-color-primary);
+  }
+  .active\:md\:custom-text-primary:active {
+    color: var(--custom-color-primary);
+  }
+  .focus\:md\:custom-text-primary:focus {
+    color: var(--custom-color-primary);
+  }
+  .hover\:md\:custom-text-primary:hover {
+    color: var(--custom-color-primary);
+  }
+  .md\:custom-text-secondary {
+    color: var(--custom-color-secondary);
+  }
+  .active\:md\:custom-text-secondary:active {
+    color: var(--custom-color-secondary);
+  }
+  .focus\:md\:custom-text-secondary:focus {
+    color: var(--custom-color-secondary);
+  }
+  .hover\:md\:custom-text-secondary:hover {
+    color: var(--custom-color-secondary);
+  }
+  .md\:custom-bg-yellow {
+    background-color: var(--custom-color-yellow);
+  }
+  .active\:md\:custom-bg-yellow:active {
+    background-color: var(--custom-color-yellow);
+  }
+  .focus\:md\:custom-bg-yellow:focus {
+    background-color: var(--custom-color-yellow);
+  }
+  .hover\:md\:custom-bg-yellow:hover {
+    background-color: var(--custom-color-yellow);
+  }
+  .md\:custom-bg-red {
+    background-color: var(--custom-color-red);
+  }
+  .active\:md\:custom-bg-red:active {
+    background-color: var(--custom-color-red);
+  }
+  .focus\:md\:custom-bg-red:focus {
+    background-color: var(--custom-color-red);
+  }
+  .hover\:md\:custom-bg-red:hover {
+    background-color: var(--custom-color-red);
+  }
+  .md\:custom-bg-blue {
+    background-color: var(--custom-color-blue);
+  }
+  .active\:md\:custom-bg-blue:active {
+    background-color: var(--custom-color-blue);
+  }
+  .focus\:md\:custom-bg-blue:focus {
+    background-color: var(--custom-color-blue);
+  }
+  .hover\:md\:custom-bg-blue:hover {
+    background-color: var(--custom-color-blue);
+  }
+  .md\:custom-bg-purple {
+    background-color: var(--custom-color-purple);
+  }
+  .active\:md\:custom-bg-purple:active {
+    background-color: var(--custom-color-purple);
+  }
+  .focus\:md\:custom-bg-purple:focus {
+    background-color: var(--custom-color-purple);
+  }
+  .hover\:md\:custom-bg-purple:hover {
+    background-color: var(--custom-color-purple);
+  }
+  .md\:custom-bg-green {
+    background-color: var(--custom-color-green);
+  }
+  .active\:md\:custom-bg-green:active {
+    background-color: var(--custom-color-green);
+  }
+  .focus\:md\:custom-bg-green:focus {
+    background-color: var(--custom-color-green);
+  }
+  .hover\:md\:custom-bg-green:hover {
+    background-color: var(--custom-color-green);
+  }
+  .md\:custom-bg-orange {
+    background-color: var(--custom-color-orange);
+  }
+  .active\:md\:custom-bg-orange:active {
+    background-color: var(--custom-color-orange);
+  }
+  .focus\:md\:custom-bg-orange:focus {
+    background-color: var(--custom-color-orange);
+  }
+  .hover\:md\:custom-bg-orange:hover {
+    background-color: var(--custom-color-orange);
+  }
+  .md\:custom-bg-primary {
+    background-color: var(--custom-color-primary);
+  }
+  .active\:md\:custom-bg-primary:active {
+    background-color: var(--custom-color-primary);
+  }
+  .focus\:md\:custom-bg-primary:focus {
+    background-color: var(--custom-color-primary);
+  }
+  .hover\:md\:custom-bg-primary:hover {
+    background-color: var(--custom-color-primary);
+  }
+  .md\:custom-bg-secondary {
+    background-color: var(--custom-color-secondary);
+  }
+  .active\:md\:custom-bg-secondary:active {
+    background-color: var(--custom-color-secondary);
+  }
+  .focus\:md\:custom-bg-secondary:focus {
+    background-color: var(--custom-color-secondary);
+  }
+  .hover\:md\:custom-bg-secondary:hover {
+    background-color: var(--custom-color-secondary);
+  }
+  .md\:custom-border-yellow {
+    border-color: var(--custom-color-yellow);
+  }
+  .active\:md\:custom-border-yellow:active {
+    border-color: var(--custom-color-yellow);
+  }
+  .focus\:md\:custom-border-yellow:focus {
+    border-color: var(--custom-color-yellow);
+  }
+  .hover\:md\:custom-border-yellow:hover {
+    border-color: var(--custom-color-yellow);
+  }
+  .md\:custom-border-red {
+    border-color: var(--custom-color-red);
+  }
+  .active\:md\:custom-border-red:active {
+    border-color: var(--custom-color-red);
+  }
+  .focus\:md\:custom-border-red:focus {
+    border-color: var(--custom-color-red);
+  }
+  .hover\:md\:custom-border-red:hover {
+    border-color: var(--custom-color-red);
+  }
+  .md\:custom-border-blue {
+    border-color: var(--custom-color-blue);
+  }
+  .active\:md\:custom-border-blue:active {
+    border-color: var(--custom-color-blue);
+  }
+  .focus\:md\:custom-border-blue:focus {
+    border-color: var(--custom-color-blue);
+  }
+  .hover\:md\:custom-border-blue:hover {
+    border-color: var(--custom-color-blue);
+  }
+  .md\:custom-border-purple {
+    border-color: var(--custom-color-purple);
+  }
+  .active\:md\:custom-border-purple:active {
+    border-color: var(--custom-color-purple);
+  }
+  .focus\:md\:custom-border-purple:focus {
+    border-color: var(--custom-color-purple);
+  }
+  .hover\:md\:custom-border-purple:hover {
+    border-color: var(--custom-color-purple);
+  }
+  .md\:custom-border-green {
+    border-color: var(--custom-color-green);
+  }
+  .active\:md\:custom-border-green:active {
+    border-color: var(--custom-color-green);
+  }
+  .focus\:md\:custom-border-green:focus {
+    border-color: var(--custom-color-green);
+  }
+  .hover\:md\:custom-border-green:hover {
+    border-color: var(--custom-color-green);
+  }
+  .md\:custom-border-orange {
+    border-color: var(--custom-color-orange);
+  }
+  .active\:md\:custom-border-orange:active {
+    border-color: var(--custom-color-orange);
+  }
+  .focus\:md\:custom-border-orange:focus {
+    border-color: var(--custom-color-orange);
+  }
+  .hover\:md\:custom-border-orange:hover {
+    border-color: var(--custom-color-orange);
+  }
+  .md\:custom-border-primary {
+    border-color: var(--custom-color-primary);
+  }
+  .active\:md\:custom-border-primary:active {
+    border-color: var(--custom-color-primary);
+  }
+  .focus\:md\:custom-border-primary:focus {
+    border-color: var(--custom-color-primary);
+  }
+  .hover\:md\:custom-border-primary:hover {
+    border-color: var(--custom-color-primary);
+  }
+  .md\:custom-border-secondary {
+    border-color: var(--custom-color-secondary);
+  }
+  .active\:md\:custom-border-secondary:active {
+    border-color: var(--custom-color-secondary);
+  }
+  .focus\:md\:custom-border-secondary:focus {
+    border-color: var(--custom-color-secondary);
+  }
+  .hover\:md\:custom-border-secondary:hover {
+    border-color: var(--custom-color-secondary);
+  }
+  .md\:custom-fill-yellow {
+    fill: var(--custom-color-yellow);
+  }
+  .active\:md\:custom-fill-yellow:active {
+    fill: var(--custom-color-yellow);
+  }
+  .focus\:md\:custom-fill-yellow:focus {
+    fill: var(--custom-color-yellow);
+  }
+  .hover\:md\:custom-fill-yellow:hover {
+    fill: var(--custom-color-yellow);
+  }
+  .md\:custom-fill-red {
+    fill: var(--custom-color-red);
+  }
+  .active\:md\:custom-fill-red:active {
+    fill: var(--custom-color-red);
+  }
+  .focus\:md\:custom-fill-red:focus {
+    fill: var(--custom-color-red);
+  }
+  .hover\:md\:custom-fill-red:hover {
+    fill: var(--custom-color-red);
+  }
+  .md\:custom-fill-blue {
+    fill: var(--custom-color-blue);
+  }
+  .active\:md\:custom-fill-blue:active {
+    fill: var(--custom-color-blue);
+  }
+  .focus\:md\:custom-fill-blue:focus {
+    fill: var(--custom-color-blue);
+  }
+  .hover\:md\:custom-fill-blue:hover {
+    fill: var(--custom-color-blue);
+  }
+  .md\:custom-fill-purple {
+    fill: var(--custom-color-purple);
+  }
+  .active\:md\:custom-fill-purple:active {
+    fill: var(--custom-color-purple);
+  }
+  .focus\:md\:custom-fill-purple:focus {
+    fill: var(--custom-color-purple);
+  }
+  .hover\:md\:custom-fill-purple:hover {
+    fill: var(--custom-color-purple);
+  }
+  .md\:custom-fill-green {
+    fill: var(--custom-color-green);
+  }
+  .active\:md\:custom-fill-green:active {
+    fill: var(--custom-color-green);
+  }
+  .focus\:md\:custom-fill-green:focus {
+    fill: var(--custom-color-green);
+  }
+  .hover\:md\:custom-fill-green:hover {
+    fill: var(--custom-color-green);
+  }
+  .md\:custom-fill-orange {
+    fill: var(--custom-color-orange);
+  }
+  .active\:md\:custom-fill-orange:active {
+    fill: var(--custom-color-orange);
+  }
+  .focus\:md\:custom-fill-orange:focus {
+    fill: var(--custom-color-orange);
+  }
+  .hover\:md\:custom-fill-orange:hover {
+    fill: var(--custom-color-orange);
+  }
+  .md\:custom-fill-primary {
+    fill: var(--custom-color-primary);
+  }
+  .active\:md\:custom-fill-primary:active {
+    fill: var(--custom-color-primary);
+  }
+  .focus\:md\:custom-fill-primary:focus {
+    fill: var(--custom-color-primary);
+  }
+  .hover\:md\:custom-fill-primary:hover {
+    fill: var(--custom-color-primary);
+  }
+  .md\:custom-fill-secondary {
+    fill: var(--custom-color-secondary);
+  }
+  .active\:md\:custom-fill-secondary:active {
+    fill: var(--custom-color-secondary);
+  }
+  .focus\:md\:custom-fill-secondary:focus {
+    fill: var(--custom-color-secondary);
+  }
+  .hover\:md\:custom-fill-secondary:hover {
+    fill: var(--custom-color-secondary);
+  }
+  .md\:custom-accent-yellow {
+    accent-color: var(--custom-color-yellow);
+  }
+  .active\:md\:custom-accent-yellow:active {
+    accent-color: var(--custom-color-yellow);
+  }
+  .focus\:md\:custom-accent-yellow:focus {
+    accent-color: var(--custom-color-yellow);
+  }
+  .hover\:md\:custom-accent-yellow:hover {
+    accent-color: var(--custom-color-yellow);
+  }
+  .md\:custom-accent-red {
+    accent-color: var(--custom-color-red);
+  }
+  .active\:md\:custom-accent-red:active {
+    accent-color: var(--custom-color-red);
+  }
+  .focus\:md\:custom-accent-red:focus {
+    accent-color: var(--custom-color-red);
+  }
+  .hover\:md\:custom-accent-red:hover {
+    accent-color: var(--custom-color-red);
+  }
+  .md\:custom-accent-blue {
+    accent-color: var(--custom-color-blue);
+  }
+  .active\:md\:custom-accent-blue:active {
+    accent-color: var(--custom-color-blue);
+  }
+  .focus\:md\:custom-accent-blue:focus {
+    accent-color: var(--custom-color-blue);
+  }
+  .hover\:md\:custom-accent-blue:hover {
+    accent-color: var(--custom-color-blue);
+  }
+  .md\:custom-accent-purple {
+    accent-color: var(--custom-color-purple);
+  }
+  .active\:md\:custom-accent-purple:active {
+    accent-color: var(--custom-color-purple);
+  }
+  .focus\:md\:custom-accent-purple:focus {
+    accent-color: var(--custom-color-purple);
+  }
+  .hover\:md\:custom-accent-purple:hover {
+    accent-color: var(--custom-color-purple);
+  }
+  .md\:custom-accent-green {
+    accent-color: var(--custom-color-green);
+  }
+  .active\:md\:custom-accent-green:active {
+    accent-color: var(--custom-color-green);
+  }
+  .focus\:md\:custom-accent-green:focus {
+    accent-color: var(--custom-color-green);
+  }
+  .hover\:md\:custom-accent-green:hover {
+    accent-color: var(--custom-color-green);
+  }
+  .md\:custom-accent-orange {
+    accent-color: var(--custom-color-orange);
+  }
+  .active\:md\:custom-accent-orange:active {
+    accent-color: var(--custom-color-orange);
+  }
+  .focus\:md\:custom-accent-orange:focus {
+    accent-color: var(--custom-color-orange);
+  }
+  .hover\:md\:custom-accent-orange:hover {
+    accent-color: var(--custom-color-orange);
+  }
+  .md\:custom-accent-primary {
+    accent-color: var(--custom-color-primary);
+  }
+  .active\:md\:custom-accent-primary:active {
+    accent-color: var(--custom-color-primary);
+  }
+  .focus\:md\:custom-accent-primary:focus {
+    accent-color: var(--custom-color-primary);
+  }
+  .hover\:md\:custom-accent-primary:hover {
+    accent-color: var(--custom-color-primary);
+  }
+  .md\:custom-accent-secondary {
+    accent-color: var(--custom-color-secondary);
+  }
+  .active\:md\:custom-accent-secondary:active {
+    accent-color: var(--custom-color-secondary);
+  }
+  .focus\:md\:custom-accent-secondary:focus {
+    accent-color: var(--custom-color-secondary);
+  }
+  .hover\:md\:custom-accent-secondary:hover {
+    accent-color: var(--custom-color-secondary);
+  }
+  .md\:custom-text-decoration-yellow {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .active\:md\:custom-text-decoration-yellow:active {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .focus\:md\:custom-text-decoration-yellow:focus {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .hover\:md\:custom-text-decoration-yellow:hover {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .md\:custom-text-decoration-red {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .active\:md\:custom-text-decoration-red:active {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .focus\:md\:custom-text-decoration-red:focus {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .hover\:md\:custom-text-decoration-red:hover {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .md\:custom-text-decoration-blue {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .active\:md\:custom-text-decoration-blue:active {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .focus\:md\:custom-text-decoration-blue:focus {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .hover\:md\:custom-text-decoration-blue:hover {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .md\:custom-text-decoration-purple {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .active\:md\:custom-text-decoration-purple:active {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .focus\:md\:custom-text-decoration-purple:focus {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .hover\:md\:custom-text-decoration-purple:hover {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .md\:custom-text-decoration-green {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .active\:md\:custom-text-decoration-green:active {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .focus\:md\:custom-text-decoration-green:focus {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .hover\:md\:custom-text-decoration-green:hover {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .md\:custom-text-decoration-orange {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .active\:md\:custom-text-decoration-orange:active {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .focus\:md\:custom-text-decoration-orange:focus {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .hover\:md\:custom-text-decoration-orange:hover {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .md\:custom-text-decoration-primary {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .active\:md\:custom-text-decoration-primary:active {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .focus\:md\:custom-text-decoration-primary:focus {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .hover\:md\:custom-text-decoration-primary:hover {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .md\:custom-text-decoration-secondary {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .active\:md\:custom-text-decoration-secondary:active {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .focus\:md\:custom-text-decoration-secondary:focus {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .hover\:md\:custom-text-decoration-secondary:hover {
+    text-decoration-color: var(--custom-color-secondary);
+  }
 }
 @media (min-width: 769px) and (max-width: 1080px) {
   .lg\:text-red {
@@ -45027,5 +46947,581 @@ SOFTWARE.
   }
   .focus\:lg\:accent-gray:focus {
     accent-color: #7d7d7d;
+  }
+  .lg\:custom-text-yellow {
+    color: var(--custom-color-yellow);
+  }
+  .active\:lg\:custom-text-yellow:active {
+    color: var(--custom-color-yellow);
+  }
+  .focus\:lg\:custom-text-yellow:focus {
+    color: var(--custom-color-yellow);
+  }
+  .hover\:lg\:custom-text-yellow:hover {
+    color: var(--custom-color-yellow);
+  }
+  .lg\:custom-text-red {
+    color: var(--custom-color-red);
+  }
+  .active\:lg\:custom-text-red:active {
+    color: var(--custom-color-red);
+  }
+  .focus\:lg\:custom-text-red:focus {
+    color: var(--custom-color-red);
+  }
+  .hover\:lg\:custom-text-red:hover {
+    color: var(--custom-color-red);
+  }
+  .lg\:custom-text-blue {
+    color: var(--custom-color-blue);
+  }
+  .active\:lg\:custom-text-blue:active {
+    color: var(--custom-color-blue);
+  }
+  .focus\:lg\:custom-text-blue:focus {
+    color: var(--custom-color-blue);
+  }
+  .hover\:lg\:custom-text-blue:hover {
+    color: var(--custom-color-blue);
+  }
+  .lg\:custom-text-purple {
+    color: var(--custom-color-purple);
+  }
+  .active\:lg\:custom-text-purple:active {
+    color: var(--custom-color-purple);
+  }
+  .focus\:lg\:custom-text-purple:focus {
+    color: var(--custom-color-purple);
+  }
+  .hover\:lg\:custom-text-purple:hover {
+    color: var(--custom-color-purple);
+  }
+  .lg\:custom-text-green {
+    color: var(--custom-color-green);
+  }
+  .active\:lg\:custom-text-green:active {
+    color: var(--custom-color-green);
+  }
+  .focus\:lg\:custom-text-green:focus {
+    color: var(--custom-color-green);
+  }
+  .hover\:lg\:custom-text-green:hover {
+    color: var(--custom-color-green);
+  }
+  .lg\:custom-text-orange {
+    color: var(--custom-color-orange);
+  }
+  .active\:lg\:custom-text-orange:active {
+    color: var(--custom-color-orange);
+  }
+  .focus\:lg\:custom-text-orange:focus {
+    color: var(--custom-color-orange);
+  }
+  .hover\:lg\:custom-text-orange:hover {
+    color: var(--custom-color-orange);
+  }
+  .lg\:custom-text-primary {
+    color: var(--custom-color-primary);
+  }
+  .active\:lg\:custom-text-primary:active {
+    color: var(--custom-color-primary);
+  }
+  .focus\:lg\:custom-text-primary:focus {
+    color: var(--custom-color-primary);
+  }
+  .hover\:lg\:custom-text-primary:hover {
+    color: var(--custom-color-primary);
+  }
+  .lg\:custom-text-secondary {
+    color: var(--custom-color-secondary);
+  }
+  .active\:lg\:custom-text-secondary:active {
+    color: var(--custom-color-secondary);
+  }
+  .focus\:lg\:custom-text-secondary:focus {
+    color: var(--custom-color-secondary);
+  }
+  .hover\:lg\:custom-text-secondary:hover {
+    color: var(--custom-color-secondary);
+  }
+  .lg\:custom-bg-yellow {
+    background-color: var(--custom-color-yellow);
+  }
+  .active\:lg\:custom-bg-yellow:active {
+    background-color: var(--custom-color-yellow);
+  }
+  .focus\:lg\:custom-bg-yellow:focus {
+    background-color: var(--custom-color-yellow);
+  }
+  .hover\:lg\:custom-bg-yellow:hover {
+    background-color: var(--custom-color-yellow);
+  }
+  .lg\:custom-bg-red {
+    background-color: var(--custom-color-red);
+  }
+  .active\:lg\:custom-bg-red:active {
+    background-color: var(--custom-color-red);
+  }
+  .focus\:lg\:custom-bg-red:focus {
+    background-color: var(--custom-color-red);
+  }
+  .hover\:lg\:custom-bg-red:hover {
+    background-color: var(--custom-color-red);
+  }
+  .lg\:custom-bg-blue {
+    background-color: var(--custom-color-blue);
+  }
+  .active\:lg\:custom-bg-blue:active {
+    background-color: var(--custom-color-blue);
+  }
+  .focus\:lg\:custom-bg-blue:focus {
+    background-color: var(--custom-color-blue);
+  }
+  .hover\:lg\:custom-bg-blue:hover {
+    background-color: var(--custom-color-blue);
+  }
+  .lg\:custom-bg-purple {
+    background-color: var(--custom-color-purple);
+  }
+  .active\:lg\:custom-bg-purple:active {
+    background-color: var(--custom-color-purple);
+  }
+  .focus\:lg\:custom-bg-purple:focus {
+    background-color: var(--custom-color-purple);
+  }
+  .hover\:lg\:custom-bg-purple:hover {
+    background-color: var(--custom-color-purple);
+  }
+  .lg\:custom-bg-green {
+    background-color: var(--custom-color-green);
+  }
+  .active\:lg\:custom-bg-green:active {
+    background-color: var(--custom-color-green);
+  }
+  .focus\:lg\:custom-bg-green:focus {
+    background-color: var(--custom-color-green);
+  }
+  .hover\:lg\:custom-bg-green:hover {
+    background-color: var(--custom-color-green);
+  }
+  .lg\:custom-bg-orange {
+    background-color: var(--custom-color-orange);
+  }
+  .active\:lg\:custom-bg-orange:active {
+    background-color: var(--custom-color-orange);
+  }
+  .focus\:lg\:custom-bg-orange:focus {
+    background-color: var(--custom-color-orange);
+  }
+  .hover\:lg\:custom-bg-orange:hover {
+    background-color: var(--custom-color-orange);
+  }
+  .lg\:custom-bg-primary {
+    background-color: var(--custom-color-primary);
+  }
+  .active\:lg\:custom-bg-primary:active {
+    background-color: var(--custom-color-primary);
+  }
+  .focus\:lg\:custom-bg-primary:focus {
+    background-color: var(--custom-color-primary);
+  }
+  .hover\:lg\:custom-bg-primary:hover {
+    background-color: var(--custom-color-primary);
+  }
+  .lg\:custom-bg-secondary {
+    background-color: var(--custom-color-secondary);
+  }
+  .active\:lg\:custom-bg-secondary:active {
+    background-color: var(--custom-color-secondary);
+  }
+  .focus\:lg\:custom-bg-secondary:focus {
+    background-color: var(--custom-color-secondary);
+  }
+  .hover\:lg\:custom-bg-secondary:hover {
+    background-color: var(--custom-color-secondary);
+  }
+  .lg\:custom-border-yellow {
+    border-color: var(--custom-color-yellow);
+  }
+  .active\:lg\:custom-border-yellow:active {
+    border-color: var(--custom-color-yellow);
+  }
+  .focus\:lg\:custom-border-yellow:focus {
+    border-color: var(--custom-color-yellow);
+  }
+  .hover\:lg\:custom-border-yellow:hover {
+    border-color: var(--custom-color-yellow);
+  }
+  .lg\:custom-border-red {
+    border-color: var(--custom-color-red);
+  }
+  .active\:lg\:custom-border-red:active {
+    border-color: var(--custom-color-red);
+  }
+  .focus\:lg\:custom-border-red:focus {
+    border-color: var(--custom-color-red);
+  }
+  .hover\:lg\:custom-border-red:hover {
+    border-color: var(--custom-color-red);
+  }
+  .lg\:custom-border-blue {
+    border-color: var(--custom-color-blue);
+  }
+  .active\:lg\:custom-border-blue:active {
+    border-color: var(--custom-color-blue);
+  }
+  .focus\:lg\:custom-border-blue:focus {
+    border-color: var(--custom-color-blue);
+  }
+  .hover\:lg\:custom-border-blue:hover {
+    border-color: var(--custom-color-blue);
+  }
+  .lg\:custom-border-purple {
+    border-color: var(--custom-color-purple);
+  }
+  .active\:lg\:custom-border-purple:active {
+    border-color: var(--custom-color-purple);
+  }
+  .focus\:lg\:custom-border-purple:focus {
+    border-color: var(--custom-color-purple);
+  }
+  .hover\:lg\:custom-border-purple:hover {
+    border-color: var(--custom-color-purple);
+  }
+  .lg\:custom-border-green {
+    border-color: var(--custom-color-green);
+  }
+  .active\:lg\:custom-border-green:active {
+    border-color: var(--custom-color-green);
+  }
+  .focus\:lg\:custom-border-green:focus {
+    border-color: var(--custom-color-green);
+  }
+  .hover\:lg\:custom-border-green:hover {
+    border-color: var(--custom-color-green);
+  }
+  .lg\:custom-border-orange {
+    border-color: var(--custom-color-orange);
+  }
+  .active\:lg\:custom-border-orange:active {
+    border-color: var(--custom-color-orange);
+  }
+  .focus\:lg\:custom-border-orange:focus {
+    border-color: var(--custom-color-orange);
+  }
+  .hover\:lg\:custom-border-orange:hover {
+    border-color: var(--custom-color-orange);
+  }
+  .lg\:custom-border-primary {
+    border-color: var(--custom-color-primary);
+  }
+  .active\:lg\:custom-border-primary:active {
+    border-color: var(--custom-color-primary);
+  }
+  .focus\:lg\:custom-border-primary:focus {
+    border-color: var(--custom-color-primary);
+  }
+  .hover\:lg\:custom-border-primary:hover {
+    border-color: var(--custom-color-primary);
+  }
+  .lg\:custom-border-secondary {
+    border-color: var(--custom-color-secondary);
+  }
+  .active\:lg\:custom-border-secondary:active {
+    border-color: var(--custom-color-secondary);
+  }
+  .focus\:lg\:custom-border-secondary:focus {
+    border-color: var(--custom-color-secondary);
+  }
+  .hover\:lg\:custom-border-secondary:hover {
+    border-color: var(--custom-color-secondary);
+  }
+  .lg\:custom-fill-yellow {
+    fill: var(--custom-color-yellow);
+  }
+  .active\:lg\:custom-fill-yellow:active {
+    fill: var(--custom-color-yellow);
+  }
+  .focus\:lg\:custom-fill-yellow:focus {
+    fill: var(--custom-color-yellow);
+  }
+  .hover\:lg\:custom-fill-yellow:hover {
+    fill: var(--custom-color-yellow);
+  }
+  .lg\:custom-fill-red {
+    fill: var(--custom-color-red);
+  }
+  .active\:lg\:custom-fill-red:active {
+    fill: var(--custom-color-red);
+  }
+  .focus\:lg\:custom-fill-red:focus {
+    fill: var(--custom-color-red);
+  }
+  .hover\:lg\:custom-fill-red:hover {
+    fill: var(--custom-color-red);
+  }
+  .lg\:custom-fill-blue {
+    fill: var(--custom-color-blue);
+  }
+  .active\:lg\:custom-fill-blue:active {
+    fill: var(--custom-color-blue);
+  }
+  .focus\:lg\:custom-fill-blue:focus {
+    fill: var(--custom-color-blue);
+  }
+  .hover\:lg\:custom-fill-blue:hover {
+    fill: var(--custom-color-blue);
+  }
+  .lg\:custom-fill-purple {
+    fill: var(--custom-color-purple);
+  }
+  .active\:lg\:custom-fill-purple:active {
+    fill: var(--custom-color-purple);
+  }
+  .focus\:lg\:custom-fill-purple:focus {
+    fill: var(--custom-color-purple);
+  }
+  .hover\:lg\:custom-fill-purple:hover {
+    fill: var(--custom-color-purple);
+  }
+  .lg\:custom-fill-green {
+    fill: var(--custom-color-green);
+  }
+  .active\:lg\:custom-fill-green:active {
+    fill: var(--custom-color-green);
+  }
+  .focus\:lg\:custom-fill-green:focus {
+    fill: var(--custom-color-green);
+  }
+  .hover\:lg\:custom-fill-green:hover {
+    fill: var(--custom-color-green);
+  }
+  .lg\:custom-fill-orange {
+    fill: var(--custom-color-orange);
+  }
+  .active\:lg\:custom-fill-orange:active {
+    fill: var(--custom-color-orange);
+  }
+  .focus\:lg\:custom-fill-orange:focus {
+    fill: var(--custom-color-orange);
+  }
+  .hover\:lg\:custom-fill-orange:hover {
+    fill: var(--custom-color-orange);
+  }
+  .lg\:custom-fill-primary {
+    fill: var(--custom-color-primary);
+  }
+  .active\:lg\:custom-fill-primary:active {
+    fill: var(--custom-color-primary);
+  }
+  .focus\:lg\:custom-fill-primary:focus {
+    fill: var(--custom-color-primary);
+  }
+  .hover\:lg\:custom-fill-primary:hover {
+    fill: var(--custom-color-primary);
+  }
+  .lg\:custom-fill-secondary {
+    fill: var(--custom-color-secondary);
+  }
+  .active\:lg\:custom-fill-secondary:active {
+    fill: var(--custom-color-secondary);
+  }
+  .focus\:lg\:custom-fill-secondary:focus {
+    fill: var(--custom-color-secondary);
+  }
+  .hover\:lg\:custom-fill-secondary:hover {
+    fill: var(--custom-color-secondary);
+  }
+  .lg\:custom-accent-yellow {
+    accent-color: var(--custom-color-yellow);
+  }
+  .active\:lg\:custom-accent-yellow:active {
+    accent-color: var(--custom-color-yellow);
+  }
+  .focus\:lg\:custom-accent-yellow:focus {
+    accent-color: var(--custom-color-yellow);
+  }
+  .hover\:lg\:custom-accent-yellow:hover {
+    accent-color: var(--custom-color-yellow);
+  }
+  .lg\:custom-accent-red {
+    accent-color: var(--custom-color-red);
+  }
+  .active\:lg\:custom-accent-red:active {
+    accent-color: var(--custom-color-red);
+  }
+  .focus\:lg\:custom-accent-red:focus {
+    accent-color: var(--custom-color-red);
+  }
+  .hover\:lg\:custom-accent-red:hover {
+    accent-color: var(--custom-color-red);
+  }
+  .lg\:custom-accent-blue {
+    accent-color: var(--custom-color-blue);
+  }
+  .active\:lg\:custom-accent-blue:active {
+    accent-color: var(--custom-color-blue);
+  }
+  .focus\:lg\:custom-accent-blue:focus {
+    accent-color: var(--custom-color-blue);
+  }
+  .hover\:lg\:custom-accent-blue:hover {
+    accent-color: var(--custom-color-blue);
+  }
+  .lg\:custom-accent-purple {
+    accent-color: var(--custom-color-purple);
+  }
+  .active\:lg\:custom-accent-purple:active {
+    accent-color: var(--custom-color-purple);
+  }
+  .focus\:lg\:custom-accent-purple:focus {
+    accent-color: var(--custom-color-purple);
+  }
+  .hover\:lg\:custom-accent-purple:hover {
+    accent-color: var(--custom-color-purple);
+  }
+  .lg\:custom-accent-green {
+    accent-color: var(--custom-color-green);
+  }
+  .active\:lg\:custom-accent-green:active {
+    accent-color: var(--custom-color-green);
+  }
+  .focus\:lg\:custom-accent-green:focus {
+    accent-color: var(--custom-color-green);
+  }
+  .hover\:lg\:custom-accent-green:hover {
+    accent-color: var(--custom-color-green);
+  }
+  .lg\:custom-accent-orange {
+    accent-color: var(--custom-color-orange);
+  }
+  .active\:lg\:custom-accent-orange:active {
+    accent-color: var(--custom-color-orange);
+  }
+  .focus\:lg\:custom-accent-orange:focus {
+    accent-color: var(--custom-color-orange);
+  }
+  .hover\:lg\:custom-accent-orange:hover {
+    accent-color: var(--custom-color-orange);
+  }
+  .lg\:custom-accent-primary {
+    accent-color: var(--custom-color-primary);
+  }
+  .active\:lg\:custom-accent-primary:active {
+    accent-color: var(--custom-color-primary);
+  }
+  .focus\:lg\:custom-accent-primary:focus {
+    accent-color: var(--custom-color-primary);
+  }
+  .hover\:lg\:custom-accent-primary:hover {
+    accent-color: var(--custom-color-primary);
+  }
+  .lg\:custom-accent-secondary {
+    accent-color: var(--custom-color-secondary);
+  }
+  .active\:lg\:custom-accent-secondary:active {
+    accent-color: var(--custom-color-secondary);
+  }
+  .focus\:lg\:custom-accent-secondary:focus {
+    accent-color: var(--custom-color-secondary);
+  }
+  .hover\:lg\:custom-accent-secondary:hover {
+    accent-color: var(--custom-color-secondary);
+  }
+  .lg\:custom-text-decoration-yellow {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .active\:lg\:custom-text-decoration-yellow:active {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .focus\:lg\:custom-text-decoration-yellow:focus {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .hover\:lg\:custom-text-decoration-yellow:hover {
+    text-decoration-color: var(--custom-color-yellow);
+  }
+  .lg\:custom-text-decoration-red {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .active\:lg\:custom-text-decoration-red:active {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .focus\:lg\:custom-text-decoration-red:focus {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .hover\:lg\:custom-text-decoration-red:hover {
+    text-decoration-color: var(--custom-color-red);
+  }
+  .lg\:custom-text-decoration-blue {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .active\:lg\:custom-text-decoration-blue:active {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .focus\:lg\:custom-text-decoration-blue:focus {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .hover\:lg\:custom-text-decoration-blue:hover {
+    text-decoration-color: var(--custom-color-blue);
+  }
+  .lg\:custom-text-decoration-purple {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .active\:lg\:custom-text-decoration-purple:active {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .focus\:lg\:custom-text-decoration-purple:focus {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .hover\:lg\:custom-text-decoration-purple:hover {
+    text-decoration-color: var(--custom-color-purple);
+  }
+  .lg\:custom-text-decoration-green {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .active\:lg\:custom-text-decoration-green:active {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .focus\:lg\:custom-text-decoration-green:focus {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .hover\:lg\:custom-text-decoration-green:hover {
+    text-decoration-color: var(--custom-color-green);
+  }
+  .lg\:custom-text-decoration-orange {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .active\:lg\:custom-text-decoration-orange:active {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .focus\:lg\:custom-text-decoration-orange:focus {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .hover\:lg\:custom-text-decoration-orange:hover {
+    text-decoration-color: var(--custom-color-orange);
+  }
+  .lg\:custom-text-decoration-primary {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .active\:lg\:custom-text-decoration-primary:active {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .focus\:lg\:custom-text-decoration-primary:focus {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .hover\:lg\:custom-text-decoration-primary:hover {
+    text-decoration-color: var(--custom-color-primary);
+  }
+  .lg\:custom-text-decoration-secondary {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .active\:lg\:custom-text-decoration-secondary:active {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .focus\:lg\:custom-text-decoration-secondary:focus {
+    text-decoration-color: var(--custom-color-secondary);
+  }
+  .hover\:lg\:custom-text-decoration-secondary:hover {
+    text-decoration-color: var(--custom-color-secondary);
   }
 }

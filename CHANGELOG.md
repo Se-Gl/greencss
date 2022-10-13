@@ -1,9 +1,8 @@
 ## [1.2.2](https://github.com/Se-Gl/greencss/compare/v1.2.1...v1.2.2) (2022-08-24)
 
-
 ### Performance Improvements
 
-* **reset:** deleted moz classes which may can cause errors p.e. with parcel ([68c63b1](https://github.com/Se-Gl/greencss/commit/68c63b17345b45161a3b02d97581e7a1dbf4dfd2))
+- **reset:** deleted moz classes which may can cause errors p.e. with parcel ([68c63b1](https://github.com/Se-Gl/greencss/commit/68c63b17345b45161a3b02d97581e7a1dbf4dfd2))
 
 ## [1.2.1](https://github.com/Se-Gl/greencss/compare/v1.2.0...v1.2.1) (2022-07-02)
 

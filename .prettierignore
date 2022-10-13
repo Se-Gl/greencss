@@ -16,3 +16,4 @@ package-lock.json
 
 # js markdown
 /js/**/*md
+/samples/index.html
