@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Se-Gl/greencss/compare/v1.2.2...v1.3.0) (2022-10-13)
+
+
+### Features
+
+* **custom-colors:** added custom color mixin ([0f002a0](https://github.com/Se-Gl/greencss/commit/0f002a027ce09fe241a0200a0d2183018d6bec64))
+
 ## [1.2.2](https://github.com/Se-Gl/greencss/compare/v1.2.1...v1.2.2) (2022-08-24)
 
 ### Performance Improvements
