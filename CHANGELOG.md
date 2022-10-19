@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/Se-Gl/greencss/compare/v1.3.1...v1.3.2) (2022-10-19)
+
+
+### Bug Fixes
+
+* **color:** added custom black and white classes ([882c6e5](https://github.com/Se-Gl/greencss/commit/882c6e5b21f208e8fb9de61fb5e907b6f66bd029))
+
 ## [1.3.1](https://github.com/Se-Gl/greencss/compare/v1.3.0...v1.3.1) (2022-10-13)
 
 ### Bug Fixes
