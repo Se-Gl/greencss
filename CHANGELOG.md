@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/Se-Gl/greencss/compare/v1.3.2...v1.3.3) (2022-11-11)
+
+
+### Bug Fixes
+
+* **line-clamp:** added line clamp ([c9bfff6](https://github.com/Se-Gl/greencss/commit/c9bfff603ca593ff6843e630eb890607bab1e198))
+
 ## [1.3.2](https://github.com/Se-Gl/greencss/compare/v1.3.1...v1.3.2) (2022-10-19)
 
 ### Bug Fixes
