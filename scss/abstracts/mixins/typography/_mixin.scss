@@ -30,3 +30,14 @@
     }
   }
 }
+
+@mixin lineClampMixin($bp, $selector: hover) {
+  @for $i from 1 through 20 {
+    .#{$bp}line-clamp-#{$i} {
+      display: -webkit-box;
+      -webkit-line-clamp: #{$i};
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
